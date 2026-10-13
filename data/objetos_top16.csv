@@ -1,0 +1,481 @@
+row_id,event,date,place,player,pokemon,item,is_mega_stone
+VR Oct #2#1#Charizard,VR Oct #2,2026-10-11,1,Kiran Singh,Charizard,Charizardite Y,si
+VR Oct #2#1#Pelipper,VR Oct #2,2026-10-11,1,Kiran Singh,Pelipper,Sitrus Berry,no
+VR Oct #2#1#Archaludon,VR Oct #2,2026-10-11,1,Kiran Singh,Archaludon,Leftovers,no
+VR Oct #2#1#Venusaur,VR Oct #2,2026-10-11,1,Kiran Singh,Venusaur,Focus Sash,no
+VR Oct #2#1#Grimmsnarl,VR Oct #2,2026-10-11,1,Kiran Singh,Grimmsnarl,Light Clay,no
+VR Oct #2#1#Garchomp,VR Oct #2,2026-10-11,1,Kiran Singh,Garchomp,Garchompite Z,si
+VR Oct #2#2#Pelipper,VR Oct #2,2026-10-11,2,Hiroto Saito,Pelipper,Sitrus Berry,no
+VR Oct #2#2#Swampert,VR Oct #2,2026-10-11,2,Hiroto Saito,Swampert,Swampertite,si
+VR Oct #2#2#Archaludon,VR Oct #2,2026-10-11,2,Hiroto Saito,Archaludon,Leftovers,no
+VR Oct #2#2#Incineroar,VR Oct #2,2026-10-11,2,Hiroto Saito,Incineroar,Passho Berry,no
+VR Oct #2#2#Sinistcha,VR Oct #2,2026-10-11,2,Hiroto Saito,Sinistcha,Colbur Berry,no
+VR Oct #2#2#Mawile,VR Oct #2,2026-10-11,2,Hiroto Saito,Mawile,Mawilite,si
+VR Oct #2#3#Indeedee,VR Oct #2,2026-10-11,3,Juan Lucin,Indeedee,Sitrus Berry,no
+VR Oct #2#3#Gardevoir,VR Oct #2,2026-10-11,3,Juan Lucin,Gardevoir,Gardevoirite,si
+VR Oct #2#3#Basculegion,VR Oct #2,2026-10-11,3,Juan Lucin,Basculegion,Choice Scarf,no
+VR Oct #2#3#Pelipper,VR Oct #2,2026-10-11,3,Juan Lucin,Pelipper,Focus Sash,no
+VR Oct #2#3#Archaludon,VR Oct #2,2026-10-11,3,Juan Lucin,Archaludon,Leftovers,no
+VR Oct #2#3#Sneasler,VR Oct #2,2026-10-11,3,Juan Lucin,Sneasler,Psychic Seed,no
+VR Oct #2#4#Dragonite,VR Oct #2,2026-10-11,4,Ko Aida,Dragonite,Dragoninite,si
+VR Oct #2#4#Kingambit,VR Oct #2,2026-10-11,4,Ko Aida,Kingambit,Chople Berry,no
+VR Oct #2#4#Sneasler,VR Oct #2,2026-10-11,4,Ko Aida,Sneasler,White Herb,no
+VR Oct #2#4#Basculegion,VR Oct #2,2026-10-11,4,Ko Aida,Basculegion,Focus Sash,no
+VR Oct #2#4#Delphox,VR Oct #2,2026-10-11,4,Ko Aida,Delphox,Delphoxite,si
+VR Oct #2#4#Garchomp,VR Oct #2,2026-10-11,4,Ko Aida,Garchomp,Choice Scarf,no
+VR Oct #2#5#Raichu,VR Oct #2,2026-10-11,5,Sahil Shaikh,Raichu,Raichunite Y,si
+VR Oct #2#5#Salamence,VR Oct #2,2026-10-11,5,Sahil Shaikh,Salamence,Salamencite,si
+VR Oct #2#5#Arcanine-Hisui,VR Oct #2,2026-10-11,5,Sahil Shaikh,Arcanine-Hisui,Focus Sash,no
+VR Oct #2#5#Milotic,VR Oct #2,2026-10-11,5,Sahil Shaikh,Milotic,Leftovers,no
+VR Oct #2#5#Gholdengo,VR Oct #2,2026-10-11,5,Sahil Shaikh,Gholdengo,Life Orb,no
+VR Oct #2#5#Rillaboom,VR Oct #2,2026-10-11,5,Sahil Shaikh,Rillaboom,Miracle Seed,no
+VR Oct #2#6#Charizard,VR Oct #2,2026-10-11,6,Stefano Greppi,Charizard,Charizardite Y,si
+VR Oct #2#6#Kingambit,VR Oct #2,2026-10-11,6,Stefano Greppi,Kingambit,Focus Sash,no
+VR Oct #2#6#Sylveon,VR Oct #2,2026-10-11,6,Stefano Greppi,Sylveon,Fairy Feather,no
+VR Oct #2#6#Aerodactyl,VR Oct #2,2026-10-11,6,Stefano Greppi,Aerodactyl,Aerodactylite,si
+VR Oct #2#6#Farigiraf,VR Oct #2,2026-10-11,6,Stefano Greppi,Farigiraf,Sitrus Berry,no
+VR Oct #2#6#Garchomp,VR Oct #2,2026-10-11,6,Stefano Greppi,Garchomp,Life Orb,no
+VR Oct #2#7#Charizard,VR Oct #2,2026-10-11,7,Jongseo Lee,Charizard,Charizardite Y,si
+VR Oct #2#7#Garchomp,VR Oct #2,2026-10-11,7,Jongseo Lee,Garchomp,Choice Scarf,no
+VR Oct #2#7#Incineroar,VR Oct #2,2026-10-11,7,Jongseo Lee,Incineroar,Leftovers,no
+VR Oct #2#7#Sylveon,VR Oct #2,2026-10-11,7,Jongseo Lee,Sylveon,Fairy Feather,no
+VR Oct #2#7#Venusaur,VR Oct #2,2026-10-11,7,Jongseo Lee,Venusaur,Life Orb,no
+VR Oct #2#7#Farigiraf,VR Oct #2,2026-10-11,7,Jongseo Lee,Farigiraf,Sitrus Berry,no
+VR Oct #2#8#Gholdengo,VR Oct #2,2026-10-11,8,Cristobal Carrasco,Gholdengo,Life Orb,no
+VR Oct #2#8#Volcarona,VR Oct #2,2026-10-11,8,Cristobal Carrasco,Volcarona,Rocky Helmet,no
+VR Oct #2#8#Garchomp,VR Oct #2,2026-10-11,8,Cristobal Carrasco,Garchomp,Garchompite Z,si
+VR Oct #2#8#Incineroar,VR Oct #2,2026-10-11,8,Cristobal Carrasco,Incineroar,Sitrus Berry,no
+VR Oct #2#8#Rillaboom,VR Oct #2,2026-10-11,8,Cristobal Carrasco,Rillaboom,Miracle Seed,no
+VR Oct #2#8#Raichu,VR Oct #2,2026-10-11,8,Cristobal Carrasco,Raichu,Raichunite Y,si
+VR Oct #2#9#Sneasler,VR Oct #2,2026-10-11,9,Arianna Deiro,Sneasler,White Herb,no
+VR Oct #2#9#Golisopod,VR Oct #2,2026-10-11,9,Arianna Deiro,Golisopod,Golisopite,si
+VR Oct #2#9#Pelipper,VR Oct #2,2026-10-11,9,Arianna Deiro,Pelipper,Damp Rock,no
+VR Oct #2#9#Archaludon,VR Oct #2,2026-10-11,9,Arianna Deiro,Archaludon,Leftovers,no
+VR Oct #2#9#Basculegion,VR Oct #2,2026-10-11,9,Arianna Deiro,Basculegion,Focus Sash,no
+VR Oct #2#9#Floette,VR Oct #2,2026-10-11,9,Arianna Deiro,Floette,Floettite,si
+VR Oct #2#10#Charizard,VR Oct #2,2026-10-11,10,Wataru Igarashi,Charizard,Charizardite Y,si
+VR Oct #2#10#Garchomp,VR Oct #2,2026-10-11,10,Wataru Igarashi,Garchomp,Choice Scarf,no
+VR Oct #2#10#Toxapex,VR Oct #2,2026-10-11,10,Wataru Igarashi,Toxapex,Leftovers,no
+VR Oct #2#10#Venusaur,VR Oct #2,2026-10-11,10,Wataru Igarashi,Venusaur,Life Orb,no
+VR Oct #2#10#Incineroar,VR Oct #2,2026-10-11,10,Wataru Igarashi,Incineroar,Sitrus Berry,no
+VR Oct #2#10#Sylveon,VR Oct #2,2026-10-11,10,Wataru Igarashi,Sylveon,Fairy Feather,no
+VR Oct #2#11#Floette,VR Oct #2,2026-10-11,11,Jong One Moon,Floette,Floettite,si
+VR Oct #2#11#Golisopod,VR Oct #2,2026-10-11,11,Jong One Moon,Golisopod,Golisopite,si
+VR Oct #2#11#Pelipper,VR Oct #2,2026-10-11,11,Jong One Moon,Pelipper,Damp Rock,no
+VR Oct #2#11#Archaludon,VR Oct #2,2026-10-11,11,Jong One Moon,Archaludon,Leftovers,no
+VR Oct #2#11#Basculegion,VR Oct #2,2026-10-11,11,Jong One Moon,Basculegion,Focus Sash,no
+VR Oct #2#11#Sneasler,VR Oct #2,2026-10-11,11,Jong One Moon,Sneasler,White Herb,no
+VR Oct #2#12#Incineroar,VR Oct #2,2026-10-11,12,Victor Medina,Incineroar,Sitrus Berry,no
+VR Oct #2#12#Rillaboom,VR Oct #2,2026-10-11,12,Victor Medina,Rillaboom,Occa Berry,no
+VR Oct #2#12#Gengar,VR Oct #2,2026-10-11,12,Victor Medina,Gengar,Gengarite,si
+VR Oct #2#12#Kommo-o,VR Oct #2,2026-10-11,12,Victor Medina,Kommo-o,Leftovers,no
+VR Oct #2#12#Ninetales-Alola,VR Oct #2,2026-10-11,12,Victor Medina,Ninetales-Alola,Choice Scarf,no
+VR Oct #2#12#Kingambit,VR Oct #2,2026-10-11,12,Victor Medina,Kingambit,Life Orb,no
+VR Oct #2#13#Gengar,VR Oct #2,2026-10-11,13,Asra Stone,Gengar,Gengarite,si
+VR Oct #2#13#Incineroar,VR Oct #2,2026-10-11,13,Asra Stone,Incineroar,Sitrus Berry,no
+VR Oct #2#13#Rillaboom,VR Oct #2,2026-10-11,13,Asra Stone,Rillaboom,Occa Berry,no
+VR Oct #2#13#Kommo-o,VR Oct #2,2026-10-11,13,Asra Stone,Kommo-o,Leftovers,no
+VR Oct #2#13#Absol,VR Oct #2,2026-10-11,13,Asra Stone,Absol,Absolite Z,si
+VR Oct #2#13#Sneasler,VR Oct #2,2026-10-11,13,Asra Stone,Sneasler,White Herb,no
+VR Oct #2#14#Charizard,VR Oct #2,2026-10-11,14,Matteo Boschmans,Charizard,Charizardite Y,si
+VR Oct #2#14#Whimsicott,VR Oct #2,2026-10-11,14,Matteo Boschmans,Whimsicott,Focus Sash,no
+VR Oct #2#14#Basculegion,VR Oct #2,2026-10-11,14,Matteo Boschmans,Basculegion,Life Orb,no
+VR Oct #2#14#Farigiraf,VR Oct #2,2026-10-11,14,Matteo Boschmans,Farigiraf,Rocky Helmet,no
+VR Oct #2#14#Incineroar,VR Oct #2,2026-10-11,14,Matteo Boschmans,Incineroar,Sitrus Berry,no
+VR Oct #2#14#Mawile,VR Oct #2,2026-10-11,14,Matteo Boschmans,Mawile,Mawilite,si
+VR Oct #2#15#Charizard,VR Oct #2,2026-10-11,15,A-C Manolache,Charizard,Charizardite Y,si
+VR Oct #2#15#Pelipper,VR Oct #2,2026-10-11,15,A-C Manolache,Pelipper,Sitrus Berry,no
+VR Oct #2#15#Archaludon,VR Oct #2,2026-10-11,15,A-C Manolache,Archaludon,Leftovers,no
+VR Oct #2#15#Venusaur,VR Oct #2,2026-10-11,15,A-C Manolache,Venusaur,Focus Sash,no
+VR Oct #2#15#Grimmsnarl,VR Oct #2,2026-10-11,15,A-C Manolache,Grimmsnarl,Light Clay,no
+VR Oct #2#15#Garchomp,VR Oct #2,2026-10-11,15,A-C Manolache,Garchomp,Garchompite Z,si
+VR Oct #2#16#Gholdengo,VR Oct #2,2026-10-11,16,Carlos Verastegui,Gholdengo,Life Orb,no
+VR Oct #2#16#Volcarona,VR Oct #2,2026-10-11,16,Carlos Verastegui,Volcarona,Charti Berry,no
+VR Oct #2#16#Garchomp,VR Oct #2,2026-10-11,16,Carlos Verastegui,Garchomp,Garchompite Z,si
+VR Oct #2#16#Incineroar,VR Oct #2,2026-10-11,16,Carlos Verastegui,Incineroar,Sitrus Berry,no
+VR Oct #2#16#Rillaboom,VR Oct #2,2026-10-11,16,Carlos Verastegui,Rillaboom,Miracle Seed,no
+VR Oct #2#16#Raichu,VR Oct #2,2026-10-11,16,Carlos Verastegui,Raichu,Raichunite Y,si
+VR Oct #1#1#Raichu,VR Oct #1,2026-10-04,1,Michael Kelsch,Raichu,Raichunite Y,si
+VR Oct #1#1#Garchomp,VR Oct #1,2026-10-04,1,Michael Kelsch,Garchomp,Garchompite Z,si
+VR Oct #1#1#Incineroar,VR Oct #1,2026-10-04,1,Michael Kelsch,Incineroar,Sitrus Berry,no
+VR Oct #1#1#Rillaboom,VR Oct #1,2026-10-04,1,Michael Kelsch,Rillaboom,Miracle Seed,no
+VR Oct #1#1#Basculegion,VR Oct #1,2026-10-04,1,Michael Kelsch,Basculegion,Choice Scarf,no
+VR Oct #1#1#Volcarona,VR Oct #1,2026-10-04,1,Michael Kelsch,Volcarona,Grassy Seed,no
+VR Oct #1#2#Sneasler,VR Oct #1,2026-10-04,2,Marcus Dion,Sneasler,White Herb,no
+VR Oct #1#2#Golisopod,VR Oct #1,2026-10-04,2,Marcus Dion,Golisopod,Golisopite,si
+VR Oct #1#2#Pelipper,VR Oct #1,2026-10-04,2,Marcus Dion,Pelipper,Damp Rock,no
+VR Oct #1#2#Archaludon,VR Oct #1,2026-10-04,2,Marcus Dion,Archaludon,Leftovers,no
+VR Oct #1#2#Basculegion,VR Oct #1,2026-10-04,2,Marcus Dion,Basculegion,Focus Sash,no
+VR Oct #1#2#Floette,VR Oct #1,2026-10-04,2,Marcus Dion,Floette,Floettite,si
+VR Oct #1#3#Grimmsnarl,VR Oct #1,2026-10-04,3,Takuto Notohara,Grimmsnarl,Light Clay,no
+VR Oct #1#3#Incineroar,VR Oct #1,2026-10-04,3,Takuto Notohara,Incineroar,Sitrus Berry,no
+VR Oct #1#3#Garchomp,VR Oct #1,2026-10-04,3,Takuto Notohara,Garchomp,Choice Scarf,no
+VR Oct #1#3#Floette,VR Oct #1,2026-10-04,3,Takuto Notohara,Floette,Floettite,si
+VR Oct #1#3#Milotic,VR Oct #1,2026-10-04,3,Takuto Notohara,Milotic,Leftovers,no
+VR Oct #1#3#Volcarona,VR Oct #1,2026-10-04,3,Takuto Notohara,Volcarona,Rocky Helmet,no
+VR Oct #1#4#Sneasler,VR Oct #1,2026-10-04,4,Emanuele Briganti,Sneasler,White Herb,no
+VR Oct #1#4#Incineroar,VR Oct #1,2026-10-04,4,Emanuele Briganti,Incineroar,Sitrus Berry,no
+VR Oct #1#4#Rillaboom,VR Oct #1,2026-10-04,4,Emanuele Briganti,Rillaboom,Miracle Seed,no
+VR Oct #1#4#Gholdengo,VR Oct #1,2026-10-04,4,Emanuele Briganti,Gholdengo,Life Orb,no
+VR Oct #1#4#Dragonite,VR Oct #1,2026-10-04,4,Emanuele Briganti,Dragonite,Dragoninite,si
+VR Oct #1#4#Floette,VR Oct #1,2026-10-04,4,Emanuele Briganti,Floette,Floettite,si
+VR Oct #1#5#Farigiraf,VR Oct #1,2026-10-04,5,Federico Camporesi,Farigiraf,Sitrus Berry,no
+VR Oct #1#5#Incineroar,VR Oct #1,2026-10-04,5,Federico Camporesi,Incineroar,Chople Berry,no
+VR Oct #1#5#Torkoal,VR Oct #1,2026-10-04,5,Federico Camporesi,Torkoal,Charcoal,no
+VR Oct #1#5#Sneasler,VR Oct #1,2026-10-04,5,Federico Camporesi,Sneasler,White Herb,no
+VR Oct #1#5#Sylveon,VR Oct #1,2026-10-04,5,Federico Camporesi,Sylveon,Fairy Feather,no
+VR Oct #1#5#Garchomp,VR Oct #1,2026-10-04,5,Federico Camporesi,Garchomp,Garchompite Z,si
+VR Oct #1#6#Sneasler,VR Oct #1,2026-10-04,6,Carson Confer,Sneasler,White Herb,no
+VR Oct #1#6#Golisopod,VR Oct #1,2026-10-04,6,Carson Confer,Golisopod,Golisopite,si
+VR Oct #1#6#Pelipper,VR Oct #1,2026-10-04,6,Carson Confer,Pelipper,Damp Rock,no
+VR Oct #1#6#Archaludon,VR Oct #1,2026-10-04,6,Carson Confer,Archaludon,Leftovers,no
+VR Oct #1#6#Basculegion,VR Oct #1,2026-10-04,6,Carson Confer,Basculegion,Focus Sash,no
+VR Oct #1#6#Floette,VR Oct #1,2026-10-04,6,Carson Confer,Floette,Floettite,si
+VR Oct #1#7#Raichu,VR Oct #1,2026-10-04,7,Lorenzo Antognoni,Raichu,Raichunite Y,si
+VR Oct #1#7#Rillaboom,VR Oct #1,2026-10-04,7,Lorenzo Antognoni,Rillaboom,Miracle Seed,no
+VR Oct #1#7#Gholdengo,VR Oct #1,2026-10-04,7,Lorenzo Antognoni,Gholdengo,Life Orb,no
+VR Oct #1#7#Arcanine-Hisui,VR Oct #1,2026-10-04,7,Lorenzo Antognoni,Arcanine-Hisui,Focus Sash,no
+VR Oct #1#7#Staraptor,VR Oct #1,2026-10-04,7,Lorenzo Antognoni,Staraptor,Staraptite,si
+VR Oct #1#7#Primarina,VR Oct #1,2026-10-04,7,Lorenzo Antognoni,Primarina,Leftovers,no
+VR Oct #1#8#Grimmsnarl,VR Oct #1,2026-10-04,8,Andrew Figueras,Grimmsnarl,Light Clay,no
+VR Oct #1#8#Archaludon,VR Oct #1,2026-10-04,8,Andrew Figueras,Archaludon,Leftovers,no
+VR Oct #1#8#Pelipper,VR Oct #1,2026-10-04,8,Andrew Figueras,Pelipper,Sitrus Berry,no
+VR Oct #1#8#Staraptor,VR Oct #1,2026-10-04,8,Andrew Figueras,Staraptor,Staraptite,si
+VR Oct #1#8#Charizard,VR Oct #1,2026-10-04,8,Andrew Figueras,Charizard,Charizardite Y,si
+VR Oct #1#8#Venusaur,VR Oct #1,2026-10-04,8,Andrew Figueras,Venusaur,Focus Sash,no
+VR Oct #1#9#Raichu,VR Oct #1,2026-10-04,9,Theotime Massaut,Raichu,Raichunite Y,si
+VR Oct #1#9#Garchomp,VR Oct #1,2026-10-04,9,Theotime Massaut,Garchomp,Garchompite Z,si
+VR Oct #1#9#Incineroar,VR Oct #1,2026-10-04,9,Theotime Massaut,Incineroar,Sitrus Berry,no
+VR Oct #1#9#Rillaboom,VR Oct #1,2026-10-04,9,Theotime Massaut,Rillaboom,Miracle Seed,no
+VR Oct #1#9#Basculegion,VR Oct #1,2026-10-04,9,Theotime Massaut,Basculegion,Choice Scarf,no
+VR Oct #1#9#Volcarona,VR Oct #1,2026-10-04,9,Theotime Massaut,Volcarona,Grassy Seed,no
+VR Oct #1#10#Incineroar,VR Oct #1,2026-10-04,10,Victor Medina,Incineroar,Sitrus Berry,no
+VR Oct #1#10#Rillaboom,VR Oct #1,2026-10-04,10,Victor Medina,Rillaboom,Occa Berry,no
+VR Oct #1#10#Gengar,VR Oct #1,2026-10-04,10,Victor Medina,Gengar,Gengarite,si
+VR Oct #1#10#Kommo-o,VR Oct #1,2026-10-04,10,Victor Medina,Kommo-o,Leftovers,no
+VR Oct #1#10#Ninetales-Alola,VR Oct #1,2026-10-04,10,Victor Medina,Ninetales-Alola,Choice Scarf,no
+VR Oct #1#10#Kingambit,VR Oct #1,2026-10-04,10,Victor Medina,Kingambit,Life Orb,no
+VR Oct #1#11#Charizard,VR Oct #1,2026-10-04,11,Juan Manuel Odriozola,Charizard,Charizardite Y,si
+VR Oct #1#11#Venusaur,VR Oct #1,2026-10-04,11,Juan Manuel Odriozola,Venusaur,Life Orb,no
+VR Oct #1#11#Incineroar,VR Oct #1,2026-10-04,11,Juan Manuel Odriozola,Incineroar,Sitrus Berry,no
+VR Oct #1#11#Sylveon,VR Oct #1,2026-10-04,11,Juan Manuel Odriozola,Sylveon,Fairy Feather,no
+VR Oct #1#11#Toxapex,VR Oct #1,2026-10-04,11,Juan Manuel Odriozola,Toxapex,Leftovers,no
+VR Oct #1#11#Garchomp,VR Oct #1,2026-10-04,11,Juan Manuel Odriozola,Garchomp,Choice Scarf,no
+VR Oct #1#12#Gengar,VR Oct #1,2026-10-04,12,Jack Geronime,Gengar,Gengarite,si
+VR Oct #1#12#Rillaboom,VR Oct #1,2026-10-04,12,Jack Geronime,Rillaboom,Life Orb,no
+VR Oct #1#12#Incineroar,VR Oct #1,2026-10-04,12,Jack Geronime,Incineroar,Sitrus Berry,no
+VR Oct #1#12#Hippowdon,VR Oct #1,2026-10-04,12,Jack Geronime,Hippowdon,Leftovers,no
+VR Oct #1#12#Kingambit,VR Oct #1,2026-10-04,12,Jack Geronime,Kingambit,Black Glasses,no
+VR Oct #1#12#Pawmot,VR Oct #1,2026-10-04,12,Jack Geronime,Pawmot,Focus Sash,no
+VR Oct #1#13#Garchomp,VR Oct #1,2026-10-04,13,Shunsuke Minami,Garchomp,Choice Scarf,no
+VR Oct #1#13#Dragonite,VR Oct #1,2026-10-04,13,Shunsuke Minami,Dragonite,Dragoninite,si
+VR Oct #1#13#Sneasler,VR Oct #1,2026-10-04,13,Shunsuke Minami,Sneasler,Focus Sash,no
+VR Oct #1#13#Rillaboom,VR Oct #1,2026-10-04,13,Shunsuke Minami,Rillaboom,Miracle Seed,no
+VR Oct #1#13#Gholdengo,VR Oct #1,2026-10-04,13,Shunsuke Minami,Gholdengo,Life Orb,no
+VR Oct #1#13#Incineroar,VR Oct #1,2026-10-04,13,Shunsuke Minami,Incineroar,Sitrus Berry,no
+VR Oct #1#14#Raichu,VR Oct #1,2026-10-04,14,Louis Markl,Raichu,Raichunite Y,si
+VR Oct #1#14#Incineroar,VR Oct #1,2026-10-04,14,Louis Markl,Incineroar,Sitrus Berry,no
+VR Oct #1#14#Basculegion,VR Oct #1,2026-10-04,14,Louis Markl,Basculegion,Choice Scarf,no
+VR Oct #1#14#Floette,VR Oct #1,2026-10-04,14,Louis Markl,Floette,Floettite,si
+VR Oct #1#14#Rillaboom,VR Oct #1,2026-10-04,14,Louis Markl,Rillaboom,Miracle Seed,no
+VR Oct #1#14#Volcarona,VR Oct #1,2026-10-04,14,Louis Markl,Volcarona,Grassy Seed,no
+VR Oct #1#15#Salamence,VR Oct #1,2026-10-04,15,Tota Nambu,Salamence,Salamencite,si
+VR Oct #1#15#Raichu,VR Oct #1,2026-10-04,15,Tota Nambu,Raichu,Raichunite Y,si
+VR Oct #1#15#Sylveon,VR Oct #1,2026-10-04,15,Tota Nambu,Sylveon,Fairy Feather,no
+VR Oct #1#15#Kingambit,VR Oct #1,2026-10-04,15,Tota Nambu,Kingambit,Chople Berry,no
+VR Oct #1#15#Sneasler,VR Oct #1,2026-10-04,15,Tota Nambu,Sneasler,Focus Sash,no
+VR Oct #1#15#Basculegion,VR Oct #1,2026-10-04,15,Tota Nambu,Basculegion,Life Orb,no
+VR Oct #1#16#Hatterene,VR Oct #1,2026-10-04,16,Jonas Wiegel,Hatterene,Life Orb,no
+VR Oct #1#16#Indeedee,VR Oct #1,2026-10-04,16,Jonas Wiegel,Indeedee,Rocky Helmet,no
+VR Oct #1#16#Camerupt,VR Oct #1,2026-10-04,16,Jonas Wiegel,Camerupt,Cameruptite,si
+VR Oct #1#16#Incineroar,VR Oct #1,2026-10-04,16,Jonas Wiegel,Incineroar,White Herb,no
+VR Oct #1#16#Farigiraf,VR Oct #1,2026-10-04,16,Jonas Wiegel,Farigiraf,Wise Glasses,no
+VR Oct #1#16#Kingambit,VR Oct #1,2026-10-04,16,Jonas Wiegel,Kingambit,Black Glasses,no
+VR Sep #1#1#Staraptor,VR Sep #1,2026-09-13,1,Michael Kelsch,Staraptor,Staraptite,si
+VR Sep #1#1#Raichu,VR Sep #1,2026-09-13,1,Michael Kelsch,Raichu,Raichunite Y,si
+VR Sep #1#1#Gholdengo,VR Sep #1,2026-09-13,1,Michael Kelsch,Gholdengo,Life Orb,no
+VR Sep #1#1#Rillaboom,VR Sep #1,2026-09-13,1,Michael Kelsch,Rillaboom,Miracle Seed,no
+VR Sep #1#1#Arcanine-Hisui,VR Sep #1,2026-09-13,1,Michael Kelsch,Arcanine-Hisui,Focus Sash,no
+VR Sep #1#1#Sylveon,VR Sep #1,2026-09-13,1,Michael Kelsch,Sylveon,Fairy Feather,no
+VR Sep #1#2#Sneasler,VR Sep #1,2026-09-13,2,Louis Markl,Sneasler,Grassy Seed,no
+VR Sep #1#2#Floette,VR Sep #1,2026-09-13,2,Louis Markl,Floette,Floettite,si
+VR Sep #1#2#Salamence,VR Sep #1,2026-09-13,2,Louis Markl,Salamence,Salamencite,si
+VR Sep #1#2#Rillaboom,VR Sep #1,2026-09-13,2,Louis Markl,Rillaboom,Sitrus Berry,no
+VR Sep #1#2#Incineroar,VR Sep #1,2026-09-13,2,Louis Markl,Incineroar,Rocky Helmet,no
+VR Sep #1#2#Gholdengo,VR Sep #1,2026-09-13,2,Louis Markl,Gholdengo,Life Orb,no
+VR Sep #1#3#Gardevoir,VR Sep #1,2026-09-13,3,Jacopo De Astis,Gardevoir,Gardevoirite,si
+VR Sep #1#3#Indeedee,VR Sep #1,2026-09-13,3,Jacopo De Astis,Indeedee,Rocky Helmet,no
+VR Sep #1#3#Arcanine-Hisui,VR Sep #1,2026-09-13,3,Jacopo De Astis,Arcanine-Hisui,Focus Sash,no
+VR Sep #1#3#Basculegion,VR Sep #1,2026-09-13,3,Jacopo De Astis,Basculegion,Mystic Water,no
+VR Sep #1#3#Whimsicott,VR Sep #1,2026-09-13,3,Jacopo De Astis,Whimsicott,Occa Berry,no
+VR Sep #1#3#Kommo-o,VR Sep #1,2026-09-13,3,Jacopo De Astis,Kommo-o,Life Orb,no
+VR Sep #1#4#Milotic,VR Sep #1,2026-09-13,4,Shunsuke Minami,Milotic,Leftovers,no
+VR Sep #1#4#Golisopod,VR Sep #1,2026-09-13,4,Shunsuke Minami,Golisopod,Golisopite,si
+VR Sep #1#4#Incineroar,VR Sep #1,2026-09-13,4,Shunsuke Minami,Incineroar,Chople Berry,no
+VR Sep #1#4#Rillaboom,VR Sep #1,2026-09-13,4,Shunsuke Minami,Rillaboom,Miracle Seed,no
+VR Sep #1#4#Garchomp,VR Sep #1,2026-09-13,4,Shunsuke Minami,Garchomp,Garchompite Z,si
+VR Sep #1#4#Farigiraf,VR Sep #1,2026-09-13,4,Shunsuke Minami,Farigiraf,Grassy Seed,no
+VR Sep #1#5#Gengar,VR Sep #1,2026-09-13,5,Marco Silva,Gengar,Gengarite,si
+VR Sep #1#5#Froslass,VR Sep #1,2026-09-13,5,Marco Silva,Froslass,Froslassite,si
+VR Sep #1#5#Incineroar,VR Sep #1,2026-09-13,5,Marco Silva,Incineroar,Passho Berry,no
+VR Sep #1#5#Politoed,VR Sep #1,2026-09-13,5,Marco Silva,Politoed,Sitrus Berry,no
+VR Sep #1#5#Archaludon,VR Sep #1,2026-09-13,5,Marco Silva,Archaludon,Leftovers,no
+VR Sep #1#5#Rillaboom,VR Sep #1,2026-09-13,5,Marco Silva,Rillaboom,Eject Button,no
+VR Sep #1#6#Metagross,VR Sep #1,2026-09-13,6,Jeremy Cote,Metagross,Metagrossite,si
+VR Sep #1#6#Indeedee,VR Sep #1,2026-09-13,6,Jeremy Cote,Indeedee,Choice Scarf,no
+VR Sep #1#6#Sneasler,VR Sep #1,2026-09-13,6,Jeremy Cote,Sneasler,Psychic Seed,no
+VR Sep #1#6#Arcanine-Hisui,VR Sep #1,2026-09-13,6,Jeremy Cote,Arcanine-Hisui,Focus Sash,no
+VR Sep #1#6#Milotic,VR Sep #1,2026-09-13,6,Jeremy Cote,Milotic,Sitrus Berry,no
+VR Sep #1#6#Salamence,VR Sep #1,2026-09-13,6,Jeremy Cote,Salamence,Salamencite,si
+VR Sep #1#7#Indeedee,VR Sep #1,2026-09-13,7,Dorian Kang,Indeedee,Rocky Helmet,no
+VR Sep #1#7#Milotic,VR Sep #1,2026-09-13,7,Dorian Kang,Milotic,Psychic Seed,no
+VR Sep #1#7#Whimsicott,VR Sep #1,2026-09-13,7,Dorian Kang,Whimsicott,Focus Sash,no
+VR Sep #1#7#Dragapult,VR Sep #1,2026-09-13,7,Dorian Kang,Dragapult,Life Orb,no
+VR Sep #1#7#Armarouge,VR Sep #1,2026-09-13,7,Dorian Kang,Armarouge,Twisted Spoon,no
+VR Sep #1#7#Staraptor,VR Sep #1,2026-09-13,7,Dorian Kang,Staraptor,Staraptite,si
+VR Sep #1#8#Charizard,VR Sep #1,2026-09-13,8,Cori Corley,Charizard,Charizardite Y,si
+VR Sep #1#8#Kingambit,VR Sep #1,2026-09-13,8,Cori Corley,Kingambit,Focus Sash,no
+VR Sep #1#8#Sylveon,VR Sep #1,2026-09-13,8,Cori Corley,Sylveon,Fairy Feather,no
+VR Sep #1#8#Aerodactyl,VR Sep #1,2026-09-13,8,Cori Corley,Aerodactyl,Aerodactylite,si
+VR Sep #1#8#Farigiraf,VR Sep #1,2026-09-13,8,Cori Corley,Farigiraf,Sitrus Berry,no
+VR Sep #1#8#Garchomp,VR Sep #1,2026-09-13,8,Cori Corley,Garchomp,Life Orb,no
+VR Sep #1#9#Salamence,VR Sep #1,2026-09-13,9,Ko Aida,Salamence,Salamencite,si
+VR Sep #1#9#Gholdengo,VR Sep #1,2026-09-13,9,Ko Aida,Gholdengo,Life Orb,no
+VR Sep #1#9#Rillaboom,VR Sep #1,2026-09-13,9,Ko Aida,Rillaboom,Miracle Seed,no
+VR Sep #1#9#Milotic,VR Sep #1,2026-09-13,9,Ko Aida,Milotic,Leftovers,no
+VR Sep #1#9#Raichu,VR Sep #1,2026-09-13,9,Ko Aida,Raichu,Raichunite Y,si
+VR Sep #1#9#Ceruledge,VR Sep #1,2026-09-13,9,Ko Aida,Ceruledge,Colbur Berry,no
+VR Sep #1#10#Metagross,VR Sep #1,2026-09-13,10,Shuji Endo,Metagross,Metagrossite,si
+VR Sep #1#10#Garchomp,VR Sep #1,2026-09-13,10,Shuji Endo,Garchomp,Garchompite Z,si
+VR Sep #1#10#Volcarona,VR Sep #1,2026-09-13,10,Shuji Endo,Volcarona,Grassy Seed,no
+VR Sep #1#10#Sneasler,VR Sep #1,2026-09-13,10,Shuji Endo,Sneasler,White Herb,no
+VR Sep #1#10#Rillaboom,VR Sep #1,2026-09-13,10,Shuji Endo,Rillaboom,Miracle Seed,no
+VR Sep #1#10#Incineroar,VR Sep #1,2026-09-13,10,Shuji Endo,Incineroar,Sitrus Berry,no
+VR Sep #1#11#Farigiraf,VR Sep #1,2026-09-13,11,Gonzalo Estrada,Farigiraf,Sitrus Berry,no
+VR Sep #1#11#Incineroar,VR Sep #1,2026-09-13,11,Gonzalo Estrada,Incineroar,White Herb,no
+VR Sep #1#11#Indeedee,VR Sep #1,2026-09-13,11,Gonzalo Estrada,Indeedee,Psychic Seed,no
+VR Sep #1#11#Hatterene,VR Sep #1,2026-09-13,11,Gonzalo Estrada,Hatterene,Life Orb,no
+VR Sep #1#11#Kingambit,VR Sep #1,2026-09-13,11,Gonzalo Estrada,Kingambit,Black Glasses,no
+VR Sep #1#11#Camerupt,VR Sep #1,2026-09-13,11,Gonzalo Estrada,Camerupt,Cameruptite,si
+VR Sep #1#12#Indeedee,VR Sep #1,2026-09-13,12,Lucas Gardes,Indeedee,Colbur Berry,no
+VR Sep #1#12#Gardevoir,VR Sep #1,2026-09-13,12,Lucas Gardes,Gardevoir,Gardevoirite,si
+VR Sep #1#12#Staraptor,VR Sep #1,2026-09-13,12,Lucas Gardes,Staraptor,Staraptite,si
+VR Sep #1#12#Armarouge,VR Sep #1,2026-09-13,12,Lucas Gardes,Armarouge,Focus Sash,no
+VR Sep #1#12#Sneasler,VR Sep #1,2026-09-13,12,Lucas Gardes,Sneasler,Psychic Seed,no
+VR Sep #1#12#Annihilape,VR Sep #1,2026-09-13,12,Lucas Gardes,Annihilape,Choice Scarf,no
+VR Sep #1#13#Charizard,VR Sep #1,2026-09-13,13,Francisco Javier Carvajal,Charizard,Charizardite Y,si
+VR Sep #1#13#Hydreigon,VR Sep #1,2026-09-13,13,Francisco Javier Carvajal,Hydreigon,Roseli Berry,no
+VR Sep #1#13#Grimmsnarl,VR Sep #1,2026-09-13,13,Francisco Javier Carvajal,Grimmsnarl,Light Clay,no
+VR Sep #1#13#Pelipper,VR Sep #1,2026-09-13,13,Francisco Javier Carvajal,Pelipper,Sitrus Berry,no
+VR Sep #1#13#Golisopod,VR Sep #1,2026-09-13,13,Francisco Javier Carvajal,Golisopod,Golisopite,si
+VR Sep #1#13#Archaludon,VR Sep #1,2026-09-13,13,Francisco Javier Carvajal,Archaludon,Leftovers,no
+VR Sep #1#14#Floette,VR Sep #1,2026-09-13,14,Cristian Contreras,Floette,Floettite,si
+VR Sep #1#14#Raichu,VR Sep #1,2026-09-13,14,Cristian Contreras,Raichu,Raichunite Y,si
+VR Sep #1#14#Rillaboom,VR Sep #1,2026-09-13,14,Cristian Contreras,Rillaboom,Miracle Seed,no
+VR Sep #1#14#Sneasler,VR Sep #1,2026-09-13,14,Cristian Contreras,Sneasler,Grassy Seed,no
+VR Sep #1#14#Incineroar,VR Sep #1,2026-09-13,14,Cristian Contreras,Incineroar,Sitrus Berry,no
+VR Sep #1#14#Gholdengo,VR Sep #1,2026-09-13,14,Cristian Contreras,Gholdengo,Life Orb,no
+VR Sep #1#15#Incineroar,VR Sep #1,2026-09-13,15,Alex Soto,Incineroar,Sitrus Berry,no
+VR Sep #1#15#Rillaboom,VR Sep #1,2026-09-13,15,Alex Soto,Rillaboom,Occa Berry,no
+VR Sep #1#15#Milotic,VR Sep #1,2026-09-13,15,Alex Soto,Milotic,Leftovers,no
+VR Sep #1#15#Gholdengo,VR Sep #1,2026-09-13,15,Alex Soto,Gholdengo,Life Orb,no
+VR Sep #1#15#Charizard,VR Sep #1,2026-09-13,15,Alex Soto,Charizard,Charizardite Y,si
+VR Sep #1#15#Aerodactyl,VR Sep #1,2026-09-13,15,Alex Soto,Aerodactyl,Aerodactylite,si
+VR Sep #1#16#Kingambit,VR Sep #1,2026-09-13,16,Jude Lee,Kingambit,Life Orb,no
+VR Sep #1#16#Floette,VR Sep #1,2026-09-13,16,Jude Lee,Floette,Floettite,si
+VR Sep #1#16#Incineroar,VR Sep #1,2026-09-13,16,Jude Lee,Incineroar,Sitrus Berry,no
+VR Sep #1#16#Sneasler,VR Sep #1,2026-09-13,16,Jude Lee,Sneasler,Focus Sash,no
+VR Sep #1#16#Rillaboom,VR Sep #1,2026-09-13,16,Jude Lee,Rillaboom,Miracle Seed,no
+VR Sep #1#16#Salamence,VR Sep #1,2026-09-13,16,Jude Lee,Salamence,Salamencite,si
+VR Sep #2#1#Floette,VR Sep #2,2026-09-20,1,Theotime Massaut,Floette,Floettite,si
+VR Sep #2#1#Incineroar,VR Sep #2,2026-09-20,1,Theotime Massaut,Incineroar,Sitrus Berry,no
+VR Sep #2#1#Gholdengo,VR Sep #2,2026-09-20,1,Theotime Massaut,Gholdengo,Life Orb,no
+VR Sep #2#1#Sneasler,VR Sep #2,2026-09-20,1,Theotime Massaut,Sneasler,White Herb,no
+VR Sep #2#1#Rillaboom,VR Sep #2,2026-09-20,1,Theotime Massaut,Rillaboom,Miracle Seed,no
+VR Sep #2#1#Dragonite,VR Sep #2,2026-09-20,1,Theotime Massaut,Dragonite,Dragoninite,si
+VR Sep #2#2#Sneasler,VR Sep #2,2026-09-20,2,Louis Markl,Sneasler,Grassy Seed,no
+VR Sep #2#2#Floette,VR Sep #2,2026-09-20,2,Louis Markl,Floette,Floettite,si
+VR Sep #2#2#Gholdengo,VR Sep #2,2026-09-20,2,Louis Markl,Gholdengo,Life Orb,no
+VR Sep #2#2#Incineroar,VR Sep #2,2026-09-20,2,Louis Markl,Incineroar,Rocky Helmet,no
+VR Sep #2#2#Salamence,VR Sep #2,2026-09-20,2,Louis Markl,Salamence,Salamencite,si
+VR Sep #2#2#Rillaboom,VR Sep #2,2026-09-20,2,Louis Markl,Rillaboom,Sitrus Berry,no
+VR Sep #2#3#Meowstic,VR Sep #2,2026-09-20,3,Yvar Vlieger,Meowstic,Meowsticite,si
+VR Sep #2#3#Kommo-o,VR Sep #2,2026-09-20,3,Yvar Vlieger,Kommo-o,Leftovers,no
+VR Sep #2#3#Indeedee,VR Sep #2,2026-09-20,3,Yvar Vlieger,Indeedee,Focus Sash,no
+VR Sep #2#3#Sneasler,VR Sep #2,2026-09-20,3,Yvar Vlieger,Sneasler,Psychic Seed,no
+VR Sep #2#3#Kingambit,VR Sep #2,2026-09-20,3,Yvar Vlieger,Kingambit,Chople Berry,no
+VR Sep #2#3#Charizard,VR Sep #2,2026-09-20,3,Yvar Vlieger,Charizard,Charizardite Y,si
+VR Sep #2#4#Indeedee,VR Sep #2,2026-09-20,4,Alex Soto,Indeedee,Rocky Helmet,no
+VR Sep #2#4#Maushold,VR Sep #2,2026-09-20,4,Alex Soto,Maushold,Chople Berry,no
+VR Sep #2#4#Sinistcha,VR Sep #2,2026-09-20,4,Alex Soto,Sinistcha,Coba Berry,no
+VR Sep #2#4#Sneasler,VR Sep #2,2026-09-20,4,Alex Soto,Sneasler,Focus Sash,no
+VR Sep #2#4#Blastoise,VR Sep #2,2026-09-20,4,Alex Soto,Blastoise,Blastoisinite,si
+VR Sep #2#4#Delphox,VR Sep #2,2026-09-20,4,Alex Soto,Delphox,Delphoxite,si
+VR Sep #2#5#Raichu,VR Sep #2,2026-09-20,5,Lorenzo Antognoni,Raichu,Raichunite Y,si
+VR Sep #2#5#Rillaboom,VR Sep #2,2026-09-20,5,Lorenzo Antognoni,Rillaboom,Life Orb,no
+VR Sep #2#5#Gholdengo,VR Sep #2,2026-09-20,5,Lorenzo Antognoni,Gholdengo,Grassy Seed,no
+VR Sep #2#5#Salamence,VR Sep #2,2026-09-20,5,Lorenzo Antognoni,Salamence,Salamencite,si
+VR Sep #2#5#Arcanine-Hisui,VR Sep #2,2026-09-20,5,Lorenzo Antognoni,Arcanine-Hisui,Focus Sash,no
+VR Sep #2#5#Milotic,VR Sep #2,2026-09-20,5,Lorenzo Antognoni,Milotic,Leftovers,no
+VR Sep #2#6#Gengar,VR Sep #2,2026-09-20,6,Vivienne Gafner,Gengar,Gengarite,si
+VR Sep #2#6#Annihilape,VR Sep #2,2026-09-20,6,Vivienne Gafner,Annihilape,Choice Scarf,no
+VR Sep #2#6#Incineroar,VR Sep #2,2026-09-20,6,Vivienne Gafner,Incineroar,Sitrus Berry,no
+VR Sep #2#6#Swampert,VR Sep #2,2026-09-20,6,Vivienne Gafner,Swampert,Swampertite,si
+VR Sep #2#6#Archaludon,VR Sep #2,2026-09-20,6,Vivienne Gafner,Archaludon,Leftovers,no
+VR Sep #2#6#Pelipper,VR Sep #2,2026-09-20,6,Vivienne Gafner,Pelipper,Focus Sash,no
+VR Sep #2#7#Salamence,VR Sep #2,2026-09-20,7,Keishiro Ohashi,Salamence,Salamencite,si
+VR Sep #2#7#Floette,VR Sep #2,2026-09-20,7,Keishiro Ohashi,Floette,Floettite,si
+VR Sep #2#7#Whimsicott,VR Sep #2,2026-09-20,7,Keishiro Ohashi,Whimsicott,Focus Sash,no
+VR Sep #2#7#Kingambit,VR Sep #2,2026-09-20,7,Keishiro Ohashi,Kingambit,Chople Berry,no
+VR Sep #2#7#Sneasler,VR Sep #2,2026-09-20,7,Keishiro Ohashi,Sneasler,White Herb,no
+VR Sep #2#7#Basculegion,VR Sep #2,2026-09-20,7,Keishiro Ohashi,Basculegion,Life Orb,no
+VR Sep #2#8#Archaludon,VR Sep #2,2026-09-20,8,Danilo Modugno,Archaludon,Leftovers,no
+VR Sep #2#8#Pelipper,VR Sep #2,2026-09-20,8,Danilo Modugno,Pelipper,Focus Sash,no
+VR Sep #2#8#Farigiraf,VR Sep #2,2026-09-20,8,Danilo Modugno,Farigiraf,Sitrus Berry,no
+VR Sep #2#8#Golisopod,VR Sep #2,2026-09-20,8,Danilo Modugno,Golisopod,Golisopite,si
+VR Sep #2#8#Garchomp,VR Sep #2,2026-09-20,8,Danilo Modugno,Garchomp,Garchompite Z,si
+VR Sep #2#8#Basculegion,VR Sep #2,2026-09-20,8,Danilo Modugno,Basculegion,Choice Scarf,no
+VR Sep #2#9#Staraptor,VR Sep #2,2026-09-20,9,Gianmaria Sorbino,Staraptor,Staraptite,si
+VR Sep #2#9#Raichu,VR Sep #2,2026-09-20,9,Gianmaria Sorbino,Raichu,Raichunite Y,si
+VR Sep #2#9#Sylveon,VR Sep #2,2026-09-20,9,Gianmaria Sorbino,Sylveon,Fairy Feather,no
+VR Sep #2#9#Rillaboom,VR Sep #2,2026-09-20,9,Gianmaria Sorbino,Rillaboom,Miracle Seed,no
+VR Sep #2#9#Volcarona,VR Sep #2,2026-09-20,9,Gianmaria Sorbino,Volcarona,Grassy Seed,no
+VR Sep #2#9#Basculegion,VR Sep #2,2026-09-20,9,Gianmaria Sorbino,Basculegion,Life Orb,no
+VR Sep #2#10#Raichu,VR Sep #2,2026-09-20,10,Thomas Gravouille,Raichu,Raichunite Y,si
+VR Sep #2#10#Floette,VR Sep #2,2026-09-20,10,Thomas Gravouille,Floette,Floettite,si
+VR Sep #2#10#Rillaboom,VR Sep #2,2026-09-20,10,Thomas Gravouille,Rillaboom,Miracle Seed,no
+VR Sep #2#10#Volcarona,VR Sep #2,2026-09-20,10,Thomas Gravouille,Volcarona,Grassy Seed,no
+VR Sep #2#10#Gholdengo,VR Sep #2,2026-09-20,10,Thomas Gravouille,Gholdengo,Life Orb,no
+VR Sep #2#10#Incineroar,VR Sep #2,2026-09-20,10,Thomas Gravouille,Incineroar,Sitrus Berry,no
+VR Sep #2#11#Gardevoir,VR Sep #2,2026-09-20,11,Tom te Boekhorst,Gardevoir,Gardevoirite,si
+VR Sep #2#11#Indeedee,VR Sep #2,2026-09-20,11,Tom te Boekhorst,Indeedee,Colbur Berry,no
+VR Sep #2#11#Sneasler,VR Sep #2,2026-09-20,11,Tom te Boekhorst,Sneasler,Psychic Seed,no
+VR Sep #2#11#Lucario,VR Sep #2,2026-09-20,11,Tom te Boekhorst,Lucario,Lucarionite Z,si
+VR Sep #2#11#Annihilape,VR Sep #2,2026-09-20,11,Tom te Boekhorst,Annihilape,Choice Scarf,no
+VR Sep #2#11#Armarouge,VR Sep #2,2026-09-20,11,Tom te Boekhorst,Armarouge,Focus Sash,no
+VR Sep #2#12#Incineroar,VR Sep #2,2026-09-20,12,Minche Chung,Incineroar,Sitrus Berry,no
+VR Sep #2#12#Gengar,VR Sep #2,2026-09-20,12,Minche Chung,Gengar,Gengarite,si
+VR Sep #2#12#Rillaboom,VR Sep #2,2026-09-20,12,Minche Chung,Rillaboom,Eject Button,no
+VR Sep #2#12#Kommo-o,VR Sep #2,2026-09-20,12,Minche Chung,Kommo-o,Leftovers,no
+VR Sep #2#12#Ninetales-Alola,VR Sep #2,2026-09-20,12,Minche Chung,Ninetales-Alola,Choice Scarf,no
+VR Sep #2#12#Kingambit,VR Sep #2,2026-09-20,12,Minche Chung,Kingambit,Chople Berry,no
+VR Sep #2#13#Kingambit,VR Sep #2,2026-09-20,13,Rahim Farzan,Kingambit,Chople Berry,no
+VR Sep #2#13#Staraptor,VR Sep #2,2026-09-20,13,Rahim Farzan,Staraptor,Staraptite,si
+VR Sep #2#13#Raichu,VR Sep #2,2026-09-20,13,Rahim Farzan,Raichu,Raichunite Y,si
+VR Sep #2#13#Gholdengo,VR Sep #2,2026-09-20,13,Rahim Farzan,Gholdengo,Life Orb,no
+VR Sep #2#13#Rillaboom,VR Sep #2,2026-09-20,13,Rahim Farzan,Rillaboom,Miracle Seed,no
+VR Sep #2#13#Arcanine-Hisui,VR Sep #2,2026-09-20,13,Rahim Farzan,Arcanine-Hisui,Focus Sash,no
+VR Sep #2#14#Salamence,VR Sep #2,2026-09-20,14,Connor O'Sullivan,Salamence,Salamencite,si
+VR Sep #2#14#Indeedee,VR Sep #2,2026-09-20,14,Connor O'Sullivan,Indeedee,Twisted Spoon,no
+VR Sep #2#14#Kingambit,VR Sep #2,2026-09-20,14,Connor O'Sullivan,Kingambit,Life Orb,no
+VR Sep #2#14#Excadrill,VR Sep #2,2026-09-20,14,Connor O'Sullivan,Excadrill,Focus Sash,no
+VR Sep #2#14#Tyranitar,VR Sep #2,2026-09-20,14,Connor O'Sullivan,Tyranitar,Choice Scarf,no
+VR Sep #2#14#Sneasler,VR Sep #2,2026-09-20,14,Connor O'Sullivan,Sneasler,Psychic Seed,no
+VR Sep #2#15#Archaludon,VR Sep #2,2026-09-20,15,Timothy Ong,Archaludon,Leftovers,no
+VR Sep #2#15#Pelipper,VR Sep #2,2026-09-20,15,Timothy Ong,Pelipper,Life Orb,no
+VR Sep #2#15#Golisopod,VR Sep #2,2026-09-20,15,Timothy Ong,Golisopod,Golisopite,si
+VR Sep #2#15#Farigiraf,VR Sep #2,2026-09-20,15,Timothy Ong,Farigiraf,Sitrus Berry,no
+VR Sep #2#15#Raichu,VR Sep #2,2026-09-20,15,Timothy Ong,Raichu,Raichunite Y,si
+VR Sep #2#15#Rillaboom,VR Sep #2,2026-09-20,15,Timothy Ong,Rillaboom,Miracle Seed,no
+VR Sep #2#16#Charizard,VR Sep #2,2026-09-20,16,Dylan Fabian Ruiz,Charizard,Charizardite Y,si
+VR Sep #2#16#Floette,VR Sep #2,2026-09-20,16,Dylan Fabian Ruiz,Floette,Floettite,si
+VR Sep #2#16#Rillaboom,VR Sep #2,2026-09-20,16,Dylan Fabian Ruiz,Rillaboom,Life Orb,no
+VR Sep #2#16#Incineroar,VR Sep #2,2026-09-20,16,Dylan Fabian Ruiz,Incineroar,Sitrus Berry,no
+VR Sep #2#16#Sneasler,VR Sep #2,2026-09-20,16,Dylan Fabian Ruiz,Sneasler,White Herb,no
+VR Sep #2#16#Basculegion,VR Sep #2,2026-09-20,16,Dylan Fabian Ruiz,Basculegion,Choice Scarf,no
+ESM Madrid Q1#1#Incineroar,ESM Madrid Q1,2026-10-11,1,Alex Soto,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#1#Kingambit,ESM Madrid Q1,2026-10-11,1,Alex Soto,Kingambit,Black Glasses,no
+ESM Madrid Q1#1#Sinistcha,ESM Madrid Q1,2026-10-11,1,Alex Soto,Sinistcha,Occa Berry,no
+ESM Madrid Q1#1#Sneasler,ESM Madrid Q1,2026-10-11,1,Alex Soto,Sneasler,Focus Sash,no
+ESM Madrid Q1#1#Floette,ESM Madrid Q1,2026-10-11,1,Alex Soto,Floette,Floettite,si
+ESM Madrid Q1#1#Delphox,ESM Madrid Q1,2026-10-11,1,Alex Soto,Delphox,Delphoxite,si
+ESM Madrid Q1#2#Rillaboom,ESM Madrid Q1,2026-10-11,2,Alberto Tejada,Rillaboom,Miracle Seed,no
+ESM Madrid Q1#2#Staraptor,ESM Madrid Q1,2026-10-11,2,Alberto Tejada,Staraptor,Staraptite,si
+ESM Madrid Q1#2#Milotic,ESM Madrid Q1,2026-10-11,2,Alberto Tejada,Milotic,Sitrus Berry,no
+ESM Madrid Q1#2#Ceruledge,ESM Madrid Q1,2026-10-11,2,Alberto Tejada,Ceruledge,Grassy Seed,no
+ESM Madrid Q1#2#Raichu,ESM Madrid Q1,2026-10-11,2,Alberto Tejada,Raichu,Raichunite Y,si
+ESM Madrid Q1#2#Gholdengo,ESM Madrid Q1,2026-10-11,2,Alberto Tejada,Gholdengo,Life Orb,no
+ESM Madrid Q1#3#Incineroar,ESM Madrid Q1,2026-10-11,3,Victor Medina,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#3#Rillaboom,ESM Madrid Q1,2026-10-11,3,Victor Medina,Rillaboom,Occa Berry,no
+ESM Madrid Q1#3#Gengar,ESM Madrid Q1,2026-10-11,3,Victor Medina,Gengar,Gengarite,si
+ESM Madrid Q1#3#Kommo-o,ESM Madrid Q1,2026-10-11,3,Victor Medina,Kommo-o,Leftovers,no
+ESM Madrid Q1#3#Kingambit,ESM Madrid Q1,2026-10-11,3,Victor Medina,Kingambit,Life Orb,no
+ESM Madrid Q1#3#Volcarona,ESM Madrid Q1,2026-10-11,3,Victor Medina,Volcarona,Charti Berry,no
+ESM Madrid Q1#4#Dragonite,ESM Madrid Q1,2026-10-11,4,Ivan de la Pena,Dragonite,Dragoninite,si
+ESM Madrid Q1#4#Froslass,ESM Madrid Q1,2026-10-11,4,Ivan de la Pena,Froslass,Froslassite,si
+ESM Madrid Q1#4#Garchomp,ESM Madrid Q1,2026-10-11,4,Ivan de la Pena,Garchomp,Choice Scarf,no
+ESM Madrid Q1#4#Kingambit,ESM Madrid Q1,2026-10-11,4,Ivan de la Pena,Kingambit,Chople Berry,no
+ESM Madrid Q1#4#Basculegion,ESM Madrid Q1,2026-10-11,4,Ivan de la Pena,Basculegion,Life Orb,no
+ESM Madrid Q1#4#Sneasler,ESM Madrid Q1,2026-10-11,4,Ivan de la Pena,Sneasler,Focus Sash,no
+ESM Madrid Q1#5#Raichu,ESM Madrid Q1,2026-10-11,5,David Perez,Raichu,Raichunite Y,si
+ESM Madrid Q1#5#Incineroar,ESM Madrid Q1,2026-10-11,5,David Perez,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#5#Basculegion,ESM Madrid Q1,2026-10-11,5,David Perez,Basculegion,Choice Scarf,no
+ESM Madrid Q1#5#Floette,ESM Madrid Q1,2026-10-11,5,David Perez,Floette,Floettite,si
+ESM Madrid Q1#5#Rillaboom,ESM Madrid Q1,2026-10-11,5,David Perez,Rillaboom,Miracle Seed,no
+ESM Madrid Q1#5#Volcarona,ESM Madrid Q1,2026-10-11,5,David Perez,Volcarona,Grassy Seed,no
+ESM Madrid Q1#6#Incineroar,ESM Madrid Q1,2026-10-11,6,Juan Ortiz,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#6#Basculegion,ESM Madrid Q1,2026-10-11,6,Juan Ortiz,Basculegion,Choice Scarf,no
+ESM Madrid Q1#6#Rillaboom,ESM Madrid Q1,2026-10-11,6,Juan Ortiz,Rillaboom,Miracle Seed,no
+ESM Madrid Q1#6#Raichu,ESM Madrid Q1,2026-10-11,6,Juan Ortiz,Raichu,Raichunite Y,si
+ESM Madrid Q1#6#Volcarona,ESM Madrid Q1,2026-10-11,6,Juan Ortiz,Volcarona,Grassy Seed,no
+ESM Madrid Q1#6#Floette,ESM Madrid Q1,2026-10-11,6,Juan Ortiz,Floette,Floettite,si
+ESM Madrid Q1#7#Sinistcha,ESM Madrid Q1,2026-10-11,7,Mikel Bolanos,Sinistcha,Occa Berry,no
+ESM Madrid Q1#7#Kommo-o,ESM Madrid Q1,2026-10-11,7,Mikel Bolanos,Kommo-o,Leftovers,no
+ESM Madrid Q1#7#Incineroar,ESM Madrid Q1,2026-10-11,7,Mikel Bolanos,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#7#Delphox,ESM Madrid Q1,2026-10-11,7,Mikel Bolanos,Delphox,Delphoxite,si
+ESM Madrid Q1#7#Kingambit,ESM Madrid Q1,2026-10-11,7,Mikel Bolanos,Kingambit,Focus Sash,no
+ESM Madrid Q1#7#Raichu,ESM Madrid Q1,2026-10-11,7,Mikel Bolanos,Raichu,Raichunite Y,si
+ESM Madrid Q1#8#Farigiraf,ESM Madrid Q1,2026-10-11,8,Angel Otero,Farigiraf,Sitrus Berry,no
+ESM Madrid Q1#8#Incineroar,ESM Madrid Q1,2026-10-11,8,Angel Otero,Incineroar,Chople Berry,no
+ESM Madrid Q1#8#Torkoal,ESM Madrid Q1,2026-10-11,8,Angel Otero,Torkoal,Charcoal,no
+ESM Madrid Q1#8#Sneasler,ESM Madrid Q1,2026-10-11,8,Angel Otero,Sneasler,White Herb,no
+ESM Madrid Q1#8#Sylveon,ESM Madrid Q1,2026-10-11,8,Angel Otero,Sylveon,Fairy Feather,no
+ESM Madrid Q1#8#Garchomp,ESM Madrid Q1,2026-10-11,8,Angel Otero,Garchomp,Garchompite Z,si
+ESM Madrid Q1#9#Kommo-o,ESM Madrid Q1,2026-10-11,9,Regino Dominguez,Kommo-o,Leftovers,no
+ESM Madrid Q1#9#Pelipper,ESM Madrid Q1,2026-10-11,9,Regino Dominguez,Pelipper,Sitrus Berry,no
+ESM Madrid Q1#9#Metagross,ESM Madrid Q1,2026-10-11,9,Regino Dominguez,Metagross,Metagrossite,si
+ESM Madrid Q1#9#Basculegion,ESM Madrid Q1,2026-10-11,9,Regino Dominguez,Basculegion,Life Orb,no
+ESM Madrid Q1#9#Rillaboom,ESM Madrid Q1,2026-10-11,9,Regino Dominguez,Rillaboom,Miracle Seed,no
+ESM Madrid Q1#9#Incineroar,ESM Madrid Q1,2026-10-11,9,Regino Dominguez,Incineroar,Chople Berry,no
+ESM Madrid Q1#10#Gholdengo,ESM Madrid Q1,2026-10-11,10,Gael Soler,Gholdengo,Life Orb,no
+ESM Madrid Q1#10#Raichu,ESM Madrid Q1,2026-10-11,10,Gael Soler,Raichu,Raichunite Y,si
+ESM Madrid Q1#10#Garchomp,ESM Madrid Q1,2026-10-11,10,Gael Soler,Garchomp,Garchompite Z,si
+ESM Madrid Q1#10#Volcarona,ESM Madrid Q1,2026-10-11,10,Gael Soler,Volcarona,Grassy Seed,no
+ESM Madrid Q1#10#Rillaboom,ESM Madrid Q1,2026-10-11,10,Gael Soler,Rillaboom,Miracle Seed,no
+ESM Madrid Q1#10#Incineroar,ESM Madrid Q1,2026-10-11,10,Gael Soler,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#11#Charizard,ESM Madrid Q1,2026-10-11,11,Martin Pena,Charizard,Charizardite Y,si
+ESM Madrid Q1#11#Garchomp,ESM Madrid Q1,2026-10-11,11,Martin Pena,Garchomp,Choice Scarf,no
+ESM Madrid Q1#11#Farigiraf,ESM Madrid Q1,2026-10-11,11,Martin Pena,Farigiraf,Sitrus Berry,no
+ESM Madrid Q1#11#Aerodactyl,ESM Madrid Q1,2026-10-11,11,Martin Pena,Aerodactyl,Aerodactylite,si
+ESM Madrid Q1#11#Sylveon,ESM Madrid Q1,2026-10-11,11,Martin Pena,Sylveon,Fairy Feather,no
+ESM Madrid Q1#11#Kingambit,ESM Madrid Q1,2026-10-11,11,Martin Pena,Kingambit,Focus Sash,no
+ESM Madrid Q1#12#Tyranitar,ESM Madrid Q1,2026-10-11,12,Daniel Los Arcos,Tyranitar,Tyranitarite,si
+ESM Madrid Q1#12#Excadrill,ESM Madrid Q1,2026-10-11,12,Daniel Los Arcos,Excadrill,Focus Sash,no
+ESM Madrid Q1#12#Milotic,ESM Madrid Q1,2026-10-11,12,Daniel Los Arcos,Milotic,Sitrus Berry,no
+ESM Madrid Q1#12#Salamence,ESM Madrid Q1,2026-10-11,12,Daniel Los Arcos,Salamence,Salamencite,si
+ESM Madrid Q1#12#Gholdengo,ESM Madrid Q1,2026-10-11,12,Daniel Los Arcos,Gholdengo,Grassy Seed,no
+ESM Madrid Q1#12#Rillaboom,ESM Madrid Q1,2026-10-11,12,Daniel Los Arcos,Rillaboom,Life Orb,no
+ESM Madrid Q1#13#Whimsicott,ESM Madrid Q1,2026-10-11,13,Hector Sanchez,Whimsicott,Focus Sash,no
+ESM Madrid Q1#13#Charizard,ESM Madrid Q1,2026-10-11,13,Hector Sanchez,Charizard,Charizardite Y,si
+ESM Madrid Q1#13#Floette,ESM Madrid Q1,2026-10-11,13,Hector Sanchez,Floette,Floettite,si
+ESM Madrid Q1#13#Basculegion,ESM Madrid Q1,2026-10-11,13,Hector Sanchez,Basculegion,Rindo Berry,no
+ESM Madrid Q1#13#Kingambit,ESM Madrid Q1,2026-10-11,13,Hector Sanchez,Kingambit,Chople Berry,no
+ESM Madrid Q1#13#Garchomp,ESM Madrid Q1,2026-10-11,13,Hector Sanchez,Garchomp,Life Orb,no
+ESM Madrid Q1#14#Sneasler,ESM Madrid Q1,2026-10-11,14,Pau Serra,Sneasler,Psychic Seed,no
+ESM Madrid Q1#14#Indeedee,ESM Madrid Q1,2026-10-11,14,Pau Serra,Indeedee,Rocky Helmet,no
+ESM Madrid Q1#14#Basculegion,ESM Madrid Q1,2026-10-11,14,Pau Serra,Basculegion,Choice Scarf,no
+ESM Madrid Q1#14#Gardevoir,ESM Madrid Q1,2026-10-11,14,Pau Serra,Gardevoir,Gardevoirite,si
+ESM Madrid Q1#14#Torkoal,ESM Madrid Q1,2026-10-11,14,Pau Serra,Torkoal,Life Orb,no
+ESM Madrid Q1#14#Pyroar,ESM Madrid Q1,2026-10-11,14,Pau Serra,Pyroar,Pyroarite,si
+ESM Madrid Q1#15#Whimsicott,ESM Madrid Q1,2026-10-11,15,Diego Ceballos,Whimsicott,Focus Sash,no
+ESM Madrid Q1#15#Garchomp,ESM Madrid Q1,2026-10-11,15,Diego Ceballos,Garchomp,Life Orb,no
+ESM Madrid Q1#15#Basculegion,ESM Madrid Q1,2026-10-11,15,Diego Ceballos,Basculegion,Mystic Water,no
+ESM Madrid Q1#15#Charizard,ESM Madrid Q1,2026-10-11,15,Diego Ceballos,Charizard,Charizardite Y,si
+ESM Madrid Q1#15#Sylveon,ESM Madrid Q1,2026-10-11,15,Diego Ceballos,Sylveon,Fairy Feather,no
+ESM Madrid Q1#15#Incineroar,ESM Madrid Q1,2026-10-11,15,Diego Ceballos,Incineroar,Sitrus Berry,no
+ESM Madrid Q1#16#Charizard,ESM Madrid Q1,2026-10-11,16,Alberto Cano,Charizard,Charizardite Y,si
+ESM Madrid Q1#16#Garchomp,ESM Madrid Q1,2026-10-11,16,Alberto Cano,Garchomp,Garchompite Z,si
+ESM Madrid Q1#16#Grimmsnarl,ESM Madrid Q1,2026-10-11,16,Alberto Cano,Grimmsnarl,Light Clay,no
+ESM Madrid Q1#16#Archaludon,ESM Madrid Q1,2026-10-11,16,Alberto Cano,Archaludon,Leftovers,no
+ESM Madrid Q1#16#Venusaur,ESM Madrid Q1,2026-10-11,16,Alberto Cano,Venusaur,Focus Sash,no
+ESM Madrid Q1#16#Pelipper,ESM Madrid Q1,2026-10-11,16,Alberto Cano,Pelipper,Sitrus Berry,no
