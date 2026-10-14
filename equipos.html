@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tres equipos M-C</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: hoja de equipo (team sheet) — tres secciones apiladas, cada una con roster en rejilla y paste copiable al lado */
+:root{
+  --bg:#f3f4f6; --panel:#ffffff; --ink:#15181d; --muted:#5b6370; --line:#dde1e7; --soft:#eef0f4;
+  --t1:#b88a00; --t2:#c2410c; --t3:#be185d; --chg:#0f766e; --chg-bg:#e3f4f1;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111418;--panel:#1a1e24;--ink:#e8eaee;--muted:#9aa3af;--line:#2b313a;--soft:#222830;--t1:#e8b923;--t2:#fb8a4c;--t3:#f472b6;--chg:#5eead4;--chg-bg:#123430;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111418;--panel:#1a1e24;--ink:#e8eaee;--muted:#9aa3af;--line:#2b313a;--soft:#222830;--t1:#e8b923;--t2:#fb8a4c;--t3:#f472b6;--chg:#5eead4;--chg-bg:#123430;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.55;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 56px}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(2rem,5vw,2.9rem);line-height:1.05}
+.intro{display:flex;flex-direction:column;gap:10px;max-width:68ch}
+.intro p{margin:0;color:var(--muted)}
+.nav{display:flex;flex-wrap:wrap;gap:8px}
+.nav a{font-family:var(--f-display);font-size:1.05rem;font-weight:600;text-decoration:none;color:var(--ink);border:1px solid var(--line);background:var(--panel);padding:6px 14px;border-radius:999px;display:inline-flex;align-items:center;gap:8px}
+.nav a:focus-visible,.copy:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--c)}
+section.team{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:clamp(16px,3vw,28px);display:flex;flex-direction:column;gap:20px;border-top:5px solid var(--c)}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-end}
+.head .tag{font-family:var(--f-display);text-transform:uppercase;letter-spacing:.08em;font-size:.9rem;color:var(--c);font-weight:700}
+h2{font-size:clamp(1.6rem,3.6vw,2.1rem);line-height:1.1}
+.base{font-size:.88rem;color:var(--muted)}
+.base a{color:inherit}
+.stats{display:flex;flex-wrap:wrap;gap:8px}
+.stat{background:var(--soft);border-radius:8px;padding:6px 12px;font-size:.85rem;display:flex;flex-direction:column;min-width:96px}
+.stat b{font-family:var(--f-display);font-size:1.3rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2}
+.stat span{color:var(--muted);font-size:.78rem}
+.roster{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:12px}
+.mon{border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.mon .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.mon h3{font-size:1.3rem}
+.spe{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);white-space:nowrap}
+.spe b{color:var(--ink);font-weight:500}
+.meta{font-size:.85rem;color:var(--muted)}
+.meta .item{color:var(--ink);font-weight:500}
+.sp{font-family:var(--f-mono);font-size:.78rem;display:grid;grid-template-columns:repeat(6,1fr);gap:2px;text-align:center}
+.sp div{background:var(--soft);border-radius:4px;padding:2px 0}
+.sp div small{display:block;color:var(--muted);font-size:.66rem;letter-spacing:.04em}
+.sp div.hi{outline:1px solid var(--line)}
+.moves{display:flex;flex-wrap:wrap;gap:4px}
+.moves span{font-size:.8rem;border:1px solid var(--line);border-radius:6px;padding:1px 7px}
+.chg{background:var(--chg-bg);color:var(--chg);border-radius:6px;padding:4px 8px;font-size:.8rem}
+.mon .moves span.new{border-color:var(--chg);color:var(--chg);font-weight:500}
+.cols{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:20px}
+@media (max-width:820px){.cols{grid-template-columns:minmax(0,1fr)}}
+.plan h3,.paste h3{font-size:1.2rem;margin-bottom:6px}
+.plan ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px}
+.plan li{max-width:65ch}
+.plan .sub{margin-top:14px}
+.paste{display:flex;flex-direction:column;gap:8px;min-width:0}
+.paste .bar{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.copy{font-family:var(--f-body);font-size:.85rem;font-weight:600;border:1px solid var(--c);color:var(--ink);background:transparent;border-radius:8px;padding:6px 12px;cursor:pointer}
+.copy:hover{background:var(--soft)}
+pre{margin:0;font-family:var(--f-mono);font-size:.78rem;line-height:1.5;background:var(--soft);border-radius:10px;padding:12px 14px;max-height:420px;overflow:auto;white-space:pre}
+.mu{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:20px;border-top:1px solid var(--line);padding-top:18px}
+@media (max-width:820px){.mu{grid-template-columns:minmax(0,1fr)}}
+.mu h3{font-size:1.2rem;margin-bottom:4px}
+.mu .lead{font-size:.82rem;color:var(--muted);margin:0 0 10px}
+.mu .note{font-size:.88rem;margin:10px 0 0;max-width:65ch}
+.mrow{display:grid;grid-template-columns:minmax(0,1fr) 46px 30px 90px;gap:8px;align-items:center;font-size:.85rem;padding:3px 0}
+.mrow .rec{font-family:var(--f-mono);font-size:.78rem;color:var(--muted);text-align:right}
+.mrow .bar{position:relative;height:14px;background:var(--soft);border-radius:3px}
+.mrow .bar i{position:absolute;top:0;bottom:0;border-radius:3px}
+.mrow .bar i.neg{right:50%;background:#dc2626}
+.mrow .bar i.pos{left:50%;background:#16a34a}
+.mrow .bar b{position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--muted)}
+.mrow .d{font-family:var(--f-mono);font-size:.75rem;text-align:right}
+.grp{font-family:var(--f-display);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin:8px 0 2px}
+.calc{display:flex;flex-direction:column;gap:6px}
+.calc div{border-left:3px solid var(--line);padding:2px 0 2px 10px;font-size:.85rem}
+.calc div.def{border-left-color:#dc2626}.calc div.off{border-left-color:#16a34a}
+.calc b{font-weight:600}.calc code{font-family:var(--f-mono);font-size:.8rem;background:var(--soft);padding:0 5px;border-radius:4px;white-space:nowrap}
+.calc small{display:block;color:var(--muted);font-size:.8rem}
+.foot{font-size:.82rem;color:var(--muted);max-width:75ch}
+.foot a{color:inherit}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="intro">
+    <h1>Tres equipos para la Regulación M-C</h1>
+    <p>Cada uno parte de un equipo campeón cuyo jugador publicó el paste completo (stat points incluidos). Los cambios que propongo están marcados en verde y salen de los datos del meta analysis: qué usan más los equipos que llegan al Top 8 y qué velocidades se repiten. Copia el paste e impórtalo tal cual.</p>
+    <nav class="nav" aria-label="Equipos">
+      <a href="#raichu" style="--c:var(--t1)"><span class="dot"></span>Raichu-Y + Garchomp-Z</a>
+      <a href="#sol" style="--c:var(--t2)"><span class="dot"></span>Sol y lluvia</a>
+      <a href="#floette" style="--c:var(--t3)"><span class="dot"></span>Floette</a>
+    </nav>
+  </header>
+  <div id="teams"></div>
+  <p class="foot">Datos: Top 32 de 10 torneos M-C (VR Pastes / victoryroad.pro) y 199 equipos con stat points publicados por sus jugadores (<a href="https://x.com/VGCPastes" target="_blank" rel="noopener">VGCPastes Repository</a>). Matchups: 3,973 partidas de los cuatro VR Challenges de septiembre y octubre (circuit.victoryroad.pro). Daño calculado con @smogon/calc; 1 stat point = 8 EVs. Velocidades finales a nivel 50: (base + 20 + SP) × naturaleza; en megas, con la base de la mega. Los planes de juego son un punto de partida, no un guion fijo: pruébalos y ajusta según tus partidas.</p>
+</div>
+
+<script>
+const TEAMS=[
+{id:'raichu',c:'var(--t1)',tag:'Recomendado para empezar',name:'Raichu-Y + Garchomp-Z',
+ base:{txt:'riopaser · campeón de Frankfurt (1,129 jugadores)',url:'https://pokepast.es/0e35fd9cd52d7552'},
+ stats:[['20','equipos en Top 32'],['6','en Top 8'],['2','títulos'],['2% → 11%','uso sep → oct']],
+ mons:[
+  {n:'Raichu',f:'Raichu-Mega-Y',i:'Raichunite Y',a:'Lightning Rod',nat:'Timid',sp:[29,0,5,0,0,32],spe:200,m:['Zap Cannon','Focus Blast','Fake Out','Protect'],chg:'SP: 32/0/11/0/0/23 → 29/0/5/0/0/32. Pasa de 190 a 200 de velocidad: empata con Gengar-Mega y supera al grupo de Raichu-Y en 190 (13 de 46 sets).'},
+  {n:'Rillaboom',f:'Rillaboom',i:'Miracle Seed',a:'Grassy Surge',nat:'Adamant',sp:[26,30,1,0,4,5],spe:110,m:['Grassy Glide','Wood Hammer','Fake Out','U-turn']},
+  {n:'Volcarona',f:'Volcarona',i:'Rocky Helmet',a:'Flame Body',nat:'Timid',sp:[13,0,30,0,0,23],spe:157,m:['Overheat','Struggle Bug','Rage Powder','Tailwind']},
+  {n:'Incineroar',f:'Incineroar',i:'Sitrus Berry',a:'Intimidate',nat:'Impish',sp:[30,0,20,0,14,2],spe:82,m:['Parting Shot','Fake Out','Flare Blitz','Darkest Lariat']},
+  {n:'Gholdengo',f:'Gholdengo',i:'Life Orb',a:'Good as Gold',nat:'Modest',sp:[27,0,9,7,3,20],spe:124,m:['Protect','Shadow Ball','Nasty Plot','Make It Rain'],chg:'SP: 17/0/0/7/22/20 → 27/0/9/7/3/20, misma velocidad. Ahora aguanta Kowtow Cleave de Kingambit (95–114% → 84–100%) y Flare Blitz de Incineroar (88–105% → 79–93%). A cambio, Shadow Ball de Gengar-Mega sube de 80–95% a 89–105%: Kingambit aparece mucho más.'},
+  {n:'Garchomp',f:'Garchomp-Mega-Z',i:'Garchompite Z',a:'Rough Skin',nat:'Modest',sp:[0,0,4,30,0,32],spe:203,m:['Dragon Pulse','Earth Power','Power Gem','Protect']}],
+ plan:['Lead base: Raichu + Rillaboom. Doble Fake Out el turno 1 y Grassy Terrain activo para que Grassy Glide salga con prioridad.','Volcarona atrae ataques con Rage Powder y pone Tailwind; ese turno Gholdengo puede usar Nasty Plot sin presión.','Elige la mega en team preview: Garchomp-Z (203 de velocidad, Levitate) contra equipos lentos o de suelo; Raichu-Y (No Guard, así Zap Cannon y Focus Blast no fallan) contra rivales rápidos que necesitas paralizar.','Incineroar entra y sale con Parting Shot para repetir Intimidate y Fake Out.'],
+ mu:{n:472,w:238,bad:[['Kommo-o','12-22',-16],['Kingambit','45-70',-12],['Basculegion','23-37',-12],['Froslass / nieve','9-14',-14],['Delphox-Mega','15-23',-10]],good:[['Staraptor','25-14',17],['Arcanine-Hisui','27-14',15],['Politoed','22-12',13],['Grimmsnarl','28-16',13]],
+ note:'Kingambit es el problema real: aparece en 115 de sus partidas y gana 45-70. Chople Berry le quita el OHKO a Focus Blast.'},
+ calc:[['off','Volcarona Overheat → Kingambit','104–123%','OHKO. Es el único golpe del equipo que lo quita de un ataque'],
+  ['off','Raichu-Y Focus Blast → Kingambit (Chople Berry)','74–88%','No hace OHKO: necesitas sumar daño o usar Overheat'],
+  ['def','Kingambit Kowtow Cleave → Gholdengo (nuevo spread)','84–100%','Sobrevive salvo el roll máximo; con Intimidate de Incineroar, 65–77%'],
+  ['off','Garchomp-Z Dragon Pulse → Kommo-o','101–120%','OHKO. Contra Kommo-o la mega es Garchomp: Zap Cannon de Raichu solo hace 30–36%'],
+  ['def','Kommo-o Clanging Scales → Garchomp-Z','75–90%','Garchomp-Z (203) es más rápido y lo quita primero'],
+  ['off','Raichu-Y Zap Cannon → Basculegion','131–155%','OHKO; Grassy Glide de Rillaboom también (104–122%)'],
+  ['def','Basculegion Wave Crash → Incineroar / Volcarona','112–132% / 160–190%','OHKO a ambos: no los dejes en el campo frente a Basculegion con Scarf'],
+  ['def','Sneasler Rock Slide → Volcarona (13/0/30)','83–99%','Por eso Volcarona va con 30 en Defensa: con más HP y menos Def ya podría caer']],
+ watch:['Trick Room sigue en el 24% de los equipos de octubre: guarda un Fake Out para el que lo pone.','Wide Guard subió al 19%: si lo ves, no dependas de Make It Rain ese turno.']},
+{id:'sol',c:'var(--t2)',tag:'El más fuerte, el más técnico',name:'Sol y lluvia · Charizard-Y + Garchomp-Z',
+ base:{txt:'mevlad552 · campeón de VR October Challenge #2',url:'https://pokepast.es/4d8ac07e6e8ba093'},
+ stats:[['20','equipos en Top 32'],['7','en Top 8'],['2','títulos'],['3% → 9%','uso sep → oct']],
+ mons:[
+  {n:'Charizard',f:'Charizard-Mega-Y',i:'Charizardite Y',a:'Blaze',nat:'Timid',sp:[16,0,18,6,0,26],spe:160,m:['Weather Ball','Heat Wave','Hurricane','Protect']},
+  {n:'Pelipper',f:'Pelipper',i:'Sitrus Berry',a:'Drizzle',nat:'Bold',sp:[31,0,0,0,16,19],spe:104,m:['Hurricane','Weather Ball','Tailwind','Wide Guard']},
+  {n:'Archaludon',f:'Archaludon',i:'Leftovers',a:'Stamina',nat:'Calm',sp:[32,0,14,1,19,0],spe:105,m:['Protect','Electro Shot','Dragon Pulse','Snarl'],nw:'Snarl',chg:'Flash Cannon → Snarl. Snarl aparece en el 38% de los Archaludon del Top 8 contra el 10% del resto (señal fuerte); lo lleva también el subcampeón de Louisville. SP: 32/0/8/1/25/0 → 32/0/14/1/19/0 para aguantar Close Combat de Sneasler sin Reflect (86–104% → 83–99%).'},
+  {n:'Venusaur',f:'Venusaur',i:'Focus Sash',a:'Chlorophyll',nat:'Modest',sp:[1,0,0,32,1,32],spe:132,m:['Protect','Sleep Powder','Sludge Bomb','Leaf Storm']},
+  {n:'Grimmsnarl',f:'Grimmsnarl',i:'Light Clay',a:'Prankster',nat:'Sassy',sp:[26,0,24,0,16,0],spe:72,m:['Spirit Break','Reflect','Light Screen','Parting Shot'],chg:'SP: 29/0/22/0/15/0 → 26/0/24/0/16/0. Dire Claw de Sneasler deja de poder hacerle OHKO (84–101% → 84–99%), sin perder ningún otro cálculo.'},
+  {n:'Garchomp',f:'Garchomp-Mega-Z',i:'Garchompite Z',a:'Rough Skin',nat:'Modest',sp:[1,0,1,32,0,32],spe:203,m:['Draco Meteor','Earth Power','Power Gem','Protect']}],
+ plan:['Dos modos. Sol: Charizard-Y (Drought) + Venusaur (Chlorophyll, Sleep Powder). Lluvia: Pelipper + Archaludon, que en lluvia usa Electro Shot sin turno de carga.','Grimmsnarl abre con Reflect y Light Screen gracias a Prankster y sale con Parting Shot; las pantallas duran más con Light Clay.','Solo una mega por partida: Charizard-Y para el modo sol, Garchomp-Z (203 de velocidad) cuando el rival es rápido o el sol no conviene.','Pelipper con Wide Guard protege del daño en área y Tailwind ayuda al modo lluvia.'],
+ mu:{n:247,w:130,bad:[['Dragonite-Mega','5-13',-20],['Politoed (lluvia rival)','5-8',-13],['Gengar-Mega','7-11',-11],['Basculegion','20-31',-10],['Volcarona','23-35',-10]],good:[['Sinistcha','12-2',36],['Staraptor','11-4',23],['Indeedee','11-5',21],['Farigiraf','21-9',20],['Psyspam (Indeedee + psíquico)','9-5',15]],
+ note:'Los datos no confirman que psyspam sea su peor cruce: va 9-5 contra Indeedee + atacante psíquico, 11-4 contra Staraptor y 10-7 contra Whimsicott. Gardevoir (3-3) y Glimmora (2-4) tienen muy pocas partidas para concluir algo. Lo que sí pierde son los cruces con Dragonite-Mega, lluvia rival (Politoed) y atacantes de agua o fuego que castigan a Charizard y Venusaur.'},
+ calc:[['off','Garchomp-Z Draco Meteor → Dragonite-Mega','62–73%','Multiscale corta el daño a la mitad: primero rómpelo con Hurricane (22–27%) o Spirit Break (26–31%)'],
+  ['def','Dragonite-Mega Dragon Pulse → Garchomp-Z','108–127%','OHKO. Garchomp-Z es más rápido (203 vs 152) pero no lo quita de un golpe'],
+  ['def','Dragonite-Mega Heat Wave → Venusaur (con tu sol)','92–109%','Focus Sash te salva si está a vida completa'],
+  ['def','Basculegion Wave Crash → Charizard-Y','163–194% sin sol · 81–97% con sol','Contra Basculegion mantén el sol activo; Last Respects a Archaludon solo hace 22–26%'],
+  ['off','Garchomp-Z Power Gem → Volcarona','113–135%','OHKO, y Garchomp-Z lo supera en velocidad. Weather Ball de Pelipper en lluvia hace 87–104%'],
+  ['def','Volcarona Overheat → Venusaur','139–163%','OHKO: no abras con Venusaur si ves Volcarona'],
+  ['def','Floette-Mega Moonblast → Garchomp-Z','147–173%','OHKO. Venusaur con Sludge Bomb le hace 58–70%'],
+  ['def','Politoed Weather Ball → Charizard-Y (lluvia)','140–165%','Muddy Water 94–111%: si Politoed pone lluvia, Charizard no debe estar en el campo'],
+  ['def','Sneasler Close Combat → Archaludon (nuevo spread)','83–99%','Antes 86–104%; con Reflect de Grimmsnarl, 57–69%']],
+ watch:['Es el arquetipo con mejor índice y el que más crece: espera que el rival llegue preparado (climas propios, Trick Room).','Necesita práctica: decidir qué clima poner y cuándo cambiarlo es lo que gana las partidas.']},
+{id:'floette',c:'var(--t3)',tag:'Contracorriente',name:'Floette · Dragonite-Mega',
+ base:{txt:'DidiVGC · campeón de VR September Challenge #2',url:'https://pokepast.es/c06c65c34f56a094'},
+ stats:[['17','equipos en Top 32'],['7','en Top 8'],['1','título'],['8% → 3%','uso sep → oct']],
+ mons:[
+  {n:'Floette-Eternal',f:'Floette-Mega',i:'Floettite',a:'Flower Veil',nat:'Modest',sp:[15,0,14,5,0,32],spe:154,m:['Dazzling Gleam','Draining Kiss','Calm Mind','Protect']},
+  {n:'Incineroar',f:'Incineroar',i:'Sitrus Berry',a:'Intimidate',nat:'Impish',sp:[30,0,20,0,0,16],spe:96,m:['Flare Blitz','Darkest Lariat','Parting Shot','Fake Out'],nw:'Darkest Lariat',chg:'Taunt → Darkest Lariat. Trick Room bajó del 30% al 24% de los equipos, y Darkest Lariat aparece en el 41% de los Incineroar del Top 8 contra el 22% del resto (señal fuerte).'},
+  {n:'Gholdengo',f:'Gholdengo',i:'Life Orb',a:'Good as Gold',nat:'Timid',sp:[7,0,0,27,0,32],spe:149,m:['Make It Rain','Shadow Ball','Nasty Plot','Protect']},
+  {n:'Sneasler',f:'Sneasler',i:'White Herb',a:'Unburden',nat:'Adamant',sp:[14,20,0,0,0,32],spe:172,m:['Rock Tomb','Protect','Close Combat','Dire Claw']},
+  {n:'Rillaboom',f:'Rillaboom',i:'Miracle Seed',a:'Grassy Surge',nat:'Adamant',sp:[26,15,0,0,12,13],spe:118,m:['Wood Hammer','High Horsepower','Grassy Glide','Fake Out']},
+  {n:'Dragonite',f:'Dragonite-Mega',i:'Dragoninite',a:'Inner Focus',nat:'Modest',sp:[2,0,0,32,0,32],spe:152,m:['Dragon Pulse','Heat Wave','Tailwind','Protect']}],
+ plan:['Lead base: Rillaboom + Floette. Fake Out para que Floette use Calm Mind el turno 1, con Grassy Terrain recuperando vida.','Dragonite-Mega pone Tailwind cuando necesitas ganar velocidad; Sneasler con White Herb usa Close Combat sin perder las defensas y Unburden lo acelera.','Gholdengo cierra partidas con Nasty Plot y Make It Rain; Good as Gold lo protege de Taunt, Encore y estados.','Floette es la mega casi siempre; Dragonite-Mega es la alternativa cuando necesitas Tailwind y daño especial en área.'],
+ mu:{n:471,w:244,bad:[['Metagross-Mega','4-10',-20],['Staraptor-Mega','13-22',-14],['Raichu-Y','42-68',-12],['Volcarona','26-38',-11],['Arcanine-Hisui','26-38',-10]],good:[['Torkoal','13-5',23],['Aerodactyl','11-5',20],['Armarouge','12-5',19],['Gardevoir','13-6',16],['Farigiraf','62-33',15]],
+ note:'Sufre contra el arquetipo Raichu-Y + Staraptor + Arcanine-Hisui (5-16): atacantes físicos rápidos que hacen OHKO a Rillaboom, Sneasler y Dragonite. A cambio, castiga sol, Trick Room y psyspam.'},
+ calc:[['def','Staraptor-Mega Brave Bird → Rillaboom / Sneasler','105–123% / 170–200%','OHKO a ambos. Intimidate de Incineroar es tu mejor defensa'],
+  ['off','Floette-Mega Dazzling Gleam → Staraptor-Mega','65–78%','Sin Calm Mind no lo quita; Make It Rain de Gholdengo hace 58–68%'],
+  ['def','Arcanine-Hisui Head Smash → Dragonite-Mega','125–148%','OHKO aun con Multiscale; Flare Blitz a Gholdengo 117–139%'],
+  ['off','Rillaboom High Horsepower → Arcanine-Hisui / Raichu-Y','147–175% / 89–106%','Lleva High Horsepower por estos dos; Close Combat de Sneasler también quita a Arcanine (149–175%)'],
+  ['def','Raichu-Y Zap Cannon → Floette-Mega / Dragonite-Mega','45–53% / 50–60%','Aguantan bien a Raichu; el daño real viene de sus compañeros'],
+  ['def','Metagross-Mega Psychic Fangs → Sneasler','343–407%','OHKO seguro: Sneasler no debe estar frente a Metagross'],
+  ['def','Gholdengo Make It Rain → Floette-Mega','85–101%','Con 28/0/0/5/1/32 baja a 79–94%, pero Iron Head de Kingambit sube de 93–111% a 98–116%. Ningún reparto aguanta ambos: deja el actual, porque Kingambit aparece más']],
+ watch:['Su uso bajó del 8% al 3%: menos rivales preparados contra Floette, pero también menos datos recientes de cómo le va.','Wide Guard (19% en octubre) frena Dazzling Gleam, Make It Rain y Heat Wave a la vez: cambia a ataques individuales ese turno.']}
+];
+const STATS=['HP','Atk','Def','SpA','SpD','Spe'];
+function pasteOf(t){return t.mons.map(m=>{const ev=m.sp.map((v,i)=>v?v+' '+STATS[i]:null).filter(Boolean).join(' / ');
+  return m.n+' @ '+m.i+'\nAbility: '+m.a+'\nLevel: 50\nEVs: '+ev+'\n'+m.nat+' Nature\n'+m.m.map(x=>'- '+x).join('\n');}).join('\n\n');}
+function el(tag,attrs,...kids){const e=document.createElement(tag);for(const k in attrs||{}){if(k==='class')e.className=attrs[k];else if(k==='style')e.setAttribute('style',attrs[k]);else e.setAttribute(k,attrs[k]);}kids.flat().forEach(c=>{if(c==null)return;e.appendChild(typeof c==='string'?document.createTextNode(c):c);});return e;}
+const host=document.getElementById('teams');host.style.display='flex';host.style.flexDirection='column';host.style.gap='28px';
+TEAMS.forEach(t=>{
+  const s=el('section',{class:'team',id:t.id,style:'--c:'+t.c});
+  s.appendChild(el('div',{class:'head'},
+    el('div',{style:'display:flex;flex-direction:column;gap:4px'},el('div',{class:'tag'},t.tag),el('h2',{},t.name),
+      el('div',{class:'base'},'Base: ',el('a',{href:t.base.url,target:'_blank',rel:'noopener'},t.base.txt))),
+    el('div',{class:'stats'},t.stats.map(([b,l])=>el('div',{class:'stat'},el('b',{},b),el('span',{},l))))));
+  s.appendChild(el('div',{class:'roster'},t.mons.map(m=>{const max=Math.max(...m.sp);
+    return el('div',{class:'mon'},
+      el('div',{class:'top'},el('h3',{},m.f),el('div',{class:'spe'},'Vel. ',el('b',{},String(m.spe)))),
+      el('div',{class:'meta'},el('span',{class:'item'},m.i),' · '+m.a+' · '+m.nat),
+      el('div',{class:'sp','aria-label':'Stat points'},m.sp.map((v,i)=>el('div',{class:v===max&&v>0?'hi':''},el('small',{},STATS[i]),String(v)))),
+      el('div',{class:'moves'},m.m.map(x=>el('span',{class:m.nw===x?'new':''},x))),
+      m.chg?el('div',{class:'chg'},'Cambio: '+m.chg):null);})));
+  const txt=pasteOf(t);const pre=el('pre',{id:'paste-'+t.id,tabindex:'0'},txt);
+  const btn=el('button',{class:'copy',type:'button',id:'copy-'+t.id},'Copiar paste');
+  btn.addEventListener('click',()=>{const done=()=>{btn.textContent='Copiado';setTimeout(()=>btn.textContent='Copiar paste',1800);};
+    const sel=()=>{const r=document.createRange();r.selectNodeContents(pre);const w=getSelection();w.removeAllRanges();w.addRange(r);btn.textContent='Seleccionado: usa Ctrl+C';setTimeout(()=>btn.textContent='Copiar paste',2500);};
+    try{navigator.clipboard.writeText(txt).then(done,sel);}catch(e){sel();}});
+  s.appendChild(el('div',{class:'cols'},
+    el('div',{class:'plan'},el('h3',{},'Plan de juego'),el('ul',{},t.plan.map(p=>el('li',{},p))),
+      el('h3',{class:'sub'},'Ojo con'),el('ul',{},t.watch.map(p=>el('li',{},p)))),
+    el('div',{class:'paste'},el('div',{class:'bar'},el('h3',{},'Paste'),btn),pre)));
+  const mrow=([n,r,d])=>{const w=Math.min(50,Math.abs(d)*1.6);return el('div',{class:'mrow'},el('span',{},n),el('span',{class:'rec'},r),el('span',{class:'d'},(d>0?'+':'')+d),
+    el('div',{class:'bar',title:(d>0?'+':'')+d+' pts vs esperado'},el('i',{class:d<0?'neg':'pos',style:'width:'+w+'%'}),el('b',{})));};
+  s.appendChild(el('div',{class:'mu'},
+    el('div',{},el('h3',{},'Matchups'),el('p',{class:'lead'},`${t.mu.w}-${t.mu.n-t.mu.w} en ${t.mu.n} partidas de VR Challenges (equipos con 5 de estos 6 Pokémon). Récord contra rivales que llevan cada Pokémon y diferencia en puntos frente a lo esperado según la fuerza de ambos jugadores.`),
+      el('div',{class:'grp'},'Le cuesta'),t.mu.bad.map(mrow),el('div',{class:'grp'},'Le va bien'),t.mu.good.map(mrow),el('p',{class:'note'},t.mu.note)),
+    el('div',{},el('h3',{},'Cálculos clave'),el('p',{class:'lead'},'Nivel 50, sets más comunes de los pastes publicados, sin críticos. Verde: tu ataque. Rojo: lo que recibes.'),
+      el('div',{class:'calc'},t.calc.map(([k,a,r,v])=>el('div',{class:k},el('b',{},a),' ',el('code',{},r),el('small',{},v)))))));
+  host.appendChild(s);});
+</script>
