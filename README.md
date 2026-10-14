@@ -10,7 +10,8 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 - **Tendencias:** cómo sube o baja el uso fin de semana a fin de semana.
 - **Conversión:** win rate en el campo completo de los VR Challenges frente a su presencia en Top 32 y Top 8.
 - **Compañeros:** con qué Pokémon se suele llevar cada uno.
-- **Objetos:** objetos del Top 16 de los VR Challenges y de la ESM Madrid.
+- **Sets:** movimientos, objeto, habilidad y naturaleza de cada Pokémon, y los sets completos más repetidos, comparando el total con el Top 8.
+- **Objetos:** objetos de los 320 equipos.
 - **Megas:** si cada mega va sola o con otra, cuántas veces llega al Top 8 y qué torneos ganó.
 - **Arquetipos:** equipos con las mismas seis especies, agrupados.
 - **Por torneo:** megas por torneo.
@@ -22,10 +23,10 @@ Abre `index.html` en cualquier navegador; no hace falta cuenta ni instalar nada.
 
 ## Fuentes
 
-victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 12 de octubre de 2026.
+victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 13 de octubre de 2026.
 
 Los datos crudos están en `data/`:
 
 - `equipos_mc.csv`: equipos.
-- `objetos_top16.csv`: objetos.
+- `sets_mc.csv`: un registro por Pokémon con objeto, habilidad, naturaleza y movimientos, leído de VR Pastes. Los pastes de torneo son Open Team List y no incluyen stat points.
 - `winrates_vr.csv`: win rates.
