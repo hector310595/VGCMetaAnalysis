@@ -66,6 +66,7 @@ window.__DATA__={"equipos":[{"team_id":"Louisville#1","event":"Louisville","tier
 .mc td.n,.mc th.n{text-align:right}
 .mc .bar{display:inline-block;height:.6rem;border-radius:4px;background:var(--cds-chart-muted);vertical-align:middle;margin-left:var(--cds-gap-xs)}
 .mc .ctrl{display:flex;gap:var(--cds-gap-sm);flex-wrap:wrap;margin-bottom:var(--cds-gap-sm)}
+.mc .ctrl select{max-width:100%;min-width:0}
 .mc .ctrl input,.mc .ctrl select{font:inherit;padding:var(--cds-pad-xs);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-bg);color:var(--color-fg)}
 .mc a{color:inherit}
 .mc .pg[hidden]{display:none}
@@ -88,6 +89,7 @@ window.__DATA__={"equipos":[{"team_id":"Louisville#1","event":"Louisville","tier
     <button data-tab="p-conv" aria-selected="false">Conversión</button>
     <button data-tab="p-comp" aria-selected="false">Compañeros</button>
     <button data-tab="p-sets" aria-selected="false">Sets</button>
+    <button data-tab="p-adapt" aria-selected="false">Adaptaciones</button>
     <button data-tab="p-obj" aria-selected="false">Objetos</button>
     <button data-tab="p-megas" aria-selected="false">Megas</button>
     <button data-tab="p-ev" aria-selected="false">Por torneo</button>
@@ -155,6 +157,23 @@ window.__DATA__={"equipos":[{"team_id":"Louisville#1","event":"Louisville","tier
     <div class="card"><h2>Sets completos más repetidos</h2><p class="note">Misma combinación de objeto, naturaleza y los cuatro movimientos (sin importar el orden).</p>
       <div class="tbox"><table id="t-set-comb" data-source="sets_comunes" data-row-key="pokemon,set"><thead><tr>
         <th data-field="item">Objeto</th><th data-field="nature">Naturaleza</th><th data-field="moves">Movimientos</th><th class="n" data-field="veces">Veces</th><th class="n" data-field="top8">En Top 8</th><th data-field="ejemplo">Mejor resultado</th>
+      </tr></thead><tbody></tbody></table></div></div>
+  </section>
+
+  <section class="pg" id="p-adapt" hidden>
+    <div class="card" style="margin-bottom:var(--cds-gap-md)"><h2>Herramientas del meta</h2><p class="note">% de equipos del Top 32 que llevan cada herramienta en al menos un Pokémon (por movimiento, habilidad u objeto). Sirve para decidir qué cubrir: si Wide Guard sube, los ataques de área rinden menos; si Psychic Surge o Armor Tail son comunes, tu prioridad falla. "Sep → Oct" compara los equipos de septiembre con los de octubre.</p>
+      <div class="tbox"><table id="t-tools" data-source="herramientas" data-row-key="herramienta"><thead><tr>
+        <th data-field="grupo">Tipo</th><th data-field="herramienta">Herramienta</th><th data-field="como">Cuenta si lleva</th><th class="n" data-field="pct">% total</th><th class="n" data-field="pct_top8">% Top 8</th><th class="n" data-field="pct_sep">Sep</th><th class="n" data-field="pct_oct">Oct</th><th class="n" data-field="cambio">Cambio</th>
+      </tr></thead><tbody></tbody></table></div></div>
+    <div class="card" style="margin-bottom:var(--cds-gap-md)"><h2>Techs que rinden (Top 8 frente al resto)</h2><p class="note">Para cada Pokémon con 15+ equipos y 5+ en Top 8: opciones que aparecen más (o menos) entre sus equipos del Top 8 que entre sus equipos del puesto 9 al 32. "Señal" indica qué tan fiable es la diferencia con estas muestras (prueba de dos proporciones: fuerte ≈ 95%, moderada ≈ 80%); una señal débil puede ser casualidad.</p>
+      <div class="ctrl"><select id="f-tech"><option value="">Todos los Pokémon</option></select><select id="f-tech-sig"><option value="">Cualquier señal</option><option value="fm">Fuerte o moderada</option></select></div>
+      <div class="tbox"><table id="t-tech" data-source="techs" data-row-key="pokemon,cat,opcion"><thead><tr>
+        <th data-field="pokemon">Pokémon</th><th data-field="cat">Tipo</th><th data-field="opcion">Opción</th><th class="n" data-field="pct_top8">% en su Top 8</th><th class="n" data-field="pct_resto">% en el resto</th><th class="n" data-field="dif">Diferencia</th><th data-field="senal">Señal</th>
+      </tr></thead><tbody></tbody></table></div></div>
+    <div class="card"><h2>Variantes por arquetipo</h2><p class="note">Para el arquetipo elegido: el set base de cada miembro dentro de ese arquetipo (movimientos en 75%+ de sus equipos), los huecos que cambian y el set exacto del equipo mejor clasificado.</p>
+      <div class="ctrl"><select id="f-var"></select><span class="muted" id="var-n"></span></div>
+      <div class="tbox"><table id="t-var" data-source="variantes" data-row-key="arquetipo,pokemon"><thead><tr>
+        <th data-field="pokemon">Pokémon</th><th class="n" data-field="presencia">Presencia</th><th data-field="objeto">Objeto (veces)</th><th data-field="naturaleza">Naturaleza (veces)</th><th data-field="fijos">Movimientos fijos</th><th data-field="opciones">Huecos flexibles (veces)</th><th data-field="mejor">Set del mejor clasificado</th>
       </tr></thead><tbody></tbody></table></div></div>
   </section>
 
@@ -261,6 +280,55 @@ dash.calc('ranking_arquetipos', {inputs:['indice_equipos','arquetipos_eq'], titl
     return Object.values(c).map(o=>({arquetipo:o.arquetipo,nucleo:(info[o.arquetipo]||{}).nucleo||'—',flex:(info[o.arquetipo]||{}).flex||'—',equipos:o.equipos,top8:o.top8,titulos:o.titulos,
       indice:o.indice,indice_medio:o.indice/o.equipos,cuota_sep:o.sep/tot.sep,cuota_oct:o.oct/tot.oct,mejor:o.best.place+'.º '+o.best.event+' ('+o.best.player+')',paste:o.best.paste,
       otros:o.arquetipo.startsWith('Otros')})).sort((x,y)=>(x.otros-y.otros)||(y.indice-x.indice));}});
+dash.calc('herramientas', {inputs:['sets','equipos'], title:'Herramientas del meta', description:'% de equipos con cada herramienta (movimiento, habilidad u objeto en algún miembro), total, Top 8, septiembre y octubre.',
+  fn:(sets,equipos)=>{const T=[
+      ['Control de velocidad','Tailwind','Tailwind',r=>r.mv.has('Tailwind')],
+      ['Control de velocidad','Trick Room','Trick Room',r=>r.mv.has('Trick Room')],
+      ['Control de velocidad','Icy Wind / Electroweb','Icy Wind o Electroweb',r=>r.mv.has('Icy Wind')||r.mv.has('Electroweb')],
+      ['Clima y terreno','Lluvia','Drizzle o Rain Dance',r=>r.ab.has('Drizzle')||r.mv.has('Rain Dance')],
+      ['Clima y terreno','Sol','Drought, Charizardite Y o Sunny Day',r=>r.ab.has('Drought')||r.it.has('Charizardite Y')||r.mv.has('Sunny Day')],
+      ['Clima y terreno','Arena','Sand Stream',r=>r.ab.has('Sand Stream')||r.it.has('Tyranitarite')],
+      ['Clima y terreno','Nieve','Snow Warning',r=>r.ab.has('Snow Warning')],
+      ['Clima y terreno','Grassy Terrain','Grassy Surge',r=>r.ab.has('Grassy Surge')],
+      ['Clima y terreno','Psychic Terrain','Psychic Surge',r=>r.ab.has('Psychic Surge')],
+      ['Protección del equipo','Wide Guard','Wide Guard',r=>r.mv.has('Wide Guard')],
+      ['Protección del equipo','Quick Guard','Quick Guard',r=>r.mv.has('Quick Guard')],
+      ['Protección del equipo','Bloqueo de prioridad','Armor Tail o Psychic Surge',r=>r.ab.has('Armor Tail')||r.ab.has('Psychic Surge')],
+      ['Protección del equipo','Pantallas','Reflect, Light Screen o Aurora Veil',r=>r.mv.has('Reflect')||r.mv.has('Light Screen')||r.mv.has('Aurora Veil')],
+      ['Soporte','Intimidate','Intimidate',r=>r.ab.has('Intimidate')],
+      ['Soporte','Fake Out','Fake Out',r=>r.mv.has('Fake Out')],
+      ['Soporte','Redirección','Follow Me o Rage Powder',r=>r.mv.has('Follow Me')||r.mv.has('Rage Powder')],
+      ['Soporte','Helping Hand','Helping Hand',r=>r.mv.has('Helping Hand')],
+      ['Disrupción','Encore','Encore',r=>r.mv.has('Encore')],
+      ['Disrupción','Taunt','Taunt',r=>r.mv.has('Taunt')],
+      ['Disrupción','Sueño','Sleep Powder, Spore, Yawn, Hypnosis o Sing',r=>['Sleep Powder','Spore','Yawn','Hypnosis','Sing'].some(m=>r.mv.has(m))],
+      ['Disrupción','Perish Song','Perish Song',r=>r.mv.has('Perish Song')],
+      ['Disrupción','Snarl','Snarl',r=>r.mv.has('Snarl')],
+      ['Disrupción','Imprison','Imprison',r=>r.mv.has('Imprison')],
+      ['Prioridad','Prioridad ofensiva','Sucker Punch, Grassy Glide, Aqua Jet, Extreme Speed, Ice Shard, Bullet Punch, Shadow Sneak, Jet Punch, Quick Attack o Vacuum Wave',r=>['Sucker Punch','Grassy Glide','Aqua Jet','Extreme Speed','Ice Shard','Bullet Punch','Shadow Sneak','Jet Punch','Quick Attack','Vacuum Wave'].some(m=>r.mv.has(m))],
+      ['Prioridad','Sucker Punch','Sucker Punch',r=>r.mv.has('Sucker Punch')],
+      ['Prioridad','Grassy Glide','Grassy Glide',r=>r.mv.has('Grassy Glide')]];
+    const tm={};equipos.forEach(r=>tm[r.team_id]={place:+r.place,mes:r.date<'2026-10-01'?'sep':'oct',mv:new Set(),ab:new Set(),it:new Set()});
+    sets.forEach(r=>{const t=tm[r.team_id];if(!t)return;[r.move1,r.move2,r.move3,r.move4].forEach(m=>m&&t.mv.add(m));t.ab.add(r.ability);t.it.add(r.item);});
+    const teams=Object.values(tm),n=teams.length,n8=teams.filter(t=>t.place<=8).length,ns=teams.filter(t=>t.mes==='sep').length,no=n-ns;
+    return T.map(([grupo,herramienta,como,f])=>{const h=teams.filter(f);const s=h.filter(t=>t.mes==='sep').length/ns,o=h.filter(t=>t.mes==='oct').length/no;
+      return {grupo,herramienta,como,pct:h.length/n,pct_top8:h.filter(t=>t.place<=8).length/n8,pct_sep:s,pct_oct:o,cambio:o-s};});}});
+dash.calc('techs', {inputs:['sets'], title:'Techs que rinden', description:'Por Pokémon (15+ equipos, 5+ en Top 8): % de cada opción en sus equipos del Top 8 frente al resto, con prueba de dos proporciones.',
+  fn:(sets)=>{const g={};sets.forEach(r=>{(g[r.pokemon]=g[r.pokemon]||[]).push(r);});const out=[];
+    Object.entries(g).forEach(([p,rs])=>{const t8=rs.filter(r=>+r.place<=8),re=rs.filter(r=>+r.place>8);if(rs.length<15||t8.length<5||re.length<5)return;
+      const c={};const add=(cat,v,top)=>{if(!v)return;const k=cat+'|'+v;c[k]=c[k]||{cat,opcion:v,a:0,b:0};top?c[k].a++:c[k].b++;};
+      rs.forEach(r=>{const top=+r.place<=8;[r.move1,r.move2,r.move3,r.move4].forEach(m=>add('Movimiento',m,top));add('Objeto',r.item,top);add('Naturaleza',r.nature,top);add('Habilidad',r.ability,top);});
+      Object.values(c).forEach(o=>{if(o.a+o.b<3)return;const p1=o.a/t8.length,p2=o.b/re.length,pp=(o.a+o.b)/rs.length,se=Math.sqrt(pp*(1-pp)*(1/t8.length+1/re.length));const z=se>0?(p1-p2)/se:0;
+        if(Math.abs(p1-p2)<0.08)return;out.push({pokemon:p,cat:o.cat,opcion:o.opcion,n_top8:t8.length,n_resto:re.length,pct_top8:p1,pct_resto:p2,dif:p1-p2,z,senal:Math.abs(z)>=1.96?'Fuerte':Math.abs(z)>=1.28?'Moderada':'Débil'});});});
+    return out.sort((x,y)=>Math.abs(y.z)-Math.abs(x.z));}});
+dash.calc('variantes', {inputs:['sets','arquetipos_eq'], title:'Variantes por arquetipo', description:'Por arquetipo y miembro: objeto y naturaleza más comunes, movimientos fijos (75%+), huecos flexibles y el set del mejor clasificado.',
+  fn:(sets,arquetipos_eq)=>{const a={};arquetipos_eq.forEach(r=>a[r.team_id]=r.arquetipo);const nt={},g={};
+    sets.forEach(r=>{const ar=a[r.team_id];if(!ar||ar.startsWith('Otros'))return;(nt[ar]=nt[ar]||new Set()).add(r.team_id);const k=ar+'|'+r.pokemon;(g[k]=g[k]||[]).push(r);});
+    const top=(arr,lim)=>{const c={};arr.forEach(v=>{if(v)c[v]=(c[v]||0)+1;});return Object.entries(c).sort((x,y)=>y[1]-x[1]).slice(0,lim);};
+    return Object.entries(g).map(([k,rs])=>{const [ar,p]=k.split('|');const n=rs.length,mv=rs.flatMap(r=>[r.move1,r.move2,r.move3,r.move4]);const mc=top(mv,20);
+      const fijos=mc.filter(e=>e[1]/n>=0.75).map(e=>e[0]),flex=mc.filter(e=>e[1]/n<0.75).map(e=>e[0]+' ('+e[1]+')');const b=rs.slice().sort((x,y)=>+x.place-+y.place)[0];
+      return {arquetipo:ar,pokemon:p,equipos_arq:nt[ar].size,veces:n,presencia:n/nt[ar].size,objeto:top(rs.map(r=>r.item),3).map(e=>e[0]+' ('+e[1]+')').join(', '),naturaleza:top(rs.map(r=>r.nature),3).map(e=>e[0]+' ('+e[1]+')').join(', '),
+        fijos:fijos.join(', ')||'—',opciones:flex.join(', ')||'—',mejor:b.item+' · '+b.nature+' · '+[b.move1,b.move2,b.move3,b.move4].filter(Boolean).join(' / ')+' — '+b.place+'.º '+b.event+' ('+b.player+')'};}).sort((x,y)=>y.veces-x.veces);}});
 dash.calc('resumen', {inputs:['equipos','uso_pokemon','uso_megas'], title:'Resumen', description:'Totales y líderes de uso.',
   fn:(equipos,uso_pokemon,uso_megas)=>{const ev=new Set(equipos.map(r=>r.event)).size,m=uso_megas[0],p=uso_pokemon[0];
     return [{equipos:equipos.length,torneos:ev,mega_top:m.mega,poke_top:p.pokemon,
@@ -385,11 +453,11 @@ function lines(el,rows,names){el.textContent='';const W=el.clientWidth||600,H=30
     ends.push({n,col,y:y(pts[pts.length-1].pct),v:pts[pts.length-1].pct});});
   ends.sort((a,b)=>a.y-b.y);for(let i=1;i<ends.length;i++)if(ends[i].y-ends[i-1].y<14)ends[i].y=ends[i-1].y+14;
   svg.append('g').selectAll('text').data(ends).join('text').attr('x',W-R+8).attr('y',d=>d.y).attr('dy','.35em').attr('font-size',12).attr('fill',d=>d.col).text(d=>d.n+' '+d3.format('.0%')(d.v));}
-const tendSel=document.getElementById('f-tend'),tendModo=document.getElementById('f-tend-modo'),compSel=document.getElementById('f-comp'),objSel=document.getElementById('f-obj'),setSel=document.getElementById('f-set');
+const tendSel=document.getElementById('f-tend'),tendModo=document.getElementById('f-tend-modo'),compSel=document.getElementById('f-comp'),objSel=document.getElementById('f-obj'),setSel=document.getElementById('f-set'),techSel=document.getElementById('f-tech'),techSig=document.getElementById('f-tech-sig'),varSel=document.getElementById('f-var');
 let tendFilled='';
 const fillSel=(sel,opts,def)=>{const cur=[...sel.selectedOptions].map(o=>o.value);sel.textContent='';opts.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=v;o.selected=(cur.length?cur:def).includes(v);sel.appendChild(o);});};
 document.getElementById('f-pares').addEventListener('change',draw);
-[tendSel,tendModo,compSel,objSel,setSel].forEach(s=>s.addEventListener('change',()=>{if(s===tendModo)tendFilled='';draw();}));
+[tendSel,tendModo,compSel,objSel,setSel,techSel,techSig,varSel].forEach(s=>s.addEventListener('change',()=>{if(s===tendModo)tendFilled='';draw();}));
 function drawExtra(){
   const TS=dash.data('tendencia_semana'),TE=dash.data('tendencias'),WR=dash.data('winrate_total'),CV=dash.data('conversion'),CP=dash.data('companeros'),OP=dash.data('objetos_pokemon'),OT=dash.data('objetos_total');
   if(TS.status==='ok'&&TE.status==='ok'){const modo=tendModo.value,rows=TS.data.filter(r=>r.tipo===modo);
@@ -420,6 +488,17 @@ function drawExtra(){
     if(objSel.options.length!==opts.length)fillSel(objSel,opts.map(o=>o),[opts[0]]);const p=objSel.value;const rows=OP.data.filter(r=>r.pokemon===p);const tb=document.querySelector('#t-obj tbody');tb.textContent='';
     order('t-obj',rows).forEach(r=>{const tr=tb.insertRow();tr.dataset.key=encodeURIComponent(r.pokemon)+','+encodeURIComponent(r.item);[['item'],['veces',1],['pct',1,pct],['pct_top8',1,v=>v==null?'—':pct(v)]].forEach(([k,n,f])=>{const td=tr.insertCell();if(n)td.className='n';td.textContent=f?f(r[k]):r[k];});});}
   if(OT.status==='ok')fillTable('t-objtot',order('t-objtot',OT.data),[{k:'item'},{k:'veces',n:1},{k:'portadores'}]);
+  const HT=dash.data('herramientas'),TC=dash.data('techs'),VA=dash.data('variantes'),spp=v=>(v>0?'+':'')+d3.format('.1f')(v*100)+' pts';
+  if(HT.status==='ok')fillTable('t-tools',order('t-tools',HT.data),[{k:'grupo'},{k:'herramienta'},{k:'como'},{k:'pct',n:1,f:pct},{k:'pct_top8',n:1,f:pct},{k:'pct_sep',n:1,f:pct},{k:'pct_oct',n:1,f:pct},{k:'cambio',n:1,f:spp}]);
+  if(TC.status==='ok'){const ps=[...new Set(TC.data.map(r=>r.pokemon))].sort();if(techSel.options.length!==ps.length+1){const cur=techSel.value;techSel.length=1;ps.forEach(p=>{const o=document.createElement('option');o.value=p;o.textContent=p;techSel.appendChild(o);});techSel.value=cur;}
+    const rows=TC.data.filter(r=>(!techSel.value||r.pokemon===techSel.value)&&(!techSig.value||r.senal!=='Débil'));
+    const tb=document.querySelector('#t-tech tbody');tb.textContent='';order('t-tech',rows).slice(0,200).forEach(r=>{const tr=tb.insertRow();tr.dataset.key=[r.pokemon,r.cat,r.opcion].map(encodeURIComponent).join(',');
+      [['pokemon'],['cat'],['opcion'],['pct_top8',1,pct],['pct_resto',1,pct],['dif',1,spp],['senal']].forEach(([k,n,f])=>{const td=tr.insertCell();if(n)td.className='n';td.textContent=f?f(r[k]):r[k];if(k==='senal'&&r.senal!=='Débil')td.style.fontWeight='600';});});}
+  if(VA.status==='ok'){const arqs=[...new Set(VA.data.map(r=>r.arquetipo))];const ra=dash.data('ranking_arquetipos');const ordA=ra.status==='ok'?ra.data.map(r=>r.arquetipo).filter(x=>arqs.includes(x)):arqs.sort();
+    if(varSel.options.length!==ordA.length)fillSel(varSel,ordA,[ordA[0]]);const ar=varSel.value;const rows=VA.data.filter(r=>r.arquetipo===ar);
+    document.getElementById('var-n').textContent=rows.length?rows[0].equipos_arq+' equipos':'';
+    const tb=document.querySelector('#t-var tbody');tb.textContent='';order('t-var',rows).forEach(r=>{const tr=tb.insertRow();tr.dataset.key=encodeURIComponent(r.arquetipo)+','+encodeURIComponent(r.pokemon);
+      [['pokemon'],['presencia',1,d3.format('.0%')],['objeto'],['naturaleza'],['fijos'],['opciones'],['mejor']].forEach(([k,n,f])=>{const td=tr.insertCell();if(n)td.className='n';td.textContent=f?f(r[k]):r[k];});});}
   const SD=dash.data('sets_detalle'),SC=dash.data('sets_comunes');
   if(SD.status==='ok'){const tot={},t8={};SD.data.forEach(r=>{tot[r.pokemon]=r.n;t8[r.pokemon]=r.n_top8;});const opts=Object.keys(tot).sort((a,b)=>tot[b]-tot[a]);
     if(setSel.options.length!==opts.length)fillSel(setSel,opts,[opts[0]]);const p=setSel.value;
@@ -457,7 +536,7 @@ function draw(){
   drawExtra();
 }
 window.__redraw=draw;
-['t-uso','t-megas','t-pares','t-arq','t-rank','t-top','t-eq','t-sube','t-baja','t-conv','t-comp','t-obj','t-objtot','t-set-mov','t-set-otros','t-set-comb'].forEach(id=>sortable(id,null,draw));
+['t-uso','t-megas','t-pares','t-arq','t-rank','t-top','t-eq','t-sube','t-baja','t-conv','t-comp','t-obj','t-objtot','t-set-mov','t-set-otros','t-set-comb','t-tools','t-tech','t-var'].forEach(id=>sortable(id,null,draw));
 evSel.addEventListener('change',draw);q.addEventListener('input',draw);
 dash.onData(draw);
 const named=document.querySelector('.tabs button[data-tab="'+location.hash.slice(1)+'"]');if(named)named.click();

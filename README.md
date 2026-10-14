@@ -11,6 +11,7 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 - **Conversión:** win rate en el campo completo de los VR Challenges frente a su presencia en Top 32 y Top 8.
 - **Compañeros:** con qué Pokémon se suele llevar cada uno.
 - **Sets:** movimientos, objeto, habilidad y naturaleza de cada Pokémon, y los sets completos más repetidos, comparando el total con el Top 8.
+- **Adaptaciones:** herramientas del meta (Tailwind, Trick Room, climas, Wide Guard, prioridad…) y su evolución de septiembre a octubre; techs que aparecen más en el Top 8 que en el resto, con una señal de fiabilidad estadística; y variantes de cada arquetipo con el set del mejor clasificado.
 - **Objetos:** objetos de los 320 equipos.
 - **Megas:** si cada mega va sola o con otra, cuántas veces llega al Top 8 y qué torneos ganó.
 - **Arquetipos:** equipos agrupados por núcleo (comparten en promedio 4 de 6 Pokémon) y un índice de posicionamiento que pondera puesto, tamaño del torneo y recencia. Incluye los equipos individuales con mejor índice.
