@@ -1,8 +1,8 @@
 # VGC Meta Analysis · Regulación M-C (Pokémon Champions)
 
-Dashboard interactivo con el meta de la Regulación M-C, construido a partir del Top 32 de 10 torneos (320 equipos), del 13 de septiembre al 11 de octubre de 2026.
+Dashboard interactivo con el meta de la Regulación M-C, construido a partir del Top 32 de 16 torneos (493 equipos), del 13 de septiembre al 25 de octubre de 2026. Incluye sprites de Pokémon Champions (vía PokeAPI) en las secciones de uso, arquetipos, tendencias, megas y equipos.
 
-**Torneos:** regionales de Louisville, Baltimore, Frankfurt, Recife y Brisbane; VR Challenges de septiembre (#1, #2) y octubre (#1, #2); y ESM Madrid 2026 Clasificatorio 1.
+**Torneos:** regionales de Baltimore, Frankfurt, Brisbane, Recife, Louisville, Nice y Puebla; VR Challenges de septiembre (#1, #2) y octubre (#1 a #4); ESM Madrid 2026 Clasificatorios 1 y 2; y el Top 16 del Thailand Premier Ball League.
 
 ## Pestañas
 
@@ -32,7 +32,7 @@ Abre `index.html` (dashboard) o `equipos.html` (equipos recomendados) en cualqui
 
 ## Fuentes
 
-victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 14 de octubre de 2026.
+victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 25 de octubre de 2026 (stat points: hasta el 14 de octubre).
 
 Los datos crudos están en `data/`:
 
