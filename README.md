@@ -9,7 +9,7 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 - **Uso:** uso por Pokémon en el Top 32 y en el Top 8.
 - **Arquetipos:** arquetipos por núcleo, índice de posicionamiento, evolución semanal, anatomía de cada arquetipo (núcleo fijo, huecos variables y qué gana o pierde cada opción con todas las partidas de VR y ESM), sets y equipos destacados.
 - **Matchups:** quién le gana a quién entre arquetipos (6 VR Challenges y 2 clasificatorios ESM, ajustado por la fuerza de los jugadores).
-- **Tendencias:** uso por fin de semana y qué sube o baja.
+- **Tendencias:** uso por fin de semana y qué sube o baja. Incluye "Acción y reacción" (cambios del meta con hipótesis, confianza y lo que no encaja) y la evolución semanal de movimientos y objetos por Pokémon.
 - **Megas:** uso de cada mega, cuáles llegan al Top 8 y combinaciones de megas.
 - **Rendimiento:** uso frente a win rate en el campo completo (gráfica con sprites) y qué Pokémon llegan más lejos de lo que su uso sugiere.
 - **Sets:** movimientos, objeto, habilidad y naturaleza de cada Pokémon, lo que más rinde en su Top 8, sets completos y objetos más usados.
