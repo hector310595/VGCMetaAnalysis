@@ -1,245 +1,167 @@
-arquetipo,tipo,hueco,pokemon,equipos,pct_arquetipo,partidas,win_rate,vs_resto_pts,top8,mejor_contra,peor_contra
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",nucleo,,Pelipper,,1.0,,,,,,
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",nucleo,,Archaludon,,1.0,,,,,,
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",nucleo,,Charizard-Mega-Y,,1.0,,,,,,
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",nucleo,,Grimmsnarl,,1.0,,,,,,
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",nucleo,,Venusaur,,0.855,,,,,,
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",hueco,1,Garchomp-Mega-Z,42,0.506,269,0.539,2.2,1,"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo | Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",hueco,1,Garchomp,21,0.253,127,0.52,-1.6,0,"Raichu-Y + Floette · Volcarona, Basculegion",
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",hueco,1,Swampert-Mega,14,0.169,82,0.524,0.0,0,"Floette · Gholdengo, Sneasler",
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",hueco,1,Metagross-Mega,8,0.096,49,0.51,-1.6,0,,
-"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",hueco,1,Staraptor-Mega,4,0.048,24,0.542,-1.5,1,,
-"Sol · Charizard-Y · Venusaur, Sylveon",nucleo,,Charizard-Mega-Y,,1.0,,,,,,
-"Sol · Charizard-Y · Venusaur, Sylveon",nucleo,,Sylveon,,0.99,,,,,,
-"Sol · Charizard-Y · Venusaur, Sylveon",nucleo,,Incineroar,,0.99,,,,,,
-"Sol · Charizard-Y · Venusaur, Sylveon",nucleo,,Garchomp,,0.98,,,,,,
-"Sol · Charizard-Y · Venusaur, Sylveon",hueco,1,Venusaur,62,0.633,438,0.546,7.9,5,"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo | Raichu-Y + Floette · Volcarona, Basculegion","Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf | Salamence + Floette · Basculegion, Kingambit"
-"Sol · Charizard-Y · Venusaur, Sylveon",hueco,1,Rillaboom,34,0.347,192,0.427,-12.5,0,,"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo | Raichu-Y + Floette · Volcarona, Basculegion"
-"Sol · Charizard-Y · Venusaur, Sylveon",hueco,2,Farigiraf,54,0.551,343,0.496,-4.8,3,"Salamence + Floette · Basculegion, Kingambit","Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo | Floette · Gholdengo, Sneasler"
-"Sol · Charizard-Y · Venusaur, Sylveon",hueco,2,Toxapex,29,0.296,197,0.497,-2.9,0,"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",
-"Sol · Charizard-Y · Venusaur, Sylveon",hueco,2,Aegislash,4,0.041,29,0.621,10.9,0,,
-"Raichu-Y + Floette · Volcarona, Basculegion",nucleo,,Rillaboom,,1.0,,,,,,
-"Raichu-Y + Floette · Volcarona, Basculegion",nucleo,,Volcarona,,0.979,,,,,,
-"Raichu-Y + Floette · Volcarona, Basculegion",nucleo,,Incineroar,,0.958,,,,,,
-"Raichu-Y + Floette · Volcarona, Basculegion",nucleo,,Basculegion,,0.947,,,,,,
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Floette-Mega,47,0.495,321,0.579,4.7,4,"Delphox + Floette · Sinistcha, Kingambit | Sol · Charizard-Y · Whimsicott, Basculegion","Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper"
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Garchomp-Mega-Z,38,0.4,227,0.515,-4.7,1,"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo","Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur"
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Kingambit,5,0.053,32,0.5,-5.9,0,,
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Glimmora-Mega,5,0.053,35,0.657,7.2,0,Otros,
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Dragonite-Mega,4,0.042,31,0.581,3.3,0,,
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Sneasler,4,0.042,34,0.559,2.5,0,,
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,1,Baxcalibur-Mega,3,0.032,14,0.286,-23.3,0,,
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,2,Raichu-Mega-Y,74,0.779,500,0.562,3.2,5,"Delphox + Floette · Sinistcha, Kingambit | Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur","Sol · Charizard-Y · Venusaur, Sylveon"
-"Raichu-Y + Floette · Volcarona, Basculegion",hueco,2,Froslass-Mega,11,0.116,73,0.548,-1.0,0,Otros,
-"Sol · Charizard-Y · Whimsicott, Basculegion",nucleo,,Whimsicott,,1.0,,,,,,
-"Sol · Charizard-Y · Whimsicott, Basculegion",nucleo,,Garchomp,,0.964,,,,,,
-"Sol · Charizard-Y · Whimsicott, Basculegion",nucleo,,Kingambit,,0.945,,,,,,
-"Sol · Charizard-Y · Whimsicott, Basculegion",nucleo,,Basculegion,,0.927,,,,,,
-"Sol · Charizard-Y · Whimsicott, Basculegion",nucleo,,Charizard-Mega-Y,,0.909,,,,,,
-"Sol · Charizard-Y · Whimsicott, Basculegion",hueco,1,Floette-Mega,27,0.491,181,0.552,-0.1,2,,"Raichu-Y + Floette · Volcarona, Basculegion"
-"Sol · Charizard-Y · Whimsicott, Basculegion",hueco,1,Sneasler,21,0.382,139,0.59,5.1,1,,
-"Sol · Charizard-Y · Whimsicott, Basculegion",hueco,1,Rillaboom,3,0.055,15,0.2,-32.3,0,,
-"Delphox + Floette · Sinistcha, Kingambit",nucleo,,Incineroar,,1.0,,,,,,
-"Delphox + Floette · Sinistcha, Kingambit",nucleo,,Kingambit,,0.985,,,,,,
-"Delphox + Floette · Sinistcha, Kingambit",nucleo,,Sinistcha,,0.938,,,,,,
-"Delphox + Floette · Sinistcha, Kingambit",nucleo,,Delphox-Mega,,0.938,,,,,,
-"Delphox + Floette · Sinistcha, Kingambit",nucleo,,Sneasler,,0.923,,,,,,
-"Delphox + Floette · Sinistcha, Kingambit",hueco,1,Floette-Mega,45,0.692,288,0.524,2.6,1,,"Raichu-Y + Floette · Volcarona, Basculegion"
-"Delphox + Floette · Sinistcha, Kingambit",hueco,1,Garchomp,14,0.215,84,0.452,-6.8,0,,
-"Delphox + Floette · Sinistcha, Kingambit",hueco,1,Blastoise-Mega,6,0.092,41,0.537,0.7,0,,Otros
-"Delphox + Floette · Sinistcha, Kingambit",hueco,1,Rillaboom,3,0.046,11,0.273,-18.7,0,,
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",nucleo,,Golisopod-Mega,,1.0,,,,,,
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",nucleo,,Pelipper,,1.0,,,,,,
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",nucleo,,Basculegion-F,,0.979,,,,,,
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",nucleo,,Sneasler,,0.958,,,,,,
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",nucleo,,Archaludon,,0.958,,,,,,
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",hueco,1,Raichu-Mega-X,34,0.708,212,0.524,-6.2,2,,"Raichu-Y + Floette · Volcarona, Basculegion"
-"Lluvia · Golisopod + Raichu-X · Basculegion-F, Pelipper",hueco,1,Floette-Mega,10,0.208,91,0.681,12.4,2,"Raichu-Y + Floette · Volcarona, Basculegion",
-"Floette · Gholdengo, Sneasler",nucleo,,Gholdengo,,1.0,,,,,,
-"Floette · Gholdengo, Sneasler",nucleo,,Sneasler,,1.0,,,,,,
-"Floette · Gholdengo, Sneasler",nucleo,,Rillaboom,,1.0,,,,,,
-"Floette · Gholdengo, Sneasler",nucleo,,Incineroar,,1.0,,,,,,
-"Floette · Gholdengo, Sneasler",hueco,1,Dragonite-Mega,33,0.33,194,0.454,-4.3,2,"Sol · Charizard-Y · Venusaur, Sylveon",Otros
-"Floette · Gholdengo, Sneasler",hueco,1,Raichu-Mega-Y,31,0.31,203,0.507,4.3,0,,"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo"
-"Floette · Gholdengo, Sneasler",hueco,1,Salamence-Mega,27,0.27,154,0.487,1.2,2,,
-"Floette · Gholdengo, Sneasler",hueco,1,Garchomp-Mega-Z,10,0.1,57,0.421,-7.3,0,,Otros
-"Floette · Gholdengo, Sneasler",hueco,1,Charizard-Mega-Y,4,0.04,19,0.474,-2.3,0,,
-"Floette · Gholdengo, Sneasler",hueco,2,Floette-Mega,72,0.72,449,0.497,5.0,4,,"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur"
-"Floette · Gholdengo, Sneasler",hueco,2,Milotic,4,0.04,20,0.5,0.5,0,,
-"Floette · Gholdengo, Sneasler",hueco,2,Garchomp,4,0.04,28,0.536,5.8,0,,
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",nucleo,,Charizard-Mega-Y,,1.0,,,,,,
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",nucleo,,Garchomp,,0.981,,,,,,
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",nucleo,,Sylveon,,0.981,,,,,,
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",nucleo,,Farigiraf,,0.963,,,,,,
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",nucleo,,Kingambit,,0.963,,,,,,
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",hueco,1,Aerodactyl-Mega,40,0.741,259,0.521,9.1,2,Otros,"Sol · Charizard-Y · Venusaur, Sylveon"
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",hueco,1,Incineroar,15,0.278,82,0.402,-12.6,0,,Otros
-"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",hueco,1,Rillaboom,3,0.056,17,0.235,-22.3,0,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",nucleo,,Rillaboom,,1.0,,,,,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",nucleo,,Arcanine-Hisui,,0.988,,,,,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",nucleo,,Raichu-Mega-Y,,0.977,,,,,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",nucleo,,Gholdengo,,0.953,,,,,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,1,Staraptor-Mega,67,0.779,397,0.466,5.4,2,Otros,"Lluvia · Gengar · Politoed, Archaludon | Raichu-Y + Garchomp-Z · Volcarona, Gholdengo"
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,1,Salamence-Mega,11,0.128,56,0.393,-6.5,0,,Otros
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,1,Dragapult,3,0.035,20,0.5,2.5,0,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,2,Sylveon,39,0.453,204,0.431,-2.8,1,"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo | Delphox + Floette · Sinistcha, Kingambit","Sol · Charizard-Y · Venusaur, Sylveon | Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur"
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,2,Primarina,30,0.349,190,0.468,3.1,1,"Sol · Charizard-Y · Venusaur, Sylveon | Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur","Floette · Gholdengo, Sneasler | Raichu-Y + Garchomp-Z · Volcarona, Gholdengo"
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,2,Sneasler,5,0.058,29,0.414,-5.0,0,,Otros
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,2,Kingambit,3,0.035,24,0.667,14.6,0,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,2,Farigiraf,3,0.035,12,0.333,-8.0,0,,
-"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",hueco,2,Annihilape,3,0.035,12,0.25,-19.9,0,,
-"Gengar · Kommo-o, Kingambit",nucleo,,Kingambit,,1.0,,,,,,
-"Gengar · Kommo-o, Kingambit",nucleo,,Gengar-Mega,,1.0,,,,,,
-"Gengar · Kommo-o, Kingambit",nucleo,,Rillaboom,,1.0,,,,,,
-"Gengar · Kommo-o, Kingambit",nucleo,,Incineroar,,0.958,,,,,,
-"Gengar · Kommo-o, Kingambit",hueco,1,Kommo-o,20,0.833,148,0.628,4.4,2,,
-"Gengar · Kommo-o, Kingambit",hueco,2,Sneasler,9,0.375,61,0.639,4.5,1,Otros,
-"Gengar · Kommo-o, Kingambit",hueco,2,Ninetales-Alola,5,0.208,44,0.659,3.6,0,,
-"Gengar · Kommo-o, Kingambit",hueco,2,Volcarona,4,0.167,34,0.706,7.6,1,,
-"Salamence + Floette · Basculegion, Kingambit",nucleo,,Salamence-Mega,,0.986,,,,,,
-"Salamence + Floette · Basculegion, Kingambit",nucleo,,Sneasler,,0.971,,,,,,
-"Salamence + Floette · Basculegion, Kingambit",nucleo,,Kingambit,,0.914,,,,,,
-"Salamence + Floette · Basculegion, Kingambit",hueco,1,Floette-Mega,58,0.829,368,0.514,4.4,1,Otros,"Floette · Gholdengo, Sneasler"
-"Salamence + Floette · Basculegion, Kingambit",hueco,1,Arcanine-Hisui,9,0.129,55,0.418,-8.5,0,,
-"Salamence + Floette · Basculegion, Kingambit",hueco,2,Rillaboom,58,0.829,370,0.514,5.5,0,,
-"Salamence + Floette · Basculegion, Kingambit",hueco,2,Whimsicott,10,0.143,64,0.438,-7.5,1,,
-"Salamence + Floette · Basculegion, Kingambit",hueco,3,Basculegion,57,0.814,366,0.492,-5.6,1,,
-"Salamence + Floette · Basculegion, Kingambit",hueco,3,Incineroar,17,0.243,99,0.556,5.1,0,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",nucleo,,Rillaboom,,0.991,,,,,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",nucleo,,Garchomp-Mega-Z,,0.991,,,,,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",nucleo,,Incineroar,,0.973,,,,,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",nucleo,,Raichu-Mega-Y,,0.946,,,,,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",nucleo,,Gholdengo,,0.937,,,,,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",nucleo,,Volcarona,,0.874,,,,,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",hueco,1,Floette-Mega,13,0.117,82,0.598,13.3,0,Otros,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",hueco,1,Primarina,7,0.063,49,0.571,10.0,0,,
-"Raichu-Y + Garchomp-Z · Volcarona, Gholdengo",hueco,1,Sylveon,3,0.027,20,0.45,0.6,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",nucleo,,Kingambit,,1.0,,,,,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",nucleo,,Rillaboom,,0.978,,,,,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",nucleo,,Sneasler,,0.935,,,,,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,1,Salamence-Mega,18,0.391,110,0.509,8.6,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,1,Froslass-Mega,11,0.239,60,0.4,-3.2,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,1,Primarina,10,0.217,76,0.461,3.6,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,1,Garchomp-Mega-Z,6,0.13,29,0.379,-6.5,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,2,Raichu-Mega-Y,26,0.565,146,0.473,3.6,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,2,Dragonite-Mega,10,0.217,67,0.403,-3.5,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,2,Gholdengo,3,0.065,16,0.5,1.5,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,3,Arcanine-Hisui,28,0.609,158,0.462,3.8,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,3,Raichu-Mega-X,11,0.239,76,0.421,-1.0,0,,
-"Raichu-Y + Salamence · Arcanine-Hisui, Kingambit",hueco,3,Volcarona,6,0.13,31,0.419,-3.3,0,,
-"Floette · Kingambit, Garchomp",nucleo,,Garchomp-Mega-Z,,0.949,,,,,,
-"Floette · Kingambit, Garchomp",nucleo,,Sneasler,,0.923,,,,,,
-"Floette · Kingambit, Garchomp",nucleo,,Rillaboom,,0.872,,,,,,
-"Floette · Kingambit, Garchomp",nucleo,,Kingambit,,0.872,,,,,,
-"Floette · Kingambit, Garchomp",hueco,1,Floette-Mega,28,0.718,183,0.475,-4.0,1,Otros,"Floette · Gholdengo, Sneasler | Raichu-Y + Garchomp-Z · Volcarona, Gholdengo"
-"Floette · Kingambit, Garchomp",hueco,1,Charizard-Mega-Y,7,0.179,53,0.547,5.4,0,,
-"Floette · Kingambit, Garchomp",hueco,1,Dragonite-Mega,3,0.077,17,0.353,-11.3,0,,
-"Floette · Kingambit, Garchomp",hueco,2,Incineroar,23,0.59,169,0.533,10.0,1,Otros,
-"Floette · Kingambit, Garchomp",hueco,2,Volcarona,7,0.179,43,0.442,-4.7,0,,Otros
-"Floette · Kingambit, Garchomp",hueco,2,Basculegion,4,0.103,30,0.533,3.0,0,,
-"Floette · Kingambit, Garchomp",hueco,2,Farigiraf,3,0.077,16,0.438,-8.0,0,,
-"Floette · Kingambit, Garchomp",hueco,2,Delphox-Mega,3,0.077,21,0.524,0.0,0,,
-"Delphox + Dragonite · Basculegion, Kingambit",nucleo,,Kingambit,,1.0,,,,,,
-"Delphox + Dragonite · Basculegion, Kingambit",nucleo,,Sneasler,,1.0,,,,,,
-"Delphox + Dragonite · Basculegion, Kingambit",nucleo,,Dragonite-Mega,,0.96,,,,,,
-"Delphox + Dragonite · Basculegion, Kingambit",nucleo,,Basculegion,,0.96,,,,,,
-"Delphox + Dragonite · Basculegion, Kingambit",hueco,1,Delphox-Mega,17,0.68,134,0.582,1.6,1,,
-"Delphox + Dragonite · Basculegion, Kingambit",hueco,1,Froslass-Mega,5,0.2,35,0.571,2.6,1,,
-"Delphox + Dragonite · Basculegion, Kingambit",hueco,1,Floette-Mega,3,0.12,16,0.5,-9.2,0,,
-"Delphox + Dragonite · Basculegion, Kingambit",hueco,2,Garchomp,12,0.48,95,0.6,6.1,2,Otros,
-"Delphox + Dragonite · Basculegion, Kingambit",hueco,2,Rillaboom,8,0.32,63,0.587,1.7,0,,
-"Lluvia · Gengar · Politoed, Archaludon",nucleo,,Politoed,,1.0,,,,,,
-"Lluvia · Gengar · Politoed, Archaludon",nucleo,,Gengar-Mega,,1.0,,,,,,
-"Lluvia · Gengar · Politoed, Archaludon",nucleo,,Rillaboom,,0.917,,,,,,
-"Lluvia · Gengar · Politoed, Archaludon",nucleo,,Archaludon,,0.917,,,,,,
-"Lluvia · Gengar · Politoed, Archaludon",nucleo,,Incineroar,,0.896,,,,,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Vivillon,16,0.333,95,0.463,-7.3,0,,"Sol · Charizard-Y · Venusaur, Sylveon"
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Froslass-Mega,5,0.104,40,0.575,3.1,1,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Raichu-Mega-Y,5,0.104,31,0.484,-5.6,0,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Swampert-Mega,4,0.083,28,0.5,-2.2,0,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Sneasler,4,0.083,24,0.5,-3.7,0,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Golisopod-Mega,4,0.083,29,0.586,4.5,0,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Mamoswine,4,0.083,39,0.615,6.7,0,,
-"Lluvia · Gengar · Politoed, Archaludon",hueco,1,Pawmot,3,0.062,22,0.591,0.3,0,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",nucleo,,Gholdengo,,1.0,,,,,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",nucleo,,Milotic,,1.0,,,,,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",nucleo,,Raichu-Mega-Y,,1.0,,,,,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",nucleo,,Rillaboom,,1.0,,,,,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",hueco,1,Salamence-Mega,16,0.667,115,0.591,-0.1,3,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",hueco,1,Staraptor-Mega,7,0.292,48,0.604,-0.4,2,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",hueco,2,Arcanine-Hisui,12,0.5,94,0.606,2.3,3,,
-"Raichu-Y + Staraptor · Milotic, Gholdengo",hueco,2,Ceruledge,9,0.375,61,0.639,5.4,2,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",nucleo,,Indeedee,,1.0,,,,,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",nucleo,,Sneasler,,1.0,,,,,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",nucleo,,Excadrill,,1.0,,,,,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",nucleo,,Tyranitar-Mega,,1.0,,,,,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",nucleo,,Salamence-Mega,,0.966,,,,,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",hueco,1,Corviknight,17,0.586,102,0.451,1.0,0,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",hueco,1,Milotic,5,0.172,23,0.348,-9.2,0,,
-"Arena · Salamence + Tyranitar · Corviknight, Excadrill",hueco,1,Kingambit,4,0.138,29,0.517,8.7,0,,
-"Scovillain + Froslass · Basculegion, Kingambit",nucleo,,Kingambit,,1.0,,,,,,
-"Scovillain + Froslass · Basculegion, Kingambit",nucleo,,Sneasler,,1.0,,,,,,
-"Scovillain + Froslass · Basculegion, Kingambit",nucleo,,Basculegion,,1.0,,,,,,
-"Scovillain + Froslass · Basculegion, Kingambit",nucleo,,Froslass-Mega,,0.923,,,,,,
-"Scovillain + Froslass · Basculegion, Kingambit",hueco,1,Scovillain-Mega,10,0.769,93,0.645,11.0,1,,
-"Scovillain + Froslass · Basculegion, Kingambit",hueco,2,Lycanroc-Dusk,7,0.538,66,0.652,6.7,1,,
-"Sol · Garchomp-Z · Torkoal, Sylveon",nucleo,,Garchomp-Mega-Z,,1.0,,,,,,
-"Sol · Garchomp-Z · Torkoal, Sylveon",nucleo,,Farigiraf,,1.0,,,,,,
-"Sol · Garchomp-Z · Torkoal, Sylveon",nucleo,,Incineroar,,1.0,,,,,,
-"Sol · Garchomp-Z · Torkoal, Sylveon",nucleo,,Torkoal,,0.923,,,,,,
-"Sol · Garchomp-Z · Torkoal, Sylveon",nucleo,,Sylveon,,0.923,,,,,,
-"Sol · Garchomp-Z · Torkoal, Sylveon",nucleo,,Sneasler,,0.885,,,,,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",nucleo,,Golisopod-Mega,,1.0,,,,,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",nucleo,,Pelipper,,1.0,,,,,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",nucleo,,Farigiraf,,1.0,,,,,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",nucleo,,Archaludon,,1.0,,,,,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,1,Swampert-Mega,9,0.36,61,0.525,1.5,0,Otros,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,1,Basculegion,5,0.2,38,0.553,6.4,1,,Otros
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,1,Raichu-Mega-Y,5,0.2,23,0.435,-6.5,0,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,1,Incineroar,3,0.12,18,0.444,-10.3,0,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,2,Rillaboom,7,0.28,52,0.5,1.8,0,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,2,Kingambit,4,0.16,21,0.429,-5.9,0,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,2,Garchomp-Mega-Z,4,0.16,32,0.625,10.2,1,,
-"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",hueco,2,Grimmsnarl,3,0.12,24,0.583,4.9,0,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",nucleo,,Tyranitar-Mega,,1.0,,,,,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",nucleo,,Excadrill,,1.0,,,,,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",nucleo,,Gholdengo,,0.964,,,,,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",nucleo,,Milotic,,0.964,,,,,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",hueco,1,Salamence-Mega,15,0.536,93,0.505,14.7,0,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",hueco,1,Staraptor-Mega,13,0.464,61,0.344,-14.7,0,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",hueco,2,Sinistcha,14,0.5,74,0.405,-5.0,0,,
-"Arena · Tyranitar + Staraptor · Excadrill, Milotic",hueco,2,Rillaboom,12,0.429,72,0.486,5.9,0,,
-"Gengar · Kommo-o, Rillaboom",nucleo,,Kommo-o,,1.0,,,,,,
-"Gengar · Kommo-o, Rillaboom",nucleo,,Gengar-Mega,,1.0,,,,,,
-"Gengar · Kommo-o, Rillaboom",nucleo,,Rillaboom,,1.0,,,,,,
-"Gengar · Kommo-o, Rillaboom",nucleo,,Incineroar,,1.0,,,,,,
-"Gengar · Kommo-o, Rillaboom",hueco,1,Delphox-Mega,4,0.211,14,0.357,-21.0,0,,
-"Gengar · Kommo-o, Rillaboom",hueco,1,Swampert-Mega,3,0.158,23,0.478,-4.1,0,,
-"Gengar · Kommo-o, Rillaboom",hueco,2,Vivillon,6,0.316,29,0.517,-3.8,1,,Otros
-"Gengar · Kommo-o, Rillaboom",hueco,2,Politoed,3,0.158,23,0.478,-4.1,0,,
-"Gengar · Kommo-o, Rillaboom",hueco,2,Volcarona,3,0.158,19,0.526,1.6,0,,
-"Gengar · Kommo-o, Rillaboom",hueco,2,Absol-Mega-Z,3,0.158,22,0.682,12.6,0,,
-"Glimmora + Salamence · Volcarona, Kingambit",nucleo,,Kingambit,,1.0,,,,,,
-"Glimmora + Salamence · Volcarona, Kingambit",nucleo,,Rillaboom,,1.0,,,,,,
-"Glimmora + Salamence · Volcarona, Kingambit",nucleo,,Volcarona,,0.895,,,,,,
-"Glimmora + Salamence · Volcarona, Kingambit",hueco,1,Glimmora-Mega,13,0.684,97,0.598,9.4,0,,
-"Glimmora + Salamence · Volcarona, Kingambit",hueco,1,Sneasler,5,0.263,33,0.485,-10.0,0,,Otros
-"Glimmora + Salamence · Volcarona, Kingambit",hueco,2,Salamence-Mega,13,0.684,95,0.568,1.4,0,,
-"Glimmora + Salamence · Volcarona, Kingambit",hueco,2,Froslass-Mega,3,0.158,22,0.591,2.5,0,,
-"Glimmora + Salamence · Volcarona, Kingambit",hueco,3,Basculegion,7,0.368,54,0.611,6.2,0,,
-"Glimmora + Salamence · Volcarona, Kingambit",hueco,3,Garchomp,5,0.263,36,0.583,-0.2,0,,
-"Gengar · Hippowdon, Rillaboom",nucleo,,Hippowdon,,1.0,,,,,,
-"Gengar · Hippowdon, Rillaboom",nucleo,,Gengar-Mega,,1.0,,,,,,
-"Gengar · Hippowdon, Rillaboom",nucleo,,Rillaboom,,1.0,,,,,,
-"Gengar · Hippowdon, Rillaboom",nucleo,,Incineroar,,1.0,,,,,,
-"Gengar · Hippowdon, Rillaboom",hueco,1,Kingambit,7,0.7,50,0.6,0.2,1,,
-"Gengar · Hippowdon, Rillaboom",hueco,2,Primarina,3,0.3,25,0.64,6.8,0,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",nucleo,,Garchomp-Mega-Z,,1.0,,,,,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",nucleo,,Rillaboom,,1.0,,,,,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",nucleo,,Incineroar,,1.0,,,,,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",nucleo,,Primarina,,0.875,,,,,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",hueco,1,Gengar-Mega,7,0.438,43,0.442,-4.8,1,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",hueco,1,Froslass-Mega,3,0.188,23,0.609,15.8,0,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",hueco,1,Gholdengo,3,0.188,11,0.182,-30.0,0,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",hueco,2,Vivillon,6,0.375,40,0.475,-0.6,1,,
-"Gengar + Garchomp-Z · Primarina, Rillaboom",hueco,2,Lucario-Mega-Z,3,0.188,20,0.5,4.9,0,,
+familia,grupo,pokemon,equipos,pct_familia,funcion,partidas,win_rate,vs_resto_pts,top8,mejor_contra,peor_contra
+Y-Chu Balance,Núcleo,Rillaboom,,0.994,Fake Out,,,,,,
+Y-Chu Balance,Núcleo,Raichu-Mega-Y,,0.898,Fake Out,,,,,,
+Y-Chu Balance,Segunda mega,Garchomp-Mega-Z,146,0.403,,835,0.473,-3.6,2,,Sand | Zard Tailwind
+Y-Chu Balance,Segunda mega,Staraptor-Mega,76,0.21,"Tailwind, Intimidate",466,0.489,-0.5,4,Goli Rain | Floette Balance,Delphox Balance
+Y-Chu Balance,Segunda mega,Floette-Mega,61,0.169,Setup: Calm Mind,410,0.583,9.5,4,Delphox Balance | Sun Rain,Zard Aero
+Y-Chu Balance,Segunda mega,Salamence-Mega,46,0.127,"Tailwind, Intimidate",289,0.522,2.9,3,Zard Aero | Gengar Perish,
+Y-Chu Balance,Segunda mega,Froslass-Mega,22,0.061,,133,0.481,-0.4,0,,
+Y-Chu Balance,Segunda mega,Dragonite-Mega,17,0.047,,115,0.443,-3.6,0,,Gengar Perish
+Y-Chu Balance,Segunda mega,Baxcalibur-Mega,5,0.014,,25,0.36,-15.3,0,,
+Y-Chu Balance,Segunda mega,Glimmora-Mega,5,0.014,,35,0.657,12.4,0,Otros,
+Y-Chu Balance,Piezas frecuentes,Gholdengo,213,0.588,Setup: Nasty Plot,1239,0.472,-5.1,8,Gengar Perish,Sand
+Y-Chu Balance,Piezas frecuentes,Incineroar,200,0.552,"Fake Out, Intimidate",1222,0.509,2.3,6,Delphox Balance | Zard Sun (Venusaur),Zard Aero | Floette Balance
+Y-Chu Balance,Piezas frecuentes,Volcarona,198,0.547,Setup: Quiver Dance,1205,0.51,2.3,6,Delphox Balance | Goli Rain,Zard Aero
+Y-Chu Balance,Piezas variables,Arcanine-Hisui,125,0.345,,746,0.475,-2.3,5,Zard Aero,Delphox Balance | Zard Sun (Venusaur)
+Y-Chu Balance,Piezas variables,Basculegion,92,0.254,,594,0.552,7.1,5,Delphox Balance | Zard Sun (Venusaur),Zard Aero
+Y-Chu Balance,Piezas variables,Kingambit,56,0.155,Setup: Swords Dance,336,0.464,-3.6,0,,Zard Sun (Venusaur) | Delphox Balance
+Y-Chu Balance,Piezas variables,Sneasler,53,0.146,,312,0.446,-4.6,0,,Zard Sun (Venusaur) | Delphox Balance
+Y-Chu Balance,Piezas variables,Primarina,47,0.13,Setup: Calm Mind,315,0.483,-0.4,1,Torkoal Sun,Delphox Balance
+Y-Chu Balance,Piezas variables,Sylveon,45,0.124,,246,0.443,-4.3,1,,Gengar Perish | Sun Rain
+Y-Chu Balance,Piezas variables,Milotic,27,0.075,"Setup: Coil, Sueño",192,0.589,9.1,5,Zard Tailwind | Zard Sun (Venusaur),
+Y-Chu Balance,Piezas variables,Garchomp,13,0.036,,74,0.459,-2.8,0,,
+Y-Chu Balance,Piezas variables,Ceruledge,9,0.025,Setup: Swords Dance,61,0.639,13.0,2,,
+Y-Chu Balance,Piezas variables,Farigiraf,4,0.011,,16,0.312,-13.3,0,,
+Goli Rain,Núcleo,Pelipper,,1.0,Helping Hand,,,,,,
+Goli Rain,Núcleo,Golisopod-Mega,,1.0,,,,,,,
+Goli Rain,Núcleo,Archaludon,,0.973,,,,,,,
+Goli Rain,Segunda mega,Raichu-Mega-X,34,0.466,Fake Out,212,0.524,-0.9,2,,
+Goli Rain,Segunda mega,Swampert-Mega,10,0.137,,66,0.515,-3.2,0,Otros,
+Goli Rain,Segunda mega,Floette-Mega,10,0.137,,91,0.681,12.9,2,Floette Balance | Y-Chu Balance,
+Goli Rain,Segunda mega,Raichu-Mega-Y,6,0.082,Fake Out,28,0.393,-13.3,0,,
+Goli Rain,Segunda mega,Garchomp-Mega-Z,5,0.068,,34,0.588,2.0,1,,Otros
+Goli Rain,Piezas frecuentes,Basculegion-F,48,0.658,,326,0.558,4.7,4,Floette Balance | Y-Chu Balance,
+Goli Rain,Piezas frecuentes,Sneasler,47,0.644,Setup: Swords Dance,323,0.57,7.8,4,Floette Balance | Y-Chu Balance,
+Goli Rain,Piezas variables,Farigiraf,26,0.356,Trick Room,171,0.509,-4.8,1,,Floette Balance | Y-Chu Balance
+Goli Rain,Piezas variables,Rillaboom,7,0.096,,52,0.5,-2.1,0,,Y-Chu Balance
+Goli Rain,Piezas variables,Basculegion,5,0.068,,38,0.553,2.0,1,,Otros
+Goli Rain,Piezas variables,Kingambit,4,0.055,,21,0.429,-8.6,0,,
+Goli Rain,Piezas variables,Grimmsnarl,4,0.055,,27,0.519,-3.8,0,,
+Goli Rain,Piezas variables,Incineroar,3,0.041,,18,0.444,-12.8,0,,
+Sun Rain,Núcleo,Pelipper,,1.0,Tailwind,,,,,,
+Sun Rain,Núcleo,Charizard-Mega-Y,,1.0,,,,,,,
+Sun Rain,Núcleo,Archaludon,,1.0,,,,,,,
+Sun Rain,Núcleo,Grimmsnarl,,1.0,,,,,,,
+Sun Rain,Núcleo,Venusaur,,0.855,Sueño,,,,,,
+Sun Rain,Segunda mega,Garchomp-Mega-Z,42,0.506,,269,0.539,2.2,1,Delphox Balance | Gengar Perish,Floette Balance
+Sun Rain,Segunda mega,Swampert-Mega,14,0.169,,82,0.524,0.0,0,Floette Balance | Y-Chu Balance,Gengar Perish | Otros
+Sun Rain,Segunda mega,Metagross-Mega,8,0.096,,49,0.51,-1.6,0,,
+Sun Rain,Segunda mega,Staraptor-Mega,4,0.048,,24,0.542,-1.5,1,,Y-Chu Balance
+Sun Rain,Piezas variables,Garchomp,21,0.253,,127,0.52,-1.6,0,Floette Balance,Delphox Balance
+Zard Sun (Venusaur),Núcleo,Charizard-Mega-Y,,1.0,,,,,,,
+Zard Sun (Venusaur),Núcleo,Incineroar,,0.99,"Fake Out, Intimidate",,,,,,
+Zard Sun (Venusaur),Núcleo,Sylveon,,0.99,Sueño,,,,,,
+Zard Sun (Venusaur),Núcleo,Garchomp,,0.98,,,,,,,
+Zard Sun (Venusaur),Piezas frecuentes,Venusaur,62,0.633,Sueño,438,0.546,7.9,5,Y-Chu Balance | Sun Rain,Zard Aero
+Zard Sun (Venusaur),Piezas frecuentes,Farigiraf,54,0.551,"Trick Room, Helping Hand",343,0.496,-4.8,3,,Y-Chu Balance | Zard Tailwind
+Zard Sun (Venusaur),Piezas variables,Rillaboom,34,0.347,,192,0.427,-12.5,0,,Y-Chu Balance | Otros
+Zard Sun (Venusaur),Piezas variables,Toxapex,29,0.296,,197,0.497,-2.9,0,Y-Chu Balance,Gengar Perish | Delphox Balance
+Zard Sun (Venusaur),Piezas variables,Aegislash,4,0.041,,29,0.621,10.9,0,,
+Zard Tailwind,Núcleo,Whimsicott,,1.0,Tailwind,,,,,,
+Zard Tailwind,Núcleo,Garchomp,,0.953,,,,,,,
+Zard Tailwind,Núcleo,Charizard-Mega-Y,,0.922,,,,,,,
+Zard Tailwind,Segunda mega,Floette-Mega,30,0.469,,212,0.58,0.7,4,Delphox Balance | Sun Rain,Gengar Perish
+Zard Tailwind,Segunda mega,Staraptor-Mega,7,0.109,Intimidate,56,0.625,5.6,1,,
+Zard Tailwind,Piezas frecuentes,Basculegion,52,0.812,,348,0.56,-8.7,3,,Y-Chu Balance
+Zard Tailwind,Piezas frecuentes,Kingambit,52,0.812,,350,0.563,-7.8,3,,Y-Chu Balance
+Zard Tailwind,Piezas variables,Sneasler,21,0.328,,139,0.59,1.6,1,Gengar Perish,
+Zard Tailwind,Piezas variables,Glimmora,10,0.156,,87,0.667,10.6,3,Y-Chu Balance,
+Zard Tailwind,Piezas variables,Indeedee,9,0.141,Trick Room,78,0.679,12.0,3,Y-Chu Balance,
+Zard Tailwind,Piezas variables,Rillaboom,3,0.047,,15,0.2,-34.2,0,,
+Zard Aero,Núcleo,Charizard-Mega-Y,,1.0,,,,,,,
+Zard Aero,Núcleo,Garchomp,,0.981,,,,,,,
+Zard Aero,Núcleo,Sylveon,,0.981,,,,,,,
+Zard Aero,Núcleo,Farigiraf,,0.963,Trick Room,,,,,,
+Zard Aero,Núcleo,Kingambit,,0.963,,,,,,,
+Zard Aero,Segunda mega,Aerodactyl-Mega,40,0.741,Tailwind,259,0.521,9.1,2,Y-Chu Balance,Zard Sun (Venusaur)
+Zard Aero,Piezas variables,Incineroar,15,0.278,,82,0.402,-12.6,0,,Otros | Y-Chu Balance
+Zard Aero,Piezas variables,Rillaboom,3,0.056,,17,0.235,-22.3,0,,Otros
+Torkoal Sun,Núcleo,Garchomp-Mega-Z,,1.0,,,,,,,
+Torkoal Sun,Núcleo,Farigiraf,,1.0,"Trick Room, Helping Hand",,,,,,
+Torkoal Sun,Núcleo,Incineroar,,1.0,"Fake Out, Intimidate",,,,,,
+Torkoal Sun,Núcleo,Torkoal,,0.923,,,,,,,
+Torkoal Sun,Núcleo,Sylveon,,0.923,Sueño,,,,,,
+Torkoal Sun,Núcleo,Sneasler,,0.885,Fake Out,,,,,,
+Delphox Balance,Núcleo,Kingambit,,0.989,Setup: Swords Dance,,,,,,
+Delphox Balance,Núcleo,Sneasler,,0.944,Fake Out,,,,,,
+Delphox Balance,Núcleo,Delphox-Mega,,0.867,Setup: Nasty Plot,,,,,,
+Delphox Balance,Segunda mega,Floette-Mega,48,0.533,Setup: Calm Mind,304,0.523,-1.5,1,,Zard Sun (Venusaur) | Zard Tailwind
+Delphox Balance,Segunda mega,Dragonite-Mega,24,0.267,Tailwind,179,0.575,4.5,2,Zard Sun (Venusaur),
+Delphox Balance,Segunda mega,Blastoise-Mega,6,0.067,,41,0.537,-0.7,0,Y-Chu Balance,
+Delphox Balance,Segunda mega,Froslass-Mega,5,0.056,,35,0.571,5.2,1,,Otros
+Delphox Balance,Piezas frecuentes,Incineroar,65,0.722,"Fake Out, Intimidate",412,0.517,-4.0,1,,Zard Sun (Venusaur) | Goli Rain
+Delphox Balance,Piezas frecuentes,Sinistcha,61,0.678,"Trick Room, Redirección",395,0.524,-2.1,1,Otros,Zard Sun (Venusaur) | Goli Rain
+Delphox Balance,Piezas variables,Garchomp,26,0.289,,179,0.531,-0.1,2,Zard Sun (Venusaur),Zard Tailwind | Floette Balance
+Delphox Balance,Piezas variables,Basculegion,25,0.278,,186,0.575,4.2,2,Zard Sun (Venusaur),
+Delphox Balance,Piezas variables,Rillaboom,11,0.122,Fake Out,74,0.541,0.5,0,,Otros
+Floette Balance,Núcleo,Sneasler,,0.976,Fake Out,,,,,,
+Floette Balance,Núcleo,Rillaboom,,0.919,Fake Out,,,,,,
+Floette Balance,Mega,Floette-Mega,158,0.756,Setup: Calm Mind,1000,0.499,2.7,6,Sand | Goli Rain,Y-Chu Balance
+Floette Balance,Mega,Salamence-Mega,97,0.464,"Intimidate, Tailwind",593,0.494,0.2,3,,Glimmora Salamence | Sun Rain
+Floette Balance,Mega,Dragonite-Mega,37,0.177,Tailwind,218,0.454,-4.4,2,Sun Rain | Zard Sun (Venusaur),Y-Chu Balance | Otros
+Floette Balance,Mega,Raichu-Mega-Y,33,0.158,Fake Out,216,0.5,1.6,0,Zard Aero,Y-Chu Balance
+Floette Balance,Mega,Garchomp-Mega-Z,27,0.129,,168,0.47,-3.3,0,Y-Chu Balance,Gengar Perish | Otros
+Floette Balance,Mega,Charizard-Mega-Y,12,0.057,,79,0.519,2.3,0,,
+Floette Balance,Mega,Garchomp-Mega,8,0.038,,66,0.561,8.8,1,Y-Chu Balance | Otros,
+Floette Balance,Mega,Delphox-Mega,4,0.019,,23,0.522,0.0,0,,
+Floette Balance,Piezas frecuentes,Incineroar,140,0.67,"Fake Out, Intimidate",865,0.501,2.1,5,Glimmora Salamence | Goli Rain,Y-Chu Balance
+Floette Balance,Piezas variables,Gholdengo,102,0.488,Setup: Nasty Plot,606,0.483,-1.7,4,Zard Aero | Glimmora Salamence,Y-Chu Balance
+Floette Balance,Piezas variables,Kingambit,100,0.478,,645,0.498,1.4,2,Y-Chu Balance,Glimmora Salamence | Zard Aero
+Floette Balance,Piezas variables,Basculegion,63,0.301,,402,0.493,-0.1,1,,Glimmora Salamence | Gengar Perish
+Floette Balance,Piezas variables,Garchomp,17,0.081,,109,0.477,0.3,0,,
+Floette Balance,Piezas variables,Whimsicott,13,0.062,,81,0.444,-5.2,1,,
+Floette Balance,Piezas variables,Arcanine-Hisui,9,0.043,,55,0.418,-6.8,0,,
+Floette Balance,Piezas variables,Volcarona,8,0.038,,51,0.471,-1.1,0,Y-Chu Balance,Otros
+Floette Balance,Piezas variables,Sylveon,5,0.024,,33,0.545,5.9,0,,
+Floette Balance,Piezas variables,Farigiraf,4,0.019,,20,0.4,-8.7,0,,
+Floette Balance,Piezas variables,Milotic,4,0.019,,20,0.5,-0.6,0,,
+Gengar Perish,Núcleo,Rillaboom,,0.966,Fake Out,,,,,,
+Gengar Perish,Núcleo,Incineroar,,0.949,"Fake Out, Intimidate",,,,,,
+Gengar Perish,Núcleo,Gengar-Mega,,0.923,Perish Song,,,,,,
+Gengar Perish,Segunda mega,Garchomp-Mega-Z,12,0.103,,78,0.487,-7.6,1,,Otros
+Gengar Perish,Segunda mega,Froslass-Mega,8,0.068,,63,0.587,3.0,1,,
+Gengar Perish,Segunda mega,Raichu-Mega-Y,8,0.068,,51,0.471,-7.2,0,,Y-Chu Balance | Otros
+Gengar Perish,Segunda mega,Swampert-Mega,7,0.06,,51,0.49,-4.0,0,,
+Gengar Perish,Segunda mega,Floette-Mega,5,0.043,,34,0.559,-0.8,0,,
+Gengar Perish,Segunda mega,Golisopod-Mega,4,0.034,,29,0.586,3.5,0,,
+Gengar Perish,Segunda mega,Delphox-Mega,4,0.034,,14,0.357,-20.7,0,,
+Gengar Perish,Segunda mega,Charizard-Mega-Y,3,0.026,,17,0.412,-13.1,0,,
+Gengar Perish,Segunda mega,Absol-Mega-Z,3,0.026,,22,0.682,8.9,0,,
+Gengar Perish,Segunda mega,Lucario-Mega-Z,3,0.026,,20,0.5,-4.2,0,,
+Gengar Perish,Piezas variables,Politoed,51,0.436,Perish Song,354,0.537,-1.9,1,Zard Sun (Venusaur) | Zard Aero,Y-Chu Balance
+Gengar Perish,Piezas variables,Archaludon,44,0.376,,300,0.533,-2.0,1,Zard Sun (Venusaur),Y-Chu Balance
+Gengar Perish,Piezas variables,Kommo-o,39,0.333,Setup: Clangorous Soul,269,0.587,4.0,3,Y-Chu Balance | Floette Balance,Delphox Balance | Sun Rain
+Gengar Perish,Piezas variables,Kingambit,33,0.282,Setup: Swords Dance,245,0.616,7.6,3,Floette Balance | Otros,Zard Sun (Venusaur)
+Gengar Perish,Piezas variables,Vivillon,29,0.248,"Redirección, Sueño",172,0.477,-7.8,2,,Otros
+Gengar Perish,Piezas variables,Primarina,19,0.162,Perish Song,133,0.556,0.0,2,,
+Gengar Perish,Piezas variables,Sneasler,17,0.145,,111,0.622,7.4,1,Floette Balance,
+Gengar Perish,Piezas variables,Hippowdon,10,0.085,Sueño,72,0.597,4.1,1,Y-Chu Balance | Otros,
+Gengar Perish,Piezas variables,Garchomp,8,0.068,,45,0.444,-8.4,0,,
+Gengar Perish,Piezas variables,Volcarona,8,0.068,,60,0.633,6.8,1,Otros,
+Sand,Núcleo,Excadrill,,1.0,,,,,,,
+Sand,Núcleo,Tyranitar-Mega,,1.0,,,,,,,
+Sand,Segunda mega,Salamence-Mega,43,0.754,Intimidate,258,0.465,10.4,0,Y-Chu Balance,
+Sand,Segunda mega,Staraptor-Mega,13,0.228,"Tailwind, Intimidate",61,0.344,-10.6,0,,Y-Chu Balance
+Sand,Piezas frecuentes,Milotic,32,0.561,"Icy Wind, Sueño",170,0.424,-2.4,0,,Y-Chu Balance
+Sand,Piezas frecuentes,Gholdengo,29,0.509,Setup: Nasty Plot,156,0.436,-1.5,0,,Y-Chu Balance
+Sand,Piezas frecuentes,Sneasler,29,0.509,,167,0.443,-0.5,0,Y-Chu Balance,
+Sand,Piezas frecuentes,Indeedee,29,0.509,,167,0.443,-0.5,0,Y-Chu Balance,
+Sand,Piezas variables,Corviknight,17,0.298,Setup: Bulk Up,102,0.451,0.2,0,Y-Chu Balance,
+Sand,Piezas variables,Sinistcha,14,0.246,Redirección,74,0.405,-3.0,0,Floette Balance,Y-Chu Balance
+Sand,Piezas variables,Rillaboom,12,0.211,,72,0.486,4.4,0,,Floette Balance | Otros
+Sand,Piezas variables,Kingambit,4,0.07,,29,0.517,7.6,0,Otros,
+Scovillain Froslass,Núcleo,Sneasler,,1.0,Fake Out,,,,,,
+Scovillain Froslass,Núcleo,Kingambit,,1.0,Setup: Swords Dance,,,,,,
+Scovillain Froslass,Núcleo,Basculegion,,1.0,,,,,,,
+Scovillain Froslass,Núcleo,Froslass-Mega,,0.923,,,,,,,
+Scovillain Froslass,Segunda mega,Scovillain-Mega,10,0.769,Redirección,93,0.645,11.0,1,,
+Scovillain Froslass,Piezas frecuentes,Lycanroc-Dusk,7,0.538,,66,0.652,6.7,1,,
+Glimmora Salamence,Núcleo,Kingambit,,1.0,Setup: Swords Dance,,,,,,
+Glimmora Salamence,Núcleo,Rillaboom,,1.0,Fake Out,,,,,,
+Glimmora Salamence,Núcleo,Volcarona,,0.895,Redirección,,,,,,
+Glimmora Salamence,Mega,Glimmora-Mega,13,0.684,,97,0.598,9.4,0,Y-Chu Balance,
+Glimmora Salamence,Mega,Salamence-Mega,13,0.684,"Tailwind, Intimidate",95,0.568,1.4,0,Otros,
+Glimmora Salamence,Mega,Froslass-Mega,3,0.158,,22,0.591,2.5,0,,
+Glimmora Salamence,Piezas variables,Basculegion,7,0.368,,54,0.611,6.2,0,Floette Balance,
+Glimmora Salamence,Piezas variables,Sneasler,5,0.263,,33,0.485,-10.0,0,,
+Glimmora Salamence,Piezas variables,Garchomp,5,0.263,,36,0.583,-0.2,0,,Otros

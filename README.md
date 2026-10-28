@@ -7,7 +7,7 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 ## Pestañas
 
 - **Uso:** uso por Pokémon en el Top 32 y en el Top 8.
-- **Arquetipos:** arquetipos por núcleo, índice de posicionamiento, evolución semanal, anatomía de cada arquetipo (núcleo fijo, huecos variables y qué gana o pierde cada opción con todas las partidas de VR y ESM), sets y equipos destacados.
+- **Arquetipos:** familias de equipos con nombre (Y-Chu Balance, Delphox Balance, Sun Rain, Gengar Perish, Goli Rain…), cada una con su núcleo fijo, segunda mega, piezas frecuentes y variables (con su función y qué gana o pierde), índice de posicionamiento, evolución semanal y equipos destacados agrupados cuando son el mismo equipo.
 - **Matchups:** quién le gana a quién entre arquetipos (6 VR Challenges y 2 clasificatorios ESM, ajustado por la fuerza de los jugadores).
 - **Tendencias:** uso por fin de semana y qué sube o baja. Incluye "Acción y reacción" (cambios del meta con hipótesis, confianza y lo que no encaja) y la evolución semanal de movimientos y objetos por Pokémon.
 - **Megas:** uso de cada mega, cuáles llegan al Top 8 y combinaciones de megas.
