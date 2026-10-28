@@ -51,7 +51,7 @@ h2{font-size:1.18rem}
 .brand{font-family:var(--f-mono);font-size:.82rem;color:var(--muted);letter-spacing:.02em}
 .brand b{color:var(--fg);font-weight:500}
 .hero h1{font-size:clamp(2rem,5.4vw,3.3rem);line-height:1.02;margin:6px 0 10px}
-.lede{margin:0;color:var(--muted);max-width:62ch}
+.lede{margin:0;color:var(--muted)}
 .lede strong{color:var(--fg);font-weight:600}
 @media (max-width:620px){.hero{grid-template-columns:minmax(0,1fr)}.orb{width:104px;height:104px}.orb img{inset:10px;width:84px;height:84px}}
 
@@ -82,7 +82,7 @@ h2{font-size:1.18rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr));gap:16px}
 .card{background:var(--panel);border-radius:var(--r-lg);padding:20px 22px;min-width:0;display:flex;flex-direction:column;gap:10px}
 @media (max-width:520px){.card{padding:16px 14px;border-radius:18px}}
-.card .note{color:var(--muted);font-size:.86rem;margin:0;max-width:78ch}
+.card .note{color:var(--muted);font-size:.86rem;margin:0}
 .card .note b{color:var(--fg);font-weight:600}
 .ctrl{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .ctrl select,.ctrl input{font:inherit;font-size:.9rem;padding:7px 12px;border-radius:var(--r-pill);border:1px solid var(--line);background:var(--panel-2);color:var(--fg);max-width:100%;min-width:0}
@@ -90,6 +90,7 @@ h2{font-size:1.18rem}
 
 /* Filas con sprite */
 .rows{display:flex;flex-direction:column;gap:2px}
+.rows.two{display:block;columns:2 26rem;column-gap:32px}.rows.two>*{break-inside:avoid;margin-bottom:2px}
 .row{display:grid;grid-template-columns:40px minmax(7rem,12rem) minmax(0,1fr) auto;gap:10px;align-items:center;padding:3px 6px;border-radius:10px}
 .row:hover{background:var(--panel-2)}
 .row img{width:40px;height:40px}
@@ -367,7 +368,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
 #mx-hover{font-family:var(--f-mono);font-size:.8rem;min-height:1.4em}
 #ch-scatter image{pointer-events:none}
 @media (max-width:700px){#mx-pick{order:0}#mx-card{order:1}}
-.foot{font-size:.8rem;color:var(--muted);max-width:90ch;line-height:1.6}
+.foot{font-size:.8rem;color:var(--muted);line-height:1.6}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 
@@ -487,13 +488,11 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
       <p class="note">Solo una mega evoluciona por combate. Llevar dos megapiedras te deja elegir cuál usar al ver el equipo rival.</p>
       <div class="legend"><span><i></i>es la única mega del equipo</span><span><i class="b2"></i>va junto a otra mega</span></div>
       <div class="rows" id="r-megas"></div></div>
-    <div class="grid">
-      <div class="card"><h2>¿Cuáles llegan al Top 8?</h2><p class="note">% de sus equipos del Top 32 que terminó en el Top 8. La línea marca la media del formato (25%). Megas con 10+ equipos.</p>
-        <div class="rows" id="r-megaconv"></div></div>
-      <div class="card"><h2>Combinaciones de megas</h2><p class="note">Cada equipo cuenta una vez, con su mega o su pareja de megas.</p>
+    <div class="card"><h2>Combinaciones de megas</h2><p class="note">Cada equipo cuenta una vez, con su mega o su pareja de megas.</p>
         <div class="ctrl"><select id="f-pares" aria-label="Filtro"><option value="">Todas</option><option value="Única mega">Solo única mega</option><option value="Doble mega">Solo doble mega</option></select></div>
         <div class="tbox"><table id="t-pares"><thead><tr><th data-f="pareja">Megas del equipo</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="top8">Top 8</th><th class="n" data-f="campeon">Títulos</th><th data-f="ganados">Torneos ganados</th></tr></thead><tbody></tbody></table></div></div>
-    </div>
+    <div class="card"><h2>¿Cuáles llegan al Top 8?</h2><p class="note">% de sus equipos del Top 32 que terminó en el Top 8. La línea marca la media del formato (25%). Megas con 10+ equipos.</p>
+        <div class="rows two" id="r-megaconv"></div></div>
     <div class="card"><h2>Tabla de megas</h2>
       <div class="tbox"><table id="t-megas"><thead><tr><th data-f="mega">Mega</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="pct">% Top 32</th><th class="n" data-f="sola">Sola</th><th class="n" data-f="con_otra">Con otra</th><th data-f="companera">Compañera más común</th><th class="n" data-f="top8">Top 8</th><th class="n" data-f="conv_top8">% a Top 8</th><th class="n" data-f="campeon">Títulos</th><th data-f="ganados">Torneos ganados</th></tr></thead><tbody></tbody></table></div></div>
   </section>
@@ -502,13 +501,11 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
     <div class="card"><h2>Popular frente a efectivo</h2>
       <p class="note" id="wr-note"></p>
       <div class="chart" id="ch-scatter"></div></div>
-    <div class="grid">
-      <div class="card"><h2>Win rate en el campo completo</h2><p class="note">Todas las rondas de los torneos con resultados abiertos. Solo Pokémon con 200+ partidas.</p>
-        <div class="rows" id="r-wr"></div></div>
-      <div class="card"><h2>¿Llega más lejos de lo que su uso sugiere?</h2>
+    <div class="card"><h2>¿Llega más lejos de lo que su uso sugiere?</h2>
         <p class="note">Compara su presencia en el Top 8 con su presencia en el Top 32 de todos los torneos. Es otra muestra, distinta del win rate de la izquierda.</p>
         <div class="tbox"><table id="t-conv"><thead><tr><th data-f="pokemon">Pokémon</th><th class="n" data-f="pct_top32">% Top 32</th><th class="n" data-f="pct_top8">% Top 8</th><th data-f="lectura">Lectura</th><th class="n" data-f="winrate">Win rate campo</th><th class="n" data-f="partidas">Partidas</th></tr></thead><tbody></tbody></table></div></div>
-    </div>
+    <div class="card"><h2>Win rate en el campo completo</h2><p class="note">Todas las rondas de los torneos con resultados abiertos. Solo Pokémon con 200+ partidas.</p>
+        <div class="rows two" id="r-wr"></div></div>
   </section>
 
   <section class="pg" id="p-sets" hidden>
@@ -520,14 +517,12 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
       <div class="card"><h2>Movimientos</h2><div class="rows" id="r-set-mov"></div></div>
       <div class="card"><h2>Objeto, habilidad y naturaleza</h2><div class="rows" id="r-set-otros"></div></div>
     </div>
-    <div class="grid">
-      <div class="card"><h2>Lo que más rinde en su Top 8</h2>
+    <div class="card"><h2>Sets completos más repetidos</h2><p class="note">Mismo objeto, naturaleza y cuatro movimientos.</p>
+        <div class="tbox"><table id="t-set-comb"><thead><tr><th data-f="item">Objeto</th><th data-f="nature">Naturaleza</th><th data-f="moves">Movimientos</th><th class="n" data-f="veces">Veces</th><th class="n" data-f="top8">Top 8</th><th data-f="ejemplo">Mejor resultado</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="card"><h2>Lo que más rinde en su Top 8</h2>
         <p class="note">Opciones que aparecen más (o menos) en sus equipos del Top 8 que en los del puesto 9 al 32. Las que van siempre juntas se muestran como una sola fila. Solo Pokémon con 15+ equipos y 5+ en Top 8.</p>
         <div class="ctrl"><select id="f-tech-sig" aria-label="Fiabilidad"><option value="fm">Diferencias fiables</option><option value="">Incluir las dudosas</option></select></div>
         <div class="rows" id="r-tech"></div></div>
-      <div class="card"><h2>Sets completos más repetidos</h2><p class="note">Mismo objeto, naturaleza y cuatro movimientos.</p>
-        <div class="tbox"><table id="t-set-comb"><thead><tr><th data-f="item">Objeto</th><th data-f="nature">Naturaleza</th><th data-f="moves">Movimientos</th><th class="n" data-f="veces">Veces</th><th class="n" data-f="top8">Top 8</th><th data-f="ejemplo">Mejor resultado</th></tr></thead><tbody></tbody></table></div></div>
-    </div>
     <div class="card"><h2>Objetos más usados en el formato</h2><p class="note">Sin contar megapiedras, con quién los lleva.</p>
       <div class="rows" id="r-objtot"></div></div>
   </section>
@@ -862,8 +857,8 @@ draws.arquetipos=()=>{const g=document.getElementById('g-arq');g.textContent='';
     const top=document.createElement('div');top.className='top';top.innerHTML='<span class="rk">#'+(i+1)+'</span>';const tg=arqTag(r.arquetipo);if(tg){const c=document.createElement('span');c.className='chip '+tagClass(r.arquetipo);c.textContent=tg;top.appendChild(c);}d.appendChild(top);
     const h=document.createElement('h3');h.textContent=arqName(r.arquetipo);d.appendChild(h);if(FAMINFO[r.arquetipo]){const ds=document.createElement('p');ds.className='fdesc';ds.textContent=FAMINFO[r.arquetipo].desc;d.appendChild(ds);}
     d.appendChild(teamEl(r.bestMons));
-    const m=document.createElement('div');m.className='meta';m.innerHTML='<span>índice <b>'+f0(r.indice)+'</b></span><span><b>'+r.equipos+'</b> eq.</span><span><b>'+r.top8+'</b> Top 8</span><span><b>'+r.titulos+'</b> títulos</span>';d.appendChild(m);
-    const sp=document.createElement('div');sp.className='sprow';const lab=document.createElement('span');lab.className='muted';lab.textContent='Top 32 por semana';sp.appendChild(lab);const vals=ARQW(r.arquetipo);sp.appendChild(spark(vals));
+    const m=document.createElement('div');m.className='meta';m.innerHTML='<span>índice <b>'+f0(r.indice)+'</b></span><span><b>'+r.equipos+'</b> eq.</span><span><b>'+r.top8+'</b> Top 8</span><span><b>'+r.titulos+'</b> '+(r.titulos===1?'título':'títulos')+'</span>';d.appendChild(m);
+    const sp=document.createElement('div');sp.className='sprow';const lab=document.createElement('span');lab.className='muted';lab.textContent='% del Top 32';sp.appendChild(lab);const vals=ARQW(r.arquetipo);sp.appendChild(spark(vals));
     const last=document.createElement('b');last.className='mono';last.textContent=pct0(vals[vals.length-1]);sp.appendChild(last);d.appendChild(sp);
     g.appendChild(d);});
   table('t-rank',C.rank,[['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['nucleo'],['equipos',{n:1}],['top8',{n:1}],['titulos',{n:1}],['indice',{n:1,f:f0}],['indice_medio',{n:1,f:f1}],['cuota_sep',{n:1,f:pct}],['cuota_oct',{n:1,f:pct}],['mejor'],['paste',{link:1}]]);
