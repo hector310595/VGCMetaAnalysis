@@ -34,7 +34,7 @@ Abre `index.html` (dashboard) o `equipos.html` (equipos recomendados) en cualqui
 
 ## Fuentes
 
-victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 25 de octubre de 2026 .
+victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 25 de octubre de 2026; stat points hasta el 26 de octubre.
 
 Los datos crudos están en `data/`:
 
@@ -42,6 +42,7 @@ Los datos crudos están en `data/`:
 - `arquetipos_mc.csv`: arquetipo, núcleo y flex de cada equipo.
 - `spreads_mc.csv`: 1,314 sets con stat points y stats finales a nivel 50 (fuente: VGCPastes Repository, pokepast.es).
 - `sets_mc.csv`: un registro por Pokémon con objeto, habilidad, naturaleza y movimientos, leído de VR Pastes. Los pastes de torneo son Open Team List y no incluyen stat points.
-- `winrates_vr.csv`: win rates.
+- `winrates_vr.csv`: win rates del campo completo por Pokémon (6 VR Challenges y 2 clasificatorios ESM).
 - `partidas_vr.csv`: 3,973 partidas de los VR Challenges de septiembre y octubre, con el equipo de cada jugador (Pokémon y mega) y el marcador en juegos.
+- `matchups_arquetipos.csv`: partidas, victorias reales y esperadas, y juegos ganados y perdidos entre cada par de arquetipos.
 - `matchups_equipos.csv`: récord de los tres equipos recomendados contra rivales que llevan cada Pokémon o estilo (psyspam, lluvia, sol, arena, nieve, Prankster).
