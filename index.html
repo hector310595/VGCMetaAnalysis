@@ -81,6 +81,14 @@ h2{font-size:1.18rem}
 .pg{display:flex;flex-direction:column;gap:16px}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr));gap:16px}
 .card{background:var(--panel);border-radius:var(--r-lg);padding:20px 22px;min-width:0;display:flex;flex-direction:column;gap:10px}
+.card>h2.chd{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;user-select:none}
+.cbtn{flex:none;width:30px;height:30px;border-radius:50%;border:0;background:var(--panel-2);color:var(--muted);cursor:pointer;display:grid;place-items:center;padding:0}
+.cbtn::before{content:'';width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(2px) rotate(-135deg);transition:transform .15s}
+.card.collapsed .cbtn::before{transform:translateY(-2px) rotate(45deg)}
+.cbtn:hover,.cbtn:focus-visible{color:var(--fg)}
+.card.collapsed{gap:0}.card.collapsed>*:not(.chd){display:none!important}
+.focus.chd{cursor:pointer}.focus.chd>.cbtn{margin-left:auto;align-self:flex-start}
+.foldbar{display:flex;justify-content:flex-end;gap:8px}.foldbar button{font:inherit;font-size:.8rem;padding:5px 12px;border-radius:var(--r-pill);border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}.foldbar button:hover{color:var(--fg)}
 @media (max-width:520px){.card{padding:16px 14px;border-radius:18px}}
 .card .note{color:var(--muted);font-size:.86rem;margin:0}
 .card .note b{color:var(--fg);font-weight:600}
@@ -97,6 +105,7 @@ h2{font-size:1.18rem}
 .row .nm{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row .val{font-family:var(--f-mono);font-size:.82rem;color:var(--muted);text-align:right;white-space:nowrap}
 .row .val b{color:var(--fg);font-weight:500}
+@media (max-width:520px){#r-objtot .row{grid-template-areas:'i n n' 'i t t' 'i v v'}#r-objtot .val{white-space:normal;text-align:left;line-height:1.35}}
 @media (max-width:520px){.row{grid-template-columns:32px minmax(0,1fr) auto;grid-template-areas:'i n v' 'i t t';row-gap:4px;column-gap:8px}.row img{width:32px;height:32px;grid-area:i}.row .nm{grid-area:n}.row .val{grid-area:v}.row .trk{grid-area:t}}
 .trk{position:relative;height:12px;background:var(--track);border-radius:var(--r-pill);overflow:hidden}
 .trk i{position:absolute;left:0;top:0;bottom:0;border-radius:var(--r-pill);background:var(--accent)}
@@ -1416,6 +1425,20 @@ sortable('t-eq',draws.equipos);
 document.getElementById('foot').innerHTML='Datos: Top 32 de los regionales de Baltimore, Frankfurt, Brisbane, Recife, Louisville, Nice y Puebla; VR Challenges de septiembre (#1, #2) y octubre (#1 a #4); ESM Madrid Clasificatorios 1 y 2; y el Top 16 del Thailand Premier Ball League. Sets leídos de VR Pastes; win rates y matchups del campo completo en circuit.victoryroad.pro y esm.victoryroad.pro; stat points del VGCPastes Repository. Sprites: iconos de Pokémon Champions vía PokeAPI. Actualizado al '+fmtDate(REF)+' de 2026.';
 
 let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const cur=document.querySelector('.tabs button[aria-selected=true]').dataset.tab;if(['tendencias','stat-points','rendimiento'].includes(cur))draws[cur]();},150);});
+/* Secciones plegables: cada tarjeta con título se puede contraer; se recuerda en este navegador */
+(()=>{const KEY='vgc-mc-plegadas';let st={};try{st=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){}
+  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}};
+  document.querySelectorAll('.pg .card').forEach(c=>{const h=c.firstElementChild;if(!h)return;const foc=h.classList.contains('focus')&&h.querySelector('h2');if(h.tagName!=='H2'&&!foc)return;
+    const pg=c.closest('.pg').id.slice(2),k=pg+'|'+(foc?foc.textContent:h.textContent).trim();
+    const b=document.createElement('button');b.type='button';b.className='cbtn';h.classList.add('chd');h.appendChild(b);
+    const set=(col,redraw)=>{c.classList.toggle('collapsed',col);b.setAttribute('aria-expanded',String(!col));b.setAttribute('aria-label',(col?'Expandir: ':'Contraer: ')+k.split('|')[1]);b.title=col?'Expandir':'Contraer';
+      if(redraw&&!col&&['tendencias','stat-points','rendimiento'].includes(pg)&&draws[pg])draws[pg]();};
+    set(!!st[k]);
+    h.addEventListener('click',e=>{if(e.target.closest('a,select,input'))return;const col=!c.classList.contains('collapsed');if(col)st[k]=1;else delete st[k];save();set(col,true);});});
+  document.querySelectorAll('.pg').forEach(pg=>{if(pg.querySelectorAll('.card>.chd').length<3)return;
+    const bar=document.createElement('div');bar.className='foldbar';
+    const mk=(t,col)=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.addEventListener('click',()=>{pg.querySelectorAll('.card>.chd').forEach(h=>{const c=h.parentElement;if(c.classList.contains('collapsed')!==col)h.click();});});return b;};
+    bar.append(mk('Contraer todo',true),mk('Expandir todo',false));pg.prepend(bar);});})();
 const h=location.hash.slice(1);show(draws[h]?h:'uso');
 })();
 </script>
