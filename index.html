@@ -15,7 +15,7 @@ html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
    barra de pestañas en píldoras fija arriba, y cada pestaña como una rejilla de tarjetas con sprites. */
 :root{
   --bg:#0f1013; --panel:#17181c; --panel-2:#202127; --line:#2a2c33; --fg:#ecedf1; --muted:#8e919c;
-  --accent:#3d6bff; --accent-soft:#9db3ff; --accent-ink:#ffffff; --track:#24262d;
+  --accent:#3d6bff; --accent-soft:#9db3ff; --accent-pale:#7f97e8; --accent-ink:#ffffff; --track:#24262d;
   --up:#3ccf91; --down:#ff6b6b; --sun:#ffb347; --rain:#5aaeff; --sand:#d2b07a; --tr:#b892ff; --snow:#a9e4f5;
   --f-display:"Bricolage Grotesque","Schibsted Grotesk",system-ui,sans-serif;
   --f-body:"Schibsted Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -25,11 +25,11 @@ html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
 }
 @media (prefers-color-scheme: light){:root:not([data-theme="dark"]){
   --bg:#f3f3f6; --panel:#ffffff; --panel-2:#eef0f4; --line:#e1e3ea; --fg:#14151a; --muted:#5f636e;
-  --accent:#2f5bff; --accent-soft:#4f6fe0; --accent-ink:#ffffff; --track:#e9ebf1;
+  --accent:#2f5bff; --accent-soft:#4f6fe0; --accent-pale:#b9c7ff; --accent-ink:#ffffff; --track:#e9ebf1;
   --up:#13985f; --down:#d63a3a; --sun:#c97a00; --rain:#1f7ad6; --sand:#9a7330; --tr:#7a4fd6; --snow:#2a8fae; color-scheme:light}}
 :root[data-theme="light"]{
   --bg:#f3f3f6; --panel:#ffffff; --panel-2:#eef0f4; --line:#e1e3ea; --fg:#14151a; --muted:#5f636e;
-  --accent:#2f5bff; --accent-soft:#4f6fe0; --accent-ink:#ffffff; --track:#e9ebf1;
+  --accent:#2f5bff; --accent-soft:#4f6fe0; --accent-pale:#b9c7ff; --accent-ink:#ffffff; --track:#e9ebf1;
   --up:#13985f; --down:#d63a3a; --sun:#c97a00; --rain:#1f7ad6; --sand:#9a7330; --tr:#7a4fd6; --snow:#2a8fae; color-scheme:light}
 *{box-sizing:border-box}
 html,body{background:var(--bg);color:var(--fg)}
@@ -117,7 +117,12 @@ img.it{width:30px;height:30px;image-rendering:pixelated;flex:none}.nm.wi{display
 @media (max-width:520px){.row{grid-template-columns:32px minmax(0,1fr) auto;grid-template-areas:'i n v' 'i t t';row-gap:4px;column-gap:8px}.row img{width:32px;height:32px;grid-area:i}.row .nm{grid-area:n}.row .val{grid-area:v}.row .trk{grid-area:t}}
 .trk{position:relative;height:12px;background:var(--track);border-radius:var(--r-pill);overflow:hidden}
 .trk i{position:absolute;left:0;top:0;bottom:0;border-radius:var(--r-pill);background:var(--accent)}
-.trk i.b2{top:3px;bottom:3px;background:var(--accent-soft);mix-blend-mode:normal}
+.trk i.b2{top:3px;bottom:3px;background:var(--accent-pale);mix-blend-mode:normal}
+.trk b.m8{position:absolute;top:0;bottom:0;width:4px;border-radius:2px;background:var(--muted);box-shadow:0 0 0 1.5px var(--panel);z-index:1}.trk b.m8.up{background:var(--up)}.trk b.m8.down{background:var(--down)}
+.v8.up{color:var(--up)}.v8.down{color:var(--down)}
+.legend i.lm{width:4px;height:14px;border-radius:2px;background:var(--muted)}.legend i.lm.up{background:var(--up)}.legend i.lm.down{background:var(--down)}
+.rows>.row .val{min-width:7.6rem}#r-megas .val{min-width:13.2rem}
+@media (max-width:520px){.rows>.row .val,#r-megas .val{min-width:0}}
 .trk.dv i{left:50%}
 .trk.dv i.neg{left:auto;right:50%;background:var(--down)}
 .trk.dv i.pos{background:var(--up)}
@@ -125,7 +130,7 @@ img.it{width:30px;height:30px;image-rendering:pixelated;flex:none}.nm.wi{display
 .legend{display:flex;gap:14px;flex-wrap:wrap;font-size:.8rem;color:var(--muted)}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .legend i{width:12px;height:12px;border-radius:4px;background:var(--accent);display:inline-block}
-.legend i.b2{background:var(--accent-soft)}
+.legend i.b2{background:var(--accent-pale)}
 
 /* Equipos (6 sprites) */
 .team{display:flex;gap:0;flex-wrap:nowrap}
@@ -331,7 +336,7 @@ table.mx thead th:first-child{z-index:3}
 @media (max-width:520px){.rows.wrap .row{grid-template-columns:32px minmax(0,1fr) auto}}
 #mx-team{flex-wrap:wrap}
 table.mx thead th.ch{vertical-align:bottom;width:44px;font-family:var(--f-mono)}
-table.mx thead th.ch span{display:block}
+table.mx thead th.ch span{display:block}table.mx thead th.ch span.vn{writing-mode:vertical-rl;transform:rotate(180deg);margin:4px auto 0;max-height:8.5rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--f-body);font-size:.72rem;color:var(--fg)}table.mx thead th.ch{vertical-align:top}table.mx td.few{color:var(--muted)}
 table.mx thead th.ch img,table.mx th.rh img{width:28px;height:28px;display:block;margin:2px auto 0}
 table.mx th.rh img{display:inline-block;vertical-align:middle;margin:0 0 0 4px}
 table.mx td{border:0;padding:0;width:44px;height:34px;text-align:center;font-family:var(--f-mono);border-radius:6px;color:var(--fg)}
@@ -360,7 +365,8 @@ details.how p{margin-top:8px}
 .dtrk{position:relative;height:14px;background:var(--track);border-radius:var(--r-pill)}
 .dtrk .seg{position:absolute;top:5px;height:4px;border-radius:2px}.dtrk .seg.up{background:var(--up)}.dtrk .seg.dn{background:var(--down)}
 .dtrk .dot{position:absolute;top:1px;width:12px;height:12px;margin-left:-6px;border-radius:50%}
-.dtrk .dot.s{background:var(--muted)}.dtrk .dot.o{background:var(--accent);box-shadow:0 0 0 2px var(--panel)}
+.dtrk .seg.fl{background:var(--muted)}.dtrk .dot.s{background:var(--panel);box-shadow:inset 0 0 0 2.5px var(--muted);width:14px;height:14px;top:0;margin-left:-7px}.dtrk .dot.o{background:var(--accent);width:8px;height:8px;top:3px;margin-left:-4px;box-shadow:0 0 0 1.5px var(--panel)}
+.legend i.dl{border-radius:50%}.legend i.dl.s{background:var(--panel);box-shadow:inset 0 0 0 2.5px var(--muted)}.legend i.dl.o{width:8px;height:8px;background:var(--accent)}
 @media (max-width:520px){.db{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:'n v' 't t';row-gap:4px}.db .nm{grid-area:n}.db .val{grid-area:v}.db .dtrk{grid-area:t}}
 .lad{display:grid;grid-template-columns:minmax(9rem,13rem) minmax(0,1fr) 3rem;gap:10px;align-items:center;padding:1px 6px;border-radius:8px}
 .lad:hover{background:var(--panel-2)}
@@ -420,8 +426,8 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
 
   <section class="pg" id="p-uso">
     <div class="card"><h2>Uso por Pokémon</h2>
-      <p class="note">% de equipos del Top 32 que lo llevan (barra azul) y % dentro de los Top 8 (franja clara). Megas y formas base cuentan juntas.</p>
-      <div class="legend"><span><i></i>Top 32</span><span><i class="b2"></i>Top 8</span></div>
+      <p class="note">La barra es el % de equipos del Top 32 que lo llevan; la marca vertical, el % dentro de los Top 8. Si la marca queda a la derecha de la barra (verde), aparece más entre los que llegan lejos; a la izquierda (roja), menos. Megas y formas base cuentan juntas.</p>
+      <div class="legend"><span><i></i>Top 32</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div>
       <div class="rows" id="r-uso"></div></div>
     <div class="card"><h2>Tabla completa</h2><p class="note">Ordena pulsando una columna.</p>
       <div class="tbox"><table id="t-uso"><thead><tr><th data-f="pokemon">Pokémon</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="pct">% Top 32</th><th class="n" data-f="top8">En Top 8</th><th class="n" data-f="pct_top8">% Top 8</th><th class="n" data-f="delta">Top 8 − Top 32</th></tr></thead><tbody></tbody></table></div></div>
@@ -429,7 +435,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
 
   <section class="pg" id="p-arquetipos" hidden>
     <div class="card"><h2>Familias de equipos mejor posicionadas</h2>
-      <p class="note">Cada familia junta equipos con el mismo plan de juego aunque cambien piezas (por ejemplo, Y-Chu Balance con Garchomp Z, Staraptor o Floette como segunda mega). Nombres: <b>Y-Chu Balance, Delphox Balance, Sun Rain y Gengar Perish</b> son los que usa la comunidad; el resto son descriptivos y se pueden ajustar. Ordenadas por un índice que premia llegar lejos, en torneos grandes y recientes. La línea muestra qué parte del Top 32 de cada fin de semana fue de esa familia.</p>
+      <p class="note">Cada familia junta equipos con el mismo plan de juego aunque cambien piezas (por ejemplo, Y-Chu Balance con Garchomp Z, Staraptor o Floette como segunda mega). Nombres: <b>Y-Chu Balance, Delphox Balance, Sun Rain y Gengar Perish</b> son los que usa la comunidad; el resto son descriptivos y se pueden ajustar. Ordenadas por un índice que premia llegar lejos, en torneos grandes y recientes. La línea muestra qué parte del Top 32 de cada fin de semana fue de esa familia, con la misma escala en todas las tarjetas para que se puedan comparar.</p>
       <details class="how"><summary>¿Cómo se calcula el índice?</summary>
         <p class="note">Cada equipo suma puntos por puesto (1.º 100 · 2.º 75 · 3–4 55 · 5–8 40 · 9–16 22 · 17–32 10), multiplicados por el tamaño del torneo (√(jugadores / 256): un regional de ~1,000 pesa ×2, un VR de ~250 ×1) y por la recencia (vale la mitad cada 3 semanas antes del <span id="ref-date"></span>). El índice del arquetipo es la suma de sus equipos. <b>Núcleo</b>: Pokémon presentes en el 75% o más de sus equipos.</p></details>
       <div class="arqs" id="g-arq"></div></div>
@@ -467,7 +473,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
     </div>
     <div class="card" id="mx-card"><h2>Quién le gana a quién</h2>
       <p class="note" id="mx-note"></p>
-      <div class="legend"><span><i style="background:var(--up)"></i>gana más de lo esperado</span><span><i style="background:var(--down)"></i>pierde más de lo esperado</span><span><i style="background:var(--track)"></i>menos de 8 partidas</span></div>
+      <div class="legend"><span><i style="background:var(--up)"></i>gana más de la mitad</span><span><i style="background:var(--down)"></i>pierde más de la mitad</span><span><i style="background:color-mix(in srgb,var(--up) 30%,var(--panel-2))"></i>tenue: pocas partidas</span><span><i style="background:var(--track)"></i>– menos de 8 partidas</span></div>
       <p class="note" id="mx-hover">Pasa el cursor (o toca) una celda para ver el cruce.</p>
       <div class="mxwrap"><table class="mx" id="mx"></table></div></div>
   </section>
@@ -503,7 +509,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   <section class="pg" id="p-megas" hidden>
     <div class="card"><h2>Uso de cada mega</h2>
       <p class="note">Solo una mega evoluciona por combate. Llevar dos megapiedras te deja elegir cuál usar al ver el equipo rival.</p>
-      <div class="legend"><span><i></i>es la única mega del equipo</span><span><i class="b2"></i>va junto a otra mega</span></div>
+      <div class="legend"><span><i></i>tramo intenso: es la única mega del equipo</span><span><i class="b2"></i>tramo suave: el equipo lleva otra mega más</span></div>
       <div class="rows" id="r-megas"></div></div>
     <div class="card"><h2>Combinaciones de megas</h2><p class="note">Cada equipo cuenta una vez, con su mega o su pareja de megas.</p>
         <div class="ctrl"><select id="f-pares" aria-label="Filtro"><option value="">Todas</option><option value="Única mega">Solo única mega</option><option value="Doble mega">Solo doble mega</option></select></div>
@@ -529,7 +535,8 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
     <div class="card">
       <div class="focus"><img id="set-img" alt=""><div class="t"><h2>Sets por Pokémon</h2><div class="ctrl"><select id="f-set" aria-label="Pokémon"></select><span class="muted" id="set-n"></span></div></div></div>
       <p class="note" id="set-core"></p>
-      <p class="note">Leído de los pastes de torneo (Open Team List, sin stat points). Barra azul: % de todos sus equipos. Franja clara: % de sus equipos del Top 8.</p></div>
+      <p class="note">Leído de los pastes de torneo (Open Team List, sin stat points). Barra: % de todos sus sets. Marca vertical: % entre sus sets del Top 8 (verde si es más frecuente en el Top 8, roja si menos).</p>
+      <div class="legend"><span><i></i>Todos sus sets</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div></div>
     <div class="grid">
       <div class="card"><h2>Movimientos</h2><div class="rows" id="r-set-mov"></div></div>
       <div class="card"><h2>Objeto, habilidad y naturaleza</h2><div class="rows" id="r-set-otros"></div></div>
@@ -547,13 +554,15 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   <section class="pg" id="p-companeros" hidden>
     <div class="card">
       <div class="focus"><img id="comp-img" alt=""><div class="t"><h2>Compañeros más frecuentes</h2><div class="ctrl"><select id="f-comp" aria-label="Pokémon"></select><span class="muted" id="comp-n"></span></div></div></div>
-      <p class="note">Entre los equipos que llevan al Pokémon elegido, % que también lleva a cada compañero (barra azul) y % entre sus equipos del Top 8 (franja clara).</p>
+      <p class="note">Entre los equipos que llevan al Pokémon elegido, % que también lleva a cada compañero (barra) y ese mismo % entre sus equipos del Top 8 (marca vertical: verde si el dúo aparece más en el Top 8, roja si menos).</p>
+      <div class="legend"><span><i></i>Todos sus equipos</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div>
       <div class="rows" id="r-comp"></div></div>
   </section>
 
   <section class="pg" id="p-herramientas" hidden>
     <div class="card"><h2>Herramientas del meta, septiembre → octubre</h2>
-      <p class="note">% de equipos del Top 32 que llevan cada herramienta en al menos un Pokémon. El punto gris es septiembre y el azul octubre. Si Wide Guard sube, los ataques de área rinden menos; si Psychic Terrain o Armor Tail son comunes, tu prioridad falla.</p>
+      <p class="note">% de equipos del Top 32 que llevan cada herramienta en al menos un Pokémon. Si Wide Guard sube, los ataques de área rinden menos; si Psychic Terrain o Armor Tail son comunes, tu prioridad falla.</p>
+      <div class="legend"><span><i class="dl s"></i>septiembre</span><span><i class="dl o"></i>octubre</span><span><i style="background:var(--up);height:4px"></i>sube 2+ pts</span><span><i style="background:var(--down);height:4px"></i>baja 2+ pts</span><span><i style="background:var(--muted);height:4px"></i>cambio menor</span></div>
       <div id="r-tools"></div></div>
     <div class="card"><h2>Detalle</h2>
       <div class="tbox"><table id="t-tools"><thead><tr><th data-f="grupo">Tipo</th><th data-f="herramienta">Herramienta</th><th data-f="como">Cuenta si lleva</th><th class="n" data-f="pct">% total</th><th class="n" data-f="pct_top8">% Top 8</th><th class="n" data-f="pct_sep">Sep</th><th class="n" data-f="pct_oct">Oct</th><th class="n" data-f="cambio">Cambio</th></tr></thead><tbody></tbody></table></div></div>
@@ -761,8 +770,12 @@ function table(id,rows,cols,lim){const tb=document.querySelector('#'+id+' tbody'
     else if(o.html)o.html(td,r);else td.textContent=o.f?o.f(v):v;});});}
 function rowEl(name,label,widths,valHTML,opt){const d=document.createElement('div');d.className='row';if(name&&sprite(name))d.appendChild(img(name));else{const ph=document.createElement('span');ph.className='ph';d.appendChild(ph);}
   const nm=document.createElement('div');nm.className='nm';nm.textContent=label&&label!==name?label:disp(name);d.appendChild(nm);
-  const t=document.createElement('div');t.className='trk'+(opt&&opt.dv?' dv':'');widths.forEach(([w,c])=>{const i=document.createElement('i');if(c)i.className=c;i.style.width=Math.max(0,Math.min(100,w))+'%';t.appendChild(i);});d.appendChild(t);
+  const t=document.createElement('div');t.className='trk'+(opt&&opt.dv?' dv':'');fillTrk(t,widths);d.appendChild(t);
   const v=document.createElement('div');v.className='val';v.innerHTML=valHTML;d.appendChild(v);if(opt&&opt.title)d.title=opt.title;return d;}
+function fillTrk(t,widths){widths.forEach(([w,c])=>{if(w==null)return;const x=Math.max(0,Math.min(100,w));if(c&&c.startsWith('m8')){const m=document.createElement('b');m.className=c;m.style.left='calc('+x+'% - 2px)';t.appendChild(m);return;}const i=document.createElement('i');if(c)i.className=c;i.style.width=x+'%';t.appendChild(i);});}
+const t8dir=(a,b)=>{if(b==null)return 'eq';const th=Math.max(0.02,a*0.15);return b-a>=th?'up':a-b>=th?'down':'eq';};
+const t8val=(a,b,f)=>'<b>'+f(a)+'</b> · <span class="v8 '+t8dir(a,b)+'">'+(b==null?'—':f(b))+'</span>';
+const T8LEG='<div class="legend"><span><i></i>Top 32</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div>';
 function fillSel(sel,opts,label){if(sel.options.length===opts.length&&sel.dataset.ok)return;const cur=sel.value;sel.textContent='';opts.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=label?label(v):v;sel.appendChild(o);});if(opts.includes(cur))sel.value=cur;sel.dataset.ok=1;}
 const tip=document.getElementById('tip');
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
@@ -821,7 +834,7 @@ function showTip(e,txt){tip.style.display='block';tip.textContent=txt;tip.style.
 function hideTip(){tip.style.display='none';}
 function barRow(label,widths,valHTML,opt){const d=document.createElement('div');d.className='row nosp';
   const nm=document.createElement('div');nm.className='nm';if(opt&&opt.item){nm.classList.add('wi');nm.appendChild(itemImg(label));const t=document.createElement('span');t.textContent=label;nm.appendChild(t);}else nm.textContent=label;d.appendChild(nm);
-  const t=document.createElement('div');t.className='trk'+(opt&&opt.dv?' dv':'');widths.forEach(([w,c])=>{const i=document.createElement('i');if(c)i.className=c;i.style.width=Math.max(0,Math.min(100,w))+'%';t.appendChild(i);});
+  const t=document.createElement('div');t.className='trk'+(opt&&opt.dv?' dv':'');fillTrk(t,widths);
   if(opt&&opt.mark!=null){const m=document.createElement('b');m.className='mark';m.style.left=opt.mark+'%';t.appendChild(m);}
   d.appendChild(t);const v=document.createElement('div');v.className='val';v.innerHTML=valHTML;d.appendChild(v);if(opt&&opt.title)d.title=opt.title;return d;}
 function arqTag(a){if(FAMINFO[a])return FAMINFO[a].tag;const m=a.match(/^(Sol y lluvia|Sol|Lluvia|Arena|Trick Room) · /);return m?m[1]:'';}
@@ -832,13 +845,13 @@ const FORM_A=a=>{const t=arqTeam(a);const megas=t?t.split(' / ').filter(x=>x.inc
 
 /* Uso */
 draws.uso=()=>{const el=document.getElementById('r-uso');el.textContent='';const mx=C.uso[0].pct;
-  C.uso.slice(0,24).forEach(r=>el.appendChild(rowEl(r.pokemon,r.pokemon,[[r.pct/mx*100],[r.pct_top8/mx*100,'b2']],'<b>'+pct(r.pct)+'</b> · '+pct(r.pct_top8),{title:disp(r.pokemon)+': '+r.equipos+' equipos, '+r.top8+' en Top 8'})));
+  C.uso.slice(0,24).forEach(r=>el.appendChild(rowEl(r.pokemon,r.pokemon,[[r.pct/mx*100],[r.pct_top8/mx*100,'m8 '+t8dir(r.pct,r.pct_top8)]],t8val(r.pct,r.pct_top8,pct),{title:disp(r.pokemon)+': '+r.equipos+' equipos, '+r.top8+' en Top 8'})));
   table('t-uso',C.uso,[['pokemon',{pk:1}],['equipos',{n:1}],['pct',{n:1,f:pct}],['top8',{n:1}],['pct_top8',{n:1,f:pct}],['delta',{n:1,html:(td,r)=>{td.textContent=spp(r.delta);td.className='n '+(r.delta>0.02?'pos':r.delta<-0.02?'neg':'');}}]]);};
 sortable('t-uso',draws.uso);
 
 /* Arquetipos */
 const ARQW=(()=>{const tot={},c={};C.indice.forEach(r=>{const w=weekKey(r.date);tot[w]=(tot[w]||0)+1;const k=r.arquetipo+'|'+w;c[k]=(c[k]||0)+1;});return a=>WEEKS.map(w=>(c[a+'|'+w]||0)/(tot[w]||1));})();
-function spark(vals){const W=120,H=30,s=svgEl(W,H);s.classList.add('spark');const mx=Math.max(0.12,...vals);const xs=i=>3+(W-6)*i/(vals.length-1),ys=v=>H-3-(H-6)*v/mx;
+function spark(vals,fmx){const W=120,H=30,s=svgEl(W,H);s.classList.add('spark');const mx=fmx||Math.max(0.12,...vals);const xs=i=>3+(W-6)*i/(vals.length-1),ys=v=>H-3-(H-6)*v/mx;
   add(s,'path',{d:vals.map((v,i)=>(i?'L':'M')+xs(i).toFixed(1)+' '+ys(v).toFixed(1)).join(' ')+' L'+xs(vals.length-1)+' '+(H-3)+' L'+xs(0)+' '+(H-3)+' Z',fill:'var(--accent)','fill-opacity':.15,stroke:'none'});
   add(s,'path',{d:vals.map((v,i)=>(i?'L':'M')+xs(i).toFixed(1)+' '+ys(v).toFixed(1)).join(' '),fill:'none',stroke:'var(--accent)','stroke-width':1.8,'stroke-linejoin':'round'});
   add(s,'circle',{cx:xs(vals.length-1),cy:ys(vals[vals.length-1]),r:2.8,fill:'var(--accent)'});return s;}
@@ -870,13 +883,13 @@ function drawTops(){const g=document.getElementById('g-top');g.textContent='';
         if(k>0){const dd=difs[k-1]||'';const m=dd.split(' — ')[1]||'idéntico';const sp=document.createElement('div');sp.className=m==='idéntico'?'same':'chg';sp.textContent=m==='idéntico'?'mismos sets':m;li.appendChild(sp);}ul.appendChild(li);});d.appendChild(ul);c.appendChild(d);}
     g.appendChild(c);});
   const btn=document.getElementById('top-more');btn.textContent=topN===12?'Ver más equipos (30)':'Ver menos';btn.hidden=C.topg.length<=12;}
-draws.arquetipos=()=>{const g=document.getElementById('g-arq');g.textContent='';
+draws.arquetipos=()=>{const g=document.getElementById('g-arq');g.textContent='';const FMX=Math.max(0.05,...ra.slice(0,12).map(r=>Math.max(...ARQW(r.arquetipo))));
   ra.slice(0,12).forEach((r,i)=>{const d=document.createElement('article');d.className='arq';
     const top=document.createElement('div');top.className='top';top.innerHTML='<span class="rk">#'+(i+1)+'</span>';const tg=arqTag(r.arquetipo);if(tg){const c=document.createElement('span');c.className='chip '+tagClass(r.arquetipo);c.textContent=tg;top.appendChild(c);}d.appendChild(top);
     const h=document.createElement('h3');h.textContent=arqName(r.arquetipo);d.appendChild(h);if(FAMINFO[r.arquetipo]){const ds=document.createElement('p');ds.className='fdesc';ds.textContent=FAMINFO[r.arquetipo].desc;d.appendChild(ds);}
     d.appendChild(teamEl(r.bestMons));
     const m=document.createElement('div');m.className='meta';m.innerHTML='<span>índice <b>'+f0(r.indice)+'</b></span><span><b>'+r.equipos+'</b> eq.</span><span><b>'+r.top8+'</b> Top 8</span><span><b>'+r.titulos+'</b> '+(r.titulos===1?'título':'títulos')+'</span>';d.appendChild(m);
-    const sp=document.createElement('div');sp.className='sprow';const lab=document.createElement('span');lab.className='muted';lab.textContent='% del Top 32';sp.appendChild(lab);const vals=ARQW(r.arquetipo);sp.appendChild(spark(vals));
+    const sp=document.createElement('div');sp.className='sprow';const lab=document.createElement('span');lab.className='muted';lab.textContent='% del Top 32';lab.title='Misma escala para todas las familias: de 0% a '+pct0(FMX)+' del Top 32 de cada fin de semana';sp.appendChild(lab);const vals=ARQW(r.arquetipo);const sk=spark(vals,FMX);sk.setAttribute('aria-label','Escala 0–'+pct0(FMX));sp.appendChild(sk);
     const last=document.createElement('b');last.className='mono';last.textContent=pct0(vals[vals.length-1]);sp.appendChild(last);d.appendChild(sp);
     g.appendChild(d);});
   table('t-rank',C.rank,[['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['nucleo'],['equipos',{n:1}],['top8',{n:1}],['titulos',{n:1}],['indice',{n:1,f:f0}],['indice_medio',{n:1,f:f1}],['cuota_sep',{n:1,f:pct}],['cuota_oct',{n:1,f:pct}],['mejor'],['paste',{link:1}]]);
@@ -987,17 +1000,17 @@ const MX=D.matchups;const mxSel=document.getElementById('f-mx');mxSel.addEventLi
 const MXC={};MX.m.forEach(([a,b,n,w,e,gw,gl])=>{MXC[a+'|'+b]={n,w,e,gw,gl};});
 const MXS=(()=>{const t={};MX.m.forEach(([a,b,n,w,e])=>{if(a===b)return;const o=t[a]=t[a]||{a,n:0,w:0,e:0};o.n+=n;o.w+=w;o.e+=e;});
   return Object.values(t).map(o=>({a:o.a,n:o.n,wr:o.w/o.n,adj:(o.w-o.e)/o.n,eq:MX.cnt[o.a]||0})).sort((x,y)=>y.n-x.n);})();
-function mxColor(v){const c=v>0?'var(--up)':'var(--down)';const p=Math.min(85,Math.abs(v)/0.25*85);return 'color-mix(in srgb,'+c+' '+p.toFixed(0)+'%,var(--panel-2))';}
+function mxColor(v,n){const c=v>0?'var(--up)':'var(--down)';const p=Math.min(85,Math.abs(v)/0.25*85)*(n==null?1:Math.min(1,0.35+0.65*n/40));return 'color-mix(in srgb,'+c+' '+p.toFixed(0)+'%,var(--panel-2))';}
 draws.matchups=()=>{const tot=MXS.reduce((s,o)=>s+o.n,0)/2;
-  document.getElementById('mx-note').textContent='Fila = tu familia, columna = rival (mismo número que la fila). Cada celda es el win rate de partidas (Bo3) en el campo completo de 6 VR Challenges y 2 clasificatorios ESM Madrid ('+Math.round(tot).toLocaleString('es')+' partidas). Un equipo entra en una familia si comparte al menos el 80% del núcleo de alguna de sus variantes; el resto es "Otros". El color mide cuánto gana por encima o por debajo de lo esperado según el récord de ambos jugadores.';
+  document.getElementById('mx-note').textContent='Fila = tu familia, columna = rival (mismo número que la fila). Cada celda es el win rate de partidas (Bo3) en el campo completo de 6 VR Challenges y 2 clasificatorios ESM Madrid ('+Math.round(tot).toLocaleString('es')+' partidas). Un equipo entra en una familia si comparte al menos el 80% del núcleo de alguna de sus variantes; el resto es "Otros". El número y el color dicen lo mismo: verde por encima del 50%, rojo por debajo; el color es más tenue cuando hay pocas partidas (menos de 40), y las celdas con menos de 20 llevan el número en gris. Al tocar una celda verás también el resultado que cabía esperar según el récord de los jugadores.';
   const arqs=MXS.filter(o=>o.a!=='Otros'&&o.n>=120).map(o=>o.a).slice(0,16);const cols=[...arqs,'Otros'];
   const t=document.getElementById('mx');t.textContent='';const th=t.createTHead().insertRow();const c0=document.createElement('th');c0.className='rh';th.appendChild(c0);
-  cols.forEach((a,i)=>{const h=document.createElement('th');h.className='ch';h.title=arqName(a);if(a!=='Otros')h.appendChild(img(FORM_A(a)));const sp=document.createElement('span');sp.textContent=a==='Otros'?'Otros':'#'+(i+1);h.appendChild(sp);th.appendChild(h);});
+  cols.forEach((a,i)=>{const h=document.createElement('th');h.className='ch';h.title=arqName(a);if(a!=='Otros')h.appendChild(img(FORM_A(a)));const sp=document.createElement('span');sp.textContent=a==='Otros'?'Otros':'#'+(i+1);h.appendChild(sp);if(a!=='Otros'){const vn=document.createElement('span');vn.className='vn';vn.textContent=arqName(a);h.appendChild(vn);}th.appendChild(h);});
   const hv=document.getElementById('mx-hover');
   const tb=t.createTBody();arqs.forEach((a,i)=>{const tr=tb.insertRow();const h=document.createElement('th');h.className='rh';const lab=document.createElement('span');lab.innerHTML='<b class="mono">#'+(i+1)+'</b> ';arqLabel(lab,a);h.appendChild(lab);tr.appendChild(h);
     cols.forEach((b,j)=>{const td=tr.insertCell();const c=MXC[a+'|'+b];if(a===b){td.className='self';td.textContent='·';return;}
-      const desc=()=>'#'+(i+1)+' '+arqName(a)+'  vs  '+(b==='Otros'?'Otros':'#'+(j+1)+' '+arqName(b))+': '+(c?c.w+'-'+(c.n-c.w)+' en partidas ('+pct(c.w/c.n)+'), juegos '+c.gw+'-'+c.gl+', esperado '+pct(c.e/c.n):'sin partidas');
-      if(!c||c.n<8){td.className='lo';td.textContent=c?c.n:'';}else{const adj=(c.w-c.e)/c.n;td.style.background=mxColor(adj);td.textContent=Math.round(c.w/c.n*100);}
+      const desc=()=>'#'+(i+1)+' '+arqName(a)+'  vs  '+(b==='Otros'?'Otros':'#'+(j+1)+' '+arqName(b))+': '+(c?c.w+'-'+(c.n-c.w)+' en '+c.n+' partidas ('+pct(c.w/c.n)+'), juegos '+c.gw+'-'+c.gl+'. Según el récord de los jugadores se esperaba '+pct(c.e/c.n)+(c.n<8?' (muy pocas partidas)':''):'sin partidas');
+      if(!c||c.n<8){td.className='lo';td.textContent='–';}else{const wr=c.w/c.n;td.style.background=mxColor(wr-0.5,c.n);td.textContent=Math.round(wr*100);if(c.n<20)td.classList.add('few');}
       const on=()=>{t.querySelectorAll('.hl').forEach(x=>x.classList.remove('hl'));h.classList.add('hl');th.children[j+1].classList.add('hl');td.classList.add('hl');hv.textContent=desc();};
       td.addEventListener('mouseenter',on);td.addEventListener('click',on);});});
   fillSel(mxSel,MXS.filter(o=>o.a!=='Otros').map(o=>o.a),arqName);const a=mxSel.value;const tm=document.getElementById('mx-team');tm.textContent='';const bm=arqTeam(a);if(bm)tm.appendChild(teamEl(bm));
@@ -1223,7 +1236,7 @@ draws.tendencias=()=>{drawAR();drawEv();const modo=modoSel.value,rows=C.semana.f
 /* Megas */
 const fp=document.getElementById('f-pares');fp.addEventListener('change',()=>draws.megas());
 draws.megas=()=>{const el=document.getElementById('r-megas');el.textContent='';const mx=C.megas[0].pct;
-  C.megas.slice(0,18).forEach(r=>el.appendChild(rowEl(r.mega,megaLabel(r.mega),[[r.pct/mx*100,'b2'],[r.pct_sola/mx*100]],'<b>'+pct(r.pct)+'</b>'+(r.campeon?' · '+r.campeon+(r.campeon>1?' títulos':' título'):''),{title:r.mega+': '+r.equipos+' equipos ('+r.sola+' sola, '+r.con_otra+' con otra), '+r.top8+' en Top 8'})));
+  C.megas.slice(0,18).forEach(r=>el.appendChild(rowEl(r.mega,megaLabel(r.mega),[[r.pct/mx*100,'b2'],[r.pct_sola/mx*100]],'<b>'+pct(r.pct)+'</b> <span class="muted">('+Math.round(r.sola/r.equipos*100)+'% sola)</span>'+(r.campeon?' · '+r.campeon+(r.campeon>1?' tít.':' tít.'):''),{title:r.mega+': '+r.equipos+' equipos ('+r.sola+' como única mega, '+r.con_otra+' junto a otra), '+r.top8+' en Top 8'+(r.campeon?', '+r.campeon+(r.campeon>1?' títulos':' título'):'')})));
   const ec=document.getElementById('r-megaconv');ec.textContent='';const cv=C.megas.filter(r=>r.equipos>=10).sort((a,b)=>b.conv_top8-a.conv_top8);const mc=Math.max(0.5,...cv.map(r=>r.conv_top8));
   cv.forEach(r=>{const d=rowEl(r.mega,megaLabel(r.mega),[[r.conv_top8/mc*100,r.conv_top8>=0.25?'':'neg']],'<b>'+pct0(r.conv_top8)+'</b> · '+r.top8+'/'+r.equipos);const m=document.createElement('b');m.className='mark';m.style.left=(0.25/mc*100)+'%';d.querySelector('.trk').appendChild(m);ec.appendChild(d);});
   table('t-megas',C.megas,[['mega',{html:(td,r)=>td.appendChild(pk(r.mega,megaLabel(r.mega)))}],['equipos',{n:1}],['pct',{n:1,f:pct}],['sola',{n:1}],['con_otra',{n:1}],['companera'],['top8',{n:1}],['conv_top8',{n:1,f:pct0}],['campeon',{n:1}],['ganados']]);
@@ -1232,12 +1245,12 @@ draws.megas=()=>{const el=document.getElementById('r-megas');el.textContent='';c
 
 /* Rendimiento */
 function scatter(el,rows){el.textContent='';const W=Math.max(320,el.clientWidth||900),H=Math.min(460,Math.max(320,W*0.5)),M={t:16,r:18,b:40,l:46};
-  const mxU=Math.max(...rows.map(r=>r.uso_campo))*1.08,ys0=[0.44,0.57];const xs=v=>M.l+(W-M.l-M.r)*v/mxU,ys=v=>M.t+(H-M.t-M.b)*(1-(Math.max(ys0[0],Math.min(ys0[1],v))-ys0[0])/(ys0[1]-ys0[0]));
+  const mxU=Math.max(...rows.map(r=>r.uso_campo))*1.15,mnU=Math.max(0.004,Math.min(...rows.map(r=>r.uso_campo))*0.8),ys0=[0.44,0.57];const xs=v=>M.l+(W-M.l-M.r)*Math.log(Math.max(v,mnU)/mnU)/Math.log(mxU/mnU),ys=v=>M.t+(H-M.t-M.b)*(1-(Math.max(ys0[0],Math.min(ys0[1],v))-ys0[0])/(ys0[1]-ys0[0]));
   const s=svgEl(W,H);
   add(s,'rect',{x:M.l,y:M.t,width:W-M.l-M.r,height:ys(0.5)-M.t,fill:'var(--up)','fill-opacity':.06});add(s,'rect',{x:M.l,y:ys(0.5),width:W-M.l-M.r,height:H-M.b-ys(0.5),fill:'var(--down)','fill-opacity':.06});
   [0.44,0.46,0.48,0.5,0.52,0.54,0.56].forEach(v=>{add(s,'line',{x1:M.l,x2:W-M.r,y1:ys(v),y2:ys(v),stroke:v===0.5?'var(--muted)':'var(--line)','stroke-dasharray':v===0.5?'4 4':''});add(s,'text',{x:M.l-6,y:ys(v)+4,'text-anchor':'end'}).textContent=Math.round(v*100)+'%';});
-  const st=mxU>0.4?0.1:0.05;for(let v=0;v<=mxU;v+=st){add(s,'line',{x1:xs(v),x2:xs(v),y1:M.t,y2:H-M.b,stroke:'var(--line)'});add(s,'text',{x:xs(v),y:H-M.b+16,'text-anchor':'middle'}).textContent=Math.round(v*100)+'%';}
-  add(s,'text',{x:(M.l+W-M.r)/2,y:H-6,'text-anchor':'middle'}).textContent='uso en el campo completo →';
+  [0.005,0.01,0.02,0.05,0.1,0.2,0.3,0.5].filter(v=>v>=mnU&&v<=mxU).forEach(v=>{add(s,'line',{x1:xs(v),x2:xs(v),y1:M.t,y2:H-M.b,stroke:'var(--line)'});add(s,'text',{x:xs(v),y:H-M.b+16,'text-anchor':'middle'}).textContent=(v<0.01?(v*100).toFixed(1):Math.round(v*100))+'%';});
+  add(s,'text',{x:(M.l+W-M.r)/2,y:H-6,'text-anchor':'middle'}).textContent='uso en el campo completo (escala logarítmica) →';
   const tl=add(s,'text',{x:W-M.r-4,y:M.t+14,'text-anchor':'end'});tl.textContent='gana más de lo que pierde';tl.style.fill='var(--up)';
   const bl=add(s,'text',{x:W-M.r-4,y:H-M.b-6,'text-anchor':'end'});bl.textContent='pierde más de lo que gana';bl.style.fill='var(--down)';
   const R=Math.max(22,Math.min(34,W/30));
@@ -1246,7 +1259,7 @@ function scatter(el,rows){el.textContent='';const W=Math.max(320,el.clientWidth|
     hit.addEventListener('mousemove',e=>showTip(e,txt));hit.addEventListener('mouseleave',hideTip);hit.addEventListener('click',e=>showTip(e,txt));});
   el.appendChild(s);}
 draws.rendimiento=()=>{const N=WR.reduce((a,r)=>{a[r.event]=+r.teams;return a;},{});const teams=Object.values(N).reduce((a,b)=>a+b,0);
-  document.getElementById('wr-note').textContent='Cada Pokémon según cuántos equipos lo llevan (eje horizontal) y qué parte de sus partidas gana (eje vertical), en todas las rondas de '+WR_EV.length+' torneos con resultados abiertos ('+teams.toLocaleString('es')+' equipos). Arriba de la línea gana más de lo que pierde. Solo Pokémon con 200+ partidas.';
+  document.getElementById('wr-note').textContent='Cada Pokémon según cuántos equipos lo llevan (eje horizontal) y qué parte de sus partidas gana (eje vertical), en todas las rondas de '+WR_EV.length+' torneos con resultados abiertos ('+teams.toLocaleString('es')+' equipos). Arriba de la línea gana más de lo que pierde. Solo Pokémon con 200+ partidas. El eje horizontal es logarítmico (1%, 2%, 5%, 10%…) para que los poco usados no queden amontonados.';
   scatter(document.getElementById('ch-scatter'),C.conv);
   const el=document.getElementById('r-wr');el.textContent='';
   C.wr.forEach(r=>{const d=r.winrate-0.5;el.appendChild(rowEl(r.pokemon,r.pokemon,[[Math.min(50,Math.abs(d)/0.1*50),d>=0?'pos':'neg']],'<b>'+pct(r.winrate)+'</b> · '+r.wins+'-'+r.losses,{dv:1,title:disp(r.pokemon)+': '+r.wins+' victorias, '+r.losses+' derrotas'}));});
@@ -1264,7 +1277,7 @@ draws.sets=()=>{const opts=Object.keys(C.setd.n).sort((a,b)=>C.setd.n[b]-C.setd.
   const core=mov.filter(r=>r.pct>=0.8).map(r=>r.opcion),flex=mov.filter(r=>r.pct<0.8&&r.pct>=0.15).map(r=>r.opcion+' '+pct0(r.pct));
   document.getElementById('set-core').innerHTML='<b>Fijos (80%+):</b> '+esc(core.join(', ')||'ninguno')+'. <b>Huecos flexibles:</b> '+esc(flex.join(', ')||'—')+'.';
   const bars=(id,rs,cat)=>{const el=document.getElementById(id);el.textContent='';let last='';rs.forEach(r=>{if(cat&&r.cat!==last){last=r.cat;const h=document.createElement('div');h.className='sub';h.textContent=r.cat;el.appendChild(h);}
-    el.appendChild(barRow(r.opcion,[[r.pct*100],[(r.pct_top8||0)*100,'b2']],'<b>'+pct0(r.pct)+'</b> · '+(r.pct_top8==null?'—':pct0(r.pct_top8)),{title:r.opcion+': '+r.veces+' veces',item:r.cat==='Objeto'}));});};
+    el.appendChild(barRow(r.opcion,[[r.pct*100],[r.pct_top8==null?null:r.pct_top8*100,'m8 '+t8dir(r.pct,r.pct_top8)]],t8val(r.pct,r.pct_top8,pct0),{title:r.opcion+': '+r.veces+' veces',item:r.cat==='Objeto'}));});};
   bars('r-set-mov',mov.filter(r=>r.veces>=2||mov.length<12).slice(0,16));
   const oc={Objeto:0,Habilidad:1,Naturaleza:2};bars('r-set-otros',rows.filter(r=>r.cat!=='Movimiento'&&(r.veces>=2||r.pct>=0.1)).sort((a,b)=>oc[a.cat]-oc[b.cat]||b.veces-a.veces),true);
   const te=document.getElementById('r-tech');te.textContent='';const ts=C.techs.filter(r=>r.pokemon===p&&(!techSig.value||r.senal!=='Débil'));
@@ -1285,14 +1298,14 @@ const compSel=document.getElementById('f-comp');compSel.addEventListener('change
 const N8=(()=>{const c={};E.forEach(r=>{if(+r.place<=8)new Set(r.mons.split(' / ').map(baseOf)).forEach(b=>c[b]=(c[b]||0)+1);});return c;})();
 draws.companeros=()=>{const n=C.comp.n,opts=Object.keys(n).sort((a,b)=>n[b]-n[a]);fillSel(compSel,opts,v=>disp(v)+' ('+n[v]+')');const p=compSel.value;
   document.getElementById('comp-img').src=sprite(p);document.getElementById('comp-n').textContent=n[p]+' equipos · '+(N8[p]||0)+' en Top 8';
-  const el=document.getElementById('r-comp');el.textContent='';C.comp.rows.filter(r=>r.pokemon===p).slice(0,20).forEach(r=>el.appendChild(rowEl(r.companero,r.companero,[[r.pct*100],[N8[p]?r.top8/N8[p]*100:0,'b2']],'<b>'+pct0(r.pct)+'</b> · '+(N8[p]?pct0(r.top8/N8[p]):'—'),{title:r.juntos+' equipos juntos, '+r.top8+' en Top 8'})));};
+  const el=document.getElementById('r-comp');el.textContent='';C.comp.rows.filter(r=>r.pokemon===p).slice(0,20).forEach(r=>el.appendChild(rowEl(r.companero,r.companero,[[r.pct*100],[N8[p]?r.top8/N8[p]*100:null,'m8 '+t8dir(r.pct,N8[p]?r.top8/N8[p]:null)]],t8val(r.pct,N8[p]?r.top8/N8[p]:null,pct0),{title:r.juntos+' equipos juntos, '+r.top8+' en Top 8'})));};
 
 /* Herramientas */
 draws.herramientas=()=>{const el=document.getElementById('r-tools');el.textContent='';const mx=Math.max(...C.tools.map(r=>Math.max(r.pct_sep,r.pct_oct)))*1.05;let last='';
   C.tools.forEach(r=>{if(r.grupo!==last){last=r.grupo;const h=document.createElement('div');h.className='sub';h.textContent=r.grupo;el.appendChild(h);}
     const d=document.createElement('div');d.className='db';d.title=r.como;
     const a=Math.min(r.pct_sep,r.pct_oct)/mx*100,b=Math.max(r.pct_sep,r.pct_oct)/mx*100;
-    d.innerHTML='<span class="nm">'+esc(r.herramienta)+'</span><span class="dtrk"><i class="seg '+(r.cambio>=0?'up':'dn')+'" style="left:'+a+'%;width:'+(b-a)+'%"></i><i class="dot s" style="left:'+(r.pct_sep/mx*100)+'%"></i><i class="dot o" style="left:'+(r.pct_oct/mx*100)+'%"></i></span><span class="val">'+pct0(r.pct_sep)+' → <b>'+pct0(r.pct_oct)+'</b> <span class="'+(r.cambio>0.02?'pos':r.cambio<-0.02?'neg':'muted')+'">'+(r.cambio>0?'+':'')+Math.round(r.cambio*100)+'</span></span>';
+    d.innerHTML='<span class="nm">'+esc(r.herramienta)+'</span><span class="dtrk"><i class="seg '+(r.cambio>=0.02?'up':r.cambio<=-0.02?'dn':'fl')+'" style="left:'+a+'%;width:'+(b-a)+'%"></i><i class="dot s" style="left:'+(r.pct_sep/mx*100)+'%"></i><i class="dot o" style="left:'+(r.pct_oct/mx*100)+'%"></i></span><span class="val">'+pct0(r.pct_sep)+' → <b>'+pct0(r.pct_oct)+'</b> <span class="'+(r.cambio>0.02?'pos':r.cambio<-0.02?'neg':'muted')+'">'+(r.cambio>0?'+':'')+Math.round(r.cambio*100)+'</span></span>';
     el.appendChild(d);});
   table('t-tools',C.tools,[['grupo'],['herramienta'],['como'],['pct',{n:1,f:pct}],['pct_top8',{n:1,f:pct}],['pct_sep',{n:1,f:pct}],['pct_oct',{n:1,f:pct}],['cambio',{n:1,html:(td,r)=>{td.textContent=spp(r.cambio);td.className='n '+(r.cambio>0.02?'pos':r.cambio<-0.02?'neg':'');}}]]);};
 sortable('t-tools',draws.herramientas);
