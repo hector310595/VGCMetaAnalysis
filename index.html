@@ -242,6 +242,32 @@ td a:hover{text-decoration:underline}
 .lad.few{opacity:.55}.lad .val small{color:var(--muted);font-weight:400}
 .bchips{display:flex;flex-wrap:wrap;gap:6px}
 .lad .nm2{display:flex;flex-direction:column;line-height:1.15;min-width:0}.lad .nm2>*{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.lad .nm2 small{font-size:.72rem;color:var(--muted)}
+.duelhd{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:start}
+.dside{display:flex;flex-direction:column;gap:8px;min-width:0}
+.dside select{font:inherit;font-size:.9rem;padding:7px 12px;border-radius:var(--r-pill);border:1px solid var(--line);background:var(--panel-2);color:var(--fg);width:100%}
+.dmon{display:flex;gap:10px;align-items:center;background:var(--panel-2);border-radius:16px;padding:10px 12px;min-width:0}
+.dmon>img{width:64px;height:64px;flex:none}
+.dmon .t{display:flex;flex-direction:column;gap:4px;min-width:0}
+.dmon b{font-size:1rem}
+.dmon small{font-size:.76rem;color:var(--muted)}
+.dmon .vers{display:flex;flex-wrap:wrap;gap:4px}
+.dmon .vers span{font-family:var(--f-mono);font-size:.72rem;background:var(--panel);border-radius:var(--r-pill);padding:1px 8px;white-space:nowrap}
+#duel-b .dmon{flex-direction:row-reverse;text-align:right}#duel-b .dmon .vers{justify-content:flex-end}
+.dswap{margin-top:52px;width:40px;height:40px;border-radius:50%;border:0;background:var(--panel-2);color:var(--fg);cursor:pointer;font-size:1.1rem;box-shadow:0 0 0 1px var(--line)}
+@media (max-width:620px){.duelhd{grid-template-columns:minmax(0,1fr)}.dswap{margin:0 auto}#duel-b .dmon{flex-direction:row;text-align:left}#duel-b .dmon .vers{justify-content:flex-start}.dmon>img{width:48px;height:48px}}
+.dsum{margin:0;font-size:.95rem;line-height:1.5}
+.dsc{display:flex;flex-direction:column;gap:8px}
+.dsr{display:grid;grid-template-columns:48px minmax(0,1fr);gap:10px;align-items:center;background:var(--panel-2);border-radius:14px;padding:8px 12px}
+.dsr>img{width:48px;height:48px}
+.dsr .tie{width:48px;height:48px;display:grid;place-items:center;font-family:var(--f-mono);font-size:.8rem;color:var(--muted)}
+.dsr .tt{display:flex;justify-content:space-between;gap:8px;align-items:baseline;flex-wrap:wrap}
+.dsr .tt b{font-weight:600}
+.dsr .tt small{color:var(--muted);font-size:.78rem}
+.dsr .why{font-size:.76rem;color:var(--muted);margin-top:2px}
+.split{display:flex;height:10px;border-radius:var(--r-pill);overflow:hidden;margin-top:6px;background:var(--track)}
+.split i{display:block;height:100%}.split .sa{background:var(--accent)}.split .sb{background:var(--sun)}
+.splitlab{display:flex;justify-content:space-between;font-family:var(--f-mono);font-size:.72rem;color:var(--muted);margin-top:2px}
+.splitlab .la{color:var(--accent-soft)}.splitlab .lb{color:var(--sun)}
 /* Gráfica de líneas */
 .chart{position:relative;width:100%}
 .chart svg{display:block;width:100%;height:auto;overflow:visible}
@@ -503,33 +529,31 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
     <div class="card"><h2>De dónde salen estos spreads</h2>
       <p class="note">Los pastes de torneo ocultan los stat points, así que esta pestaña usa equipos que los jugadores publicaron completos, recopilados por el <a href="https://x.com/VGCPastes" target="_blank" rel="noopener">VGCPastes Repository</a> hasta el 26 de octubre: <b>219 equipos con resultado</b>, <b>1,314 Pokémon</b>. Stats a nivel 50 con IVs máximos: HP = base + 75 + SP; resto = (base + 20 + SP) × naturaleza. Las megas usan sus stats de mega.</p></div>
     <div class="card"><h2>Escalera de velocidades</h2>
-      <p class="note">Rango de velocidad de cada Pokémon y su valor más repetido (punto). Elige el escenario: <b>en sus stats</b> es el número del spread; <b>en combate</b> aplica su objeto y su habilidad cuando su propio equipo la activa (Choice Scarf ×1.5; Unburden con semilla, Swift Swim, Chlorophyll o Sand Rush ×2); <b>con Tailwind</b> solo cuenta los spreads de equipos que llevan Tailwind (×2); <b>Trick Room</b> ordena de más lento a más rápido los de equipos con Trick Room. En combate cada versión (naturaleza + objeto/habilidad) va por separado: Garchomp Adamant con Scarf no es el Garchomp Jolly con Life Orb. Atenuados: menos de 5 spreads (u 8 en la vista de stats, donde también entran Pokémon con 8+ equipos en el Top 32).</p>
-      <div class="ctrl"><select id="f-lad" aria-label="Escenario"><option value="eff">En combate (objeto y habilidad)</option><option value="raw">En sus stats</option><option value="tw">Con Tailwind (equipos que lo llevan)</option><option value="tr">Trick Room (equipos que lo llevan)</option></select></div>
+      <p class="note">Rango de velocidad de cada Pokémon y su valor más repetido (punto). Elige el escenario: <b>en sus stats</b> es el número del spread; <b>en combate</b> aplica su objeto (Choice Scarf ×1.5); <b>con su habilidad activa</b> muestra solo los spreads cuya habilidad de velocidad puede activar su propio equipo (Unburden con su semilla y su campo, Swift Swim con lluvia, Chlorophyll con sol, Sand Rush con arena: ×2); <b>con Tailwind</b> solo cuenta los spreads de equipos que llevan Tailwind (×2); <b>Trick Room</b> ordena de más lento a más rápido los de equipos con Trick Room. En combate cada versión (naturaleza + objeto/habilidad) va por separado: Garchomp Adamant con Scarf no es el Garchomp Jolly con Life Orb. Atenuados: menos de 5 spreads (u 8 en la vista de stats, donde también entran Pokémon con 8+ equipos en el Top 32).</p>
+      <div class="ctrl"><select id="f-lad" aria-label="Escenario"><option value="eff">En combate (con su objeto)</option><option value="ab">Con su habilidad activa</option><option value="raw">En sus stats</option><option value="tw">Con Tailwind (equipos que lo llevan)</option><option value="tr">Trick Room (equipos que lo llevan)</option></select></div>
       <div id="r-ladder"></div></div>
     <div class="card" id="duel-card"><h2>¿Quién se mueve primero?</h2>
-      <p class="note">Compara todos los spreads publicados de dos Pokémon, cada uno con su objeto, su habilidad y el contexto de su propio equipo, y da el % de enfrentamientos en que se mueve antes el primero ("tuyo" = el de la izquierda). Así se ve, por ejemplo, contra qué escenarios necesitas Tailwind o Icy Wind.</p>
-      <div class="ctrl"><select id="f-duA" aria-label="Tu Pokémon"></select><span class="muted">vs</span><select id="f-duB" aria-label="Rival"></select></div>
-      <div class="rows" id="r-duel"></div>
-      <p class="note" id="duel-ctx"></p>
-      <div class="grid"><div><p class="note">Versiones del primero (velocidad en combate más repetida × spreads)</p><div class="ch bchips" id="duel-va"></div></div><div><p class="note">Versiones del rival</p><div class="ch bchips" id="duel-vb"></div></div></div></div>
+      <p class="note">Elige dos Pokémon. Se cruzan todos sus spreads publicados, cada uno con su objeto, y se cuenta quién se mueve antes en cada situación. Las habilidades de velocidad (Unburden, Swift Swim, Chlorophyll, Sand Rush) van en un escenario aparte.</p>
+      <div class="duelhd">
+        <div class="dside" id="duel-a"><select id="f-duA" aria-label="Pokémon 1"></select><div class="dmon"></div></div>
+        <button class="nb dswap" type="button" id="duel-swap" aria-label="Intercambiar" title="Intercambiar">⇄</button>
+        <div class="dside" id="duel-b"><select id="f-duB" aria-label="Pokémon 2"></select><div class="dmon"></div></div>
+      </div>
+      <p class="dsum" id="duel-sum"></p>
+      <div class="dsc" id="r-duel"></div>
+      <p class="note" id="duel-ctx"></p></div>
     <div class="card"><h2>Control de velocidad por arquetipo</h2>
       <p class="note">% de equipos del Top 32 de cada arquetipo (5+ equipos con sets) que llevan cada herramienta. "Habilidad" = Unburden con su semilla y su campo, o Swift Swim / Chlorophyll / Sand Rush con su clima en el equipo. "Nada" = ninguna de las anteriores.</p>
       <div class="tbox"><table id="t-ctrl"><thead><tr><th data-f="arquetipo">Arquetipo</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="p_tw">Tailwind</th><th class="n" data-f="p_tr">Trick Room</th><th class="n" data-f="p_icy">Icy Wind / Electroweb</th><th class="n" data-f="p_scarf">Scarf</th><th class="n" data-f="p_abil">Habilidad</th><th class="n" data-f="p_nada">Nada</th></tr></thead><tbody></tbody></table></div>
       <h3 style="font-size:1rem;margin-top:6px">¿Invierten menos velocidad si su equipo lleva Tailwind?</h3>
       <p class="note">Spreads publicados, sin contar equipos de Trick Room. Pokémon con 5+ spreads en cada grupo, ordenados por cuánta velocidad se ahorran con Tailwind (puntos de 32).</p>
       <div class="tbox"><table id="t-twinv"><thead><tr><th data-f="forma">Pokémon</th><th class="n" data-f="n_tw">Con TW</th><th class="n" data-f="max_tw">Vel. máx</th><th class="n" data-f="sp_tw">Puntos</th><th class="n" data-f="n_no">Sin TW</th><th class="n" data-f="max_no">Vel. máx</th><th class="n" data-f="sp_no">Puntos</th></tr></thead><tbody></tbody></table></div></div>
-    <div class="card" id="bench-card"><h2>Benchmarks de velocidad: a quién intentan superar</h2>
-      <p class="note">Spreads que <b>no</b> ponen 32 en velocidad y aun así quedan justo por encima de una <b>velocidad ancla</b>: la que repite al menos el 30% de una versión de otro Pokémon (mínimo 4 spreads; p. ej. Garchomp Adamant con Scarf a 231). Se mira en combate (con objeto y habilidad, hasta 3 puntos por encima) y, si su equipo lleva Tailwind, con la velocidad doblada (hasta 4 por encima): "×2 TW". Solo cuentan spreads que invierten algo en velocidad (2+ puntos; 4+ para la lectura con Tailwind, y sin Trick Room en el equipo): un Pokémon al máximo con su naturaleza, o sin inversión, no persigue a nadie.</p>
-      <h3 style="font-size:1rem">Las velocidades más perseguidas</h3>
-      <div class="bench" id="r-bench"></div>
-      <p class="note">Es una coincidencia numérica, no una prueba: el motivo (evitar un OHKO, golpear primero a una amenaza concreta) hay que comprobarlo con cálculos de daño. Toca un Pokémon para ver sus spreads abajo.</p></div>
     <div class="card">
       <div class="focus"><img id="sp-img" alt=""><div class="t"><h2>Spreads por Pokémon</h2><div class="ctrl"><select id="f-sp" aria-label="Pokémon"></select><span class="muted" id="sp-n"></span></div></div></div>
       <div class="grid">
         <div><p class="note">Stat points promedio por stat (de 32)</p><div class="rows" id="r-spavg"></div></div>
         <div><p class="note">Velocidad final (nº de sets)</p><div class="chart" id="ch-spvel"></div></div>
       </div>
-      <div class="benchme" id="sp-bench"></div>
       <div class="tbox"><table id="t-sptop"><thead><tr><th data-f="nature">Naturaleza</th><th data-f="sp">SP (HP/Atk/Def/SpA/SpD/Spe)</th><th data-f="stats">Stats finales</th><th class="n" data-f="veces">Veces</th><th data-f="items">Objeto</th><th data-f="mejor">Mejor resultado</th><th data-f="paste">Paste</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card"><h2>Velocidades del meta</h2>
       <p class="note">Una fila por Pokémon (cada mega por separado) con la <b>velocidad final</b> de sus spreads publicados: el número que ves en el juego a nivel 50, ya con naturaleza y puntos, pero <b>sin</b> objeto, habilidad ni Tailwind (eso está en la escalera, vista "En combate"). Los puntos de velocidad van de 0 a 32.</p>
@@ -976,7 +1000,7 @@ const AR=[
   s:[{t:'bulk',f:'Salamence-Mega',min:20,l:'20+ puntos en HP/Def/DefEsp'},{t:'spemax',f:'Salamence-Mega',l:'Vel. máx (32)'}],
   dato:'Septiembre: 2 de 37 Salamence con 20+ puntos en HP, Defensa y Def. Especial (mediana: 2 puntos). Octubre: 6 de 9 (mediana: 24). Velocidad al máximo: 86% → 44%. Pasa de Timid 32 At. Esp. / 32 Vel. a Modest con 17–24 en Velocidad (velocidad final 157–180 en vez de 189) y puntos en HP y Def. Especial.',
   hip:'Las velocidades no son al azar. 157–158 deja a Salamence justo por encima de Arcanine Hisui, que va a 156 en 30 de sus 31 spreads (Jolly al máximo) y cuyo Head Smash le puede hacer OHKO: lo justo para golpear primero, y el resto de puntos va a HP y Def. Especial para aguantar a los atacantes especiales que dominan octubre. 180 supera a Mega Staraptor (178). Es la otra cara de la noticia anterior: el Salamence Timid de septiembre dejó de funcionar y sobrevive una versión ajustada a amenazas concretas.',
-  no:'Solo 9 sets en octubre (de 7 torneos distintos, incluidos locales; fuente: spreads públicos de VGCPastes y Victory Road). El OHKO de Head Smash y qué golpes especiales aguanta con ese bulk se confirman con cálculos de daño. Ver "Benchmarks de velocidad" en la pestaña Stat points.'},
+  no:'Solo 9 sets en octubre (de 7 torneos distintos, incluidos locales; fuente: spreads públicos de VGCPastes y Victory Road). El OHKO de Head Smash y qué golpes especiales aguanta con ese bulk se confirman con cálculos de daño. Compáralo en "¿Quién se mueve primero?" (pestaña Stat points).'},
  {sh:'Charizard Y y Rock Slide',dt:'sep → 25 oct',t:'Charizard Y sube y el Garchomp sin mega va siempre con Rock Slide',test:{t:'mega',n:'Charizard-Mega-Y',l:'Equipos con Mega Charizard Y'},
   s:[{t:'mega',n:'Charizard-Mega-Y',l:'Mega Charizard Y (% de equipos)'},{t:'m',p:'Garchomp',f:1,n:'Rock Slide',l:'Garchomp sin mega con Rock Slide'},{t:'m',p:'Garchomp-Mega-Z',f:1,n:'Rock Slide',l:'Mega Garchomp Z con Rock Slide'}],
   dato:'Charizard Y pasa de 17% a 36% de los equipos del Top 32. El Garchomp sin mega pasa de 69% a 95% con Rock Slide; ningún Mega Garchomp Z lo lleva (0 de 52 sets). Conviven dos Garchomp con papeles distintos.',
@@ -999,7 +1023,7 @@ const AR=[
  {sh:'Tailwind y benchmarks',dt:'sep → oct',t:'Con Tailwind, los lentos también persiguen velocidades',test:null,pill:'Patrón estable (no es un cambio en el tiempo)',s:[],
   dato:'En equipos con Tailwind, Kingambit sí invierte velocidad (11 de 32 puntos de media, frente a 3 sin Tailwind) y se queda en 79–80: doblado son 158–160, justo por encima de Arcanine Hisui (156). Charizard Y a 133–134 con Tailwind (266–268) supera al Venusaur con Chlorophyll al sol (264), clave en el espejo de sol. Rillaboom a 112–113 con Tailwind (224–226) supera a Mega Aerodactyl (222). En cambio, los rápidos se ahorran puntos: Sneasler va al máximo en el 42% de los equipos con Tailwind y en el 69% sin él.',
   hip:'Tailwind no solo acelera: cambia cuánto hay que invertir. Los rápidos ahorran velocidad para meter bulk o daño, y los lentos ajustan su número para que, doblado, supere a una amenaza concreta.',
-  no:'Son coincidencias numéricas de 5–15 spreads. Si de verdad apuntan ahí se confirma con el cálculo de daño de esa amenaza. Ver "Benchmarks de velocidad" y "¿Quién se mueve primero?" en Stat points.'},
+  no:'Son coincidencias numéricas de 5–15 spreads. Si de verdad apuntan ahí se confirma con el cálculo de daño de esa amenaza. Compruébalo en "¿Quién se mueve primero?" (pestaña Stat points).'},
  {sh:'Sylveon: Moonblast',dt:'sep → 25 oct',t:'Sylveon deja Hyper Beam por Moonblast',test:{t:'m',p:'Sylveon',n:'Hyper Beam',l:'Sylveon con Hyper Beam'},
   s:[{t:'m',p:'Sylveon',n:'Hyper Beam',l:'Sylveon con Hyper Beam'},{t:'m',p:'Sylveon',n:'Moonblast',l:'Sylveon con Moonblast'}],
   dato:'Hyper Beam pasa de 83% a 35% de los Sylveon y Moonblast de 0% a 38%.',
@@ -1175,13 +1199,13 @@ function speedMod(r,T){let m=1;const tags=[];if(r.item==='Choice Scarf'){m*=1.5;
   if((a==='Swift Swim'||f==='Swampert-Mega')&&T.rain)ab='Swift Swim';else if(a==='Chlorophyll'&&T.sun)ab='Chlorophyll';else if(a==='Sand Rush'&&T.sand)ab='Sand Rush';else if(a==='Slush Rush'&&T.snow)ab='Slush Rush';
   else if(a==='Unburden'&&((it==='Electric Seed'&&T.eT)||(it==='Grassy Seed'&&T.gT)||(it==='Psychic Seed'&&T.pT)||(it==='Misty Seed'&&T.mT)))ab='Unburden';
   return {scarf:r.item==='Choice Scarf',ab,tags:ab?tags.concat(ab):tags};}
-const SV=SPd.filter(r=>r.spe_f!=='').map(r=>{const T=SPTEAM[r.paste]||{};const md=speedMod(r,T);const raw=+r.spe_f;let eff=md.scarf?Math.floor(raw*1.5):raw;if(md.ab)eff*=2;
-  return {r,f:r.forma,raw,eff,sp:+r.spe,tw:!!T.tw,tr:!!T.tr,icy:!!T.icy,lab:[r.nature].concat(md.tags).filter(Boolean).join(' '),ver:r.forma+'|'+[r.nature].concat(md.tags).filter(Boolean).join(' ')};});
+const SV=SPd.filter(r=>r.spe_f!=='').map(r=>{const T=SPTEAM[r.paste]||{};const md=speedMod(r,T);const raw=+r.spe_f;const norm=md.scarf?Math.floor(raw*1.5):raw;const lab=[r.nature,md.scarf?'Scarf':''].filter(Boolean).join(' ');
+  return {r,f:r.forma,raw,eff:norm,ab:md.ab,abil:md.ab?norm*2:norm,sp:+r.spe,tw:!!T.tw,tr:!!T.tr,icy:!!T.icy,lab,ver:r.forma+'|'+lab,verAb:md.ab?r.forma+'|'+[lab,md.ab].filter(Boolean).join(' '):null};});
 const verName=v=>{const [f,l]=v.split('|');return formName(f)+(l?' · '+l:'');};
 function statsOf(vals){const c={};vals.forEach(v=>c[v]=(c[v]||0)+1);const md=+Object.entries(c).sort((a,b)=>b[1]-a[1]||b[0]-a[0])[0][0];return {min:Math.min(...vals),max:Math.max(...vals),moda:md,n:vals.length};}
 function ladderRows(mode){const rows=[];
   if(mode==='raw'){C.vel.filter(r=>r.n>=8||(USEF[r.forma]||0)>=8).forEach(r=>rows.push({img:r.forma,name:megaLabel(r.forma),min:r.min,max:r.max,moda:r.moda,n:r.n,few:r.n<8,extra:r.n<8?'; pocos datos, está aquí por ir en '+USEF[r.forma]+' equipos del Top 32':''}));return rows;}
-  const g={};SV.forEach(s=>{if(mode==='tw'&&!s.tw)return;if(mode==='tr'&&!s.tr)return;const v=mode==='tw'?s.eff*2:s.eff;(g[s.ver]=g[s.ver]||[]).push(v);});
+  const g={};SV.forEach(s=>{if(mode==='tw'&&!s.tw)return;if(mode==='tr'&&!s.tr)return;if(mode==='ab'){if(!s.ab)return;(g[s.verAb]=g[s.verAb]||[]).push(s.abil);return;}const v=mode==='tw'?s.eff*2:s.eff;(g[s.ver]=g[s.ver]||[]).push(v);});
   Object.entries(g).forEach(([ver,vals])=>{if(vals.length<3)return;const st=statsOf(vals);rows.push({img:ver.split('|')[0],name:formName(ver.split('|')[0]),sub:ver.split('|')[1]||'',...st,few:vals.length<5,extra:''});});return rows;}
 function ladder(){const el=document.getElementById('r-ladder');el.textContent='';const mode=document.getElementById('f-lad').value;const asc=mode==='tr';
   const rows=ladderRows(mode).sort((a,b)=>asc?a.moda-b.moda:b.moda-a.moda);if(!rows.length)return;
@@ -1196,24 +1220,41 @@ document.getElementById('f-lad').addEventListener('change',ladder);
 /* --- duelo: ¿quién se mueve primero? --- */
 const SVF={};SV.forEach(s=>(SVF[s.f]=SVF[s.f]||[]).push(s));
 const duA=document.getElementById('f-duA'),duB=document.getElementById('f-duB');[duA,duB].forEach(x=>x.addEventListener('change',drawDuel));
+document.getElementById('duel-swap').addEventListener('click',()=>{const t=duA.value;duA.value=duB.value;duB.value=t;drawDuel();});
 function pFirst(A,B,fa,fb,rev){let w=0,n=0;A.forEach(a=>B.forEach(b=>{const x=fa(a),y=fb(b);w+=x===y?0.5:((rev?x<y:x>y)?1:0);n++;}));return n?w/n:null;}
 function drawDuel(){const fs=Object.keys(SVF).filter(f=>SVF[f].length>=5).sort((a,b)=>SVF[b].length-SVF[a].length);
-  fillSel(duA,fs,f=>formName(f)+' ('+SVF[f].length+')');fillSel(duB,fs,f=>formName(f)+' ('+SVF[f].length+')');
+  fillSel(duA,fs,f=>formName(f)+' ('+SVF[f].length+' spreads)');fillSel(duB,fs,f=>formName(f)+' ('+SVF[f].length+' spreads)');
   if(!duA.dataset.init){duA.dataset.init=1;if(fs.includes('Sneasler'))duA.value='Sneasler';if(fs.includes('Garchomp'))duB.value='Garchomp';}
-  const A=SVF[duA.value],B=SVF[duB.value],nA=formName(duA.value),nB=formName(duB.value);const icy=v=>Math.floor(v*2/3);
-  const sc=[['Normal (sin Tailwind ni TR)',a=>a.eff,b=>b.eff,0,'Con su objeto y habilidad (Scarf, Unburden, Swift Swim…) si su equipo la activa.'],
-    ['Tailwind tuyo',a=>a.eff*2,b=>b.eff,0,'Tailwind solo de tu lado.'],
-    ['Tailwind del rival',a=>a.eff,b=>b.eff*2,0,'Tailwind solo del rival. Si ambos lo tienen, es igual que el primer caso.'],
-    ['Trick Room',a=>a.eff,b=>b.eff,1,'Se mueve primero el más lento (Scarf y habilidades siguen contando).'],
-    ['Icy Wind al rival',a=>a.eff,b=>icy(b.eff),0,'−1 de velocidad al rival (Icy Wind o Electroweb).'],
-    ['Icy Wind a ti',a=>icy(a.eff),b=>b.eff,0,'−1 de velocidad para ti.']];
-  const box=document.getElementById('r-duel');box.textContent='';
-  sc.forEach(([lab,fa,fb,rev,help])=>{const pv=pFirst(A,B,fa,fb,rev);const r=rowEl(duA.value,lab,[[pv*100,'']],'<b>'+pct0(pv)+'</b> primero',{title:help});box.appendChild(r);});
-  const ctx=document.getElementById('duel-ctx');const P=(arr,k)=>pct0(arr.filter(s=>s[k]).length/arr.length);
-  ctx.innerHTML='En sus equipos publicados: <b>'+nA+'</b> lleva Tailwind en el '+P(A,'tw')+' y Trick Room en el '+P(A,'tr')+'; <b>'+nB+'</b> en el '+P(B,'tw')+' y el '+P(B,'tr')+'. Empates = 50%. No cuenta prioridad (Fake Out, Sucker Punch, Prankster…).';
-  const vers=(arr,el)=>{el.textContent='';const g={};arr.forEach(s=>(g[s.lab]=g[s.lab]||[]).push(s.eff));Object.entries(g).sort((a,b)=>b[1].length-a[1].length).slice(0,5).forEach(([l,vals])=>{const st=statsOf(vals);const c=document.createElement('span');c.className='bchip';c.style.cursor='default';c.appendChild(img(arr[0].f));const t=document.createElement('span');t.innerHTML=(l||'—')+' <span class="mono">'+st.moda+' ×'+vals.length+'</span>';c.appendChild(t);el.appendChild(c);});};
-  vers(A,document.getElementById('duel-va'));vers(B,document.getElementById('duel-vb'));}
+  const fA=duA.value,fB=duB.value,A=SVF[fA],B=SVF[fB],nA=formName(fA),nB=formName(fB);const icy=v=>Math.floor(v*2/3);const P=(arr,k)=>arr.filter(s=>s[k]).length/arr.length;
+  const card=(el,f,arr)=>{el.textContent='';el.appendChild(img(f));const t=document.createElement('div');t.className='t';const b=document.createElement('b');b.textContent=formName(f);t.appendChild(b);
+    const sm=document.createElement('small');sm.textContent='Tailwind en el '+pct0(P(arr,'tw'))+' de sus equipos · Trick Room en el '+pct0(P(arr,'tr'));t.appendChild(sm);
+    const g={};arr.forEach(s=>(g[s.lab]=g[s.lab]||[]).push(s.eff));const vs=document.createElement('div');vs.className='vers';
+    Object.entries(g).sort((a,b)=>b[1].length-a[1].length).slice(0,4).forEach(([l,vals])=>{const sp=document.createElement('span');sp.textContent=(l||'—')+' '+statsOf(vals).moda;sp.title=vals.length+' spreads; velocidad más repetida (con Scarf si lo lleva)';vs.appendChild(sp);});
+    const ga={};arr.filter(s=>s.ab).forEach(s=>(ga[s.ab]=ga[s.ab]||[]).push(s.abil));Object.entries(ga).forEach(([ab,vals])=>{const sp=document.createElement('span');sp.textContent='con '+ab+' '+statsOf(vals).moda;sp.title=vals.length+' spreads pueden activarla';vs.appendChild(sp);});t.appendChild(vs);el.appendChild(t);};
+  card(document.querySelector('#duel-a .dmon'),fA,A);card(document.querySelector('#duel-b .dmon'),fB,B);
+  const hasAb=A.some(s=>s.ab)||B.some(s=>s.ab);const abN=arr=>[...new Set(arr.filter(s=>s.ab).map(s=>s.ab))].join('/');
+  const sc=[['Normal','Sin Tailwind, Trick Room ni habilidades de velocidad. Cuenta Choice Scarf.',a=>a.eff,b=>b.eff,0]].concat(hasAb?[['Con habilidades activas','Las habilidades de velocidad activas en los spreads cuyo equipo las activa'+(abN(A)?' ('+nA+': '+abN(A)+')':'')+(abN(B)?' ('+nB+': '+abN(B)+')':'')+'. Por ejemplo, Unburden tras consumir la semilla al entrar el campo.',a=>a.abil,b=>b.abil,0]]:[]).concat([
 
+    ['Con Tailwind de '+nA,'Solo '+nA+' tiene Tailwind (velocidad ×2). Si ambos lo tienen, queda como en el caso normal.',a=>a.eff*2,b=>b.eff,0],
+    ['Con Tailwind de '+nB,'Solo '+nB+' tiene Tailwind (velocidad ×2).',a=>a.eff,b=>b.eff*2,0],
+    ['En Trick Room','Se mueve primero el más lento.',a=>a.eff,b=>b.eff,1],
+    ['Tras un Icy Wind a '+nB,nB+' con −1 de velocidad (Icy Wind o Electroweb).',a=>a.eff,b=>icy(b.eff),0],
+    ['Tras un Icy Wind a '+nA,nA+' con −1 de velocidad.',a=>icy(a.eff),b=>b.eff,0]]);
+  const box=document.getElementById('r-duel');box.textContent='';const res=[];
+  sc.forEach(([lab,why,fa,fb,rev])=>{const pa=pFirst(A,B,fa,fb,rev),pb=1-pa;res.push([lab,pa]);const r=document.createElement('div');r.className='dsr';
+    const win=pa>0.55?fA:pb>0.55?fB:null;if(win){r.appendChild(img(win));}else{const t=document.createElement('span');t.className='tie';t.textContent='≈';r.appendChild(t);}
+    const body=document.createElement('div');const tt=document.createElement('div');tt.className='tt';const h=document.createElement('b');h.textContent=lab;tt.appendChild(h);
+    const v=document.createElement('small');v.textContent=win?formName(win)+' primero en el '+pct0(Math.max(pa,pb))+' de los casos':'Muy parejo: depende del spread';tt.appendChild(v);body.appendChild(tt);
+    const sp=document.createElement('div');sp.className='split';sp.innerHTML='<i class="sa" style="width:'+(pa*100).toFixed(1)+'%"></i><i class="sb" style="width:'+(pb*100).toFixed(1)+'%"></i>';body.appendChild(sp);
+    const sl=document.createElement('div');sl.className='splitlab';sl.innerHTML='<span class="la">'+pct0(pa)+' '+esc(nA)+'</span><span class="lb">'+esc(nB)+' '+pct0(pb)+'</span>';body.appendChild(sl);
+    const w=document.createElement('div');w.className='why';w.textContent=why;body.appendChild(w);r.appendChild(body);box.appendChild(r);});
+  const base=res[0][1];const R=k=>(res.find(x=>x[0].startsWith(k))||[0,0.5])[1];const twA=R('Con Tailwind de '+nA),twB=R('Con Tailwind de '+nB),trv=R('En Trick Room'),icB=R('Tras un Icy Wind a '+nB);let sum;
+  if(base>=0.6)sum='<b>'+esc(nA)+'</b> '+(base>=0.75?'suele ser más rápido que':'va primero más a menudo ('+pct0(base)+') que')+' <b>'+esc(nB)+'</b>'+(twB<0.5?', salvo que '+esc(nB)+' tenga Tailwind':'')+(trv<0.5?'; en Trick Room se invierte':'')+'.';
+  else if(base<=0.4)sum='<b>'+esc(nB)+'</b> '+(base<=0.25?'suele ser más rápido que':'va primero más a menudo ('+pct0(1-base)+') que')+' <b>'+esc(nA)+'</b>'+(twA>0.5?'; con Tailwind de '+esc(nA)+' se invierte':'')+(icB>0.5?'; un Icy Wind a '+esc(nB)+' también le da la vuelta':'')+'.';
+  else sum='Sin modificadores está bastante parejo ('+pct0(base)+' para '+esc(nA)+'): depende de cada spread. '+(twA>0.8?'Con Tailwind de '+esc(nA)+', va primero casi siempre.':'');
+  if(hasAb){const ab=R('Con habilidades activas');if(Math.abs(ab-base)>0.15)sum+=' Con las habilidades activas cambia: '+esc(ab>=0.5?nA:nB)+' va primero en el '+pct0(Math.max(ab,1-ab))+'.';}
+  document.getElementById('duel-sum').innerHTML=sum;
+  document.getElementById('duel-ctx').textContent='Empates cuentan como 50%. No incluye prioridad (Fake Out, Sucker Punch, Prankster, Gale Wings) ni Unburden con White Herb, que solo se activa tras bajar una stat.';}
 /* --- control de velocidad por arquetipo (Top 32) --- */
 C.ctrl=(()=>{const tm={};S.forEach(r=>{const t=tm[r.team_id]=tm[r.team_id]||{tw:0,tr:0,icy:0,scarf:0,st:{},abl:[]};const m=mvsOf(r);if(m.includes('Tailwind'))t.tw=1;if(m.includes('Trick Room'))t.tr=1;if(m.includes('Icy Wind')||m.includes('Electroweb'))t.icy=1;if(r.item==='Choice Scarf')t.scarf=1;
     const st=setterOf(r.ability,formOf(r));Object.keys(st).forEach(k=>{if(st[k])t.st[k]=1;});t.abl.push(r);});
@@ -1246,13 +1287,12 @@ function benchMe(f){const box=document.getElementById('sp-bench');box.textConten
   const mine=C.bench.links.filter(l=>l.f===f).sort((a,b)=>b.k-a.k),chasers=C.bench.links.filter(l=>l.t.f===f).sort((a,b)=>b.k-a.k);
   if(mine.length){const d=document.createElement('div');d.className='ln';d.innerHTML='<span class="lbl">Sus velocidades con objetivo</span>';mine.forEach(l=>{const c=document.createElement('span');c.className='bchip';c.appendChild(img(l.t.f));const t=document.createElement('span');t.innerHTML=l.vs+(l.sc==='tw'?' (×2 con Tailwind)':'')+' ×'+l.k+' <span class="mono">supera a</span> '+verName(l.t.ver)+' <span class="mono">('+l.t.v+')</span>';c.appendChild(t);d.appendChild(c);});box.appendChild(d);}
   if(chasers.length){const d=document.createElement('div');d.className='ln';d.innerHTML='<span class="lbl">Quién va justo por encima de él</span>';chasers.forEach(l=>{const c=document.createElement('span');c.className='bchip';c.appendChild(img(l.f));const t=document.createElement('span');t.innerHTML=formName(l.f)+' <span class="mono">'+l.vs+(l.sc==='tw'?' ×2 TW':'')+' ×'+l.k+' (vs '+l.t.v+')</span>';c.appendChild(t);d.appendChild(c);});box.appendChild(d);}}
-draws['stat-points']=()=>{benchDraw();ladder();drawDuel();table('t-ctrl',C.ctrl,[['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['equipos',{n:1}],['p_tw',{n:1,f:pct0}],['p_tr',{n:1,f:pct0}],['p_icy',{n:1,f:pct0}],['p_scarf',{n:1,f:pct0}],['p_abil',{n:1,f:pct0}],['p_nada',{n:1,f:pct0}]]);table('t-twinv',C.twinv,[['forma',{pk:1,pkName:r=>r.forma}],['n_tw',{n:1}],['max_tw',{n:1,f:pct0}],['sp_tw',{n:1,f:f1}],['n_no',{n:1}],['max_no',{n:1,f:pct0}],['sp_no',{n:1,f:f1}]]);table('t-vel',C.vel,[['forma',{pk:1}],['n',{n:1}],['base',{n:1}],['min',{n:1}],['moda',{n:1}],['max',{n:1}],['pct_max',{n:1,f:pct0}],['pct_tr',{n:1,f:pct0}],['comunes']]);
+draws['stat-points']=()=>{ladder();drawDuel();table('t-ctrl',C.ctrl,[['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['equipos',{n:1}],['p_tw',{n:1,f:pct0}],['p_tr',{n:1,f:pct0}],['p_icy',{n:1,f:pct0}],['p_scarf',{n:1,f:pct0}],['p_abil',{n:1,f:pct0}],['p_nada',{n:1,f:pct0}]]);table('t-twinv',C.twinv,[['forma',{pk:1,pkName:r=>r.forma}],['n_tw',{n:1}],['max_tw',{n:1,f:pct0}],['sp_tw',{n:1,f:f1}],['n_no',{n:1}],['max_no',{n:1,f:pct0}],['sp_no',{n:1,f:f1}]]);table('t-vel',C.vel,[['forma',{pk:1}],['n',{n:1}],['base',{n:1}],['min',{n:1}],['moda',{n:1}],['max',{n:1}],['pct_max',{n:1,f:pct0}],['pct_tr',{n:1,f:pct0}],['comunes']]);
   const opts=C.vel.slice().sort((a,b)=>b.n-a.n).map(r=>r.forma);fillSel(spSel,opts,v=>megaLabel(v)+' ('+C.vel.find(r=>r.forma===v).n+')');const f=spSel.value,row=C.vel.find(r=>r.forma===f);
   document.getElementById('sp-img').src=sprite(f);document.getElementById('sp-n').textContent=row.n+' sets · velocidad base '+row.base;
   const K=['hp','atk','def_','spa','spd','spe'],L={hp:'HP',atk:'Atk',def_:'Def',spa:'SpA',spd:'SpD',spe:'Spe'};const el=document.getElementById('r-spavg');el.textContent='';
   K.forEach(k=>{const avg=row.rs.reduce((a,r)=>a+(+r[k]),0)/row.rs.length,p32=row.rs.filter(r=>+r[k]>=32).length/row.rs.length;el.appendChild(barRow(L[k],[[avg/32*100]],'<b>'+avg.toFixed(1)+'</b> · '+pct0(p32)+' con 32'));});
   velbars(document.getElementById('ch-spvel'),row.dist);
-  benchMe(f);
   table('t-sptop',C.sptop.filter(r=>r.forma===f),[['nature'],['sp',{html:(td,r)=>{td.textContent=r.sp;td.className='mono';}}],['stats',{html:(td,r)=>{td.textContent=r.stats;td.className='mono';}}],['veces',{n:1}],['items'],['mejor'],['paste',{link:1}]],15);};
 ['t-vel','t-sptop','t-ctrl','t-twinv'].forEach(id=>sortable(id,draws['stat-points']));
 
