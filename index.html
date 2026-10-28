@@ -274,6 +274,17 @@ td a:hover{text-decoration:underline}
 td.resl,td.difl{font-size:.8rem;min-width:14rem}td.resl div,td.difl div{white-space:normal}
 .fdesc{margin:0;font-size:.8rem;color:var(--muted);line-height:1.4}
 .roles{display:flex;flex-wrap:wrap;gap:3px;margin-top:2px}.roles span{font-size:.66rem;font-weight:600;padding:1px 6px;border-radius:var(--r-pill);background:var(--panel);color:var(--accent-soft)}
+.tops{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:12px}
+.tcard{background:var(--panel-2);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.thd{display:flex;justify-content:space-between;align-items:center;gap:8px}.thd .rk{font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.tfam{font-size:.8rem;font-weight:600;text-align:right}
+.tcard .team img{width:38px;height:38px}
+.tres{display:flex;flex-direction:column;line-height:1.3}.tres b{font-size:.95rem}.tres span{font-size:.82rem;color:var(--muted)}
+.tft{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:.78rem}.tft a{color:var(--accent-soft);text-decoration:none;margin-left:auto}
+.tmore summary{cursor:pointer;font-size:.8rem;color:var(--muted)}
+.tmore ul{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:.8rem}
+.tmore .same{color:var(--up);font-size:.74rem}.tmore .chg{color:var(--sun);font-size:.74rem}
+.more{align-self:center;font:inherit;font-size:.86rem;padding:7px 16px;border-radius:var(--r-pill);border:1px solid var(--line);background:var(--panel-2);color:var(--fg);cursor:pointer}
 /* Gráfica de líneas */
 .chart{position:relative;width:100%}
 .chart svg{display:block;width:100%;height:auto;overflow:visible}
@@ -413,8 +424,9 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
         <div class="tbox"><table id="t-var"><thead><tr><th data-f="pokemon">Pokémon</th><th class="n" data-f="presencia">Presencia</th><th data-f="objeto">Objeto</th><th data-f="naturaleza">Naturaleza</th><th data-f="fijos">Fijos</th><th data-f="opciones">Huecos flexibles</th><th data-f="mejor">Set del mejor clasificado</th></tr></thead><tbody></tbody></table></div></details></div>
     <div class="card"><h2>Ranking completo</h2><p class="note">"Sep" y "Oct" = % de los equipos del Top 32 de ese mes que son de este arquetipo.</p>
       <div class="tbox"><table id="t-rank"><thead><tr><th data-f="arquetipo">Arquetipo</th><th data-f="nucleo">Núcleo</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="top8">Top 8</th><th class="n" data-f="titulos">Títulos</th><th class="n" data-f="indice">Índice</th><th class="n" data-f="indice_medio">Por equipo</th><th class="n" data-f="cuota_sep">Sep</th><th class="n" data-f="cuota_oct">Oct</th><th data-f="mejor">Mejor resultado</th><th data-f="paste">Paste</th></tr></thead><tbody></tbody></table></div></div>
-    <div class="card"><h2>Equipos destacados</h2><p class="note">Los 30 equipos con mejor índice individual (buen puesto, en torneos grandes y recientes). Si varios jugadores llevaron las mismas seis especies, van en una sola fila con todos sus resultados; en "Diferencias" se indica si usaron exactamente los mismos sets (objetos, naturalezas y movimientos; los stat points no se pueden comparar porque los pastes de torneo los ocultan).</p>
-      <div class="tbox"><table id="t-top"><thead><tr><th data-f="mons">Equipo</th><th data-f="arquetipo">Familia</th><th data-f="res">Resultados</th><th class="n" data-f="indice">Mejor índice</th><th data-f="dif">Diferencias</th><th data-f="paste">Paste</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="card"><h2>Equipos destacados</h2><p class="note">Los equipos con mejor resultado en torneos grandes y recientes. Si varios jugadores llevaron el mismo equipo, aparece una sola vez con todos sus resultados.</p>
+      <div class="tops" id="g-top"></div>
+      <button class="more" type="button" id="top-more">Ver más equipos</button></div>
   </section>
 
   <section class="pg" id="p-matchups" hidden>
@@ -823,6 +835,22 @@ C.topg=(()=>{const SS={};S.forEach(r=>(SS[r.team_id]=SS[r.team_id]||{})[r.pokemo
       difs.push(d.length?r.place+'.º '+r.event+' — '+d.join(' · '):r.place+'.º '+r.event+' — idéntico');});
     return {mons:b.mons,arquetipo:b.arquetipo,indice:b.indice,n:rs.length,paste:b.paste,res:rs.map(r=>r.place+'.º '+r.event+' ('+r.player+')').join(' · '),rs,
       dif:rs.length===1?'—':(difs.every(x=>x.endsWith('idéntico'))?'Todos idénticos':difs.join(' | '))};}).sort((a,b)=>b.indice-a.indice).slice(0,30);})();
+let topN=12;document.getElementById('top-more').addEventListener('click',()=>{topN=topN===12?30:12;drawTops();});
+function drawTops(){const g=document.getElementById('g-top');g.textContent='';
+  C.topg.slice(0,topN).forEach((r,i)=>{const c=document.createElement('article');c.className='tcard';
+    const hd=document.createElement('div');hd.className='thd';hd.innerHTML='<span class="rk">#'+(i+1)+'</span>';const fl=document.createElement('span');fl.className='tfam';arqLabel(fl,r.arquetipo);hd.appendChild(fl);c.appendChild(hd);
+    c.appendChild(teamEl(r.mons));
+    const b=r.rs[0];const res=document.createElement('div');res.className='tres';res.innerHTML='<b>'+b.place+'.º '+esc(b.event)+'</b><span>'+esc(b.player)+'</span>';c.appendChild(res);
+    const ft=document.createElement('div');ft.className='tft';
+    if(r.n>1){const tg=document.createElement('span');const same=r.dif==='Todos idénticos';tg.className='pill '+(same?'up':'flat');tg.textContent=same?'Mismo equipo ×'+r.n:r.n+' resultados · con cambios';ft.appendChild(tg);}
+    const ix=document.createElement('span');ix.className='mono muted';ix.textContent='índice '+f1(r.indice);ft.appendChild(ix);
+    if(r.paste){const a=document.createElement('a');a.href=r.paste;a.target='_blank';a.rel='noopener';a.textContent='Paste ↗';ft.appendChild(a);}c.appendChild(ft);
+    if(r.n>1){const d=document.createElement('details');d.className='tmore';const sm=document.createElement('summary');sm.textContent='Ver los '+r.n+' resultados';d.appendChild(sm);
+      const ul=document.createElement('ul');const difs=r.dif==='Todos idénticos'?[]:r.dif.split(' | ');
+      r.rs.forEach((x,k)=>{const li=document.createElement('li');li.innerHTML='<b>'+x.place+'.º '+esc(x.event)+'</b> · '+esc(x.player);
+        if(k>0){const dd=difs[k-1]||'';const m=dd.split(' — ')[1]||'idéntico';const sp=document.createElement('div');sp.className=m==='idéntico'?'same':'chg';sp.textContent=m==='idéntico'?'mismos sets':m;li.appendChild(sp);}ul.appendChild(li);});d.appendChild(ul);c.appendChild(d);}
+    g.appendChild(c);});
+  const btn=document.getElementById('top-more');btn.textContent=topN===12?'Ver más equipos (30)':'Ver menos';btn.hidden=C.topg.length<=12;}
 draws.arquetipos=()=>{const g=document.getElementById('g-arq');g.textContent='';
   ra.slice(0,12).forEach((r,i)=>{const d=document.createElement('article');d.className='arq';
     const top=document.createElement('div');top.className='top';top.innerHTML='<span class="rk">#'+(i+1)+'</span>';const tg=arqTag(r.arquetipo);if(tg){const c=document.createElement('span');c.className='chip '+tagClass(r.arquetipo);c.textContent=tg;top.appendChild(c);}d.appendChild(top);
@@ -833,7 +861,7 @@ draws.arquetipos=()=>{const g=document.getElementById('g-arq');g.textContent='';
     const last=document.createElement('b');last.className='mono';last.textContent=pct0(vals[vals.length-1]);sp.appendChild(last);d.appendChild(sp);
     g.appendChild(d);});
   table('t-rank',C.rank,[['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['nucleo'],['equipos',{n:1}],['top8',{n:1}],['titulos',{n:1}],['indice',{n:1,f:f0}],['indice_medio',{n:1,f:f1}],['cuota_sep',{n:1,f:pct}],['cuota_oct',{n:1,f:pct}],['mejor'],['paste',{link:1}]]);
-  table('t-top',C.topg,[['mons',{team:1}],['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['res',{html:(td,r)=>{td.className='resl';r.rs.forEach((x,i)=>{const d=document.createElement('div');d.textContent=x.place+'.º '+x.event+' · '+x.player+' ('+f1(x.indice)+')';td.appendChild(d);});}}],['indice',{n:1,f:f1}],['dif',{html:(td,r)=>{td.className='difl';if(r.n===1){td.textContent='—';return;}if(r.dif==='Todos idénticos'){td.innerHTML='<b class="pos">Idénticos</b>';return;}r.dif.split(' | ').forEach(x=>{const d=document.createElement('div');d.textContent=x;td.appendChild(d);});}}],['paste',{link:1}]]);
+  drawTops();
   const ANm={};(D.anatomia||[]).forEach(o=>ANm[o.a]=o);
   const arqs=ra.map(r=>r.arquetipo).filter(a=>ANm[a]);fillSel(varSel,arqs,arqName);const ar=varSel.value;
   drawAnat(ANm[ar]);
@@ -894,7 +922,7 @@ function drawAnat(o){const box=document.getElementById('anat'),sum=document.getE
     sec.appendChild(grid);
     if(sl.otros&&sl.otros.k>=3){const p=document.createElement('p');p.className='otros-line';p.textContent=(sl.tipo==='mega'?'Sin '+(sl.label||'mega').toLowerCase()+': ':'Otras opciones o el hueco vacío: ')+sl.otros.k+' equipos.';sec.appendChild(p);}
     box.appendChild(sec);});}
-['t-rank','t-top','t-var'].forEach(id=>sortable(id,draws.arquetipos));
+['t-rank','t-var'].forEach(id=>sortable(id,draws.arquetipos));
 
 /* Matchups */
 const MX=D.matchups;const mxSel=document.getElementById('f-mx');mxSel.addEventListener('change',()=>draws.matchups());
