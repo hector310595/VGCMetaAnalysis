@@ -226,6 +226,19 @@ td a:hover{text-decoration:underline}
 .solid b.mono{font-weight:600}
 .artitles .lv{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:middle;background:var(--muted)}
 .artitles .lv.solida{background:var(--up)}.artitles .lv.probable{background:var(--sun)}.artitles .lv.debil{background:var(--down)}
+.bench{display:flex;flex-direction:column;gap:8px}
+.bnr{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:10px;align-items:center;background:var(--panel-2);border-radius:14px;padding:8px 12px}
+@media (max-width:620px){.bnr{grid-template-columns:minmax(0,1fr)}}
+.bnr .tg{display:flex;align-items:center;gap:8px;min-width:0}
+.bnr .tg img{width:44px;height:44px;flex:none}
+.bnr .tg b{display:block}
+.bnr .tg small{font-family:var(--f-mono);font-size:.74rem;color:var(--muted)}
+.bnr .ch{display:flex;flex-wrap:wrap;gap:6px}
+.bchip{display:inline-flex;align-items:center;gap:4px;padding:2px 10px 2px 2px;border-radius:var(--r-pill);background:var(--panel);font-size:.8rem;cursor:pointer;border:0;color:var(--fg);font-family:inherit}
+.bchip img{width:28px;height:28px}
+.bchip .mono{color:var(--muted);font-size:.74rem}
+.benchme{display:flex;flex-direction:column;gap:4px;font-size:.86rem}
+.benchme .ln{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
 /* Gráfica de líneas */
 .chart{position:relative;width:100%}
 .chart svg{display:block;width:100%;height:auto;overflow:visible}
@@ -488,12 +501,18 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
       <p class="note">Los pastes de torneo ocultan los stat points, así que esta pestaña usa equipos que los jugadores publicaron completos, recopilados por el <a href="https://x.com/VGCPastes" target="_blank" rel="noopener">VGCPastes Repository</a> hasta el 26 de octubre: <b>219 equipos con resultado</b>, <b>1,314 Pokémon</b>. Stats a nivel 50 con IVs máximos: HP = base + 75 + SP; resto = (base + 20 + SP) × naturaleza. Las megas usan sus stats de mega.</p></div>
     <div class="card"><h2>Escalera de velocidades</h2><p class="note">Rango de velocidad final de cada Pokémon en los spreads publicados (de la más lenta a la más rápida) y su velocidad más repetida (punto). Pokémon con 8+ sets.</p>
       <div id="r-ladder"></div></div>
+    <div class="card" id="bench-card"><h2>Benchmarks de velocidad: a quién intentan superar</h2>
+      <p class="note">Cuando un Pokémon no invierte toda su velocidad, casi siempre es para quedar justo por encima de un rival concreto (y gastar el resto en bulk o daño). Aquí se buscan esas coincidencias: velocidades usadas por 2+ spreads que quedan 1–3 puntos por encima de una <b>velocidad ancla</b>, la que usan al menos el 25% de los spreads de otro Pokémon (mínimo 4). No cuenta la velocidad máxima de cada Pokémon.</p>
+      <h3 style="font-size:1rem">Las velocidades más perseguidas</h3>
+      <div class="bench" id="r-bench"></div>
+      <p class="note">Es una coincidencia numérica, no una prueba: el motivo (evitar un OHKO, golpear primero a una amenaza concreta) hay que comprobarlo con cálculos de daño. Toca un Pokémon para ver sus spreads abajo.</p></div>
     <div class="card">
       <div class="focus"><img id="sp-img" alt=""><div class="t"><h2>Spreads por Pokémon</h2><div class="ctrl"><select id="f-sp" aria-label="Pokémon"></select><span class="muted" id="sp-n"></span></div></div></div>
       <div class="grid">
         <div><p class="note">Stat points promedio por stat (de 32)</p><div class="rows" id="r-spavg"></div></div>
         <div><p class="note">Velocidad final (nº de sets)</p><div class="chart" id="ch-spvel"></div></div>
       </div>
+      <div class="benchme" id="sp-bench"></div>
       <div class="tbox"><table id="t-sptop"><thead><tr><th data-f="nature">Naturaleza</th><th data-f="sp">SP (HP/Atk/Def/SpA/SpD/Spe)</th><th data-f="stats">Stats finales</th><th class="n" data-f="veces">Veces</th><th data-f="items">Objeto</th><th data-f="mejor">Mejor resultado</th><th data-f="paste">Paste</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card"><h2>Velocidades del meta</h2>
       <div class="tbox"><table id="t-vel"><thead><tr><th data-f="forma">Pokémon</th><th class="n" data-f="n">Sets</th><th class="n" data-f="base">Base</th><th class="n" data-f="min">Mín.</th><th class="n" data-f="moda">Moda</th><th class="n" data-f="max">Máx.</th><th class="n" data-f="pct_max">% 30+ SP</th><th class="n" data-f="pct_tr">% Trick Room</th><th data-f="comunes">Más comunes</th></tr></thead><tbody></tbody></table></div></div>
@@ -937,8 +956,8 @@ const AR=[
  {sh:'Salamence bulky',dt:'sep → oct',t:'El Salamence que sobrevive es más bulky y más lento',test:{t:'bulk',f:'Salamence-Mega',min:20,cut:'2026-10-01',l:'Salamence con 20+ puntos en bulk'},
   s:[{t:'bulk',f:'Salamence-Mega',min:20,l:'20+ puntos en HP/Def/DefEsp'},{t:'spemax',f:'Salamence-Mega',l:'Vel. máx (32)'}],
   dato:'Septiembre: 2 de 37 Salamence con 20+ puntos en HP, Defensa y Def. Especial (mediana: 2 puntos). Octubre: 6 de 9 (mediana: 24). Velocidad al máximo: 86% → 44%. Pasa de Timid 32 At. Esp. / 32 Vel. a Modest con 17–24 en Velocidad (velocidad final 157–180 en vez de 189) y puntos en HP y Def. Especial.',
-  hip:'Con más ataques especiales en el meta, quien sigue usando Salamence prefiere aguantar un golpe especial antes que ser el más rápido. Es la otra cara de la noticia anterior: el Salamence de septiembre dejó de funcionar y sobrevive una versión adaptada.',
-  no:'Solo 9 sets en octubre (de 7 torneos distintos, incluidos locales; fuente: spreads públicos de VGCPastes y Victory Road). Falta ver a qué velocidad apuntan esos 157–180 y qué golpes buscan aguantar: eso se comprueba con cálculos de daño.'},
+  hip:'Las velocidades no son al azar. 157–158 deja a Salamence justo por encima de Arcanine Hisui, que va a 156 en 30 de sus 31 spreads (Jolly al máximo) y cuyo Head Smash le puede hacer OHKO: lo justo para golpear primero, y el resto de puntos va a HP y Def. Especial para aguantar a los atacantes especiales que dominan octubre. 180 supera a Mega Staraptor (178). Es la otra cara de la noticia anterior: el Salamence Timid de septiembre dejó de funcionar y sobrevive una versión ajustada a amenazas concretas.',
+  no:'Solo 9 sets en octubre (de 7 torneos distintos, incluidos locales; fuente: spreads públicos de VGCPastes y Victory Road). El OHKO de Head Smash y qué golpes especiales aguanta con ese bulk se confirman con cálculos de daño. Ver "Benchmarks de velocidad" en la pestaña Stat points.'},
  {sh:'Charizard Y y Rock Slide',dt:'sep → 25 oct',t:'Charizard Y sube y el Garchomp sin mega va siempre con Rock Slide',test:{t:'mega',n:'Charizard-Mega-Y',l:'Equipos con Mega Charizard Y'},
   s:[{t:'mega',n:'Charizard-Mega-Y',l:'Mega Charizard Y (% de equipos)'},{t:'m',p:'Garchomp',f:1,n:'Rock Slide',l:'Garchomp sin mega con Rock Slide'},{t:'m',p:'Garchomp-Mega-Z',f:1,n:'Rock Slide',l:'Mega Garchomp Z con Rock Slide'}],
   dato:'Charizard Y pasa de 17% a 36% de los equipos del Top 32. El Garchomp sin mega pasa de 69% a 95% con Rock Slide; ningún Mega Garchomp Z lo lleva (0 de 52 sets). Conviven dos Garchomp con papeles distintos.',
@@ -954,6 +973,10 @@ const AR=[
   dato:'Snarl pasa del 21% al 68% de los Archaludon y Flash Cannon cae del 67% al 21%. La mayoría de los Snarl van en la lluvia de Golisopod.',
   hip:'Más atacantes especiales en el meta (Charizard Y, Raichu Y, Delphox, Floette): Snarl baja el Ataque Especial de los dos rivales a la vez. Flash Cannon servía sobre todo contra Floette y las hadas, cuyo uso no ha subido.',
   no:'Coincide con la llegada de Raichu X a la lluvia: el cambio puede venir del nuevo plan de juego del equipo más que de una amenaza concreta.'},
+ {sh:'Cadenas de velocidad',dt:'sep → oct',t:'Las velocidades se persiguen en cadena',test:null,pill:'Patrón estable (no es un cambio en el tiempo)',s:[],bench:'Arcanine-Hisui',
+  dato:'Arcanine Hisui va a 156 en 30 de 31 spreads, y es la velocidad más perseguida del meta: Sneasler (158 ×8), Charizard Y (157–158 ×7), Floette (158 ×3), Froslass, Metagross y Salamence se colocan justo por encima. Hay más cadenas: Garchomp sin mega a 169 ← Sneasler a 170/172 (48 spreads) ← Mega Metagross a 173. Mega Salamence a 189 ← Raichu Y a 190–192 (24 spreads) ← Mega Garchomp Z a 203 por encima del Raichu Y a 200. Dragonite a 152 supera al Gholdengo de 149, y Garchomp a 154 supera a ese Dragonite.',
+  hip:'Cada jugador invierte solo lo necesario para golpear antes que la amenaza que más le preocupa y gasta el resto en bulk o daño. Cuando un Pokémon se vuelve popular, su velocidad típica se convierte en un listón; y quien supera ese listón crea uno nuevo.',
+  no:'Que una velocidad quede 1–3 puntos por encima de otra puede ser casualidad cuando ambos Pokémon rara vez se enfrentan. El motivo concreto (evitar un OHKO, ganar un intercambio) hay que confirmarlo con cálculos de daño.'},
  {sh:'Sylveon: Moonblast',dt:'sep → 25 oct',t:'Sylveon deja Hyper Beam por Moonblast',test:{t:'m',p:'Sylveon',n:'Hyper Beam',l:'Sylveon con Hyper Beam'},
   s:[{t:'m',p:'Sylveon',n:'Hyper Beam',l:'Sylveon con Hyper Beam'},{t:'m',p:'Sylveon',n:'Moonblast',l:'Sylveon con Moonblast'}],
   dato:'Hyper Beam pasa de 83% a 35% de los Sylveon y Moonblast de 0% a 38%.',
@@ -1002,7 +1025,7 @@ function drawAR(){const box=document.getElementById('ar');if(box.dataset.ok)retu
   AR.forEach(e=>{e.res=e.test?testAB(e.test):null;});
   AR.forEach(e=>{const c=document.createElement('article');c.className='arx';
     const tp=document.createElement('div');tp.className='top';const dt=document.createElement('span');dt.className='dt';dt.textContent=e.dt;tp.appendChild(dt);
-    const pl=document.createElement('span');const L=e.res?LVL[e.res.lvl]:['flat','Aviso de lectura'];pl.className='pill '+L[0];pl.textContent=e.res?'Solidez: '+L[1]:L[1];tp.appendChild(pl);c.appendChild(tp);
+    const pl=document.createElement('span');const L=e.res?LVL[e.res.lvl]:['flat','Aviso de lectura'];pl.className='pill '+L[0];pl.textContent=e.res?'Solidez: '+L[1]:(e.pill||L[1]);tp.appendChild(pl);c.appendChild(tp);
     const h=document.createElement('h3');h.textContent=e.t;c.appendChild(h);
     if(e.res){const r=e.res;const bx=document.createElement('div');bx.className='solid';
       const cutTxt=r.cut?['antes del '+fmtDate(r.cut),'desde el '+fmtDate(r.cut)]:['hasta el 5 oct','12–25 oct'];
@@ -1014,6 +1037,8 @@ function drawAR(){const box=document.getElementById('ar');if(box.dataset.ok)retu
       const l=document.createElement('span');l.className='l';l.textContent=x.l;l.title=x.l;row.appendChild(l);row.appendChild(spark(v.filter(y=>y!=null)));
       const [a,b]=arPooled(x);const vv=document.createElement('span');vv.className='v';vv.innerHTML=pct0(a)+' → <b class="'+(b>a+0.01?'pos':b<a-0.01?'neg':'')+'">'+pct0(b)+'</b>';row.appendChild(vv);sr.appendChild(row);});c.appendChild(sr);}
     [['Qué muestran los datos',e.dato,''],['Interpretación (hipótesis)',e.hip,''],['Lo que no encaja o falta comprobar',e.no,'nope']].forEach(([k,t,cls])=>{if(!t)return;const s1=document.createElement('div');s1.className='sec';s1.textContent=k;c.appendChild(s1);const p=document.createElement('p');p.textContent=t;if(cls)p.className=cls;c.appendChild(p);});
+    if(e.bench){const ls=C.bench.links.filter(l=>l.f===e.bench||l.t.f===e.bench).sort((a,b)=>b.k-a.k).slice(0,6);if(ls.length){const s1=document.createElement('div');s1.className='sec';s1.textContent='Velocidades relacionadas (spreads)';c.appendChild(s1);
+      const d=document.createElement('div');d.className='ch';d.style.cssText='display:flex;flex-wrap:wrap;gap:6px';ls.forEach(l=>{const b=document.createElement('span');b.className='bchip';b.appendChild(img(l.f));const t=document.createElement('span');t.innerHTML=formName(l.f)+' <span class="mono">'+l.v+' ×'+l.k+' › '+formName(l.t.f)+' '+l.t.v+'</span>';b.appendChild(t);d.appendChild(b);});c.appendChild(d);}}
     box.appendChild(c);});
   const dots=document.getElementById('ar-dots'),tl=document.getElementById('ar-titles'),cnt=document.getElementById('ar-cnt'),prev=document.getElementById('ar-prev'),next=document.getElementById('ar-next');
   const go=i=>{i=Math.max(0,Math.min(AR.length-1,i));box.scrollTo({left:i*(box.clientWidth+16)});};
@@ -1123,12 +1148,33 @@ function ladder(){const el=document.getElementById('r-ladder');el.textContent=''
     const a=document.createElement('span');a.className='pk';a.appendChild(img(r.forma));a.appendChild(document.createTextNode(megaLabel(r.forma)));d.appendChild(a);
     const t=document.createElement('span');t.className='ltrk';t.innerHTML='<i class="rng" style="left:'+p(r.min)+'%;width:'+Math.max(0.6,p(r.max)-p(r.min))+'%"></i><i class="md" style="left:'+p(r.moda)+'%"></i>';d.appendChild(t);
     const v=document.createElement('span');v.className='val';v.innerHTML='<b>'+r.moda+'</b>';d.appendChild(v);el.appendChild(d);});}
-draws['stat-points']=()=>{ladder();table('t-vel',C.vel,[['forma',{pk:1}],['n',{n:1}],['base',{n:1}],['min',{n:1}],['moda',{n:1}],['max',{n:1}],['pct_max',{n:1,f:pct0}],['pct_tr',{n:1,f:pct0}],['comunes']]);
+/* --- benchmarks de velocidad --- */
+C.bench=(()=>{const sp={},N={};SPd.forEach(r=>{if(r.spe_f==='')return;const v=+r.spe_f;(sp[r.forma]=sp[r.forma]||{})[v]=(sp[r.forma][v]||0)+1;N[r.forma]=(N[r.forma]||0)+1;});
+  const anch=[];Object.entries(sp).forEach(([f,c])=>{if(N[f]<10)return;Object.entries(c).forEach(([v,k])=>{if(k>=4&&k/N[f]>=0.25)anch.push({f,v:+v,k,n:N[f]});});});
+  const links=[];Object.entries(sp).forEach(([f,c])=>{if(N[f]<10)return;const mx=Math.max(...Object.keys(c).map(Number));Object.entries(c).forEach(([v,k])=>{v=+v;if(v===mx||k<2)return;
+    const t=anch.filter(a=>a.f!==f&&a.v<v&&a.v>=v-3).sort((a,b)=>b.v-a.v||b.k-a.k)[0];if(t)links.push({f,v,k,n:N[f],t});});});
+  return {anch,links};})();
+function mergeLs(ls){const m={};ls.forEach(l=>{const o=m[l.f+'|'+l.t.f+'|'+l.t.v]=m[l.f+'|'+l.t.f+'|'+l.t.v]||{f:l.f,n:l.n,t:l.t,k:0,v:[]};o.k+=l.k;o.v.push(l.v);});
+  return Object.values(m).map(o=>({...o,vs:Math.min(...o.v)===Math.max(...o.v)?String(o.v[0]):Math.min(...o.v)+'–'+Math.max(...o.v)})).sort((a,b)=>b.k-a.k);}
+function benchDraw(){const box=document.getElementById('r-bench');if(box.dataset.ok)return;box.dataset.ok=1;
+  const by={};C.bench.links.forEach(l=>{const key=l.t.f+'|'+l.t.v;(by[key]=by[key]||{t:l.t,ls:[]}).ls.push(l);});
+  Object.values(by).map(o=>({...o,tot:o.ls.reduce((a,l)=>a+l.k,0)})).sort((a,b)=>b.tot-a.tot).slice(0,10).forEach(o=>{
+    const r=document.createElement('div');r.className='bnr';const tg=document.createElement('div');tg.className='tg';tg.appendChild(img(o.t.f));
+    const t=document.createElement('div');t.innerHTML='<b></b><small></small>';t.querySelector('b').textContent=formName(o.t.f)+' · '+o.t.v;t.querySelector('small').textContent=o.t.k+' de '+o.t.n+' spreads van a '+o.t.v+' · '+o.tot+' spreads rivales justo por encima';tg.appendChild(t);r.appendChild(tg);
+    const ch=document.createElement('div');ch.className='ch';mergeLs(o.ls).forEach(l=>{const b=document.createElement('button');b.type='button';b.className='bchip';b.appendChild(img(l.f));
+      const tx=document.createElement('span');tx.innerHTML=formName(l.f)+' <span class="mono">'+l.vs+' ×'+l.k+'</span>';b.appendChild(tx);b.title=l.k+' de '+l.n+' spreads de '+formName(l.f)+' con velocidad '+l.vs;
+      b.addEventListener('click',()=>{spSel.value=l.f;draws['stat-points']();document.getElementById('sp-img').scrollIntoView({behavior:'smooth',block:'center'});});ch.appendChild(b);});r.appendChild(ch);box.appendChild(r);});}
+function benchMe(f){const box=document.getElementById('sp-bench');box.textContent='';
+  const mine=C.bench.links.filter(l=>l.f===f).sort((a,b)=>b.v-a.v),chasers=C.bench.links.filter(l=>l.t.f===f).sort((a,b)=>b.k-a.k);
+  if(mine.length){const d=document.createElement('div');d.className='ln';d.innerHTML='<span class="lbl">Sus velocidades con objetivo</span>';mine.forEach(l=>{const c=document.createElement('span');c.className='bchip';c.appendChild(img(l.t.f));const t=document.createElement('span');t.innerHTML=l.v+' ×'+l.k+' <span class="mono">supera a</span> '+formName(l.t.f)+' <span class="mono">('+l.t.v+')</span>';c.appendChild(t);d.appendChild(c);});box.appendChild(d);}
+  if(chasers.length){const d=document.createElement('div');d.className='ln';d.innerHTML='<span class="lbl">Quién va justo por encima de él</span>';mergeLs(chasers).forEach(l=>{const c=document.createElement('span');c.className='bchip';c.appendChild(img(l.f));const t=document.createElement('span');t.innerHTML=formName(l.f)+' <span class="mono">'+l.vs+' ×'+l.k+' (vs '+l.t.v+')</span>';c.appendChild(t);d.appendChild(c);});box.appendChild(d);}}
+draws['stat-points']=()=>{benchDraw();ladder();table('t-vel',C.vel,[['forma',{pk:1}],['n',{n:1}],['base',{n:1}],['min',{n:1}],['moda',{n:1}],['max',{n:1}],['pct_max',{n:1,f:pct0}],['pct_tr',{n:1,f:pct0}],['comunes']]);
   const opts=C.vel.slice().sort((a,b)=>b.n-a.n).map(r=>r.forma);fillSel(spSel,opts,v=>megaLabel(v)+' ('+C.vel.find(r=>r.forma===v).n+')');const f=spSel.value,row=C.vel.find(r=>r.forma===f);
   document.getElementById('sp-img').src=sprite(f);document.getElementById('sp-n').textContent=row.n+' sets · velocidad base '+row.base;
   const K=['hp','atk','def_','spa','spd','spe'],L={hp:'HP',atk:'Atk',def_:'Def',spa:'SpA',spd:'SpD',spe:'Spe'};const el=document.getElementById('r-spavg');el.textContent='';
   K.forEach(k=>{const avg=row.rs.reduce((a,r)=>a+(+r[k]),0)/row.rs.length,p32=row.rs.filter(r=>+r[k]>=32).length/row.rs.length;el.appendChild(barRow(L[k],[[avg/32*100]],'<b>'+avg.toFixed(1)+'</b> · '+pct0(p32)+' con 32'));});
   velbars(document.getElementById('ch-spvel'),row.dist);
+  benchMe(f);
   table('t-sptop',C.sptop.filter(r=>r.forma===f),[['nature'],['sp',{html:(td,r)=>{td.textContent=r.sp;td.className='mono';}}],['stats',{html:(td,r)=>{td.textContent=r.stats;td.className='mono';}}],['veces',{n:1}],['items'],['mejor'],['paste',{link:1}]],15);};
 ['t-vel','t-sptop'].forEach(id=>sortable(id,draws['stat-points']));
 
