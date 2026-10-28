@@ -6,6 +6,7 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 
 ## Pestañas
 
+- : partidas, victorias reales y esperadas, y juegos entre cada par de arquetipos.
 - **Uso:** uso por Pokémon en el Top 32 y en el Top 8.
 - **Tendencias:** cómo sube o baja el uso fin de semana a fin de semana.
 - **Conversión:** win rate en el campo completo de los VR Challenges frente a su presencia en Top 32 y Top 8.
@@ -15,6 +16,7 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 - **Stat points:** velocidades del meta (mín., moda y máx. por Pokémon) y spreads más repetidos, a partir de 199 equipos con resultado cuyos jugadores publicaron el paste completo (VGCPastes Repository).
 - **Objetos:** objetos de los 320 equipos.
 - **Megas:** si cada mega va sola o con otra, cuántas veces llega al Top 8 y qué torneos ganó.
+- **Matchups:** matriz de win rate entre arquetipos en el campo completo de 6 VR Challenges y 2 clasificatorios ESM (5,567 partidas), ajustada por la fuerza de los jugadores.
 - **Arquetipos:** equipos agrupados por núcleo (comparten en promedio 4 de 6 Pokémon) y un índice de posicionamiento que pondera puesto, tamaño del torneo y recencia. Incluye los equipos individuales con mejor índice.
 - **Por torneo:** megas por torneo.
 - **Equipos y pastes:** los 320 equipos con su enlace a VR Pastes.
@@ -32,13 +34,13 @@ Abre `index.html` (dashboard) o `equipos.html` (equipos recomendados) en cualqui
 
 ## Fuentes
 
-victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 25 de octubre de 2026 (stat points: hasta el 14 de octubre).
+victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y pokedata.ovh. Datos actualizados al 25 de octubre de 2026 .
 
 Los datos crudos están en `data/`:
 
 - `equipos_mc.csv`: equipos.
 - `arquetipos_mc.csv`: arquetipo, núcleo y flex de cada equipo.
-- `spreads_mc.csv`: 1,194 sets con stat points y stats finales a nivel 50 (fuente: VGCPastes Repository, pokepast.es).
+- `spreads_mc.csv`: 1,314 sets con stat points y stats finales a nivel 50 (fuente: VGCPastes Repository, pokepast.es).
 - `sets_mc.csv`: un registro por Pokémon con objeto, habilidad, naturaleza y movimientos, leído de VR Pastes. Los pastes de torneo son Open Team List y no incluyen stat points.
 - `winrates_vr.csv`: win rates.
 - `partidas_vr.csv`: 3,973 partidas de los VR Challenges de septiembre y octubre, con el equipo de cada jugador (Pokémon y mega) y el marcador en juegos.
