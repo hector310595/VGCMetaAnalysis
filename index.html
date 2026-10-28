@@ -503,7 +503,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
     <div class="card"><h2>Escalera de velocidades</h2><p class="note">Rango de velocidad final de cada Pokémon en los spreads publicados (de la más rápida a la más lenta) y su velocidad más repetida (punto). Entran los Pokémon con 8+ spreads publicados, y también los que van en 8+ equipos del Top 32 aunque casi nadie publique sus stat points: esos se ven atenuados y con el número de spreads entre paréntesis (por ejemplo, Mega Aerodactyl: 18 equipos del Top 32 pero solo 4 spreads).</p>
       <div id="r-ladder"></div></div>
     <div class="card" id="bench-card"><h2>Benchmarks de velocidad: a quién intentan superar</h2>
-      <p class="note">Cuando un Pokémon no invierte toda su velocidad, casi siempre es para quedar justo por encima de un rival concreto (y gastar el resto en bulk o daño). Aquí se buscan esas coincidencias: velocidades usadas por 2+ spreads que quedan 1–3 puntos por encima de una <b>velocidad ancla</b>, la que usan al menos el 25% de los spreads de otro Pokémon (mínimo 4). No cuenta la velocidad máxima de cada Pokémon.</p>
+      <p class="note">Cuando un Pokémon no invierte toda su velocidad, casi siempre es para quedar justo por encima de un rival concreto (y gastar el resto en bulk o daño). Aquí se buscan esas coincidencias: velocidades usadas por 2+ spreads que quedan 1–3 puntos por encima de una <b>velocidad ancla</b>, la que usan al menos el 25% de los spreads de otro Pokémon (mínimo 4). Solo cuentan spreads que <b>no</b> ponen 32 en velocidad: un Garchomp Adamant al máximo (154) no está persiguiendo a nadie, es su techo con esa naturaleza.</p>
       <h3 style="font-size:1rem">Las velocidades más perseguidas</h3>
       <div class="bench" id="r-bench"></div>
       <p class="note">Es una coincidencia numérica, no una prueba: el motivo (evitar un OHKO, golpear primero a una amenaza concreta) hay que comprobarlo con cálculos de daño. Toca un Pokémon para ver sus spreads abajo.</p></div>
@@ -975,7 +975,7 @@ const AR=[
   hip:'Más atacantes especiales en el meta (Charizard Y, Raichu Y, Delphox, Floette): Snarl baja el Ataque Especial de los dos rivales a la vez. Flash Cannon servía sobre todo contra Floette y las hadas, cuyo uso no ha subido.',
   no:'Coincide con la llegada de Raichu X a la lluvia: el cambio puede venir del nuevo plan de juego del equipo más que de una amenaza concreta.'},
  {sh:'Cadenas de velocidad',dt:'sep → oct',t:'Las velocidades se persiguen en cadena',test:null,pill:'Patrón estable (no es un cambio en el tiempo)',s:[],bench:'Arcanine-Hisui',
-  dato:'Arcanine Hisui va a 156 en 30 de 31 spreads, y es la velocidad más perseguida del meta: Sneasler (158 ×8), Charizard Y (157–158 ×7), Floette (158 ×3), Froslass, Metagross y Salamence se colocan justo por encima. Hay más cadenas: Garchomp sin mega a 169 ← Sneasler a 170/172 (48 spreads) ← Mega Metagross a 173. Mega Salamence a 189 ← Raichu Y a 190–192 (24 spreads) ← Mega Garchomp Z a 203 por encima del Raichu Y a 200. Dragonite a 152 supera al Gholdengo de 149, y Garchomp a 154 supera a ese Dragonite.',
+  dato:'Arcanine Hisui va a 156 en 30 de 31 spreads, y es la velocidad más perseguida del meta: Sneasler (158 ×8), Charizard Y (157–158 ×7), Floette (158 ×3), Froslass, Metagross y Salamence se colocan justo por encima. Hay más cadenas: Garchomp sin mega a 169 ← Sneasler a 170/172 (48 spreads) ← Mega Metagross a 173. Mega Salamence a 189 ← Raichu Y a 190–192 (24 spreads) ← Mega Garchomp Z a 203 por encima del Raichu Y a 200. Dragonite a 152 supera al Gholdengo de 149.',
   hip:'Cada jugador invierte solo lo necesario para golpear antes que la amenaza que más le preocupa y gasta el resto en bulk o daño. Cuando un Pokémon se vuelve popular, su velocidad típica se convierte en un listón; y quien supera ese listón crea uno nuevo.',
   no:'Que una velocidad quede 1–3 puntos por encima de otra puede ser casualidad cuando ambos Pokémon rara vez se enfrentan. El motivo concreto (evitar un OHKO, ganar un intercambio) hay que confirmarlo con cálculos de daño.'},
  {sh:'Sylveon: Moonblast',dt:'sep → 25 oct',t:'Sylveon deja Hyper Beam por Moonblast',test:{t:'m',p:'Sylveon',n:'Hyper Beam',l:'Sylveon con Hyper Beam'},
@@ -1153,7 +1153,8 @@ function ladder(){const el=document.getElementById('r-ladder');el.textContent=''
 /* --- benchmarks de velocidad --- */
 C.bench=(()=>{const sp={},N={};SPd.forEach(r=>{if(r.spe_f==='')return;const v=+r.spe_f;(sp[r.forma]=sp[r.forma]||{})[v]=(sp[r.forma][v]||0)+1;N[r.forma]=(N[r.forma]||0)+1;});
   const anch=[];Object.entries(sp).forEach(([f,c])=>{if(N[f]<10)return;Object.entries(c).forEach(([v,k])=>{if(k>=4&&k/N[f]>=0.25)anch.push({f,v:+v,k,n:N[f]});});});
-  const links=[];Object.entries(sp).forEach(([f,c])=>{if(N[f]<10)return;const mx=Math.max(...Object.keys(c).map(Number));Object.entries(c).forEach(([v,k])=>{v=+v;if(v===mx||k<2)return;
+  const sub={};SPd.forEach(r=>{if(r.spe_f===''||+r.spe>=32)return;const v=+r.spe_f;(sub[r.forma]=sub[r.forma]||{})[v]=(sub[r.forma][v]||0)+1;});
+  const links=[];Object.entries(sub).forEach(([f,c])=>{if(N[f]<10)return;Object.entries(c).forEach(([v,k])=>{v=+v;if(k<2)return;
     const t=anch.filter(a=>a.f!==f&&a.v<v&&a.v>=v-3).sort((a,b)=>b.v-a.v||b.k-a.k)[0];if(t)links.push({f,v,k,n:N[f],t});});});
   return {anch,links};})();
 function mergeLs(ls){const m={};ls.forEach(l=>{const o=m[l.f+'|'+l.t.f+'|'+l.t.v]=m[l.f+'|'+l.t.f+'|'+l.t.v]||{f:l.f,n:l.n,t:l.t,k:0,v:[]};o.k+=l.k;o.v.push(l.v);});
