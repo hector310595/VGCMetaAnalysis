@@ -65,7 +65,14 @@ h2{font-size:1.18rem}
 .stat img{width:46px;height:46px;flex:none}
 
 /* Pestañas en píldoras */
-.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:10px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--line)}
+.tabbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.tabs{padding-block:10px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;scroll-behavior:smooth;scroll-padding-inline:48px}
+.tabarrow{position:absolute;top:0;bottom:1px;width:56px;display:flex;align-items:center;border:0;padding:0;cursor:pointer;color:var(--fg);font-size:1.1rem;z-index:1}
+.tabarrow span{width:32px;height:32px;border-radius:50%;background:var(--panel-2);display:grid;place-items:center;box-shadow:0 0 0 1px var(--line)}
+.tabarrow:hover span{background:var(--line)}
+.tabarrow.l{left:0;justify-content:flex-start;background:linear-gradient(90deg,var(--bg) 55%,transparent)}
+.tabarrow.r{right:0;justify-content:flex-end;background:linear-gradient(270deg,var(--bg) 55%,transparent)}
+@media (prefers-reduced-motion:reduce){.tabs{scroll-behavior:auto}}
 .tabs::-webkit-scrollbar{display:none}
 .tabs button{font:inherit;font-size:.9rem;font-weight:500;white-space:nowrap;padding:7px 15px;border-radius:var(--r-pill);border:0;background:var(--panel-2);color:var(--fg);cursor:pointer;transition:background .15s}
 .tabs button:hover{background:var(--line)}
@@ -178,7 +185,9 @@ table.mx td.self{background:transparent!important;color:var(--muted)}
   </header>
   <div class="stats" id="stats"></div>
 
-  <nav class="tabs" role="tablist" aria-label="Secciones">
+  <div class="tabbar">
+  <button class="tabarrow l" id="tab-l" type="button" aria-label="Ver pestañas anteriores" hidden><span>‹</span></button>
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Secciones">
     <button data-tab="uso" aria-selected="true">Uso</button>
     <button data-tab="arquetipos" aria-selected="false">Arquetipos</button>
     <button data-tab="matchups" aria-selected="false">Matchups</button>
@@ -193,6 +202,8 @@ table.mx td.self{background:transparent!important;color:var(--muted)}
     <button data-tab="torneos" aria-selected="false">Por torneo</button>
     <button data-tab="equipos" aria-selected="false">Equipos</button>
   </nav>
+  <button class="tabarrow r" id="tab-r" type="button" aria-label="Ver más pestañas" hidden><span>›</span></button>
+  </div>
 
   <section class="pg" id="p-uso">
     <div class="card"><h2>Uso por Pokémon</h2>
@@ -520,7 +531,14 @@ document.getElementById('orb-img').src=sprite(m0.mega);
 
 /* ---------------- pestañas ---------------- */
 const draws={};
+const tabsEl=document.getElementById('tabs'),tl=document.getElementById('tab-l'),tr_=document.getElementById('tab-r');
+function tabArrows(){const max=tabsEl.scrollWidth-tabsEl.clientWidth;tl.hidden=tabsEl.scrollLeft<=4;tr_.hidden=tabsEl.scrollLeft>=max-4;}
+tabsEl.addEventListener('scroll',tabArrows,{passive:true});window.addEventListener('resize',tabArrows);
+tl.addEventListener('click',()=>tabsEl.scrollBy({left:-tabsEl.clientWidth*0.7}));tr_.addEventListener('click',()=>tabsEl.scrollBy({left:tabsEl.clientWidth*0.7}));
+tabsEl.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)&&tabsEl.scrollWidth>tabsEl.clientWidth){tabsEl.scrollLeft+=e.deltaY;e.preventDefault();}},{passive:false});
+tabsEl.addEventListener('keydown',e=>{if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;const bs=[...tabsEl.querySelectorAll('button')];const i=bs.indexOf(document.activeElement);if(i<0)return;const n=bs[(i+(e.key==='ArrowRight'?1:-1)+bs.length)%bs.length];n.focus();n.click();e.preventDefault();});
 function show(id){document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===id));
+  const act=tabsEl.querySelector('button[data-tab="'+id+'"]');if(act){const l=act.offsetLeft-tabsEl.offsetLeft,r=l+act.offsetWidth;if(l<tabsEl.scrollLeft+48||r>tabsEl.scrollLeft+tabsEl.clientWidth-48)tabsEl.scrollLeft=l-tabsEl.clientWidth/2+act.offsetWidth/2;}setTimeout(tabArrows,0);
   document.querySelectorAll('.pg').forEach(p=>p.hidden=p.id!=='p-'+id);if(draws[id])draws[id]();}
 document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{show(b.dataset.tab);try{history.replaceState(null,'','#'+b.dataset.tab);}catch(e){}}));
 window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(draws[h])show(h);});
