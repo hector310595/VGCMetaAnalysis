@@ -79,9 +79,37 @@ h2{font-size:1.18rem}
 .tabs button[aria-selected=true]{background:var(--accent);color:var(--accent-ink)}
 
 .pg{display:flex;flex-direction:column;gap:16px}
+.perctl{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:8px}.perctl label{font-size:.84rem;color:var(--muted)}
+.perctl select{font:inherit;font-size:.88rem;padding:5px 10px;border-radius:var(--r-pill);border:1px solid var(--line);background:var(--panel-2);color:var(--fg)}
+.perbadge{font-size:.8rem;padding:3px 10px;border-radius:var(--r-pill);background:color-mix(in srgb,var(--sun) 22%,transparent);color:var(--fg)}
+.pernote{display:none;font-size:.8rem;color:var(--muted);margin:-4px 0 0}body.filtered .pernote{display:block}
+body.filtered .perctl select{border-color:var(--sun)}
+.subtabs{display:flex;gap:6px;padding:0 0 10px;overflow-x:auto;scrollbar-width:none}.subtabs::-webkit-scrollbar{display:none}
+.subtabs button{font:inherit;font-size:.86rem;white-space:nowrap;padding:5px 13px;border-radius:var(--r-pill);border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.subtabs button:hover{color:var(--fg)}.subtabs button[aria-selected=true]{border-color:var(--accent);color:var(--accent);font-weight:600}
+.sumgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:12px}
+.stile{display:flex;align-items:center;gap:12px;background:var(--panel);border-radius:var(--r-lg);padding:14px 16px;border:0;font:inherit;color:var(--fg);text-align:left;cursor:pointer;text-decoration:none;min-width:0}
+.stile:hover{box-shadow:inset 0 0 0 1.5px var(--accent)}.stile>img{width:52px;height:52px;flex:none}.stile>div:not(.team){display:flex;flex-direction:column;min-width:0}
+@media (max-width:440px){.tabs{gap:5px}.tabs button{padding:7px 11px;font-size:.86rem}}
+.stile span{font-size:.8rem;color:var(--muted)}.stile b{font-family:var(--f-display);font-size:1.2rem;font-weight:700;line-height:1.2}.stile small{font-size:.84rem;color:var(--muted)}
+.stile.up small{color:var(--up)}.stile.down small{color:var(--down)}
+.stile.champ{grid-column:1/-1;justify-content:space-between;flex-wrap:wrap}.stile.champ .team{display:flex;flex-wrap:wrap}.stile.champ .team img{width:46px;height:46px}
+body:not(.home) #stats,body:not(.home) .lede{display:none}
+.sumnews{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:10px}
+.snew{display:flex;gap:10px;align-items:flex-start;text-align:left;font:inherit;color:var(--fg);background:var(--panel-2);border:0;border-radius:14px;padding:12px;cursor:pointer}
+.snew:hover{box-shadow:inset 0 0 0 1.5px var(--accent)}.snew img{width:40px;height:40px;flex:none}.snew small{display:block;font-size:.8rem;color:var(--muted)}.snew b{font-weight:600;line-height:1.3}
+.sumnews .more{grid-column:1/-1;justify-self:start}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr));gap:16px}
 .card{background:var(--panel);border-radius:var(--r-lg);padding:20px 22px;min-width:0;display:flex;flex-direction:column;gap:10px}
 .arwhy{margin-top:4px}.arwhy>summary{cursor:pointer;font-weight:600;color:var(--accent-soft);font-size:.92rem;padding:6px 0}.arwhy[open]>summary{margin-bottom:4px}
+.pkstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,10.5rem),1fr));gap:10px}
+.pkstats .kp{background:var(--panel-2);border-radius:14px;padding:10px 12px;display:flex;flex-direction:column;gap:1px;min-width:0}.pkstats .kp>span{font-size:.78rem;color:var(--muted)}.pkstats .kp>b{font-size:1.35rem;font-weight:700;font-family:var(--f-display)}.pkstats .kp>small{font-size:.8rem;color:var(--muted)}
+.pkstats .kp.forms{grid-column:span 2}.pkstats .kp.forms>div{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:4px}.pkstats .kp.forms>div>span{display:inline-flex;align-items:center;gap:4px;font-size:.88rem}.pkstats .kp.forms img{width:30px;height:30px}
+@media (max-width:520px){.pkstats .kp.forms{grid-column:auto}}
+.pkfam{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.pkfam .lbl{font-size:.78rem;color:var(--muted);margin-right:4px}
+.fchip{display:inline-flex;align-items:center;gap:4px;font:inherit;font-size:.88rem;padding:3px 10px 3px 4px;border-radius:var(--r-pill);border:1px solid var(--line);background:var(--panel-2);color:var(--fg);cursor:pointer}.fchip img{width:26px;height:26px}.fchip b{font-family:var(--f-mono);font-size:.8rem;color:var(--muted);font-weight:500}.fchip:hover{border-color:var(--accent)}
+.card.empty #r-spavg,.card.empty #ch-spvel,.card.empty .tbox,.card.empty .grid{display:none}
+.pg img[alt]:not(.it){cursor:pointer}#mx img,#r-mx img,#p-sets .focus img,.dside img{cursor:default}
 .card>h2.chd{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;user-select:none}
 .cbtn{flex:none;width:30px;height:30px;border-radius:50%;border:0;background:var(--panel-2);color:var(--muted);cursor:pointer;display:grid;place-items:center;padding:0}
 .cbtn::before{content:'';width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(2px) rotate(-135deg);transition:transform .15s}
@@ -122,7 +150,7 @@ img.it{width:30px;height:30px;image-rendering:pixelated;flex:none}.nm.wi{display
 .trk b.m8{position:absolute;top:0;bottom:0;width:4px;border-radius:2px;background:var(--muted);box-shadow:0 0 0 1.5px var(--panel);z-index:1}.trk b.m8.up{background:var(--up)}.trk b.m8.down{background:var(--down)}
 .v8.up{color:var(--up)}.v8.down{color:var(--down)}
 .legend i.lm{width:4px;height:14px;border-radius:2px;background:var(--muted)}.legend i.lm.up{background:var(--up)}.legend i.lm.down{background:var(--down)}
-.rows>.row .val{min-width:7.6rem}#r-megas .val{min-width:13.2rem}
+.rows>.row .val{min-width:7.6rem}#r-megas .val{min-width:13.2rem}#r-spavg .val{min-width:9rem}
 @media (max-width:520px){.rows>.row .val,#r-megas .val{min-width:0}}
 .trk.dv i{left:50%}
 .trk.dv i.neg{left:auto;right:50%;background:var(--down)}
@@ -145,6 +173,10 @@ table{width:100%;border-collapse:collapse;font-size:.9rem}
 th{position:sticky;top:0;z-index:1;background:var(--panel-2);text-align:left;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);padding:9px 10px;cursor:pointer;white-space:nowrap;user-select:none}
 th[aria-sort=descending]::after{content:" ↓"}th[aria-sort=ascending]::after{content:" ↑"}
 td{border-top:1px solid var(--line);padding:7px 10px;vertical-align:middle}
+@media (max-width:560px){.tbox table:not(.mx) thead{display:none}.tbox table:not(.mx) tbody tr{display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;padding:10px 12px;border-top:1px solid var(--line)}
+  .tbox table:not(.mx) tbody tr:first-child{border-top:0}.tbox table:not(.mx) td{border:0;padding:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;min-width:0;overflow-wrap:anywhere}
+  .tbox table:not(.mx) td::before{content:attr(data-l);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:1px}
+  .tbox table:not(.mx) td:first-child{grid-column:1/-1;font-weight:600}.tbox table:not(.mx) td:first-child::before{display:none}.tbox table:not(.mx) td.n{text-align:left}}
 td.n,th.n{text-align:right;white-space:nowrap}
 td .pk{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 td .pk img{width:28px;height:28px}
@@ -400,9 +432,10 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   <header class="hero">
     <div class="orb" aria-hidden="true"><canvas id="orb" width="33" height="33"></canvas><img id="orb-img" alt=""></div>
     <div style="min-width:0">
-      <div class="brand"><b>Pokémon Champions</b> · VGC dobles · Regulación M-C · Open Team List</div>
+      <div class="brand"><b>Pokémon Champions</b> · VGC dobles · Regulación M-C · <span id="upd"></span></div>
       <h1>Meta de la Regulación M-C</h1>
       <p class="lede" id="lede">Cargando…</p>
+      <div class="perctl"><label for="f-per">Periodo</label><select id="f-per"><option value="">Todo (13 sep – 25 oct)</option><option value="oct">Desde el 1 de octubre</option><option value="2w">Últimos 2 fines de semana</option></select><span class="perbadge" id="per-badge" hidden></span></div>
     </div>
   </header>
   <div class="stats" id="stats"></div>
@@ -410,37 +443,43 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   <div class="tabbar">
   <button class="tabarrow l" id="tab-l" type="button" aria-label="Ver pestañas anteriores" hidden><span>‹</span></button>
   <nav class="tabs" id="tabs" role="tablist" aria-label="Secciones">
-    <button data-tab="uso" aria-selected="true">Uso</button>
-    <button data-tab="arquetipos" aria-selected="false">Arquetipos</button>
-    <button data-tab="matchups" aria-selected="false">Matchups</button>
-    <button data-tab="tendencias" aria-selected="false">Tendencias</button>
-    <button data-tab="megas" aria-selected="false">Megas</button>
-    <button data-tab="rendimiento" aria-selected="false">Rendimiento</button>
-    <button data-tab="sets" aria-selected="false">Sets</button>
-    <button data-tab="companeros" aria-selected="false">Compañeros</button>
-    <button data-tab="herramientas" aria-selected="false">Herramientas</button>
-    <button data-tab="stat-points" aria-selected="false">Stat points</button>
-    <button data-tab="equipos" aria-selected="false">Equipos</button>
+    <button data-group="resumen" aria-selected="true">Resumen</button>
+    <button data-group="meta" aria-selected="false">Meta</button>
+    <button data-group="equipos" aria-selected="false">Equipos</button>
+    <button data-group="pokemon" aria-selected="false">Pokémon</button>
+    <button data-group="tendencias" aria-selected="false">Tendencias</button>
   </nav>
   <button class="tabarrow r" id="tab-r" type="button" aria-label="Ver más pestañas" hidden><span>›</span></button>
+  <nav class="subtabs" id="subtabs" aria-label="Subsecciones"></nav>
   </div>
 
-  <section class="pg" id="p-uso">
-    <div class="card"><h2>Uso por Pokémon</h2>
+  <section class="pg" id="p-resumen">
+    <div class="sumgrid" id="sum-kpi"></div>
+    <div class="card"><h2>Lo más importante ahora</h2><div class="sumnews" id="sum-news"></div></div>
+    <div class="grid">
+      <div class="card"><h2>Pokémon que suben</h2><div class="rows" id="sum-up"></div></div>
+      <div class="card"><h2>Pokémon que bajan</h2><div class="rows" id="sum-down"></div></div>
+    </div>
+  </section>
+
+  <section class="pg" id="p-uso" hidden>
+    <div class="card"><h2>¿Qué Pokémon se juegan más?</h2>
       <p class="note">% de equipos del Top 32 que lo llevan. La marca es su % en el Top 8.</p>
       <div class="legend"><span><i></i>Top 32</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div>
       <div class="rows" id="r-uso"></div></div>
     <div class="card"><h2>Tabla completa</h2><p class="note">Ordena pulsando una columna.</p>
       <div class="tbox"><table id="t-uso"><thead><tr><th data-f="pokemon">Pokémon</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="pct">% Top 32</th><th class="n" data-f="top8">En Top 8</th><th class="n" data-f="pct_top8">% Top 8</th><th class="n" data-f="delta">Top 8 − Top 32</th></tr></thead><tbody></tbody></table></div></div>
+    <div class="card"><h2>¿Qué objetos se llevan?</h2><p class="note">Sin megapiedras. Número y % de Pokémon del Top 32 que lo llevan, y quién lo lleva.</p>
+      <div class="itab" id="r-objtot"></div></div>
   </section>
 
   <section class="pg" id="p-arquetipos" hidden>
-    <div class="card"><h2>Familias de equipos mejor posicionadas</h2>
+    <div class="card"><h2>¿Qué familias de equipos dominan?</h2>
       <p class="note">Equipos con el mismo plan de juego aunque cambien piezas, ordenados por un índice que premia llegar lejos en torneos grandes y recientes.</p>
       <details class="how"><summary>¿Cómo se calcula el índice?</summary>
         <p class="note">Cada equipo suma puntos por puesto (1.º 100 · 2.º 75 · 3–4 55 · 5–8 40 · 9–16 22 · 17–32 10), multiplicados por el tamaño del torneo (√(jugadores / 256): un regional de ~1,000 pesa ×2, un VR de ~250 ×1) y por la recencia (vale la mitad cada 3 semanas antes del <span id="ref-date"></span>). El índice del arquetipo es la suma de sus equipos. <b>Núcleo</b>: Pokémon presentes en el 75% o más de sus equipos. Y-Chu Balance, Delphox Balance, Sun Rain y Gengar Perish son nombres de la comunidad; el resto son descriptivos.</p></details>
       <div class="arqs" id="g-arq"></div></div>
-    <div class="card" id="anat-card"><h2>Anatomía de una familia: núcleo, combinación de megas y piezas variables</h2>
+    <div class="card" id="anat-card"><h2>¿Cómo se arma cada familia?</h2><p class="pernote">Usa todo el periodo: no le aplica el filtro.</p>
       <p class="note">Qué va siempre, qué pareja de megas lleva cada equipo y qué piezas cambian. Datos de todas las partidas de 8 torneos.</p>
       <div class="ctrl"><select id="f-var" aria-label="Arquetipo"></select></div>
       <div class="anat-sum" id="anat-sum"></div>
@@ -472,7 +511,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
         <div class="chart" id="ch-mxsum"></div>
         <div class="tbox"><table id="t-mxsum"><thead><tr><th data-f="a">Arquetipo</th><th class="n" data-f="eq">Equipos</th><th class="n" data-f="n">Partidas</th><th class="n" data-f="wr">Win rate</th><th class="n" data-f="adj">Vs esperado</th></tr></thead><tbody></tbody></table></div></div>
     </div>
-    <div class="card" id="mx-card"><h2>Quién le gana a quién</h2>
+    <div class="card" id="mx-card"><h2>Quién le gana a quién</h2><p class="pernote">Usa todo el periodo: no le aplica el filtro.</p>
       <p class="note" id="mx-note"></p>
       <div class="legend"><span><i style="background:var(--up)"></i>gana más de la mitad</span><span><i style="background:var(--down)"></i>pierde más de la mitad</span><span><i style="background:color-mix(in srgb,var(--up) 30%,var(--panel-2))"></i>tenue: pocas partidas</span><span><i style="background:var(--track)"></i>– menos de 8 partidas</span></div>
       <p class="note" id="mx-hover">Pasa el cursor (o toca) una celda para ver el cruce.</p>
@@ -480,7 +519,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   </section>
 
   <section class="pg" id="p-tendencias" hidden>
-    <div class="card" id="ar-card"><h2>Acción y reacción: cómo se ha movido el meta</h2>
+    <div class="card" id="ar-card"><h2>Acción y reacción: cómo se ha movido el meta</h2><p class="pernote">Usa todo el periodo para comparar antes y después.</p>
       <p class="note">Cada noticia trae el dato, una posible explicación y lo que falta comprobar. La etiqueta indica qué tan sólido es el dato.</p>
       <details class="how"><summary>Cuatro preguntas antes de creerse una "reacción del meta"</summary>
         <p class="note"><b>1. Orden:</b> la reacción tiene que llegar después de la amenaza, no antes ni a la vez por casualidad. <b>2. Lugar:</b> el cambio debería verse en los equipos que sufren esa amenaza. <b>3. Tamaño:</b> con 5–10 sets por semana un 20% de diferencia puede ser una sola persona. <b>4. Copia:</b> tras ganar un torneo grande un equipo se copia entero; sus movimientos suben por arrastre, no necesariamente porque respondan a algo.</p></details>
@@ -508,11 +547,11 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   </section>
 
   <section class="pg" id="p-megas" hidden>
-    <div class="card"><h2>Uso de cada mega</h2>
+    <div class="card"><h2>¿Qué megas se juegan?</h2>
       <p class="note">Solo una mega evoluciona por combate. Llevar dos megapiedras te deja elegir cuál usar al ver el equipo rival.</p>
       <div class="legend"><span><i></i>tramo intenso: es la única mega del equipo</span><span><i class="b2"></i>tramo suave: el equipo lleva otra mega más</span></div>
       <div class="rows" id="r-megas"></div></div>
-    <div class="card"><h2>Combinaciones de megas</h2><p class="note">Cada equipo cuenta una vez, con su mega o su pareja de megas.</p>
+    <div class="card"><h2>¿Con qué pareja de megas?</h2><p class="note">Cada equipo cuenta una vez, con su mega o su pareja de megas.</p>
         <div class="ctrl"><select id="f-pares" aria-label="Filtro"><option value="">Todas</option><option value="Única mega">Solo única mega</option><option value="Doble mega">Solo doble mega</option></select></div>
         <div class="tbox"><table id="t-pares"><thead><tr><th data-f="pareja">Megas del equipo</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="top8">Top 8</th><th class="n" data-f="campeon">Títulos</th><th data-f="ganados">Torneos ganados</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card"><h2>¿Cuáles llegan al Top 8?</h2><p class="note">% de sus equipos que llegó al Top 8. La línea es la media (25%).</p>
@@ -522,46 +561,49 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   </section>
 
   <section class="pg" id="p-rendimiento" hidden>
-    <div class="card"><h2>Popular frente a efectivo</h2>
+    <div class="card"><h2>¿Lo más usado es lo que más gana?</h2>
       <p class="note" id="wr-note"></p>
       <div class="chart" id="ch-scatter"></div></div>
     <div class="card"><h2>¿Llega más lejos de lo que su uso sugiere?</h2>
         <p class="note">Su % en el Top 8 frente a su % en el Top 32.</p>
         <div class="tbox"><table id="t-conv"><thead><tr><th data-f="pokemon">Pokémon</th><th class="n" data-f="pct_top32">% Top 32</th><th class="n" data-f="pct_top8">% Top 8</th><th data-f="lectura">Lectura</th><th class="n" data-f="winrate">Win rate campo</th><th class="n" data-f="partidas">Partidas</th></tr></thead><tbody></tbody></table></div></div>
-    <div class="card"><h2>Win rate en el campo completo</h2><p class="note">Todas las rondas de los torneos con resultados abiertos. Solo Pokémon con 200+ partidas.</p>
+    <div class="card"><h2>¿Quién gana más partidas?</h2><p class="note">Todas las rondas de los torneos con resultados abiertos. Solo Pokémon con 200+ partidas.</p>
         <div class="rows two" id="r-wr"></div></div>
   </section>
 
   <section class="pg" id="p-sets" hidden>
     <div class="card">
-      <div class="focus"><img id="set-img" alt=""><div class="t"><h2>Sets por Pokémon</h2><div class="ctrl"><select id="f-set" aria-label="Pokémon"></select><span class="muted" id="set-n"></span></div></div></div>
+      <div class="focus"><img id="set-img" alt=""><div class="t"><h2>Ficha de Pokémon</h2><div class="ctrl"><select id="f-set" aria-label="Pokémon"></select><span class="muted" id="set-n"></span></div></div></div>
+      <div class="pkstats" id="pk-stats"></div>
+      <div class="pkfam" id="pk-fam"></div>
       <p class="note" id="set-core"></p>
-      <p class="note">Barra: % de sus sets. Marca: % en sus sets del Top 8.</p>
       <div class="legend"><span><i></i>Todos sus sets</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div></div>
     <div class="grid">
       <div class="card"><h2>Movimientos</h2><div class="rows" id="r-set-mov"></div></div>
       <div class="card"><h2>Objeto, habilidad y naturaleza</h2><div class="rows" id="r-set-otros"></div></div>
     </div>
-    <div class="card"><h2>Sets completos más repetidos</h2><p class="note">Mismo objeto, naturaleza y cuatro movimientos.</p>
+    <div class="card"><h2>¿Con quién va?</h2>
+      <p class="note">% de sus equipos que también llevan a cada compañero. La marca es ese % en su Top 8.</p>
+      <div class="rows two" id="r-comp"></div></div>
+    <div class="card"><h2>¿Qué sets completos se repiten?</h2><p class="note">Mismo objeto, naturaleza y cuatro movimientos.</p>
         <div class="tbox"><table id="t-set-comb"><thead><tr><th data-f="item">Objeto</th><th data-f="nature">Naturaleza</th><th data-f="moves">Movimientos</th><th class="n" data-f="veces">Veces</th><th class="n" data-f="top8">Top 8</th><th data-f="ejemplo">Mejor resultado</th></tr></thead><tbody></tbody></table></div></div>
-    <div class="card"><h2>Lo que más rinde en su Top 8</h2>
+    <div class="card"><h2>¿Qué lleva cuando llega lejos?</h2>
         <p class="note">Lo que aparece más (o menos) en su Top 8 que del 9.º al 32.º. Solo Pokémon con 15+ equipos.</p>
         <div class="ctrl"><select id="f-tech-sig" aria-label="Fiabilidad"><option value="fm">Diferencias fiables</option><option value="">Incluir las dudosas</option></select></div>
         <div class="rows" id="r-tech"></div></div>
-    <div class="card"><h2>Objetos más usados en el formato</h2><p class="note">Sin megapiedras. Número y % de Pokémon del Top 32 que lo llevan, y quién lo lleva.</p>
-      <div class="itab" id="r-objtot"></div></div>
+    <div class="card">
+      <h2>Stat points y spreads</h2>
+      <div class="ctrl"><select id="f-sp" aria-label="Forma"></select><span class="muted" id="sp-n"></span></div>
+      <div class="grid">
+        <div><p class="note">Stat points promedio por stat (de 32)</p><div class="rows" id="r-spavg"></div></div>
+        <div><p class="note">Velocidad final (nº de sets)</p><div class="chart" id="ch-spvel"></div></div>
+      </div>
+      <div class="tbox"><table id="t-sptop"><thead><tr><th data-f="nature">Naturaleza</th><th data-f="sp">SP (HP/Atk/Def/SpA/SpD/Spe)</th><th data-f="stats">Stats finales</th><th class="n" data-f="veces">Veces</th><th data-f="items">Objeto</th><th data-f="mejor">Mejor resultado</th><th data-f="paste">Paste</th></tr></thead><tbody></tbody></table></div></div>
   </section>
 
-  <section class="pg" id="p-companeros" hidden>
-    <div class="card">
-      <div class="focus"><img id="comp-img" alt=""><div class="t"><h2>Compañeros más frecuentes</h2><div class="ctrl"><select id="f-comp" aria-label="Pokémon"></select><span class="muted" id="comp-n"></span></div></div></div>
-      <p class="note">% de sus equipos que también llevan a cada compañero. La marca es ese % en su Top 8.</p>
-      <div class="legend"><span><i></i>Todos sus equipos</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div>
-      <div class="rows" id="r-comp"></div></div>
-  </section>
 
   <section class="pg" id="p-herramientas" hidden>
-    <div class="card"><h2>Herramientas del meta, septiembre → octubre</h2>
+    <div class="card"><h2>¿Qué herramientas suben o bajan?</h2><p class="pernote">Compara siempre septiembre con octubre.</p>
       <p class="note">% de equipos del Top 32 con al menos un Pokémon que la lleva.</p>
       <div class="legend"><span><i class="dl s"></i>septiembre</span><span><i class="dl o"></i>octubre</span><span><i style="background:var(--up);height:4px"></i>sube 2+ pts</span><span><i style="background:var(--down);height:4px"></i>baja 2+ pts</span><span><i style="background:var(--muted);height:4px"></i>cambio menor</span></div>
       <div id="r-tools"></div></div>
@@ -572,7 +614,7 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
   <section class="pg" id="p-stat-points" hidden>
     <div class="card"><h2>De dónde salen estos spreads</h2>
       <p class="note">Stat points de 219 equipos publicados completos por el <a href="https://x.com/VGCPastes" target="_blank" rel="noopener">VGCPastes Repository</a> (1,314 Pokémon). Stats a nivel 50.</p></div>
-    <div class="card"><h2>Escalera de velocidades</h2>
+    <div class="card"><h2>¿Quién es más rápido?</h2>
       <p class="note">Rango de velocidad de cada Pokémon; el punto es el valor más repetido. Elige el escenario arriba. Atenuados: pocos spreads.</p>
       <div class="ctrl"><select id="f-lad" aria-label="Escenario"><option value="eff">En combate (con su objeto)</option><option value="ab">Con su habilidad activa</option><option value="raw">En sus stats</option><option value="tw">Con Tailwind (equipos que lo llevan)</option><option value="tr">Trick Room (equipos que lo llevan)</option></select></div>
       <div id="r-ladder"></div></div>
@@ -590,13 +632,6 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
       <p class="note">% de equipos de cada arquetipo con cada forma de controlar la velocidad.</p>
       <div class="tbox"><table id="t-ctrl"><thead><tr><th data-f="arquetipo">Arquetipo</th><th class="n" data-f="equipos">Equipos</th><th class="n" data-f="p_tw">Tailwind</th><th class="n" data-f="p_tr">Trick Room</th><th class="n" data-f="p_icy">Icy Wind / Electroweb</th><th class="n" data-f="p_scarf">Scarf</th><th class="n" data-f="p_abil">Habilidad</th><th class="n" data-f="p_nada">Nada</th></tr></thead><tbody></tbody></table></div>
 </div>
-    <div class="card">
-      <div class="focus"><img id="sp-img" alt=""><div class="t"><h2>Spreads por Pokémon</h2><div class="ctrl"><select id="f-sp" aria-label="Pokémon"></select><span class="muted" id="sp-n"></span></div></div></div>
-      <div class="grid">
-        <div><p class="note">Stat points promedio por stat (de 32)</p><div class="rows" id="r-spavg"></div></div>
-        <div><p class="note">Velocidad final (nº de sets)</p><div class="chart" id="ch-spvel"></div></div>
-      </div>
-      <div class="tbox"><table id="t-sptop"><thead><tr><th data-f="nature">Naturaleza</th><th data-f="sp">SP (HP/Atk/Def/SpA/SpD/Spe)</th><th data-f="stats">Stats finales</th><th class="n" data-f="veces">Veces</th><th data-f="items">Objeto</th><th data-f="mejor">Mejor resultado</th><th data-f="paste">Paste</th></tr></thead><tbody></tbody></table></div></div>
     <div class="card"><h2>Velocidades del meta</h2>
       <p class="note">Velocidad final de sus spreads a nivel 50, sin objeto, habilidad ni Tailwind.</p>
       <div class="tbox"><table id="t-vel"><thead><tr><th data-f="forma">Pokémon</th><th class="n" data-f="n" title="Cuántos spreads publicados hay">Spreads</th><th class="n" data-f="base" title="Velocidad base de la especie (o de la mega)">Vel. base</th><th class="n" data-f="min" title="La velocidad final más baja que aparece">Más lento</th><th class="n" data-f="moda" title="La velocidad final que más se repite">Más usada</th><th class="n" data-f="max" title="La velocidad final más alta que aparece">Más rápido</th><th class="n" data-f="pct_max" title="% de spreads con 30 o más de 32 puntos en Velocidad">% casi al máximo</th><th class="n" data-f="pct_tr" title="% de spreads con 0 puntos en Velocidad y naturaleza que la baja (Brave, Relaxed, Quiet o Sassy)">% para Trick Room</th><th data-f="comunes" title="Velocidad final (número de spreads)">Velocidades frecuentes (spreads)</th></tr></thead><tbody></tbody></table></div>
@@ -626,10 +661,17 @@ const baseOf=m=>{const b=m.split('-Mega')[0];return b==='Floette'?'Floette-Etern
 const DISP={'Floette-Eternal':'Floette Flor Eterna','Indeedee':'Indeedee ♂','Indeedee-F':'Indeedee ♀','Basculegion':'Basculegion ♂','Basculegion-F':'Basculegion ♀','Meowstic':'Meowstic ♂','Meowstic-F':'Meowstic ♀'};
 const disp=n=>DISP[n]||n;
 const megaLabel=m=>m.includes('-Mega')?'Mega '+m.replace(/-Mega-?/,' ').replace('Floette','Floette').replace('-F ',' ♀ ').trim():disp(m);
-const E=D.equipos, S=D.sets, WR=D.winrates, AQ=D.arquetipos_eq, SPd=D.spreads;
+const E0=D.equipos, S0=D.sets, WR0=D.winrates, AQ=D.arquetipos_eq, SPd0=D.spreads;
 const isOct=d=>d>='2026-10-01';
 const weekKey=d=>{const t=new Date(d+'T00:00:00Z');const add=(7-t.getUTCDay())%7;t.setUTCDate(t.getUTCDate()+add);return t.toISOString().slice(0,10);};
-const REF=E.reduce((m,r)=>r.date>m?r.date:m,'');
+const REF=E0.reduce((m,r)=>r.date>m?r.date:m,'');
+/* Periodo: filtra los datos del Top 32, de win rates y de spreads; Tendencias y Herramientas usan siempre todo */
+const PER=(()=>{let v='';try{v=localStorage.getItem('vgc-mc-periodo')||'';}catch(e){}if(!v&&(window.name||'').startsWith('periodo='))v=window.name.slice(8);return ['oct','2w'].includes(v)?v:'';})();
+const PCUT=(()=>{if(PER==='oct')return '2026-10-01';if(PER==='2w'){const ws=[...new Set(E0.map(r=>weekKey(r.date)))].sort();const t=new Date(ws[ws.length-2]+'T00:00:00Z');t.setUTCDate(t.getUTCDate()-6);return t.toISOString().slice(0,10);}return '';})();
+const SPM={Jan:'01',Feb:'02',Mar:'03',Apr:'04',May:'05',Jun:'06',Jul:'07',Aug:'08',Sep:'09',Oct:'10',Nov:'11',Dec:'12'};
+const spISO=r=>{const m=(r.date||'').match(/(\d+) (\w{3}) (\d{4})/);return m?m[3]+'-'+SPM[m[2]]+'-'+m[1].padStart(2,'0'):'';};
+const inP=d=>!PCUT||d>=PCUT;
+const E=E0.filter(r=>inP(r.date)), S=S0.filter(r=>inP(r.date)), WR=WR0.filter(r=>inP(r.date)), SPd=SPd0.filter(r=>inP(spISO(r)));
 const fmtDate=d=>{const t=new Date(d+'T00:00:00Z');return t.getUTCDate()+' '+['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'][t.getUTCMonth()];};
 
 /* --- sprites: forma más común de cada especie base --- */
@@ -668,7 +710,7 @@ C.rank=(()=>{const info={};(D.anatomia||[]).forEach(o=>info[o.a]={nucleo:o.fixed
   return Object.values(c).map(o=>({arquetipo:o.arquetipo,nucleo:(info[o.arquetipo]||{}).nucleo||'—',flex:(info[o.arquetipo]||{}).flex||'—',equipos:o.equipos,top8:o.top8,titulos:o.titulos,
     indice:o.indice,indice_medio:o.indice/o.equipos,cuota_sep:o.sep/tot.sep,cuota_oct:o.oct/tot.oct,mejor:o.best.place+'.º '+o.best.event+' ('+o.best.player+')',paste:o.best.paste,bestMons:o.best.mons,
     otros:o.arquetipo.startsWith('Otros')})).sort((x,y)=>(x.otros-y.otros)||(y.indice-x.indice));})();
-C.semana=(()=>{const byW={},out=[];E.forEach(r=>{(byW[weekKey(r.date)]=byW[weekKey(r.date)]||[]).push(r);});
+C.semana=(()=>{const byW={},out=[];E0.forEach(r=>{(byW[weekKey(r.date)]=byW[weekKey(r.date)]||[]).push(r);});
   Object.keys(byW).sort().forEach(w=>{const t=byW[w],c={};t.forEach(r=>{new Set(r.mons.split(' / ').map(baseOf)).forEach(b=>{c['P|'+b]=(c['P|'+b]||0)+1;});[r.mega1,r.mega2].filter(Boolean).forEach(m=>{c['M|'+m]=(c['M|'+m]||0)+1;});});
     Object.keys(c).forEach(k=>out.push({semana:w,tipo:k[0]==='P'?'pokemon':'mega',nombre:k.slice(2),equipos:c[k],total:t.length,pct:c[k]/t.length}));});
   return out;})();
@@ -719,8 +761,8 @@ C.tools=(()=>{const T=[
   ['Disrupción','Sueño','Sleep Powder, Spore, Yawn, Hypnosis o Sing',r=>['Sleep Powder','Spore','Yawn','Hypnosis','Sing'].some(m=>r.mv.has(m))],
   ['Disrupción','Perish Song','Perish Song',r=>r.mv.has('Perish Song')],['Disrupción','Snarl','Snarl',r=>r.mv.has('Snarl')],['Disrupción','Imprison','Imprison',r=>r.mv.has('Imprison')],
   ['Prioridad','Prioridad ofensiva','Cualquier ataque con prioridad (desglose en la columna de la derecha)',r=>PRIO.some(m=>r.mv.has(m))]];
-  const tm={};E.forEach(r=>tm[r.team_id]={place:+r.place,mes:isOct(r.date)?'oct':'sep',mv:new Set(),ab:new Set(),it:new Set()});
-  S.forEach(r=>{const t=tm[r.team_id];if(!t)return;[r.move1,r.move2,r.move3,r.move4].forEach(m=>m&&t.mv.add(m));t.ab.add(r.ability);t.it.add(r.item);});
+  const tm={};E0.forEach(r=>tm[r.team_id]={place:+r.place,mes:isOct(r.date)?'oct':'sep',mv:new Set(),ab:new Set(),it:new Set()});
+  S0.forEach(r=>{const t=tm[r.team_id];if(!t)return;[r.move1,r.move2,r.move3,r.move4].forEach(m=>m&&t.mv.add(m));t.ab.add(r.ability);t.it.add(r.item);});
   const teams=Object.values(tm),n=teams.length,n8=teams.filter(t=>t.place<=8).length,ns=teams.filter(t=>t.mes==='sep').length,no=n-ns;
   return T.map(([grupo,herramienta,como,f])=>{const h=teams.filter(f);const s=h.filter(t=>t.mes==='sep').length/ns,o=h.filter(t=>t.mes==='oct').length/no;
     let como2=como;if(herramienta==='Prioridad ofensiva'){como2=PRIO.map(m=>[m,teams.filter(t=>t.mv.has(m)).length]).filter(e=>e[1]).sort((a,b)=>b[1]-a[1]).map(e=>e[0]+' '+Math.round(e[1]/n*100)+'%').join(', ');}
@@ -765,8 +807,8 @@ function sortable(id,draw){document.querySelectorAll('#'+id+' th').forEach(th=>t
 const order=(id,rows)=>{const s=sorts[id];if(!s)return rows;return rows.slice().sort((a,b)=>{const x=a[s.f],y=b[s.f];return (typeof x==='number'?x-y:String(x).localeCompare(String(y)))*s.d;});};
 function link(u){const a=document.createElement('a');a.href=u;a.target='_blank';a.rel='noopener';a.textContent=u.replace(/^https:\/\/(www\.)?/,'');return a;}
 /* cols: [key, {n, f, pk, team, link, chip}] */
-function table(id,rows,cols,lim){const tb=document.querySelector('#'+id+' tbody');tb.textContent='';
-  order(id,rows).slice(0,lim||1e9).forEach(r=>{const tr=tb.insertRow();cols.forEach(([k,o])=>{o=o||{};const td=tr.insertCell();if(o.n)td.className='n';const v=r[k];
+function table(id,rows,cols,lim){const tb=document.querySelector('#'+id+' tbody');tb.textContent='';const HL=[...document.querySelectorAll('#'+id+' thead th')].map(h=>h.textContent.trim());
+  order(id,rows).slice(0,lim||1e9).forEach(r=>{const tr=tb.insertRow();cols.forEach(([k,o],ci)=>{o=o||{};const td=tr.insertCell();if(HL[ci])td.dataset.l=HL[ci];if(o.n)td.className='n';const v=r[k];
     if(o.pk)td.appendChild(pk(o.pkName?o.pkName(r):v,v));else if(o.team)td.appendChild(teamEl(v));else if(o.link){if(v)td.appendChild(link(v));}
     else if(o.html)o.html(td,r);else td.textContent=o.f?o.f(v):v;});});}
 function rowEl(name,label,widths,valHTML,opt){const d=document.createElement('div');d.className='row';if(name&&sprite(name))d.appendChild(img(name));else{const ph=document.createElement('span');ph.className='ph';d.appendChild(ph);}
@@ -775,7 +817,7 @@ function rowEl(name,label,widths,valHTML,opt){const d=document.createElement('di
   const v=document.createElement('div');v.className='val';v.innerHTML=valHTML;d.appendChild(v);if(opt&&opt.title)d.title=opt.title;return d;}
 function fillTrk(t,widths){widths.forEach(([w,c])=>{if(w==null)return;const x=Math.max(0,Math.min(100,w));if(c&&c.startsWith('m8')){const m=document.createElement('b');m.className=c;m.style.left='calc('+x+'% - 2px)';t.appendChild(m);return;}const i=document.createElement('i');if(c)i.className=c;i.style.width=x+'%';t.appendChild(i);});}
 const t8dir=(a,b)=>{if(b==null)return 'eq';const th=Math.max(0.02,a*0.15);return b-a>=th?'up':a-b>=th?'down':'eq';};
-const t8val=(a,b,f)=>'<b>'+f(a)+'</b> · <span class="v8 '+t8dir(a,b)+'">'+(b==null?'—':f(b))+'</span>';
+const t8val=(a,b,f)=>{const d=t8dir(a,b);return '<b>'+f(a)+'</b> · <span class="v8 '+d+'">'+(b==null?'—':(d==='up'?'▲':d==='down'?'▼':'')+f(b))+'</span>';};
 const T8LEG='<div class="legend"><span><i></i>Top 32</span><span><i class="lm up"></i>Top 8, más presente</span><span><i class="lm down"></i>Top 8, menos presente</span><span><i class="lm eq"></i>Top 8, parecido</span></div>';
 function fillSel(sel,opts,label){if(sel.options.length===opts.length&&sel.dataset.ok)return;const cur=sel.value;sel.textContent='';opts.forEach(v=>{const o=document.createElement('option');o.value=v;o.textContent=label?label(v):v;sel.appendChild(o);});if(opts.includes(cur))sel.value=cur;sel.dataset.ok=1;}
 const tip=document.getElementById('tip');
@@ -799,10 +841,11 @@ function tagClass(a){if(FAMINFO[a]){const t=FAMINFO[a].tag;return t==='Sol y llu
 /* ---------------- cabecera ---------------- */
 const nEv=new Set(E.map(r=>r.event)).size, m0=C.megas[0], p0=C.uso[0];
 const ra=C.rank.filter(r=>!r.otros);
-document.getElementById('lede').innerHTML='<strong>'+E.length+' equipos</strong> del Top 32 de <strong>'+nEv+' torneos</strong>, del 13 de septiembre al '+fmtDate(REF)+'. '+
-  esc(p0.pokemon)+' está en el '+pct0(p0.pct)+' de los equipos; la mega más usada es '+esc(megaLabel(m0.mega))+' ('+pct0(m0.pct)+') y la familia mejor posicionada, '+esc(arqName(ra[0].arquetipo))+'.';
+document.getElementById('lede').innerHTML='<strong>'+E.length+' equipos</strong> del Top 32 de <strong>'+nEv+' torneos</strong>, del '+(PCUT?fmtDate(PCUT):'13 sep')+' al '+fmtDate(REF)+'.';document.getElementById('upd').textContent='Actualizado al '+fmtDate(REF);
+(()=>{const ps=document.getElementById('f-per');ps.value=PER;ps.addEventListener('change',()=>{const v=ps.value;try{localStorage.setItem('vgc-mc-periodo',v);}catch(e){}window.name='periodo='+v;location.reload();});
+  if(PER){const b=document.getElementById('per-badge');b.hidden=false;b.textContent='Filtrado desde el '+fmtDate(PCUT)+' · '+E.length+' equipos';document.body.classList.add('filtered');}})();
 const statsEl=document.getElementById('stats');
-[['Equipos',E.length,'Top 32',null],['Torneos',nEv,'sep–oct',null],['Mega más usada',megaLabel(m0.mega).replace('Mega ',''),pct0(m0.pct),m0.mega],['Pokémon más usado',p0.pokemon,pct0(p0.pct),p0.pokemon]].forEach(([k,v,s,n])=>{
+[['Equipos',E.length,'Top 32',null],['Torneos',nEv,PCUT?'desde el '+fmtDate(PCUT):'sep–oct',null],['Mega más usada',megaLabel(m0.mega).replace('Mega ',''),pct0(m0.pct),m0.mega],['Pokémon más usado',p0.pokemon,pct0(p0.pct),p0.pokemon]].forEach(([k,v,s,n])=>{
   const d=document.createElement('div');d.className='stat';if(n)d.appendChild(img(n));const t=document.createElement('div');t.style.minWidth='0';
   t.innerHTML='<div class="k">'+k+'</div><div class="v">'+esc(v)+'<small>'+esc(s)+'</small></div>';d.appendChild(t);statsEl.appendChild(d);});
 document.getElementById('ref-date').textContent=fmtDate(REF);
@@ -821,11 +864,23 @@ tabsEl.addEventListener('scroll',tabArrows,{passive:true});window.addEventListen
 tl.addEventListener('click',()=>tabsEl.scrollBy({left:-tabsEl.clientWidth*0.7}));tr_.addEventListener('click',()=>tabsEl.scrollBy({left:tabsEl.clientWidth*0.7}));
 tabsEl.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)&&tabsEl.scrollWidth>tabsEl.clientWidth){tabsEl.scrollLeft+=e.deltaY;e.preventDefault();}},{passive:false});
 tabsEl.addEventListener('keydown',e=>{if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;const bs=[...tabsEl.querySelectorAll('button')];const i=bs.indexOf(document.activeElement);if(i<0)return;const n=bs[(i+(e.key==='ArrowRight'?1:-1)+bs.length)%bs.length];n.focus();n.click();e.preventDefault();});
-function show(id){document.querySelectorAll('.tabs button').forEach(b=>b.setAttribute('aria-selected',b.dataset.tab===id));
-  const act=tabsEl.querySelector('button[data-tab="'+id+'"]');if(act){const l=act.offsetLeft-tabsEl.offsetLeft,r=l+act.offsetWidth;if(l<tabsEl.scrollLeft+48||r>tabsEl.scrollLeft+tabsEl.clientWidth-48)tabsEl.scrollLeft=l-tabsEl.clientWidth/2+act.offsetWidth/2;}setTimeout(tabArrows,0);
+const GROUPS=[{g:'resumen',p:[['resumen','Resumen']]},{g:'meta',p:[['uso','Uso'],['megas','Megas'],['herramientas','Herramientas'],['rendimiento','Rendimiento']]},
+  {g:'equipos',p:[['arquetipos','Familias'],['matchups','Matchups'],['equipos','Torneos']]},{g:'pokemon',p:[['sets','Ficha'],['stat-points','Velocidad y stats']]},{g:'tendencias',p:[['tendencias','Tendencias']]}];
+window.__pages=GROUPS.flatMap(x=>x.p.map(y=>y[0]));const LASTP={};let CUR=null;
+const grpOf=id=>GROUPS.find(x=>x.p.some(y=>y[0]===id));const subEl=document.getElementById('subtabs');
+function show(id){const G=grpOf(id);if(!G)return;CUR=id;LASTP[G.g]=id;document.body.classList.toggle('home',id==='resumen');
+  tabsEl.querySelectorAll('button').forEach(b=>b.setAttribute('aria-selected',b.dataset.group===G.g));
+  subEl.textContent='';subEl.hidden=G.p.length<2;if(G.p.length>1)G.p.forEach(([pid,lab])=>{const b=document.createElement('button');b.type='button';b.dataset.tab=pid;b.textContent=lab;b.setAttribute('aria-selected',pid===id);b.addEventListener('click',()=>nav(pid));subEl.appendChild(b);});
+  setTimeout(tabArrows,0);
   document.querySelectorAll('.pg').forEach(p=>p.hidden=p.id!=='p-'+id);if(draws[id])draws[id]();}
-document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{show(b.dataset.tab);try{history.replaceState(null,'','#'+b.dataset.tab);}catch(e){}}));
-window.addEventListener('hashchange',()=>{const h=location.hash.slice(1);if(draws[h])show(h);});
+function nav(id){show(id);try{history.replaceState(null,'','#'+id);}catch(e){}}
+function setDeep(sub){if(!CUR)return;try{history.replaceState(null,'','#'+CUR+(sub!=null&&sub!==''?'/'+encodeURIComponent(sub):''));}catch(e){}}
+function applySub(page,sub){if(!sub)return;const pick=(sel,fn)=>{if([...sel.options].some(o=>o.value===sub)){sel.value=sub;fn();}};
+  if(page==='sets')pick(setSel,()=>draws.sets());else if(page==='arquetipos')pick(varSel,()=>draws.arquetipos());else if(page==='matchups')pick(mxSel,()=>draws.matchups());
+  else if(page==='tendencias'){const n=+sub;if(n>0)setTimeout(()=>{if(window.arGo)window.arGo(n-1);},60);}}
+function applyHash(){const parts=location.hash.slice(1).split('/');const pg=parts[0];const sub=decodeURIComponent(parts.slice(1).join('/'));const page=draws[pg]?pg:'resumen';if(page!==CUR)show(page);applySub(page,sub);}
+tabsEl.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{const G=GROUPS.find(x=>x.g===b.dataset.group);nav(LASTP[G.g]||G.p[0][0]);}));
+window.addEventListener('hashchange',applyHash);
 
 /* ---------- helpers de gráficas ---------- */
 const NS='http://www.w3.org/2000/svg';
@@ -833,6 +888,7 @@ function svgEl(W,H){const s=document.createElementNS(NS,'svg');s.setAttribute('v
 function add(svg,t,a){const e=document.createElementNS(NS,t);Object.entries(a).forEach(([k,v])=>e.setAttribute(k,v));svg.appendChild(e);return e;}
 function showTip(e,txt){tip.style.display='block';tip.textContent=txt;tip.style.left=Math.min(e.pageX+12,document.body.clientWidth-280)+'px';tip.style.top=(e.pageY+14)+'px';}
 function hideTip(){tip.style.display='none';}
+if(matchMedia('(hover: none)').matches){document.addEventListener('click',e=>{const el=e.target.closest('[title]');if(!el||el.tagName==='IMG'||el.closest('a,button,select,input,summary,.tabbar'))return;const t=el.getAttribute('title');if(!t)return;showTip(e,t);clearTimeout(window.__tt);window.__tt=setTimeout(hideTip,4000);});window.addEventListener('scroll',hideTip,{passive:true});}
 function barRow(label,widths,valHTML,opt){const d=document.createElement('div');d.className='row nosp';
   const nm=document.createElement('div');nm.className='nm';if(opt&&opt.item){nm.classList.add('wi');nm.appendChild(itemImg(label));const t=document.createElement('span');t.textContent=label;nm.appendChild(t);}else nm.textContent=label;d.appendChild(nm);
   const t=document.createElement('div');t.className='trk'+(opt&&opt.dv?' dv':'');fillTrk(t,widths);
@@ -845,18 +901,25 @@ const arqTeam=a=>{const r=C.rank.find(x=>x.arquetipo===a);return r?r.bestMons:''
 const FORM_A=a=>{if(FAMINFO[a]&&FAMINFO[a].face)return FAMINFO[a].face;const t=arqTeam(a);const megas=t?t.split(' / ').filter(x=>x.includes('-Mega')):[];return megas[0]||(t?t.split(' / ')[0]:'');};
 
 /* Uso */
-draws.uso=()=>{const el=document.getElementById('r-uso');el.textContent='';const mx=C.uso[0].pct;
+function drawObjTot(){  const ot=document.getElementById('r-objtot');if(!ot.childElementCount){const mx=C.objt[0].veces,N=S.length;
+    const hd=document.createElement('div');hd.className='ihd';hd.innerHTML='<span></span><span>Objeto</span><span>Pokémon que lo llevan</span><span>Quién lo lleva (nº de veces)</span>';ot.appendChild(hd);
+    C.objt.slice(0,16).forEach(r=>{const d=document.createElement('div');d.className='irow';d.title=r.item+': '+r.veces+' de '+N+' Pokémon del Top 32 ('+pct(r.veces/N)+')';
+      d.appendChild(itemImg(r.item));const nm=document.createElement('div');nm.className='inm';nm.textContent=r.item;d.appendChild(nm);
+      const tr=document.createElement('div');tr.className='itrk';tr.innerHTML='<span class="bar"><i style="width:'+(r.veces/mx*100).toFixed(1)+'%"></i></span><span class="iv"><b>'+r.veces+'</b> · '+pct0(r.veces/N)+'</span>';d.appendChild(tr);
+      const cr=document.createElement('div');cr.className='icar';r.por.forEach(([p,k])=>{const c=document.createElement('span');c.title=disp(p)+': '+k;c.appendChild(img(setFormName(p)));const b=document.createElement('b');b.textContent=k;c.appendChild(b);cr.appendChild(c);});
+      if(r.resto>0){const m=document.createElement('span');m.className='mas';m.textContent='+'+r.resto;m.title=r.resto+' más entre otros Pokémon';cr.appendChild(m);}d.appendChild(cr);ot.appendChild(d);});}}
+draws.uso=()=>{drawObjTot();const el=document.getElementById('r-uso');el.textContent='';const mx=C.uso[0].pct;
   C.uso.slice(0,24).forEach(r=>el.appendChild(rowEl(r.pokemon,r.pokemon,[[r.pct/mx*100],[r.pct_top8/mx*100,'m8 '+t8dir(r.pct,r.pct_top8)]],t8val(r.pct,r.pct_top8,pct),{title:disp(r.pokemon)+': '+r.equipos+' equipos, '+r.top8+' en Top 8'})));
   table('t-uso',C.uso,[['pokemon',{pk:1}],['equipos',{n:1}],['pct',{n:1,f:pct}],['top8',{n:1}],['pct_top8',{n:1,f:pct}],['delta',{n:1,html:(td,r)=>{td.textContent=spp(r.delta);td.className='n '+(r.delta>0.02?'pos':r.delta<-0.02?'neg':'');}}]]);};
 sortable('t-uso',draws.uso);
 
 /* Arquetipos */
-const ARQW=(()=>{const tot={},c={};C.indice.forEach(r=>{const w=weekKey(r.date);tot[w]=(tot[w]||0)+1;const k=r.arquetipo+'|'+w;c[k]=(c[k]||0)+1;});return a=>WEEKS.map(w=>(c[a+'|'+w]||0)/(tot[w]||1));})();
+const ARQW=(()=>{const tot={},c={},am={};AQ.forEach(r=>am[r.team_id]=r.arquetipo);E0.forEach(r=>{const w=weekKey(r.date);tot[w]=(tot[w]||0)+1;const k=am[r.team_id]+'|'+w;c[k]=(c[k]||0)+1;});return a=>WEEKS.map(w=>(c[a+'|'+w]||0)/(tot[w]||1));})();
 function spark(vals,fmx){const W=120,H=30,s=svgEl(W,H);s.classList.add('spark');const mx=fmx||Math.max(0.12,...vals);const xs=i=>3+(W-6)*i/(vals.length-1),ys=v=>H-3-(H-6)*v/mx;
   add(s,'path',{d:vals.map((v,i)=>(i?'L':'M')+xs(i).toFixed(1)+' '+ys(v).toFixed(1)).join(' ')+' L'+xs(vals.length-1)+' '+(H-3)+' L'+xs(0)+' '+(H-3)+' Z',fill:'var(--accent)','fill-opacity':.15,stroke:'none'});
   add(s,'path',{d:vals.map((v,i)=>(i?'L':'M')+xs(i).toFixed(1)+' '+ys(v).toFixed(1)).join(' '),fill:'none',stroke:'var(--accent)','stroke-width':1.8,'stroke-linejoin':'round'});
   add(s,'circle',{cx:xs(vals.length-1),cy:ys(vals[vals.length-1]),r:2.8,fill:'var(--accent)'});return s;}
-const varSel=document.getElementById('f-var');varSel.addEventListener('change',()=>draws.arquetipos());
+const varSel=document.getElementById('f-var');varSel.addEventListener('change',()=>{draws.arquetipos();setDeep(varSel.value);});
 C.topg=(()=>{const SS={};S.forEach(r=>(SS[r.team_id]=SS[r.team_id]||{})[r.pokemon]=r);
   const sig=r=>[r.item,r.nature,r.ability,[r.move1,r.move2,r.move3,r.move4].sort().join('/')].join('|');
   const g={};C.indice.forEach(r=>{const k=r.mons.split(' / ').map(baseOf).sort().join('|');(g[k]=g[k]||[]).push(r);});
@@ -994,7 +1057,7 @@ function drawAnat(o){const box=document.getElementById('anat'),sum=document.getE
 ['t-rank','t-var'].forEach(id=>sortable(id,draws.arquetipos));
 
 /* Matchups */
-const MX=D.matchups;const mxSel=document.getElementById('f-mx');mxSel.addEventListener('change',()=>draws.matchups());
+const MX=D.matchups;const mxSel=document.getElementById('f-mx');mxSel.addEventListener('change',()=>{draws.matchups();setDeep(mxSel.value);});
 const MXC={};MX.m.forEach(([a,b,n,w,e,gw,gl])=>{MXC[a+'|'+b]={n,w,e,gw,gl};});
 const MXS=(()=>{const t={};MX.m.forEach(([a,b,n,w,e])=>{if(a===b)return;const o=t[a]=t[a]||{a,n:0,w:0,e:0};o.n+=n;o.w+=w;o.e+=e;});
   return Object.values(t).map(o=>({a:o.a,n:o.n,wr:o.w/o.n,adj:(o.w-o.e)/o.n,eq:MX.cnt[o.a]||0})).sort((x,y)=>y.n-x.n);})();
@@ -1043,14 +1106,14 @@ function lines(el,rows,names){el.textContent='';const W=Math.max(320,el.clientWi
   el.appendChild(svg);}
 /* --- evolución de sets por semana --- */
 const formOf=r=>{if(!isStone(r.item))return r.pokemon;const b=r.pokemon.replace(/-Eternal$/,'');const m=r.item.match(/ ([XYZ])$/);return b+'-Mega'+(m?'-'+m[1]:'');};
-const mkSetW=key=>{const n={},c={};S.forEach(r=>{const w=weekKey(r.date),p=key(r);const k0=p+'|'+w;n[k0]=(n[k0]||0)+1;
+const mkSetW=key=>{const n={},c={};S0.forEach(r=>{const w=weekKey(r.date),p=key(r);const k0=p+'|'+w;n[k0]=(n[k0]||0)+1;
   new Set([r.move1,r.move2,r.move3,r.move4].filter(Boolean)).forEach(m=>{const k='m|'+p+'|'+m+'|'+w;c[k]=(c[k]||0)+1;});const ki='i|'+p+'|'+r.item+'|'+w;c[ki]=(c[ki]||0)+1;});return {n,c};};
 const SETW=mkSetW(r=>r.pokemon),SETF=mkSetW(formOf);
 function setRows(p,kind,names,W){W=W||SETW;const out=[];names.forEach(nm=>WEEKS.forEach(w=>{const t=W.n[p+'|'+w]||0,e=W.c[kind+'|'+p+'|'+nm+'|'+w]||0;out.push({semana:w,nombre:nm,equipos:e,total:t,pct:t?e/t:0});}));return out;}
 function setOpts(p,kind,W){W=W||SETW;const tot={};Object.entries(W.c).forEach(([k,v])=>{const [kd,pp,nm]=k.split('|');if(kd===kind&&pp===p)tot[nm]=(tot[nm]||0)+v;});return Object.entries(tot).sort((a,b)=>b[1]-a[1]);}
 const EARLY=w=>w<='2026-10-04',LATE=w=>w>='2026-10-18';
 function pooled(p,kind,nm,f,W){W=W||SETW;let a=0,t=0;WEEKS.filter(f).forEach(w=>{a+=W.c[kind+'|'+p+'|'+nm+'|'+w]||0;t+=W.n[p+'|'+w]||0;});return {v:t?a/t:0,t};}
-const FCNT={};S.forEach(r=>{const f=formOf(r);FCNT[f]=(FCNT[f]||0)+1;});
+const FCNT={};S0.forEach(r=>{const f=formOf(r);FCNT[f]=(FCNT[f]||0)+1;});
 const hasMegaForm=b=>Object.keys(FCNT).some(f=>f!==b&&f.startsWith(b.replace(/-Eternal$/,'')+'-Mega'));
 const formName=f=>f.includes('-Mega')?megaLabel(f):disp(f)+(hasMegaForm(f)?' (sin mega)':'');
 C.shifts=(()=>{const out=[];Object.keys(FCNT).forEach(p=>{['m','i'].forEach(k=>setOpts(p,k,SETF).filter(([nm])=>!(k==='i'&&isStone(nm))).forEach(([nm])=>{const e=pooled(p,k,nm,EARLY,SETF),l=pooled(p,k,nm,LATE,SETF);
@@ -1066,16 +1129,16 @@ const sprDate=r=>{if(r._d)return r._d;const m=(r.date||'').match(/(\d+) (\w{3}) 
 const bulkOf=r=>(+r.hp||0)+(+r.def_||0)+(+r.spd||0);
 const SPRF=['Vel. máx (32)','Bulk 20+','At. Esp. máx','Ataque máx','Vel. 0 (TR)'];
 const sprHas={'Vel. máx (32)':r=>+r.spe>=32,'Bulk 20+':r=>bulkOf(r)>=20,'At. Esp. máx':r=>+r.spa>=32,'Ataque máx':r=>+r.atk>=32,'Vel. 0 (TR)':r=>+r.spe===0};
-const SCNT={};SPd.forEach(r=>{if(r.hp!=='')SCNT[r.forma]=(SCNT[r.forma]||0)+1;});
-function sprRows(f,names){const out=[];names.forEach(nm=>WEEKS.forEach(w=>{const rs=SPd.filter(r=>r.forma===f&&r.hp!==''&&weekKey(sprDate(r))===w);const e=rs.filter(sprHas[nm]).length;out.push({semana:w,nombre:nm,equipos:e,total:rs.length,pct:rs.length?e/rs.length:0});}));return out;}
+const SCNT={};SPd0.forEach(r=>{if(r.hp!=='')SCNT[r.forma]=(SCNT[r.forma]||0)+1;});
+function sprRows(f,names){const out=[];names.forEach(nm=>WEEKS.forEach(w=>{const rs=SPd0.filter(r=>r.forma===f&&r.hp!==''&&weekKey(sprDate(r))===w);const e=rs.filter(sprHas[nm]).length;out.push({semana:w,nombre:nm,equipos:e,total:rs.length,pct:rs.length?e/rs.length:0});}));return out;}
 /* fuente de filas + condición para una prueba antes/después */
 /* AQM se define más abajo (pestaña Equipos); se usa aquí solo en tiempo de render */
 const AQA={};AQ.forEach(r=>AQA[r.team_id]=r.arquetipo);
 function testSrc(x){
-  if(x.t==='mega')return {rows:E.map(r=>({d:r.date,ev:r.event,r})),has:o=>o.r.mega1===x.n||o.r.mega2===x.n};
-  if(x.t==='arq')return {rows:E.map(r=>({d:r.date,ev:r.event,r})),has:o=>AQA[o.r.team_id]===x.n};
-  if(x.t==='bulk'||x.t==='spemax'){const rs=SPd.filter(r=>r.forma===x.f&&r.hp!=='').map(r=>({d:sprDate(r),ev:r.event,r}));return {rows:rs,has:x.t==='bulk'?o=>bulkOf(o.r)>=(x.min||20):o=>+o.r.spe>=32};}
-  const key=x.f?formOf:(r=>r.pokemon);const rs=S.filter(r=>key(r)===x.p).map(r=>({d:r.date,ev:r.event,r}));
+  if(x.t==='mega')return {rows:E0.map(r=>({d:r.date,ev:r.event,r})),has:o=>o.r.mega1===x.n||o.r.mega2===x.n};
+  if(x.t==='arq')return {rows:E0.map(r=>({d:r.date,ev:r.event,r})),has:o=>AQA[o.r.team_id]===x.n};
+  if(x.t==='bulk'||x.t==='spemax'){const rs=SPd0.filter(r=>r.forma===x.f&&r.hp!=='').map(r=>({d:sprDate(r),ev:r.event,r}));return {rows:rs,has:x.t==='bulk'?o=>bulkOf(o.r)>=(x.min||20):o=>+o.r.spe>=32};}
+  const key=x.f?formOf:(r=>r.pokemon);const rs=S0.filter(r=>key(r)===x.p).map(r=>({d:r.date,ev:r.event,r}));
   return {rows:rs,has:x.t==='i'?o=>o.r.item===x.n:o=>[o.r.move1,o.r.move2,o.r.move3,o.r.move4].includes(x.n)};}
 function testAB(x){const {rows,has}=testSrc(x);const cut=x.cut;const bef=cut?o=>o.d<cut:o=>o.d<='2026-10-05',aft=cut?o=>o.d>=cut:o=>o.d>='2026-10-12';
   const A=rows.filter(bef),B=rows.filter(aft);const ka=A.filter(has).length,kb=B.filter(has).length;const up=kb/(B.length||1)>=ka/(A.length||1);
@@ -1095,14 +1158,14 @@ function drawEv(){const k=evK.value,isS=k==='s';const cnt=isS?SCNT:FCNT;const pk
   const pg=document.getElementById('ev-picks');pg.textContent='';opts.forEach(([nm])=>{const b=document.createElement('button');b.className='pick';b.type='button';b.textContent=nm;b.setAttribute('aria-pressed',evPicks.includes(nm));
     const i=evPicks.indexOf(nm);if(i>=0)b.style.setProperty('--c',COLORS[i%COLORS.length]);b.addEventListener('click',()=>{const j=evPicks.indexOf(nm);if(j>=0)evPicks.splice(j,1);else if(evPicks.length<6)evPicks.push(nm);drawEv();});pg.appendChild(b);});
   lines(document.getElementById('ch-ev'),rowsOf(evPicks),evPicks);
-  const nW=w=>isS?SPd.filter(r=>r.forma===p&&r.hp!==''&&weekKey(sprDate(r))===w).length:(SETF.n[p+'|'+w]||0);
+  const nW=w=>isS?SPd0.filter(r=>r.forma===p&&r.hp!==''&&weekKey(sprDate(r))===w).length:(SETF.n[p+'|'+w]||0);
   document.getElementById('ev-n').textContent=(isS?'Spreads':'Sets')+' por fin de semana: '+WEEKS.map(w=>{const t=nW(w);return fmtDate(w)+' '+t+(t<6?'*':'');}).join(' · ')+'   (* pocos datos)'+(isS?' · Fuente: spreads de pastes públicos (VGCPastes y Victory Road, incluye torneos locales).':'');
   const rs=document.getElementById('r-shift');rs.textContent='';C.shifts.forEach(x=>{const lab=formName(x.p)+' · '+(x.k==='i'?'objeto ':'')+x.nm;
     const r=rowEl(x.p,lab,[[Math.max(x.e,x.l)*100,'b2'],[Math.min(x.e,x.l)*100,'']],'<b class="'+(x.d>0?'pos':'neg')+'">'+pct0(x.e)+' → '+pct0(x.l)+'</b> <span class="muted">· '+pfmt(x.pv)+'</span>',{title:lab+': '+x.et+' antes, '+x.lt+' después · probabilidad de que sea casualidad '+pfmt(x.pv)});
     r.style.cursor='pointer';r.addEventListener('click',()=>{evK.value=x.k;evPk.dataset.want=x.p;evPicks=[x.nm];drawEv();document.getElementById('ev-card').scrollIntoView({behavior:'smooth',block:'start'});});rs.appendChild(r);});}
 /* cambios de stats en spreads (bulk / velocidad) */
 C.shifts=(()=>{const base=C.shifts.map(x=>{const t=testAB({t:x.k,p:x.p,n:x.nm,f:1});return Object.assign(x,{pv:t.p});}).filter(x=>x.pv<0.05);
-  const add=[];Object.keys(SCNT).forEach(f=>SPRF.forEach(nm=>{const rs=SPd.filter(r=>r.forma===f&&r.hp!=='');const A=rs.filter(r=>sprDate(r)<='2026-10-05'),B=rs.filter(r=>sprDate(r)>='2026-10-12');
+  const add=[];Object.keys(SCNT).forEach(f=>SPRF.forEach(nm=>{const rs=SPd0.filter(r=>r.forma===f&&r.hp!=='');const A=rs.filter(r=>sprDate(r)<='2026-10-05'),B=rs.filter(r=>sprDate(r)>='2026-10-12');
     if(A.length<8||B.length<8)return;const ka=A.filter(sprHas[nm]).length,kb=B.filter(sprHas[nm]).length,e=ka/A.length,l=kb/B.length,pv=fisher(ka,A.length-ka,kb,B.length-kb);
     if(Math.abs(l-e)>=0.25&&pv<0.05)add.push({p:f,k:'s',nm,e,l,et:A.length,lt:B.length,d:l-e,pv});}));
   return base.concat(add).sort((a,b)=>Math.abs(b.d)-Math.abs(a.d)).slice(0,16);})();
@@ -1213,10 +1276,10 @@ function drawAR(){const box=document.getElementById('ar');if(box.dataset.ok)retu
       const d=document.createElement('div');d.className='ch';d.style.cssText='display:flex;flex-wrap:wrap;gap:6px';ls.forEach(l=>{const b=document.createElement('span');b.className='bchip';b.appendChild(img(l.f));const t=document.createElement('span');t.innerHTML=formName(l.f)+' <span class="mono">'+l.vs+(l.sc==='tw'?' ×2 TW':'')+' ×'+l.k+' › '+verName(l.t.ver)+' '+l.t.v+'</span>';b.appendChild(t);d.appendChild(b);});c.appendChild(d);}}
     box.appendChild(c);});
   const dots=document.getElementById('ar-dots'),tl=document.getElementById('ar-titles'),cnt=document.getElementById('ar-cnt'),prev=document.getElementById('ar-prev'),next=document.getElementById('ar-next');
-  const go=i=>{i=Math.max(0,Math.min(AR.length-1,i));box.scrollTo({left:i*(box.clientWidth+16)});};
+  const go=i=>{i=Math.max(0,Math.min(AR.length-1,i));box.scrollTo({left:i*(box.clientWidth+16)});};window.arGo=go;
   AR.forEach((e,i)=>{const d=document.createElement('button');d.type='button';d.setAttribute('aria-label',(i+1)+': '+e.t);d.title=e.t;d.addEventListener('click',()=>go(i));dots.appendChild(d);
     const t=document.createElement('button');t.type='button';const lv=e.res?e.res.lvl:'';t.innerHTML='<i class="lv '+lv+'"></i>';t.appendChild(document.createTextNode(e.sh));t.addEventListener('click',()=>go(i));tl.appendChild(t);});
-  let cur=-1;const upd=()=>{const i=Math.round(box.scrollLeft/(box.clientWidth+16));if(i===cur)return;cur=i;
+  let cur=-1;const upd=()=>{const i=Math.round(box.scrollLeft/(box.clientWidth+16));if(i===cur)return;cur=i;if(CUR==='tendencias')setDeep(i>0?i+1:'');
     [...dots.children].forEach((d,k)=>d.setAttribute('aria-current',k===i));[...tl.children].forEach((d,k)=>{d.setAttribute('aria-current',k===i);if(k===i)tl.scrollTo({left:d.offsetLeft-tl.clientWidth/2+d.clientWidth/2,behavior:'smooth'});});
     cnt.textContent=(i+1)+' / '+AR.length;prev.disabled=i===0;next.disabled=i===AR.length-1;};
   box.addEventListener('scroll',()=>requestAnimationFrame(upd));prev.addEventListener('click',()=>go(cur-1));next.addEventListener('click',()=>go(cur+1));
@@ -1268,7 +1331,7 @@ draws.rendimiento=()=>{const N=WR.reduce((a,r)=>{a[r.event]=+r.teams;return a;},
 sortable('t-conv',draws.rendimiento);
 
 /* Sets */
-const setSel=document.getElementById('f-set'),techSig=document.getElementById('f-tech-sig');[setSel,techSig].forEach(s=>s.addEventListener('change',()=>draws.sets()));
+const setSel=document.getElementById('f-set'),techSig=document.getElementById('f-tech-sig');[setSel,techSig].forEach(s=>s.addEventListener('change',()=>{draws.sets();setDeep(setSel.value);}));
 const setFormName=p=>{const r=S.find(x=>x.pokemon===p);return FORM[p]||(r&&r.forma)||p;};
 draws.sets=()=>{const opts=Object.keys(C.setd.n).sort((a,b)=>C.setd.n[b]-C.setd.n[a]);fillSel(setSel,opts,v=>disp(v)+' ('+C.setd.n[v]+')');const p=setSel.value;
   document.getElementById('set-img').src=sprite(setFormName(p));
@@ -1284,21 +1347,55 @@ draws.sets=()=>{const opts=Object.keys(C.setd.n).sort((a,b)=>C.setd.n[b]-C.setd.
   if(!ts.length){te.innerHTML='<p class="note">'+(C.setd.n[p]<15||(C.setd.n8[p]||0)<5?'Muestra pequeña: necesita 15+ equipos y 5+ en Top 8.':'Ninguna diferencia fiable entre su Top 8 y el resto.')+'</p>';}
   ts.forEach(r=>{te.appendChild(barRow(r.opcion,[[Math.min(50,Math.abs(r.dif)/0.5*50),r.dif>0?'pos':'neg']],'<b>'+pct0(r.pct_top8)+'</b> vs '+pct0(r.pct_resto)+' <span class="chip'+(r.senal==='Fuerte'?' fuerte':'')+'">'+(r.senal==='Fuerte'?'fiable':r.senal==='Moderada'?'probable':'dudosa')+'</span>',{dv:1,title:r.cat+': '+r.opcion+' · Top 8 '+pct(r.pct_top8)+' vs resto '+pct(r.pct_resto)}));});
   table('t-set-comb',C.setc.filter(r=>r.pokemon===p),[['item'],['nature'],['moves'],['veces',{n:1}],['top8',{n:1}],['ejemplo']],12);
-  const ot=document.getElementById('r-objtot');if(!ot.childElementCount){const mx=C.objt[0].veces,N=S.length;
-    const hd=document.createElement('div');hd.className='ihd';hd.innerHTML='<span></span><span>Objeto</span><span>Pokémon que lo llevan</span><span>Quién lo lleva (nº de veces)</span>';ot.appendChild(hd);
-    C.objt.slice(0,16).forEach(r=>{const d=document.createElement('div');d.className='irow';d.title=r.item+': '+r.veces+' de '+N+' Pokémon del Top 32 ('+pct(r.veces/N)+')';
-      d.appendChild(itemImg(r.item));const nm=document.createElement('div');nm.className='inm';nm.textContent=r.item;d.appendChild(nm);
-      const tr=document.createElement('div');tr.className='itrk';tr.innerHTML='<span class="bar"><i style="width:'+(r.veces/mx*100).toFixed(1)+'%"></i></span><span class="iv"><b>'+r.veces+'</b> · '+pct0(r.veces/N)+'</span>';d.appendChild(tr);
-      const cr=document.createElement('div');cr.className='icar';r.por.forEach(([p,k])=>{const c=document.createElement('span');c.title=disp(p)+': '+k;c.appendChild(img(setFormName(p)));const b=document.createElement('b');b.textContent=k;c.appendChild(b);cr.appendChild(c);});
-      if(r.resto>0){const m=document.createElement('span');m.className='mas';m.textContent='+'+r.resto;m.title=r.resto+' más entre otros Pokémon';cr.appendChild(m);}d.appendChild(cr);ot.appendChild(d);});}};
+  pkExtra(p);};
 sortable('t-set-comb',draws.sets);
+function pkExtra(p){const b=baseOf(p);
+  const u=C.uso.find(r=>r.pokemon===b),w=C.wr.find(r=>r.pokemon===b)||(()=>{let wi=0,lo=0;WR.forEach(r=>{if(r.pokemon===b){wi+= +r.wins;lo+= +r.losses;}});return wi+lo?{winrate:wi/(wi+lo),partidas:wi+lo}:null;})();
+  const tit=E.filter(r=>+r.place===1&&r.mons.split(' / ').some(m=>baseOf(m)===b)).length;
+  const fc={};E.forEach(r=>r.mons.split(' / ').forEach(m=>{if(baseOf(m)===b)fc[m]=(fc[m]||0)+1;}));const ft=Object.values(fc).reduce((a,c)=>a+c,0);
+  const st=document.getElementById('pk-stats');st.textContent='';
+  const kp=(lab,val,sub,cls)=>{const d=document.createElement('div');d.className='kp';d.innerHTML='<span>'+lab+'</span><b class="'+(cls||'')+'">'+val+'</b>'+(sub?'<small>'+sub+'</small>':'');st.appendChild(d);};
+  if(u){kp('Uso en el Top 32',pct0(u.pct),u.equipos+' equipos');const dd=t8dir(u.pct,u.pct_top8);kp('En el Top 8',pct0(u.pct_top8),dd==='up'?'▲ más que su uso':dd==='down'?'▼ menos que su uso':'≈ igual que su uso',dd==='up'?'pos':dd==='down'?'neg':'');}
+  if(w)kp('Win rate (todas las rondas)',pct(w.winrate),w.partidas.toLocaleString('es')+' partidas',w.winrate>=0.52?'pos':w.winrate<=0.48?'neg':'');
+  kp('Títulos',tit,tit===1?'torneo ganado':'torneos ganados');
+  const fs=Object.entries(fc).sort((a,b)=>b[1]-a[1]);
+  if(fs.length>1){const d=document.createElement('div');d.className='kp forms';d.innerHTML='<span>Formas</span>';const ch=document.createElement('div');fs.forEach(([f,c])=>{const x=document.createElement('span');x.appendChild(img(f,f.includes('-Mega')?'mega':''));x.append(megaLabel(f)+' '+pct0(c/ft));ch.appendChild(x);});d.appendChild(ch);st.appendChild(d);}
+  const fam={};let nt=0;E.forEach(r=>{if(r.mons.split(' / ').some(m=>baseOf(m)===b)){nt++;const a=AQA[r.team_id]||'Otros';fam[a]=(fam[a]||0)+1;}});
+  const fe=document.getElementById('pk-fam');fe.textContent='';const top=Object.entries(fam).filter(([a])=>!a.startsWith('Otros')).sort((x,y)=>y[1]-x[1]).slice(0,5);
+  if(top.length){const l=document.createElement('span');l.className='lbl';l.textContent='Familias donde juega';fe.appendChild(l);
+    top.forEach(([a,c])=>{const x=document.createElement('button');x.type='button';x.className='fchip';x.appendChild(img(FORM_A(a)));x.append(arqName(a)+' ');const k=document.createElement('b');k.textContent=pct0(c/nt);x.appendChild(k);x.title='Ver la anatomía de '+arqName(a);
+      x.addEventListener('click',()=>goFam(a));fe.appendChild(x);});}
+  drawComp(b);drawSpreads(p);}
+function pkKey(n){if(!n)return null;const b=baseOf(n);return Object.keys(C.setd.n).find(k=>baseOf(k)===b)||null;}
+function goPk(k){if(!k)return;location.hash='sets/'+encodeURIComponent(k);setTimeout(()=>window.scrollTo({top:document.getElementById('p-sets').offsetTop-90,behavior:'smooth'}),60);}
+document.addEventListener('click',e=>{const im=e.target.closest('.pg img');if(!im||im.classList.contains('it')||!im.alt)return;if(im.closest('a,button,select,summary,label,#p-sets .focus,.dside,#mx,#r-mx,#mx-team'))return;const k=pkKey(im.alt);if(k)goPk(k);});
+function goFam(a){location.hash='arquetipos/'+encodeURIComponent(a);setTimeout(()=>{const c=document.getElementById('anat-card');if(c){c.classList.remove('collapsed');c.scrollIntoView({behavior:'smooth',block:'start'});}},120);}
 
 /* Compañeros */
-const compSel=document.getElementById('f-comp');compSel.addEventListener('change',()=>draws.companeros());
 const N8=(()=>{const c={};E.forEach(r=>{if(+r.place<=8)new Set(r.mons.split(' / ').map(baseOf)).forEach(b=>c[b]=(c[b]||0)+1);});return c;})();
-draws.companeros=()=>{const n=C.comp.n,opts=Object.keys(n).sort((a,b)=>n[b]-n[a]);fillSel(compSel,opts,v=>disp(v)+' ('+n[v]+')');const p=compSel.value;
-  document.getElementById('comp-img').src=sprite(p);document.getElementById('comp-n').textContent=n[p]+' equipos · '+(N8[p]||0)+' en Top 8';
-  const el=document.getElementById('r-comp');el.textContent='';C.comp.rows.filter(r=>r.pokemon===p).slice(0,20).forEach(r=>el.appendChild(rowEl(r.companero,r.companero,[[r.pct*100],[N8[p]?r.top8/N8[p]*100:null,'m8 '+t8dir(r.pct,N8[p]?r.top8/N8[p]:null)]],t8val(r.pct,N8[p]?r.top8/N8[p]:null,pct0),{title:r.juntos+' equipos juntos, '+r.top8+' en Top 8'})));};
+function drawComp(p){const el=document.getElementById('r-comp');el.textContent='';C.comp.rows.filter(r=>r.pokemon===p).slice(0,20).forEach(r=>el.appendChild(rowEl(r.companero,r.companero,[[r.pct*100],[N8[p]?r.top8/N8[p]*100:null,'m8 '+t8dir(r.pct,N8[p]?r.top8/N8[p]:null)]],t8val(r.pct,N8[p]?r.top8/N8[p]:null,pct0),{title:r.juntos+' equipos juntos, '+r.top8+' en Top 8'})));}
+
+/* Resumen */
+draws.resumen=()=>{const k=document.getElementById('sum-kpi');if(k.dataset.ok)return;k.dataset.ok=1;
+  const tile=(lab,big,sub,ic,go,cls)=>{const d=document.createElement(go?'button':'div');if(go){d.type='button';d.addEventListener('click',go);}d.className='stile'+(cls?' '+cls:'');
+    if(ic){const im=img(ic,ic.includes('-Mega')?'mega':'');d.appendChild(im);}const t=document.createElement('div');t.innerHTML='<span>'+lab+'</span><b>'+big+'</b>'+(sub?'<small>'+sub+'</small>':'');d.appendChild(t);k.appendChild(d);};
+  const f1=ra[0];tile('Familia mejor posicionada',arqName(f1.arquetipo),f1.titulos+(f1.titulos===1?' título':' títulos')+' · '+f1.top8+' Top 8',FORM_A(f1.arquetipo),()=>goFam(f1.arquetipo));
+  const tr=ra.slice(0,12).map(r=>{const v=ARQW(r.arquetipo),n=v.length;const rec=(v[n-1]+v[n-2])/2,old=v.slice(0,n-2).reduce((a,x)=>a+x,0)/Math.max(1,n-2);return {a:r.arquetipo,d:rec-old,rec};}).sort((a,b)=>b.d-a.d);
+  const up=tr[0],dn=tr[tr.length-1];
+  tile('Familia que más sube',arqName(up.a),'▲ '+Math.round(up.d*100)+' pts · ahora '+pct0(up.rec)+' del Top 32',FORM_A(up.a),()=>goFam(up.a),'up');
+  tile('Familia que más baja',arqName(dn.a),'▼ '+Math.round(-dn.d*100)+' pts · ahora '+pct0(dn.rec)+' del Top 32',FORM_A(dn.a),()=>goFam(dn.a),'down');
+  const mr=C.tend.filter(o=>o.tipo==='mega').sort((a,b)=>b.reciente-a.reciente)[0];
+  if(mr)tile('Mega del momento',megaLabel(mr.nombre),pct0(mr.reciente)+' de los equipos (últimos 2 fines de semana)',mr.nombre,()=>goPk(pkKey(mr.nombre)));
+  const last=C.torneo.rows.filter(r=>r.campeon).sort((a,b)=>a.fecha<b.fecha?1:a.fecha>b.fecha?-1:b.att-a.att)[0];
+  if(last){const c=last.campeon;const d=document.createElement('a');d.className='stile champ';d.href=c.paste;d.target='_blank';d.rel='noopener';
+    d.innerHTML='<div><span>Último campeón · '+esc(last.torneo)+' ('+fmtDate(last.fecha)+')</span><b>'+esc(c.player)+'</b><small>'+esc(arqName(AQA[c.team_id]||''))+' · ver paste ↗</small></div>';d.appendChild(teamEl(c.mons));k.appendChild(d);}
+  const nb=document.getElementById('sum-news');AR.forEach(e=>{e.res=e.res||(e.test?testAB(e.test):null);});
+  AR.map((e,i)=>({e,i})).filter(o=>o.e.res&&o.e.res.lvl==='solida').slice(0,4).forEach(({e,i})=>{const b=document.createElement('button');b.type='button';b.className='snew';
+    const ic=e.s&&e.s[0]?iconOf(e.s[0]):null;if(ic)b.appendChild(img(ic));const t=document.createElement('div');t.innerHTML='<small>'+esc(e.dt)+'</small><b></b>';t.querySelector('b').textContent=e.t;b.appendChild(t);
+    b.addEventListener('click',()=>{nav('tendencias');setTimeout(()=>{if(window.arGo)window.arGo(i);document.getElementById('ar-card').scrollIntoView({behavior:'smooth',block:'start'});},120);});nb.appendChild(b);});
+  const more=document.createElement('button');more.type='button';more.className='more';more.textContent='Ver todas las noticias';more.addEventListener('click',()=>nav('tendencias'));nb.appendChild(more);
+  const lst=(id,rows)=>{const el=document.getElementById(id);rows.forEach(o=>{const r=rowEl(o.nombre,o.nombre,[[Math.min(100,o.reciente/0.5*100)]],'<b class="'+(o.cambio>0?'pos':'neg')+'">'+(o.cambio>0?'▲ +':'▼ ')+Math.round(o.cambio*100)+'</b> · '+pct0(o.septiembre)+' → '+pct0(o.reciente),{title:disp(o.nombre)+': septiembre '+pct(o.septiembre)+' → últimos 2 fines de semana '+pct(o.reciente)});el.appendChild(r);});};
+  const P=C.tend.filter(o=>o.tipo==='pokemon');lst('sum-up',P.slice().sort((a,b)=>b.cambio-a.cambio).slice(0,5));lst('sum-down',P.slice().sort((a,b)=>a.cambio-b.cambio).slice(0,5));};
 
 /* Herramientas */
 draws.herramientas=()=>{const el=document.getElementById('r-tools');el.textContent='';const mx=Math.max(...C.tools.map(r=>Math.max(r.pct_sep,r.pct_oct)))*1.05;let last='';
@@ -1311,7 +1408,7 @@ draws.herramientas=()=>{const el=document.getElementById('r-tools');el.textConte
 sortable('t-tools',draws.herramientas);
 
 /* Stat points */
-const spSel=document.getElementById('f-sp');spSel.addEventListener('change',()=>draws['stat-points']());
+const spSel=document.getElementById('f-sp');spSel.addEventListener('change',()=>{spSel.dataset.keep=spSel.value;draws.sets();});
 function velbars(el,dist){el.textContent='';if(!dist.length)return;const W=Math.max(300,el.clientWidth||420),H=170,L=28,B=22,T=8;const mn=dist[0].vel,mx=dist[dist.length-1].vel,my=Math.max(...dist.map(d=>d.sets));
   const xs=v=>L+(W-L-10)*((v-mn+2)/(mx-mn+4)),ys=v=>T+(H-B-T)*(1-v/my),bw=Math.max(4,Math.min(16,(W-L)/(mx-mn+5)*0.8));const svg=svgEl(W,H);
   const st=Math.max(1,Math.ceil(my/4));for(let v=0;v<=my;v+=st){add(svg,'line',{x1:L,x2:W-6,y1:ys(v),y2:ys(v),stroke:'var(--line)'});add(svg,'text',{x:L-6,y:ys(v)+4,'text-anchor':'end'}).textContent=v;}
@@ -1424,13 +1521,16 @@ function benchMe(f){const box=document.getElementById('sp-bench');box.textConten
   if(mine.length){const d=document.createElement('div');d.className='ln';d.innerHTML='<span class="lbl">Sus velocidades con objetivo</span>';mine.forEach(l=>{const c=document.createElement('span');c.className='bchip';c.appendChild(img(l.t.f));const t=document.createElement('span');t.innerHTML=l.vs+(l.sc==='tw'?' (×2 con Tailwind)':'')+' ×'+l.k+' <span class="mono">supera a</span> '+verName(l.t.ver)+' <span class="mono">('+l.t.v+')</span>';c.appendChild(t);d.appendChild(c);});box.appendChild(d);}
   if(chasers.length){const d=document.createElement('div');d.className='ln';d.innerHTML='<span class="lbl">Quién va justo por encima de él</span>';chasers.forEach(l=>{const c=document.createElement('span');c.className='bchip';c.appendChild(img(l.f));const t=document.createElement('span');t.innerHTML=formName(l.f)+' <span class="mono">'+l.vs+(l.sc==='tw'?' ×2 TW':'')+' ×'+l.k+' (vs '+l.t.v+')</span>';c.appendChild(t);d.appendChild(c);});box.appendChild(d);}}
 draws['stat-points']=()=>{ladder();drawDuel();table('t-ctrl',C.ctrl,[['arquetipo',{html:(td,r)=>arqLabel(td,r.arquetipo)}],['equipos',{n:1}],['p_tw',{n:1,f:pct0}],['p_tr',{n:1,f:pct0}],['p_icy',{n:1,f:pct0}],['p_scarf',{n:1,f:pct0}],['p_abil',{n:1,f:pct0}],['p_nada',{n:1,f:pct0}]]);table('t-vel',C.vel,[['forma',{pk:1}],['n',{n:1}],['base',{n:1}],['min',{n:1}],['moda',{n:1}],['max',{n:1}],['pct_max',{n:1,f:pct0}],['pct_tr',{n:1,f:pct0}],['comunes']]);
-  const opts=C.vel.slice().sort((a,b)=>b.n-a.n).map(r=>r.forma);fillSel(spSel,opts,v=>megaLabel(v)+' ('+C.vel.find(r=>r.forma===v).n+')');const f=spSel.value,row=C.vel.find(r=>r.forma===f);
-  document.getElementById('sp-img').src=sprite(f);document.getElementById('sp-n').textContent=row.n+' sets · velocidad base '+row.base;
+};
+function drawSpreads(p){const box=spSel.closest('.card');const forms=C.vel.filter(r=>baseOf(r.forma)===baseOf(p)).sort((a,b)=>b.n-a.n);
+  box.classList.toggle('empty',!forms.length);if(!forms.length){document.getElementById('sp-n').textContent='Sin spreads publicados para este Pokémon.';spSel.hidden=true;return;}
+  const keep=spSel.dataset.keep;spSel.hidden=forms.length<2;delete spSel.dataset.ok;fillSel(spSel,forms.map(r=>r.forma),v=>megaLabel(v)+' ('+forms.find(r=>r.forma===v).n+')');if(keep&&forms.some(r=>r.forma===keep))spSel.value=keep;const f=spSel.value,row=forms.find(r=>r.forma===f);
+  document.getElementById('sp-n').textContent=(forms.length<2?megaLabel(f)+' · ':'')+row.n+' sets · velocidad base '+row.base;
   const K=['hp','atk','def_','spa','spd','spe'],L={hp:'HP',atk:'Atk',def_:'Def',spa:'SpA',spd:'SpD',spe:'Spe'};const el=document.getElementById('r-spavg');el.textContent='';
   K.forEach(k=>{const avg=row.rs.reduce((a,r)=>a+(+r[k]),0)/row.rs.length,p32=row.rs.filter(r=>+r[k]>=32).length/row.rs.length;el.appendChild(barRow(L[k],[[avg/32*100]],'<b>'+avg.toFixed(1)+'</b> · '+pct0(p32)+' con 32'));});
   velbars(document.getElementById('ch-spvel'),row.dist);
   table('t-sptop',C.sptop.filter(r=>r.forma===f),[['nature'],['sp',{html:(td,r)=>{td.textContent=r.sp;td.className='mono';}}],['stats',{html:(td,r)=>{td.textContent=r.stats;td.className='mono';}}],['veces',{n:1}],['items'],['mejor'],['paste',{link:1}]],15);};
-['t-vel','t-sptop','t-ctrl'].forEach(id=>sortable(id,draws['stat-points']));
+['t-vel','t-ctrl'].forEach(id=>sortable(id,draws['stat-points']));sortable('t-sptop',draws.sets);
 
 /* Equipos y fichas de torneo */
 const AQM={};AQ.forEach(r=>AQM[r.team_id]=r.arquetipo);
@@ -1452,7 +1552,7 @@ sortable('t-eq',draws.equipos);
 
 document.getElementById('foot').innerHTML='Datos: Top 32 de los regionales de Baltimore, Frankfurt, Brisbane, Recife, Louisville, Nice y Puebla; VR Challenges de septiembre (#1, #2) y octubre (#1 a #4); ESM Madrid Clasificatorios 1 y 2; y el Top 16 del Thailand Premier Ball League. Sets leídos de VR Pastes; win rates y matchups del campo completo en circuit.victoryroad.pro y esm.victoryroad.pro; stat points del VGCPastes Repository. Sprites: iconos de Pokémon Champions vía PokeAPI. Actualizado al '+fmtDate(REF)+' de 2026.';
 
-let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const cur=document.querySelector('.tabs button[aria-selected=true]').dataset.tab;if(['tendencias','stat-points','rendimiento'].includes(cur))draws[cur]();},150);});
+let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const cur=CUR;if(['tendencias','stat-points','rendimiento'].includes(cur))draws[cur]();},150);});
 /* Secciones plegables: cada tarjeta con título se puede contraer; se recuerda en este navegador */
 (()=>{const KEY='vgc-mc-plegadas';let st={};try{st=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){}
   const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}};
@@ -1463,11 +1563,11 @@ let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>
       if(redraw&&!col&&['tendencias','stat-points','rendimiento'].includes(pg)&&draws[pg])draws[pg]();};
     set(!!st[k]);
     h.addEventListener('click',e=>{if(e.target.closest('a,select,input'))return;const col=!c.classList.contains('collapsed');if(col)st[k]=1;else delete st[k];save();set(col,true);});});
-  document.querySelectorAll('.pg').forEach(pg=>{if(pg.querySelectorAll('.card>.chd').length<3)return;
+  document.querySelectorAll('.pg').forEach(pg=>{if(pg.id==='p-resumen'||pg.querySelectorAll('.card>.chd').length<3)return;
     const bar=document.createElement('div');bar.className='foldbar';
     const mk=(t,col)=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.addEventListener('click',()=>{pg.querySelectorAll('.card>.chd').forEach(h=>{const c=h.parentElement;if(c.classList.contains('collapsed')!==col)h.click();});});return b;};
     bar.append(mk('Contraer todo',true),mk('Expandir todo',false));pg.prepend(bar);});})();
-const h=location.hash.slice(1);show(draws[h]?h:'uso');
+applyHash();
 })();
 </script>
 
