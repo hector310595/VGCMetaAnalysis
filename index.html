@@ -97,7 +97,7 @@ body.filtered .perctl select{border-color:var(--sun)}
 body:not(.home) #stats,body:not(.home) .lede{display:none}
 .sumnews{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,17rem),1fr));gap:10px}
 .snew{display:flex;gap:10px;align-items:flex-start;text-align:left;font:inherit;color:var(--fg);background:var(--panel-2);border:0;border-radius:14px;padding:12px;cursor:pointer}
-.snew:hover{box-shadow:inset 0 0 0 1.5px var(--accent)}.snew img{width:40px;height:40px;flex:none}.snew small{display:block;font-size:.8rem;color:var(--muted)}.snew b{font-weight:600;line-height:1.3}
+.snew:hover{box-shadow:inset 0 0 0 1.5px var(--accent)}.snew img{width:40px;height:40px;flex:none}.snew small{display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:.8rem;color:var(--muted);margin-bottom:2px}.snew small .pill{font-size:.72rem;padding:1px 7px}.snew b{font-weight:600;line-height:1.3}
 .sumnews .more{grid-column:1/-1;justify-self:start}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,30rem),1fr));gap:16px}
 .card{background:var(--panel);border-radius:var(--r-lg);padding:20px 22px;min-width:0;display:flex;flex-direction:column;gap:10px}
@@ -1406,8 +1406,13 @@ draws.resumen=()=>{const k=document.getElementById('sum-kpi');if(k.dataset.ok)re
   if(last){const c=last.campeon;const d=document.createElement('a');d.className='stile champ';d.href=c.paste;d.target='_blank';d.rel='noopener';
     d.innerHTML='<div><span>Último campeón · '+esc(last.torneo)+' ('+fmtDate(last.fecha)+')</span><b>'+esc(c.player)+'</b><small>'+esc(arqName(AQA[c.team_id]||''))+' · ver paste ↗</small></div>';d.appendChild(teamEl(c.mons));k.appendChild(d);}
   const nb=document.getElementById('sum-news');AR.forEach(e=>{e.res=e.res||(e.test?testAB(e.test):null);});
-  AR.map((e,i)=>({e,i})).filter(o=>o.e.res&&o.e.res.lvl==='solida').slice(0,4).forEach(({e,i})=>{const b=document.createElement('button');b.type='button';b.className='snew';
-    const ic=e.s&&e.s[0]?iconOf(e.s[0]):null;if(ic)b.appendChild(img(ic));const t=document.createElement('div');t.innerHTML='<small>'+esc(e.dt)+'</small><b></b>';t.querySelector('b').textContent=e.t;b.appendChild(t);
+  const recOf=e=>{if(!e.s||!e.s.length)return 0;const v=arSeries(e.s[0]);const win=f=>{const xs=v.filter((x,i)=>x!=null&&f(WEEKS[i]));return xs.length?xs.reduce((a,b)=>a+b,0)/xs.length:null;};
+    const A=win(w=>w<'2026-10-01'),B=win(w=>w>='2026-10-01'&&w<'2026-10-12'),Cc=win(w=>w>='2026-10-12');if(Cc==null||(A==null&&B==null))return 0;
+    const a=A==null?B:A,b=B==null?a:B;const d1=Math.abs(b-a),d2=Math.abs(Cc-b);return d1+d2>0.005?d2/(d1+d2):0;};
+  const ranked=AR.map((e,i)=>({e,i})).filter(o=>o.e.res&&o.e.res.lvl!=='debil').map(o=>{const r=o.e.res,size=Math.abs(r.kb/(r.nb||1)-r.ka/(r.na||1)),rec=recOf(o.e);
+    return {...o,size,rec,score:0.4*Math.min(1,size/0.3)+0.4*rec+(r.lvl==='solida'?0.2:0.1)};}).sort((a,b)=>b.score-a.score);window.__newsRank=ranked.map(o=>[o.e.sh,o.e.res.lvl,+o.size.toFixed(2),+o.rec.toFixed(2),+o.score.toFixed(2)]);
+  ranked.slice(0,4).forEach(({e,i})=>{const b=document.createElement('button');b.type='button';b.className='snew';
+    const ic=e.s&&e.s[0]?iconOf(e.s[0]):null;if(ic)b.appendChild(img(ic));const t=document.createElement('div');const L=LVL[e.res.lvl];t.innerHTML='<small>'+esc(e.dt)+' · <span class="pill '+L[0]+'">'+L[1]+'</span></small><b></b>';t.querySelector('b').textContent=e.t;b.appendChild(t);
     b.addEventListener('click',()=>{nav('tendencias');setTimeout(()=>{if(window.arGo)window.arGo(i);document.getElementById('ar-card').scrollIntoView({behavior:'smooth',block:'start'});},120);});nb.appendChild(b);});
   const more=document.createElement('button');more.type='button';more.className='more';more.textContent='Ver todas las noticias';more.addEventListener('click',()=>nav('tendencias'));nb.appendChild(more);
   const lst=(id,rows)=>{const el=document.getElementById(id);rows.forEach(o=>{const r=rowEl(o.nombre,o.nombre,[[Math.min(100,o.reciente/0.5*100)]],'<b class="'+(o.cambio>0?'pos':'neg')+'">'+(o.cambio>0?'▲ +':'▼ ')+Math.round(o.cambio*100)+'</b> · '+pct0(o.septiembre)+' → '+pct0(o.reciente),{title:disp(o.nombre)+': septiembre '+pct(o.septiembre)+' → últimos 2 fines de semana '+pct(o.reciente)});el.appendChild(r);});};
