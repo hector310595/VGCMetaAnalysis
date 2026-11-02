@@ -451,6 +451,8 @@ table.mx td.hl{outline:2px solid var(--fg);outline-offset:-2px}
 .tset .th{display:flex;align-items:center;gap:8px}.tset .th img{width:52px;height:52px}.tset .th b{font-size:1rem}
 .tset .it2{display:flex;align-items:center;gap:6px;font-size:.88rem}.tset .it2 img{width:24px;height:24px}
 .tset small{color:var(--muted);font-size:.82rem}.tset .arm{font:inherit;align-self:flex-start;border:0;background:none;color:var(--accent);cursor:pointer;padding:0;font-size:.85rem;margin-top:2px}.tset ul{margin:2px 0 0;padding-left:18px;font-size:.88rem}
+.plink{font:inherit;font-weight:inherit;border:0;background:none;color:var(--accent);cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px}
+.plist{display:flex;flex-direction:column;gap:8px;margin-top:8px}.plr{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--panel-2);border-radius:12px;padding:8px 12px}.plh{display:flex;flex-direction:column;gap:2px;min-width:12rem}.plh small{color:var(--muted);font-size:.82rem}
 .gloss{margin:10px 0 0;display:grid;grid-template-columns:minmax(9rem,13rem) 1fr;gap:8px 16px}.gloss dt{font-weight:600}.gloss dd{margin:0;color:var(--muted)}
 @media (max-width:560px){.gloss{grid-template-columns:1fr}.gloss dd{margin-bottom:6px}}
 .team.clk{cursor:pointer;border-radius:10px}.team.clk:hover{background:color-mix(in srgb,var(--accent) 10%,transparent)}.team.clk:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -738,6 +740,7 @@ table.mx th.rh{cursor:pointer}table.mx th.rh:hover{color:var(--accent)}table.mx 
   <p class="foot" id="foot"></p>
 </div>
 <dialog class="dlg" id="tm-dlg" aria-labelledby="tm-t"><div class="dlgh"><h3 id="tm-t"></h3><button type="button" class="dlgx" data-close aria-label="Cerrar">×</button></div><p class="note" id="tm-s"></p><div class="tsets" id="tm-b"></div><p class="note" id="tm-f"></p></dialog>
+<dialog class="dlg" id="pl-dlg" aria-labelledby="pl-t"><div class="dlgh"><h3 id="pl-t"></h3><button type="button" class="dlgx" data-close aria-label="Cerrar">×</button></div><p class="note" id="pl-s"></p><div class="plist" id="pl-b"></div></dialog>
 <dialog class="dlg" id="gl-dlg" aria-labelledby="gl-t"><div class="dlgh"><h3 id="gl-t">Glosario</h3><button type="button" class="dlgx" data-close aria-label="Cerrar">×</button></div><dl class="gloss"><dt>Top 32</dt><dd>Los 32 mejores equipos de cada torneo. Es la base de uso, megas, sets y familias.</dd><dt>Campo completo</dt><dd>Todos los inscritos: VR Challenges, ESM y los 8 regionales (pokedata). Es la base de win rates y enfrentamientos.</dd><dt>Familia</dt><dd>Equipos con el mismo plan aunque cambien piezas. Se agrupan por los Pokémon que comparten.</dd><dt>Núcleo</dt><dd>Pokémon que van en el 85% o más de los equipos de una familia. Se marcan con brillo dorado.</dd><dt>Variante</dt><dd>Versión de una familia que cambia piezas, por ejemplo Big 6 con Salamence en lugar de Garchomp. Sigue siendo la misma familia.</dd><dt>Mega</dt><dd>Brillo azul. Un equipo puede llevar dos megapiedras, pero solo megaevoluciona una por partida.</dd><dt>Win rate</dt><dd>Partidas ganadas contra otras familias, sin contar espejos.</dd><dt>Vs esperado</dt><dd>Win rate menos lo que se esperaba por el récord de los jugadores. Descuenta que los buenos jugadores ganan más con cualquier equipo.</dd><dt>Llega al Top 32</dt><dd>Cuántos equipos de la familia entraron al Top 32 de los regionales frente a lo esperado por el tamaño de cada torneo, comparado con la media de las familias (1,0× = la media).</dd><dt>Índice</dt><dd>Puntos por puesto × tamaño del torneo × recencia. Ordena las familias.</dd><dt>Dato sólido · probable · puede ser azar</dt><dd>Sólido: menos de 1% de probabilidad de ser casualidad y visto en 3+ torneos. Probable: menos de 5%. El resto puede ser azar.</dd><dt>Atenuado</dt><dd>Un número en gris claro tiene pocos datos detrás: tómalo con cuidado.</dd></dl></dialog>
 <div class="tip" id="tip"></div>
 
@@ -1836,7 +1839,7 @@ function famFicha(a){const box=document.getElementById('fam-x');if(!box)return;b
 const SBT={};S0.forEach(r=>{(SBT[r.team_id]=SBT[r.team_id]||[]).push(r);});
 const dlgT=document.getElementById('tm-dlg');
 window.openTeam=tid=>{const r=E0.find(x=>x.team_id===tid);if(!r)return;const sets=SBT[tid]||[];const mons=r.mons.split(' / ');const fam=AQM[tid]||'';
-  document.getElementById('tm-t').textContent=r.place+'.º '+r.event+' · '+r.player;
+  const tt=document.getElementById('tm-t');tt.textContent=r.place+'.º '+r.event+' · ';const pk=pnz(r.player),po=PLAYERS[pk];if(po&&po.rs.length>1){const a=document.createElement('button');a.type='button';a.className='plink';a.textContent=r.player;a.title='Ver sus '+po.rs.length+' resultados';a.addEventListener('click',()=>{dlgT.close();openPlayer(pk);});tt.appendChild(a);}else tt.appendChild(document.createTextNode(r.player));
   const sub=document.getElementById('tm-s');sub.textContent='';arqLabel(sub,fam||'Otros (menos de 5 equipos)');sub.appendChild(document.createTextNode(' · '+fmtDate(r.date)+' · '+(+r.attendance).toLocaleString('es')+' jugadores'));
   const b=document.getElementById('tm-b');b.textContent='';const core=CORE[fam];
   const order=sets.length?sets:mons.map(m=>({pokemon:baseOf(m)}));
@@ -1851,11 +1854,24 @@ window.openTeam=tid=>{const r=E0.find(x=>x.team_id===tid);if(!r)return;const set
 document.querySelectorAll('.dlg').forEach(d=>{d.addEventListener('click',e=>{if(e.target===d||e.target.closest('[data-close]'))d.close();});});
 document.getElementById('gl-btn').addEventListener('click',()=>{const d=document.getElementById('gl-dlg');if(d.showModal)d.showModal();else d.setAttribute('open','');});
 
+/* ---------- Ficha de jugador ---------- */
+const pnz=t=>String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/\s+/g,' ').trim();
+const PLAYERS={};E0.forEach(r=>{const k=pnz(r.player);const o=PLAYERS[k]=PLAYERS[k]||{key:k,name:r.player,rs:[]};o.rs.push(r);});
+Object.values(PLAYERS).forEach(o=>{o.rs.sort(cmpRes);o.name=o.rs[0].player;});
+function openPlayer(k){const o=PLAYERS[k];if(!o)return;const d=document.getElementById('pl-dlg');document.getElementById('pl-t').textContent=o.name;
+  const t8=o.rs.filter(r=>+r.place<=8).length,ti=o.rs.filter(r=>+r.place===1).length;const fam={};o.rs.forEach(r=>{const a=AQM[r.team_id];if(a&&!a.startsWith('Otros'))fam[a]=(fam[a]||0)+1;});
+  document.getElementById('pl-s').textContent=o.rs.length+' resultados en el Top 32 · '+t8+' en Top 8'+(ti?' · '+ti+(ti===1?' título':' títulos'):'')+(Object.keys(fam).length?' · juega sobre todo '+Object.entries(fam).sort((a,b)=>b[1]-a[1]).slice(0,2).map(([a])=>arqName(a)).join(' y '):'');
+  const b=document.getElementById('pl-b');b.textContent='';o.rs.forEach(r=>{const row=document.createElement('div');row.className='plr';const h=document.createElement('div');h.className='plh';
+    h.innerHTML='<b>'+r.place+'.º '+esc(r.event)+'</b><small>'+fmtDate(r.date)+' · '+(+r.attendance).toLocaleString('es')+' jugadores</small>';const a=AQM[r.team_id]||'Otros (menos de 5 equipos)';const sm=document.createElement('small');arqLabel(sm,a);h.appendChild(sm);row.appendChild(h);
+    row.appendChild(teamEl(r.mons,CORE[a],r.team_id));b.appendChild(row);});
+  if(d.showModal)d.showModal();else d.setAttribute('open','');}
+window.openPlayer=openPlayer;
+
 /* ---------- Buscador global ---------- */
 (()=>{const inp=document.getElementById('gs'),res=document.getElementById('gs-res');const nz=t=>String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'');
   const IDX=[];Object.keys(C.setd.n).forEach(k=>IDX.push({k:'Pokémon',l:disp(k),ic:k,go:()=>goPk(k)}));
   ra.forEach(r=>IDX.push({k:'Familia',l:arqName(r.arquetipo),ic:FORM_A(r.arquetipo),go:()=>goFam(r.arquetipo)}));
-  const best={};E0.forEach(r=>{if(!best[r.player]||+r.place<+best[r.player].place)best[r.player]=r;});Object.values(best).forEach(r=>IDX.push({k:r.place+'.º '+r.event,l:r.player,ic:r.mons.split(' / ')[0],go:()=>window.openTeam(r.team_id)}));
+  Object.values(PLAYERS).forEach(o=>{const b=o.rs[0];IDX.push({k:o.rs.length>1?o.rs.length+' resultados · mejor '+b.place+'.º '+b.event:b.place+'.º '+b.event,l:o.name,ic:b.mons.split(' / ')[0],go:()=>o.rs.length>1?openPlayer(o.key):window.openTeam(b.team_id)});});
   EVL.forEach(ev=>IDX.push({k:'Torneo',l:ev,ic:'',go:()=>{nav('equipos');setTimeout(()=>{evSel.value=ev;draws.equipos();document.getElementById('evd-card').scrollIntoView({behavior:'smooth',block:'start'});},80);}}));
   IDX.forEach(o=>o.n=nz(o.l));let hits=[],on=0;
   const close=()=>{res.hidden=true;};const pick=o=>{close();inp.value='';inp.blur();o.go();};
