@@ -1855,9 +1855,12 @@ document.querySelectorAll('.dlg').forEach(d=>{d.addEventListener('click',e=>{if(
 document.getElementById('gl-btn').addEventListener('click',()=>{const d=document.getElementById('gl-dlg');if(d.showModal)d.showModal();else d.setAttribute('open','');});
 
 /* ---------- Ficha de jugador ---------- */
-const pnz=t=>String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/\s+/g,' ').trim();
+/* mismo jugador inscrito con nombres distintos → nombre que se muestra */
+const PALIAS={'jude gerard lee wei cong':'Jude Lee'};
+const pnz0=t=>String(t).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').trim();
+const pnz=t=>{const k=pnz0(t);return PALIAS[k]?pnz0(PALIAS[k]):k;};
 const PLAYERS={};E0.forEach(r=>{const k=pnz(r.player);const o=PLAYERS[k]=PLAYERS[k]||{key:k,name:r.player,rs:[]};o.rs.push(r);});
-Object.values(PLAYERS).forEach(o=>{o.rs.sort(cmpRes);o.name=o.rs[0].player;});
+Object.values(PLAYERS).forEach(o=>{o.rs.sort(cmpRes);const al=Object.values(PALIAS).find(v=>pnz0(v)===o.key);o.name=al||o.rs[0].player;});
 function openPlayer(k){const o=PLAYERS[k];if(!o)return;const d=document.getElementById('pl-dlg');document.getElementById('pl-t').textContent=o.name;
   const t8=o.rs.filter(r=>+r.place<=8).length,ti=o.rs.filter(r=>+r.place===1).length;const fam={};o.rs.forEach(r=>{const a=AQM[r.team_id];if(a&&!a.startsWith('Otros'))fam[a]=(fam[a]||0)+1;});
   document.getElementById('pl-s').textContent=o.rs.length+' resultados en el Top 32 · '+t8+' en Top 8'+(ti?' · '+ti+(ti===1?' título':' títulos'):'')+(Object.keys(fam).length?' · juega sobre todo '+Object.entries(fam).sort((a,b)=>b[1]-a[1]).slice(0,2).map(([a])=>arqName(a)).join(' y '):'');
