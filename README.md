@@ -27,7 +27,9 @@ victoryroad.pro, circuit.victoryroad.pro, esm.victoryroad.pro, VR Pastes y poked
 
 Los datos crudos están en `data/`:
 
-- `equipos_mc.csv`: equipos.
+- `equipos_mc.csv`: equipos. `player_id` identifica a la persona aunque se inscriba con otro nombre (también en `sets_mc.csv`).
+- `jugadores.csv`: un registro por jugador (`player_id`, nombre que se muestra, variantes con las que se inscribió, nº de resultados).
+- `jugadores_alias.csv`: uniones manuales de nombres distintos de la misma persona (alias → nombre). Las variantes de tildes se unen solas.
 - `arquetipos_mc.csv`: familia, variante, núcleo y flex de cada equipo del Top 32.
 - `spreads_mc.csv`: 1,314 sets con stat points y stats finales a nivel 50 (fuente: VGCPastes Repository, pokepast.es).
 - `sets_mc.csv`: un registro por Pokémon con objeto, habilidad, naturaleza y movimientos, leído de VR Pastes. Los pastes de torneo son Open Team List y no incluyen stat points.
