@@ -10,7 +10,7 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 - **Meta:** uso, megas, herramientas (Tailwind, Trick Room, climas…) y rendimiento (uso frente a win rate en el campo completo).
 - **Equipos:**
   - **Familias:** tarjetas con el núcleo resaltado (brillo dorado) y una ficha por familia: núcleo, contra quién gana y pierde, cuánto llega al Top 32, mejores equipos, noticias y cómo se arma (combinaciones de megas y piezas, con su efecto en el win rate).
-  - **Matchups:** quién le gana a quién entre familias y resumen por familia (win rate, vs esperado y "llega al Top 32").
+  - **Matchups:** mapa del meta (gana partidas frente a llega lejos), cruces de cada familia con margen de error, resumen por familia y mapa de calor de quién le gana a quién (color según qué tan clara es la diferencia).
   - **Torneos:** ficha de cada torneo con Top 8, corte final, familias del campo completo frente al Top 32 y todos los equipos.
 - **Pokémon:** ficha de cada Pokémon (sets, compañeros, por forma) y velocidad y stat points.
 - **Tendencias:** noticias fechadas con dato, hipótesis y lo que falta comprobar (filtrables por solidez y texto), uso por fin de semana y evolución de sets.

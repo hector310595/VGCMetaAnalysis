@@ -477,6 +477,16 @@ article.arq{cursor:pointer;transition:box-shadow .15s}article.arq:hover{box-shad
 .brk .m{background:var(--panel-2);border-radius:10px;padding:6px 9px;font-size:.86rem;display:flex;flex-direction:column;gap:1px}.brk .m b{font-weight:600}.brk .m span{color:var(--muted)}
 .db .nm.wi{display:flex;align-items:center;gap:6px;min-width:0}.db .nm.wi img{width:28px;height:28px;flex:none}.db .nm.wi span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .dkey{display:flex;gap:16px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin:2px 0 6px}.dkey i{display:inline-block;vertical-align:middle;margin-right:5px;border-radius:50%}
+
+.mxhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:4px 0 8px}.mxhead select{font:inherit}#mx-team img{width:40px;height:40px}
+.mxleg{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin:4px 0 8px}.mxleg i{display:inline-block;width:160px;height:10px;border-radius:99px;background:linear-gradient(90deg,var(--down),var(--panel-2),var(--up))}.mxleg em{font-style:normal;flex-basis:100%}
+table.mx thead th.ch span.vn{display:none!important}.mxwrap{max-height:none}table.mx{width:100%;table-layout:fixed;min-width:calc(13rem + var(--mxn,15) * 40px)}table.mx thead th.rh{width:13rem}table.mx th.rh{min-width:0;max-width:none}table.mx thead th.ch{width:auto}table.mx td{width:auto;height:36px;font-size:.86rem}table.mx thead th.ch img{width:30px;height:30px}
+@media (min-width:1100px){table.mx td{height:40px;font-size:.92rem}table.mx thead th.rh{width:15rem}}
+@media (max-width:560px){table.mx{min-width:calc(4.8rem + var(--mxn,15) * 36px)}table.mx thead th.rh{width:4.8rem}table.mx th.rh span{font-size:0}table.mx th.rh span b{font-size:.78rem}table.mx td{height:34px;font-size:.8rem}}
+table.mx th.rh{cursor:pointer}table.mx th.rh:hover{color:var(--accent)}table.mx th.rh img{width:26px;height:26px;margin:0 6px 0 0}
+#ch-mxmap svg text,#ch-mxbar svg text{font-size:12px;fill:var(--muted)}#ch-mxbar svg text.nm{fill:var(--fg);font-size:13px}#ch-mxbar svg text.v{fill:var(--fg);font-family:var(--f-mono)}
+#ch-mxmap svg text.q{font-size:12px;font-weight:600}#ch-mxmap svg text.lb{fill:var(--fg);font-size:11px}
+#ch-mxmap image,#ch-mxbar image{cursor:pointer}
 </style>
 
 <div class="wrap">
@@ -555,21 +565,17 @@ article.arq{cursor:pointer;transition:box-shadow .15s}article.arq:hover{box-shad
   </section>
 
   <section class="pg" id="p-matchups" hidden>
-    <div class="grid" id="mx-pick">
-      <div class="card">
-        <div class="focus"><div class="team" id="mx-team"></div></div>
-        <div class="ctrl"><select id="f-mx" aria-label="Arquetipo"></select><span class="muted" id="mx-n"></span></div>
-        <p class="note">Contra cada familia rival (8+ partidas): cuánto gana por encima o por debajo de lo esperado.</p>
-        <div class="rows wrap" id="r-mx"></div></div>
-      <div class="card"><h2>Rendimiento contra todo el campo</h2>
-        <p class="note">Sin espejos. "Vs esperado" descuenta el nivel de los jugadores. Partidas de VR, ESM y el campo completo de los 8 regionales.</p>
-        <div class="chart" id="ch-mxsum"></div>
-        </div>
-    </div>
+    <div class="card"><h2>Mapa del meta: ¿gana partidas o llega lejos?</h2>
+      <p class="note">Cada familia según cuánto gana por encima de lo esperado (horizontal) y cuánto llega al Top 32 de los regionales frente a la media de las familias (vertical). Más grande = más partidas; más transparente = menos datos. Toca una familia para ver sus cruces.</p>
+      <div class="chart" id="ch-mxmap"></div></div>
+    <div class="card" id="mx-pick"><h2>¿Contra quién gana cada familia?</h2>
+      <div class="mxhead"><select id="f-mx" aria-label="Familia"></select><div class="team" id="mx-team"></div><span class="muted" id="mx-n"></span></div>
+      <p class="note">Puntos por encima o por debajo de lo esperado contra cada rival con 15+ partidas, ya descontado el nivel de los jugadores. La línea fina es el margen de error: si cruza el centro, el cruce puede ser parejo. Más transparente = menos partidas.</p>
+      <div class="chart" id="ch-mxbar"></div></div>
     <div class="card"><h2>Resumen por familia</h2><p class="note">Atenuado: menos de 300 partidas (o menos de 40 equipos en "Llega al Top 32").</p><div class="tbox"><table id="t-mxsum"><thead><tr><th data-f="a">Arquetipo</th><th class="n" data-f="eq">Equipos</th><th class="n" data-f="n">Partidas</th><th class="n" data-f="wr">Win rate</th><th class="n" data-f="adj">Vs esperado</th><th class="n" data-f="conv" title="Cuántas veces llega al Top 32 de los regionales frente a la media de las familias, ya descontado el tamaño de cada torneo">Llega al Top 32</th></tr></thead><tbody></tbody></table></div><p class="note">"Llega al Top 32": en los 8 regionales con campo completo, cuántos equipos de la familia entraron al Top 32 frente a lo esperado por el tamaño de cada torneo, comparado con la media de las familias (1,0× = la media). Separa ganar partidas de llegar lejos.</p></div>
     <div class="card" id="mx-card"><h2>Quién le gana a quién</h2><p class="pernote">Usa todo el periodo: no le aplica el filtro.</p>
-      <p class="note" id="mx-note"></p>
-      <div class="legend"><span><i style="background:var(--up)"></i>gana más de la mitad</span><span><i style="background:var(--down)"></i>pierde más de la mitad</span><span><i style="background:color-mix(in srgb,var(--up) 30%,var(--panel-2))"></i>tenue: pocas partidas</span><span><i style="background:var(--track)"></i>– menos de 8 partidas</span></div>
+      <p class="note" id="mx-note"></p><div class="mxleg"><span>pierde</span><i></i><span>gana</span><em>Color más intenso = diferencia más clara (no solo más grande). Gris: menos de 8 partidas.</em></div>
+      <div class="legend" hidden><span><i style="background:var(--up)"></i>gana más de la mitad</span><span><i style="background:var(--down)"></i>pierde más de la mitad</span><span><i style="background:color-mix(in srgb,var(--up) 30%,var(--panel-2))"></i>tenue: pocas partidas</span><span><i style="background:var(--track)"></i>– menos de 8 partidas</span></div>
       <p class="note" id="mx-hover">Pasa el cursor (o toca) una celda para ver el cruce.</p>
       <div class="mxwrap"><table class="mx" id="mx"></table></div></div>
   </section>
@@ -1127,29 +1133,74 @@ const MXC={};MX.m.forEach(([a,b,n,w,e,gw,gl])=>{MXC[a+'|'+b]={n,w,e,gw,gl};});
 const CONV=(()=>{const cv=(D.matchups&&D.matchups.conv)||{};let T=0,X=0;Object.entries(cv).forEach(([k,v])=>{if(k!=='Otros'){T+=v.t32;X+=v.e32;}});const base=X?T/X:1;const o={};Object.entries(cv).forEach(([k,v])=>{o[k]={...v,rel:v.e32?(v.t32/v.e32)/base:0};});return o;})();
 const MXS=(()=>{const t={};MX.m.forEach(([a,b,n,w,e])=>{if(a===b)return;const o=t[a]=t[a]||{a,n:0,w:0,e:0};o.n+=n;o.w+=w;o.e+=e;});
   return Object.values(t).map(o=>({a:o.a,n:o.n,wr:o.w/o.n,adj:(o.w-o.e)/o.n,eq:MX.cnt[o.a]||0,conv:CONV[o.a]&&o.a!=='Otros'?CONV[o.a].rel:null})).sort((x,y)=>y.n-x.n);})();
+function mxZ(wr,n){return (wr-0.5)/Math.sqrt(0.25/n)/Math.sqrt(1.5);}
+function mxColor2(wr,n){const z=mxZ(wr,n);const p=Math.min(1,Math.abs(z)/3)*80;return 'color-mix(in srgb,'+(z>0?'var(--up)':'var(--down)')+' '+p.toFixed(0)+'%,var(--panel-2))';}
 function mxColor(v,n){const c=v>0?'var(--up)':'var(--down)';const p=Math.min(85,Math.abs(v)/0.25*85)*(n==null?1:Math.min(1,0.35+0.65*n/40));return 'color-mix(in srgb,'+c+' '+p.toFixed(0)+'%,var(--panel-2))';}
 draws.matchups=()=>{const tot=MXS.reduce((s,o)=>s+o.n,0)/2;
-  document.getElementById('mx-note').textContent='Fila = tu familia, columna = rival. Cada celda es su win rate; más tenue con pocas partidas. Toca una celda para ver el detalle.';
+  document.getElementById('mx-note').textContent='Fila = tu familia, columna = rival. Cada celda es el win rate de la fila contra la columna. Toca una celda para ver el detalle, o el nombre de una familia para ver todos sus cruces arriba.';
   const arqs=MXS.filter(o=>o.a!=='Otros'&&o.n>=120).map(o=>o.a).slice(0,16);const cols=[...arqs,'Otros'];
-  const t=document.getElementById('mx');t.textContent='';const th=t.createTHead().insertRow();const c0=document.createElement('th');c0.className='rh';th.appendChild(c0);
-  cols.forEach((a,i)=>{const h=document.createElement('th');h.className='ch';h.title=arqName(a);if(a!=='Otros')h.appendChild(img(FORM_A(a)));const sp=document.createElement('span');sp.textContent=a==='Otros'?'Otros':'#'+(i+1);h.appendChild(sp);if(a!=='Otros'){const vn=document.createElement('span');vn.className='vn';vn.textContent=arqName(a);h.appendChild(vn);}th.appendChild(h);});
+  const t=document.getElementById('mx');t.textContent='';t.style.setProperty('--mxn',cols.length);const th=t.createTHead().insertRow();const c0=document.createElement('th');c0.className='rh';th.appendChild(c0);
+  cols.forEach((a,i)=>{const h=document.createElement('th');h.className='ch';h.title=arqName(a);if(a!=='Otros')h.appendChild(img(FORM_A(a)));const sp=document.createElement('span');sp.textContent=a==='Otros'?'Otros':'#'+(i+1);h.appendChild(sp);th.appendChild(h);});
   const hv=document.getElementById('mx-hover');
-  const tb=t.createTBody();arqs.forEach((a,i)=>{const tr=tb.insertRow();const h=document.createElement('th');h.className='rh';const lab=document.createElement('span');lab.innerHTML='<b class="mono">#'+(i+1)+'</b> ';arqLabel(lab,a);h.appendChild(lab);tr.appendChild(h);
+  const tb=t.createTBody();arqs.forEach((a,i)=>{const tr=tb.insertRow();const h=document.createElement('th');h.className='rh';h.title='Ver todos los cruces de '+arqName(a);h.appendChild(img(FORM_A(a)));const lab=document.createElement('span');lab.innerHTML='<b class="mono">#'+(i+1)+'</b> ';lab.appendChild(document.createTextNode(arqName(a)));h.appendChild(lab);h.addEventListener('click',()=>mxPick(a));tr.appendChild(h);
     cols.forEach((b,j)=>{const td=tr.insertCell();const c=MXC[a+'|'+b];if(a===b){td.className='self';td.textContent='·';return;}
-      const desc=()=>'#'+(i+1)+' '+arqName(a)+'  vs  '+(b==='Otros'?'Otros':'#'+(j+1)+' '+arqName(b))+': '+(c?c.w+'-'+(c.n-c.w)+' en '+c.n+' partidas ('+pct(c.w/c.n)+')'+(c.gw+c.gl?', juegos en VR y ESM '+c.gw+'-'+c.gl:'')+'. Según el récord de los jugadores se esperaba '+pct(c.e/c.n)+(c.n<8?' (muy pocas partidas)':''):'sin partidas');
-      if(!c||c.n<8){td.className='lo';td.textContent='–';}else{const wr=c.w/c.n;td.style.background=mxColor(wr-0.5,c.n);td.textContent=Math.round(wr*100);if(c.n<20)td.classList.add('few');}
+      const desc=()=>'#'+(i+1)+' '+arqName(a)+'  vs  '+(b==='Otros'?'Otros':'#'+(j+1)+' '+arqName(b))+': '+(c?c.w+'-'+(c.n-c.w)+' en '+c.n+' partidas ('+pct(c.w/c.n)+')'+(c.gw+c.gl?', juegos en VR y ESM '+c.gw+'-'+c.gl:'')+'. Según el récord de los jugadores se esperaba '+pct(c.e/c.n)+(c.n<8?' (muy pocas partidas)':Math.abs(mxZ(c.w/c.n,c.n))>=2?' · diferencia clara':' · puede ser azar'):'sin partidas');
+      if(!c||c.n<8){td.className='lo';td.textContent='–';}else{const wr=c.w/c.n;td.style.background=mxColor2(wr,c.n);td.textContent=Math.round(wr*100);}
       const on=()=>{t.querySelectorAll('.hl').forEach(x=>x.classList.remove('hl'));h.classList.add('hl');th.children[j+1].classList.add('hl');td.classList.add('hl');hv.textContent=desc();};
       td.addEventListener('mouseenter',on);td.addEventListener('click',on);});});
-  fillSel(mxSel,MXS.filter(o=>o.a!=='Otros').map(o=>o.a),arqName);const a=mxSel.value;const tm=document.getElementById('mx-team');tm.textContent='';const bm=arqTeam(a);if(bm)tm.appendChild(teamEl(bm,CORE[a]));
-  const me=MXS.find(o=>o.a===a);document.getElementById('mx-n').textContent=me?me.n+' partidas · '+pct(me.wr):'';
-  const rows=MX.m.filter(x=>x[0]===a&&x[1]!==a&&x[2]>=8).map(([x,b,n,w,e])=>({b,n,w,adj:(w-e)/n})).sort((x,y)=>x.adj-y.adj);
-  const el=document.getElementById('r-mx');el.textContent='';rows.forEach(r=>{el.appendChild(rowEl(r.b==='Otros'?'':FORM_A(r.b),arqName(r.b),[[Math.min(50,Math.abs(r.adj)/0.25*50),r.adj>0?'pos':'neg']],'<b>'+r.w+'-'+(r.n-r.w)+'</b> · '+(r.adj>0?'+':'')+Math.round(r.adj*100)+' pts',{dv:1,title:arqName(r.b)}));});
-  // gráfica de rendimiento contra el campo
-  const ce=document.getElementById('ch-mxsum');ce.textContent='';const S2=MXS.filter(o=>o.n>=100).slice().sort((x,y)=>y.adj-x.adj);
-  S2.forEach(o=>ce.appendChild(rowEl(o.a==='Otros'?'':FORM_A(o.a),arqName(o.a),[[Math.min(50,Math.abs(o.adj)/0.12*50),o.adj>0?'pos':'neg']],(o.adj>0?'+':'')+(o.adj*100).toFixed(1)+' pts · '+o.n,{dv:1,title:arqName(o.a)+': '+pct(o.wr)+' en '+o.n+' partidas'})));
-  ce.classList.add('rows','wrap');
+  fillSel(mxSel,MXS.filter(o=>o.a!=='Otros').map(o=>o.a),arqName);const a=mxSel.value;const tm=document.getElementById('mx-team');tm.textContent='';const an=(D.anatomia||[]).find(o=>o.a===a);const cm=an?an.fixed.map(x=>x.f):[];if(cm.length)tm.appendChild(teamEl(cm.join(' / '),new Set(cm)));
+  const me=MXS.find(o=>o.a===a);document.getElementById('mx-n').textContent=me?me.n.toLocaleString('es')+' partidas · '+pct(me.wr)+' · '+(me.adj>0?'+':'')+(me.adj*100).toFixed(1)+' pts vs esperado':'';
+  drawMxBar(a);drawMxMap();
   table('t-mxsum',MXS,[['a',{html:(td,r)=>arqLabel(td,r.a)}],['eq',{n:1}],['n',{n:1,html:(td,r)=>{td.textContent=r.n.toLocaleString('es');td.className='n'+(r.n<300?' lowss':'');}}],['wr',{n:1,html:(td,r)=>{td.textContent=pct(r.wr);td.className='n'+(r.n<300?' lowss':'');}}],['adj',{n:1,html:(td,r)=>{td.textContent=(r.adj>0?'+':'')+(r.adj*100).toFixed(1)+' pts';td.className='n '+(r.adj>0.02?'pos':r.adj<-0.02?'neg':'')+(r.n<300?' lowss':'');}}],['conv',{n:1,html:(td,r)=>{if(r.conv==null){td.textContent='—';td.className='n muted';return;}const c=CONV[r.a];td.textContent=r.conv.toFixed(1).replace('.',',')+'×';td.title=c.t32+' de '+c.field+' equipos en el Top 32 (se esperaban '+c.e32.toFixed(1)+' por tamaño)';td.className='n '+(r.conv>=1.25?'pos':r.conv<=0.8?'neg':'')+(c.field<40?' lowss':'');}}]]);};
 sortable('t-mxsum',draws.matchups);
+
+
+/* ---------- Matchups: gráficas ---------- */
+function mxPick(a){mxSel.value=a;draws.matchups();setDeep(a);document.getElementById('mx-pick').scrollIntoView({behavior:'smooth',block:'start'});}
+function drawMxBar(a){const el=document.getElementById('ch-mxbar');el.textContent='';
+  const rows=MX.m.filter(x=>x[0]===a&&x[1]!==a&&x[2]>=15).map(([x,b,n,w,e])=>{const wr=w/n,adj=(w-e)/n,ci=1.96*Math.sqrt(Math.max(0.05,wr*(1-wr))/n)*Math.sqrt(1.5);return {b,n,w,adj,ci};}).sort((x,y)=>y.adj-x.adj);
+  if(!rows.length){el.innerHTML='<p class="note">Sin cruces con 15+ partidas.</p>';return;}
+  const W=Math.max(300,el.clientWidth||800),narrow=W<560,LW=narrow?Math.min(128,W*0.36):210,VW=narrow?70:120,RH=34,M={t:24,b:28};
+  const H=M.t+M.b+rows.length*RH;const D=Math.min(0.35,Math.max(0.12,...rows.map(r=>Math.abs(r.adj)+r.ci*0.6)));
+  const x0=LW+6,x1=W-VW-6,xs=v=>x0+(x1-x0)*(Math.max(-D,Math.min(D,v))+D)/(2*D);const s=svgEl(W,H);
+  add(s,'rect',{x:xs(0),y:M.t-6,width:x1-xs(0),height:H-M.t-M.b+12,fill:'var(--up)','fill-opacity':.05});add(s,'rect',{x:x0,y:M.t-6,width:xs(0)-x0,height:H-M.t-M.b+12,fill:'var(--down)','fill-opacity':.05});
+  const st=narrow?(D>0.2?0.2:0.1):(D>0.2?0.1:0.05);for(let v=-Math.floor(D/st)*st;v<=D+1e-9;v+=st){const X=xs(v);add(s,'line',{x1:X,x2:X,y1:M.t-6,y2:H-M.b+6,stroke:Math.abs(v)<1e-9?'var(--muted)':'var(--line)','stroke-dasharray':Math.abs(v)<1e-9?'':'2 3'});add(s,'text',{x:X,y:H-8,'text-anchor':'middle'}).textContent=(v>0.001?'+':'')+Math.round(v*100);}
+  add(s,'text',{x:x0,y:12,'text-anchor':'start'}).textContent=narrow?'← pierde':'← le cuesta';add(s,'text',{x:x1,y:12,'text-anchor':'end'}).textContent=narrow?'gana →':'le gana →';
+  rows.forEach((r,i)=>{const y=M.t+i*RH+RH/2,op=(0.35+0.65*Math.min(1,r.n/150)).toFixed(2);
+    if(r.b!=='Otros'){const im=add(s,'image',{href:sprite(FORM_A(r.b))||'',x:0,y:y-14,width:28,height:28});im.addEventListener('click',()=>mxPick(r.b));}
+    const t=add(s,'text',{x:34,y:y+4,class:'nm'});let nm=r.b==='Otros'?'Otros':arqName(r.b);const maxc=Math.floor((LW-36)/7.4);if(nm.length>maxc)nm=nm.slice(0,maxc-1)+'…';t.textContent=nm;
+    const xa=xs(0),xb=xs(r.adj);add(s,'rect',{x:Math.min(xa,xb),y:y-9,width:Math.max(2,Math.abs(xb-xa)),height:18,rx:4,fill:r.adj>=0?'var(--up)':'var(--down)','fill-opacity':op});
+    add(s,'line',{x1:xs(r.adj-r.ci),x2:xs(r.adj+r.ci),y1:y,y2:y,stroke:'var(--fg)','stroke-width':1.5,'stroke-opacity':.55});
+    [r.adj-r.ci,r.adj+r.ci].forEach(v=>add(s,'line',{x1:xs(v),x2:xs(v),y1:y-5,y2:y+5,stroke:'var(--fg)','stroke-width':1.5,'stroke-opacity':.55}));
+    const v=add(s,'text',{x:W-2,y:y+4,'text-anchor':'end',class:'v'});v.textContent=(r.adj>0?'+':'')+Math.round(r.adj*100)+(narrow?' · '+r.w+'-'+(r.n-r.w):' pts · '+r.w+'-'+(r.n-r.w));if(narrow)v.style.fontSize='11px';if(r.n<40)v.setAttribute('opacity','.55');
+    const hit=add(s,'rect',{x:0,y:y-RH/2,width:W,height:RH,fill:'transparent'});const txt=arqName(a)+' vs '+(r.b==='Otros'?'Otros':arqName(r.b))+': '+r.w+'-'+(r.n-r.w)+' ('+pct(r.w/r.n)+'), '+(r.adj>0?'+':'')+(r.adj*100).toFixed(1)+' pts sobre lo esperado (margen ±'+Math.round(r.ci*100)+')'+(Math.abs(r.adj)>r.ci?' · diferencia clara':' · puede ser parejo');
+    hit.addEventListener('mousemove',e=>showTip(e,txt));hit.addEventListener('mouseleave',hideTip);hit.addEventListener('click',e=>showTip(e,txt));});
+  el.appendChild(s);}
+function drawMxMap(){const el=document.getElementById('ch-mxmap');el.textContent='';
+  const rows=MXS.filter(o=>o.a!=='Otros'&&CONV[o.a]&&o.n>=100).map(o=>({...o,rel:CONV[o.a].rel,field:CONV[o.a].field}));if(!rows.length)return;
+  const W=Math.max(300,el.clientWidth||900),narrow=W<560,H=narrow?Math.round(W*1.1):Math.min(520,Math.max(380,W*0.5)),M={t:24,r:14,b:42,l:52};
+  const xa=Math.min(-0.03,...rows.map(r=>r.adj))-0.015,xb=Math.max(0.03,...rows.map(r=>r.adj))+0.02,ya=0,yb=Math.min(2.6,Math.max(2,...rows.map(r=>r.rel))*1.08);
+  const xs=v=>M.l+(W-M.l-M.r)*(v-xa)/(xb-xa),ys=v=>M.t+(H-M.t-M.b)*(1-(Math.min(yb,v)-ya)/(yb-ya));const s=svgEl(W,H);
+  add(s,'rect',{x:xs(0),y:M.t,width:W-M.r-xs(0),height:ys(1)-M.t,fill:'var(--up)','fill-opacity':.07});add(s,'rect',{x:M.l,y:ys(1),width:xs(0)-M.l,height:H-M.b-ys(1),fill:'var(--down)','fill-opacity':.07});
+  const xst=narrow?0.04:0.02;for(let v=Math.ceil(xa/xst)*xst;v<=xb;v+=xst){add(s,'line',{x1:xs(v),x2:xs(v),y1:M.t,y2:H-M.b,stroke:Math.abs(v)<1e-9?'var(--muted)':'var(--line)','stroke-dasharray':Math.abs(v)<1e-9?'4 4':''});add(s,'text',{x:xs(v),y:H-M.b+16,'text-anchor':'middle'}).textContent=(v>0.001?'+':'')+Math.round(v*100);}
+  for(let v=0;v<=yb+1e-9;v+=0.5){add(s,'line',{x1:M.l,x2:W-M.r,y1:ys(v),y2:ys(v),stroke:Math.abs(v-1)<1e-9?'var(--muted)':'var(--line)','stroke-dasharray':Math.abs(v-1)<1e-9?'4 4':''});add(s,'text',{x:M.l-6,y:ys(v)+4,'text-anchor':'end'}).textContent=v.toFixed(1).replace('.',',')+'×';}
+  add(s,'text',{x:(M.l+W-M.r)/2,y:H-6,'text-anchor':'middle'}).textContent='puntos sobre lo esperado (sin espejos) →';
+  const yc=(M.t+H-M.b)/2;add(s,'text',{x:10,y:yc,'text-anchor':'middle',transform:'rotate(-90 10 '+yc+')'}).textContent='llega al Top 32 →';
+  const q=(x,y,anc,t,c)=>{const e=add(s,'text',{x,y,'text-anchor':anc,class:'q'});e.textContent=t;e.style.fill=c;if(narrow)e.style.fontSize='11px';};
+  if(narrow){q(W-M.r-2,ys(1)-8,'end','↗ gana y llega lejos','var(--up)');q(M.l+4,H-M.b-8,'start','ni gana ni llega','var(--down)');}
+  else{q(W-M.r-6,ys(1)-8,'end','Gana y llega lejos','var(--up)');q(M.l+6,H-M.b-8,'start','Ni gana ni llega','var(--down)');q(M.l+6,ys(1)-8,'start','Llega lejos sin ganar más','var(--muted)');q(W-M.r-6,H-M.b-8,'end','Gana, pero se queda antes','var(--muted)');}
+  const nmax=Math.max(...rows.map(r=>r.n));const P=rows.map(r=>({r,R:Math.round((narrow?20:26)+(narrow?16:30)*Math.sqrt(r.n/nmax)),x:xs(r.adj),y:ys(r.rel)}));
+  const boxes=P.map(o=>({x:o.x-o.R/2-2,y:o.y-o.R/2-2,w:o.R+4,h:o.R+4}));const free=b=>b.x>=M.l-6&&b.x+b.w<=W-2&&b.y>=M.t-2&&b.y+b.h<=H-M.b+2&&!boxes.some(o=>b.x<o.x+o.w&&b.x+b.w>o.x&&b.y<o.y+o.h&&b.y+b.h>o.y);
+  P.slice().sort((a,b)=>b.r.n-a.r.n).forEach(({r,R,x,y})=>{const few=r.n<300||r.field<40;
+    add(s,'circle',{cx:x,cy:y,r:R/2+2,fill:'var(--panel)',stroke:r.adj>0?'var(--up)':'var(--down)','stroke-width':2,'stroke-opacity':few?.35:.85});
+    const im=add(s,'image',{href:sprite(FORM_A(r.a))||'',x:x-R/2+3,y:y-R/2+3,width:R-6,height:R-6});if(few)im.setAttribute('opacity','.45');
+    if(r.rel>yb){const t=add(s,'text',{x,y:y-R/2-4,'text-anchor':'middle',class:'lb'});t.textContent='↑ '+r.rel.toFixed(1).replace('.',',')+'×';boxes.push({x:x-20,y:y-R/2-16,w:40,h:14});}
+    const hit=add(s,'circle',{cx:x,cy:y,r:R/2+2,fill:'transparent'});const txt=arqName(r.a)+': '+(r.adj>0?'+':'')+(r.adj*100).toFixed(1)+' pts sobre lo esperado ('+r.n.toLocaleString('es')+' partidas, '+pct(r.wr)+') · llega al Top 32 '+r.rel.toFixed(1).replace('.',',')+'× ('+CONV[r.a].t32+' de '+r.field+' equipos)';
+    hit.style.cursor='pointer';hit.addEventListener('mousemove',e=>showTip(e,txt));hit.addEventListener('mouseleave',hideTip);hit.addEventListener('click',()=>{hideTip();mxPick(r.a);});});
+  P.slice().sort((a,b)=>b.r.n-a.r.n).forEach(({r,R,x,y})=>{const nm=arqName(r.a),fs=narrow?10:11,tw=nm.length*fs*0.58+4,th=fs+3;
+    const cand=[[x-tw/2,y+R/2+3],[x-tw/2,y-R/2-th-3],[x+R/2+4,y-th/2],[x-R/2-4-tw,y-th/2],[x-tw/2,y+R/2+th+4],[x-tw/2,y-R/2-2*th-4]];const c=cand.map(([bx,by])=>({x:bx,y:by,w:tw,h:th})).find(free);
+    if(c){boxes.push(c);const lb=add(s,'text',{x:c.x+tw/2,y:c.y+th-3,'text-anchor':'middle',class:'lb'});lb.textContent=nm;lb.style.fontSize=fs+'px';if(r.n<300||r.field<40)lb.setAttribute('opacity','.55');}});
+  el.appendChild(s);}
 
 /* Tendencias */
 const COLORS=['var(--accent)','var(--sun)','var(--up)','var(--tr)','var(--rain)','var(--down)'];
@@ -1740,7 +1791,7 @@ document.getElementById('gl-btn').addEventListener('click',()=>{const d=document
   inp.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){on=Math.min(hits.length-1,on+1);draw();e.preventDefault();}else if(e.key==='ArrowUp'){on=Math.max(0,on-1);draw();e.preventDefault();}else if(e.key==='Enter'&&hits[on]){pick(hits[on]);e.preventDefault();}else if(e.key==='Escape'){close();}});
   inp.addEventListener('blur',()=>setTimeout(close,120));})();
 
-let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const cur=CUR;if(['tendencias','stat-points','rendimiento'].includes(cur))draws[cur]();},150);});
+let rt;window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{const cur=CUR;if(['tendencias','stat-points','rendimiento','matchups'].includes(cur))draws[cur]();},150);});
 /* Secciones plegables: cada tarjeta con título se puede contraer; se recuerda en este navegador */
 (()=>{const KEY='vgc-mc-plegadas';let st={};try{st=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){}
   const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(st));}catch(e){}};
