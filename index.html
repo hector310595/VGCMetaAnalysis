@@ -864,7 +864,7 @@ C.tools=(()=>{const T=[
   return T.map(([grupo,herramienta,como,f])=>{const h=teams.filter(f);const s=h.filter(t=>t.mes==='sep').length/ns,o=h.filter(t=>t.mes==='oct').length/no;
     let como2=como;if(herramienta==='Prioridad ofensiva'){como2=PRIO.map(m=>[m,teams.filter(t=>t.mv.has(m)).length]).filter(e=>e[1]).sort((a,b)=>b[1]-a[1]).map(e=>e[0]+' '+Math.round(e[1]/n*100)+'%').join(', ');}
     return {grupo,herramienta,como:como2,pct:h.length/n,pct_top8:h.filter(t=>t.place<=8).length/n8,pct_sep:s,pct_oct:o,cambio:o-s};});})();
-C.techs=(()=>{const g={};S.forEach(r=>{(g[r.pokemon]=g[r.pokemon]||[]).push(r);});const out=[];
+function techsOf(g){const out=[];
   Object.entries(g).forEach(([p,rs])=>{const t8=rs.filter(r=>+r.place<=8),re=rs.filter(r=>+r.place>8);if(rs.length<15||t8.length<5||re.length<5)return;
     const c={};const add=(cat,v,top,i)=>{if(!v)return;const k=cat+'|'+v;c[k]=c[k]||{cat,opcion:v,a:0,b:0,m:new Set()};top?c[k].a++:c[k].b++;c[k].m.add(i);};
     rs.forEach((r,i)=>{const top=+r.place<=8;[r.move1,r.move2,r.move3,r.move4].forEach(m=>add('Movimiento',m,top,i));add('Objeto',r.item,top,i);add('Naturaleza',r.nature,top,i);add('Habilidad',r.ability,top,i);});
@@ -877,7 +877,8 @@ C.techs=(()=>{const g={};S.forEach(r=>{(g[r.pokemon]=g[r.pokemon]||[]).push(r);}
     loc.forEach(o=>{const j=(a,b)=>{let i=0;a.forEach(v=>{if(b.has(v))i++;});return i/(a.size+b.size-i);};const k=kept.find(x=>(x.dif>0)===(o.dif>0)&&j(x.m,o.m)>=0.75);
       if(k){k.opcion+=' + '+o.opcion;if(k.cat!==o.cat&&!k.cat.includes(o.cat))k.cat+=' + '+o.cat;}else kept.push(o);});
     kept.forEach(o=>{delete o.m;out.push(o);});});
-  return out.sort((x,y)=>Math.abs(y.z)-Math.abs(x.z));})();
+  return out.sort((x,y)=>Math.abs(y.z)-Math.abs(x.z));}
+C.techs=(()=>{const g={};S.forEach(r=>{(g[r.pokemon]=g[r.pokemon]||[]).push(r);});return techsOf(g);})();
 C.var=(()=>{const a={};AQ.forEach(r=>a[r.team_id]=r.arquetipo);const nt={},g={};
   S.forEach(r=>{const ar=a[r.team_id];if(!ar||ar.startsWith('Otros'))return;(nt[ar]=nt[ar]||new Set()).add(r.team_id);const k=ar+'|'+r.pokemon;(g[k]=g[k]||[]).push(r);});
   const top=(arr,lim)=>{const c={};arr.forEach(v=>{if(v)c[v]=(c[v]||0)+1;});return Object.entries(c).sort((x,y)=>y[1]-x[1]).slice(0,lim);};
@@ -1529,11 +1530,13 @@ draws.sets=()=>{const opts=Object.keys(C.setd.n).sort((a,b)=>C.setd.n[b]-C.setd.
     el.appendChild(barRow(r.opcion,[[r.pct*100],[r.pct_top8==null?null:r.pct_top8*100,'m8 '+t8dir(r.pct,r.pct_top8)]],t8val(r.pct,r.pct_top8,pct0)+trend(r),{title:r.opcion+': '+r.veces+' veces',item:r.cat==='Objeto'}));});};
   bars('r-set-mov',mov.filter(r=>r.veces>=2||mov.length<12).slice(0,16));
   const oc={Objeto:0,Habilidad:1,Naturaleza:2};bars('r-set-otros',rows.filter(r=>r.cat!=='Movimiento'&&(r.veces>=2||r.pct>=0.1)).sort((a,b)=>oc[a.cat]-oc[b.cat]||b.veces-a.veces),true);
-  const te=document.getElementById('r-tech');te.textContent='';const ts=C.techs.filter(r=>r.pokemon===p&&(!techSig.value||r.senal!=='Débil'));
-  if(!ts.length){te.innerHTML='<p class="note">'+(C.setd.n[p]<15||(C.setd.n8[p]||0)<5?'Muestra pequeña: necesita 15+ equipos y 5+ en Top 8.':'Ninguna diferencia fiable entre su Top 8 y el resto.')+'</p>';}
+  const te=document.getElementById('r-tech');te.textContent='';const filt=!!(PKF[p]||FA),s8=sel.filter(r=>+r.place<=8).length,okF=sel.length>=15&&s8>=5&&sel.length-s8>=5;
+  const base=filt&&okF?techsOf({[p]:sel}):C.techs.filter(r=>r.pokemon===p);const ts=base.filter(r=>!techSig.value||r.senal!=='Débil');
+  if(filt)te.insertAdjacentHTML('beforeend','<p class="note">'+(okF?'Solo '+esc([PKF[p]?megaLabel(PKF[p]):'',FA?arqName(FA):''].filter(Boolean).join(' · '))+' · '+sel.length+' sets, '+s8+' en Top 8':'Pocos sets con este filtro ('+s8+' en Top 8): se muestran todas las formas')+'</p>');
+  if(!ts.length){te.insertAdjacentHTML('beforeend','<p class="note">'+((filt&&okF?sel.length:C.setd.n[p])<15?'Muestra pequeña: necesita 15+ equipos y 5+ en Top 8.':'Ninguna diferencia fiable entre su Top 8 y el resto.')+'</p>');}
   ts.forEach(r=>{te.appendChild(barRow(r.opcion,[[Math.min(50,Math.abs(r.dif)/0.5*50),r.dif>0?'pos':'neg']],'<b>'+pct0(r.pct_top8)+'</b> vs '+pct0(r.pct_resto)+' <span class="chip'+(r.senal==='Fuerte'?' fuerte':'')+'">'+(r.senal==='Fuerte'?'fiable':r.senal==='Moderada'?'probable':'dudosa')+'</span>',{dv:1,title:r.cat+': '+r.opcion+' · Top 8 '+pct(r.pct_top8)+' vs resto '+pct(r.pct_resto)}));});
   table('t-set-comb',combRows(sel),[['item'],['nature'],['moves'],['veces',{n:1}],['top8',{n:1}],['ejemplo']],12);
-  const tf=document.getElementById('r-tech');if(PKF[p]||FA)tf.insertAdjacentHTML('afterbegin','<p class="note">Sin filtros (muestra pequeña).</p>');
+  
   pkExtra(p);const ffF=PKF[p]||(()=>{const c={};SP.forEach(r=>{const f=formOf(r);c[f]=(c[f]||0)+1;});return Object.entries(c).sort((a,b)=>b[1]-a[1])[0][0];})();drawRoles(ffF);drawFF(ffF);};
 sortable('t-set-comb',draws.sets);
 const PKF={};
