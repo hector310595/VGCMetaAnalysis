@@ -315,13 +315,13 @@ Recife#5,Torkoal Sun,"Sol · Garchomp-Z · Torkoal, Sylveon",Torkoal / Sylveon /
 VR Oct #1#5,Torkoal Sun,"Sol · Garchomp-Z · Torkoal, Sylveon",Torkoal / Sylveon / Farigiraf / Garchomp / Incineroar / Sneasler,—
 VR Oct #1#32,Torkoal Sun,"Sol · Garchomp-Z · Torkoal, Sylveon",Torkoal / Sylveon / Farigiraf / Garchomp / Incineroar / Sneasler,—
 Puebla#18,Torkoal Sun,"Sol · Garchomp-Z · Torkoal, Sylveon",Torkoal / Sylveon / Farigiraf / Garchomp / Incineroar / Sneasler,—
-Brisbane#16,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
-Nice#11,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
-VR Oct #4#13,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
-VR Oct #4#15,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
-ESM Madrid Q2#3,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
-VR Oct #3#4,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
-VR Oct #4#4,Zard Staraptor,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+Brisbane#16,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+Nice#11,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+VR Oct #4#13,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+VR Oct #4#15,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+ESM Madrid Q2#3,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+VR Oct #3#4,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+VR Oct #4#4,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
 Louisville#6,Goli Rain,"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",Archaludon / Golisopod / Farigiraf / Pelipper,"Garchomp (66%), Raichu (66%)"
 Frankfurt#14,Goli Rain,"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",Archaludon / Golisopod / Farigiraf / Pelipper,"Garchomp (66%), Raichu (66%)"
 Puebla#30,Goli Rain,"Lluvia · Golisopod + Raichu-Y · Farigiraf, Pelipper",Archaludon / Golisopod / Farigiraf / Pelipper,"Garchomp (66%), Raichu (66%)"
@@ -492,3 +492,35 @@ Puebla#10,Otros,Otros (menos de 5 equipos),—,—
 VR Oct #4#24,Otros,Otros (menos de 5 equipos),—,—
 VR Oct #4#25,Otros,Otros (menos de 5 equipos),—,—
 ESM Madrid Q2#13,Otros,Otros (menos de 5 equipos),—,—
+Gdańsk#1,Sand,"Arena · Tyranitar + Staraptor · Excadrill, Milotic",Gholdengo / Tyranitar / Excadrill / Sinistcha / Milotic,"Staraptor (66%), Salamence (33%)"
+Gdańsk#2,Floette Balance,"Floette · Kingambit, Garchomp",Rillaboom / Garchomp / Kingambit / Sneasler / Floette,Incineroar (69%)
+Gdańsk#3,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#4,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#5,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+Gdańsk#6,Floette Balance,"Salamence + Floette · Basculegion, Kingambit",Salamence / Floette / Kingambit / Basculegion / Sneasler / Rillaboom,—
+Gdańsk#7,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#8,Delphox Balance,"Delphox + Floette · Sinistcha, Kingambit",Kingambit / Incineroar / Sneasler / Sinistcha / Delphox / Floette,—
+Gdańsk#9,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#10,Zard Glimmora,"Sol · Charizard-Y + Staraptor · Indeedee, Glimmora",Charizard / Glimmora / Indeedee / Whimsicott / Garchomp,"Staraptor (57%), Floette (28%)"
+Gdańsk#11,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#12,Y-Chu Balance,"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",Raichu / Gholdengo / Rillaboom / Staraptor / Arcanine-Hisui,Primarina (53%)
+Gdańsk#13,Y-Chu Balance,"Raichu-Y + Staraptor · Arcanine-Hisui, Gholdengo",Raichu / Gholdengo / Rillaboom / Staraptor / Arcanine-Hisui,Primarina (53%)
+Gdańsk#14,Delphox Balance,"Delphox + Dragonite · Basculegion, Kingambit",Kingambit / Sneasler / Delphox / Basculegion / Dragonite,"Rillaboom (58%), Garchomp (41%)"
+Gdańsk#15,Scovillain Froslass,"Scovillain + Froslass · Basculegion, Kingambit",Kingambit / Scovillain / Basculegion / Froslass / Sneasler,Lycanroc-Dusk (71%)
+Gdańsk#16,Gengar Perish,"Gengar · Hippowdon, Rillaboom",Rillaboom / Incineroar / Hippowdon / Gengar,"Kingambit (60%), Primarina (40%)"
+Gdańsk#17,Glimmora Salamence,"Glimmora + Salamence · Volcarona, Kingambit",Kingambit / Glimmora / Rillaboom / Volcarona / Salamence,Garchomp (60%)
+Gdańsk#18,Zard Sun (Venusaur),"Sol · Charizard-Y · Venusaur, Sylveon",Charizard / Sylveon / Garchomp / Incineroar / Venusaur,"Farigiraf (41%), Toxapex (37%)"
+Gdańsk#19,Otros,Otros (menos de 5 equipos),—,—
+Gdańsk#20,Gengar Perish,"Gengar · Kommo-o, Rillaboom",Kommo-o / Rillaboom / Incineroar / Gengar,"Politoed (60%), Vivillon (60%)"
+Gdańsk#21,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#22,Floette Balance,"Salamence + Floette · Basculegion, Kingambit",Salamence / Floette / Kingambit / Basculegion / Sneasler / Rillaboom,—
+Gdańsk#23,Gengar Perish,"Lluvia · Gengar · Politoed, Archaludon",Politoed / Rillaboom / Incineroar / Gengar / Archaludon,—
+Gdańsk#24,Gengar Perish,"Gengar · Hippowdon, Rillaboom",Rillaboom / Incineroar / Hippowdon / Gengar,"Kingambit (60%), Primarina (40%)"
+Gdańsk#25,Sand,"Arena · Tyranitar + Staraptor · Excadrill, Milotic",Gholdengo / Tyranitar / Excadrill / Sinistcha / Milotic,"Staraptor (66%), Salamence (33%)"
+Gdańsk#26,Zard Sun (Venusaur),"Sol · Charizard-Y · Venusaur, Sylveon",Charizard / Sylveon / Garchomp / Incineroar / Venusaur,"Farigiraf (41%), Toxapex (37%)"
+Gdańsk#27,Sun Rain,"Sol y lluvia · Charizard-Y + Garchomp-Z · Grimmsnarl, Venusaur",Archaludon / Charizard / Grimmsnarl / Venusaur / Pelipper / Garchomp,—
+Gdańsk#28,Gengar Perish,"Lluvia · Gengar · Politoed, Archaludon",Politoed / Rillaboom / Incineroar / Gengar / Archaludon,—
+Gdańsk#29,Big 6,"Sol · Charizard-Y · Whimsicott, Basculegion",Kingambit / Whimsicott / Charizard / Basculegion / Garchomp,"Sneasler (66%), Floette (38%)"
+Gdańsk#30,Zard Aero,"Sol · Charizard-Y + Aerodactyl · Sylveon, Farigiraf",Kingambit / Charizard / Sylveon / Farigiraf / Garchomp / Aerodactyl,—
+Gdańsk#31,Gengar Perish,"Gengar + Garchomp-Z · Primarina, Rillaboom",Rillaboom / Incineroar / Gengar / Garchomp / Primarina,"Vivillon (60%), Kingambit (40%)"
+Gdańsk#32,Otros,Otros (menos de 5 equipos),—,—
