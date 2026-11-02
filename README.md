@@ -8,11 +8,11 @@ Dashboard interactivo con el meta de la Regulación M-C, construido a partir del
 
 - **Resumen:** familias que suben y bajan, mega del momento, último campeón y las noticias más recientes (ordenadas por fecha y solidez).
 - **Meta:** uso, megas, herramientas (Tailwind, Trick Room, climas…) y rendimiento (uso frente a win rate en el campo completo).
-- **Equipos:**
+- **Equipos** (los mejores resultados se ordenan siempre por prioridad: internacionales, regionales y después VR):
   - **Familias:** tarjetas con el núcleo resaltado (brillo dorado) y una ficha por familia: núcleo, contra quién gana y pierde, cuánto llega al Top 32, mejores equipos, noticias y cómo se arma (combinaciones de megas y piezas, con su efecto en el win rate).
   - **Matchups:** mapa del meta (gana partidas frente a llega lejos), cruces de cada familia con margen de error, resumen por familia y mapa de calor de quién le gana a quién (color según qué tan clara es la diferencia).
   - **Torneos:** ficha de cada torneo con Top 8, corte final, familias del campo completo frente al Top 32 y todos los equipos.
-- **Pokémon:** ficha de cada Pokémon (sets, compañeros, por forma) y velocidad y stat points.
+- **Pokémon:** ficha de cada Pokémon filtrable por forma y por familia: set (con cambios desde septiembre), roles y rendimiento de cada opción en el campo completo de los regionales, compañeros, sets completos, qué lleva cuando llega lejos y spreads copiables en formato Showdown; más velocidad y stat points.
 - **Tendencias:** noticias fechadas con dato, hipótesis y lo que falta comprobar (filtrables por solidez y texto), uso por fin de semana y evolución de sets.
 
 Cualquier equipo se puede tocar para ver sus sets completos. Hay un buscador global (Pokémon, familia, jugador o torneo) y un glosario.
@@ -39,3 +39,4 @@ Los datos crudos están en `data/`:
 - `anatomia_arquetipos.csv`: núcleo, combinaciones de megas y piezas de cada familia, con win rate frente al resto de la familia.
 - `familias_por_torneo.csv`: por regional, inscritos, Top 32, Top 8 y partidas de cada familia en el campo completo.
 - `corte_final.csv`: resultados del corte final de los 8 regionales (por puesto final).
+- `opciones_campo_regionales.csv`: por forma, equipos y récord de quienes llevan cada movimiento, objeto, naturaleza y habilidad en los 8 regionales.

@@ -1,0 +1,904 @@
+forma,equipos_forma,ganadas_forma,perdidas_forma,tipo,opcion,equipos,ganadas,perdidas
+Rillaboom,2798,11233,11417,movimiento,Fake Out,2771,11166,11297
+Rillaboom,2798,11233,11417,movimiento,Grassy Glide,2776,11149,11328
+Rillaboom,2798,11233,11417,movimiento,U-turn,935,3553,3849
+Rillaboom,2798,11233,11417,movimiento,Protect,256,1080,1025
+Rillaboom,2798,11233,11417,objeto,Eject Button,123,518,484
+Rillaboom,2798,11233,11417,habilidad,Grassy Surge,2797,11232,11410
+Rillaboom,2798,11233,11417,movimiento,Wood Hammer,2544,10231,10389
+Rillaboom,2798,11233,11417,movimiento,High Horsepower,1726,7110,7009
+Rillaboom,2798,11233,11417,objeto,Miracle Seed,2104,8496,8599
+Rillaboom,2798,11233,11417,naturaleza,Adamant,2521,10157,10281
+Rillaboom,2798,11233,11417,objeto,Sitrus Berry,166,622,687
+Rillaboom,2798,11233,11417,objeto,Life Orb,206,823,841
+Sneasler,2202,8965,8980,movimiento,Dire Claw,1766,6999,7263
+Sneasler,2202,8965,8980,movimiento,Close Combat,2200,8961,8968
+Sneasler,2202,8965,8980,movimiento,Coaching,222,850,920
+Sneasler,2202,8965,8980,movimiento,Protect,1687,6872,6870
+Sneasler,2202,8965,8980,objeto,White Herb,804,3386,3230
+Sneasler,2202,8965,8980,naturaleza,Adamant,1606,6567,6507
+Sneasler,2202,8965,8980,habilidad,Unburden,1887,7529,7730
+Sneasler,2202,8965,8980,movimiento,Throat Chop,233,904,995
+Sneasler,2202,8965,8980,movimiento,Rock Slide,526,2099,2147
+Sneasler,2202,8965,8980,objeto,Psychic Seed,436,1651,1839
+Sneasler,2202,8965,8980,movimiento,Fake Out,947,3842,3870
+Sneasler,2202,8965,8980,movimiento,Poison Jab,255,1128,1011
+Sneasler,2202,8965,8980,movimiento,Quick Guard,196,913,762
+Sneasler,2202,8965,8980,objeto,Focus Sash,332,1511,1313
+Sneasler,2202,8965,8980,naturaleza,Jolly,591,2380,2455
+Sneasler,2202,8965,8980,habilidad,Poison Touch,313,1432,1241
+Sneasler,2202,8965,8980,movimiento,Rock Tomb,376,1631,1493
+Sneasler,2202,8965,8980,objeto,Grassy Seed,505,1919,2082
+Sneasler,2202,8965,8980,movimiento,Swords Dance,134,554,535
+Sneasler,2202,8965,8980,movimiento,Gunk Shot,136,636,526
+Sneasler,2202,8965,8980,objeto,Electric Seed,93,395,372
+Incineroar,1979,8178,7975,movimiento,Fake Out,1971,8160,7935
+Incineroar,1979,8178,7975,movimiento,Parting Shot,1896,7859,7633
+Incineroar,1979,8178,7975,movimiento,Darkest Lariat,644,2558,2631
+Incineroar,1979,8178,7975,movimiento,Protect,224,1024,865
+Incineroar,1979,8178,7975,objeto,Passho Berry,116,491,452
+Incineroar,1979,8178,7975,naturaleza,Sassy,163,776,618
+Incineroar,1979,8178,7975,habilidad,Intimidate,1978,8174,7971
+Incineroar,1979,8178,7975,movimiento,Flare Blitz,1864,7664,7520
+Incineroar,1979,8178,7975,movimiento,Throat Chop,794,3333,3190
+Incineroar,1979,8178,7975,naturaleza,Careful,762,3162,3091
+Incineroar,1979,8178,7975,objeto,Sitrus Berry,1353,5656,5446
+Incineroar,1979,8178,7975,naturaleza,Impish,558,2275,2245
+Incineroar,1979,8178,7975,movimiento,Helping Hand,127,568,506
+Incineroar,1979,8178,7975,naturaleza,Adamant,305,1199,1262
+Incineroar,1979,8178,7975,movimiento,Snarl,208,823,830
+Incineroar,1979,8178,7975,objeto,Chople Berry,253,1035,997
+Incineroar,1979,8178,7975,naturaleza,Relaxed,89,352,346
+Incineroar,1979,8178,7975,naturaleza,Brave,88,348,354
+Raichu-Mega-Y,1451,5884,5873,movimiento,Zap Cannon,1448,5878,5862
+Raichu-Mega-Y,1451,5884,5873,movimiento,Protect,1443,5865,5843
+Raichu-Mega-Y,1451,5884,5873,movimiento,Fake Out,1181,4805,4780
+Raichu-Mega-Y,1451,5884,5873,movimiento,Focus Blast,1443,5865,5845
+Raichu-Mega-Y,1451,5884,5873,objeto,Raichunite Y,1451,5884,5873
+Raichu-Mega-Y,1451,5884,5873,naturaleza,Timid,1427,5804,5767
+Raichu-Mega-Y,1451,5884,5873,habilidad,Lightning Rod,1447,5872,5855
+Raichu-Mega-Y,1451,5884,5873,movimiento,Encore,229,926,907
+Kingambit,1386,6085,5494,movimiento,Kowtow Cleave,1380,6068,5465
+Kingambit,1386,6085,5494,movimiento,Sucker Punch,1377,6060,5456
+Kingambit,1386,6085,5494,movimiento,Swords Dance,424,1992,1660
+Kingambit,1386,6085,5494,movimiento,Protect,871,3848,3476
+Kingambit,1386,6085,5494,objeto,Life Orb,451,2068,1753
+Kingambit,1386,6085,5494,naturaleza,Adamant,1268,5637,4992
+Kingambit,1386,6085,5494,habilidad,Defiant,1382,6073,5477
+Kingambit,1386,6085,5494,movimiento,Iron Head,885,3732,3540
+Kingambit,1386,6085,5494,movimiento,Low Kick,581,2556,2261
+Kingambit,1386,6085,5494,objeto,Focus Sash,221,1044,835
+Kingambit,1386,6085,5494,objeto,Black Glasses,181,749,764
+Kingambit,1386,6085,5494,objeto,Chople Berry,465,1950,1872
+Kingambit,1386,6085,5494,objeto,Occa Berry,62,256,242
+Kingambit,1386,6085,5494,naturaleza,Brave,114,433,485
+Gholdengo,1358,5463,5571,movimiento,Shadow Ball,1357,5459,5567
+Gholdengo,1358,5463,5571,movimiento,Nasty Plot,1276,5158,5216
+Gholdengo,1358,5463,5571,movimiento,Make It Rain,1356,5459,5562
+Gholdengo,1358,5463,5571,movimiento,Protect,1319,5331,5395
+Gholdengo,1358,5463,5571,objeto,Life Orb,1216,4927,4989
+Gholdengo,1358,5463,5571,naturaleza,Modest,866,3465,3579
+Gholdengo,1358,5463,5571,habilidad,Good as Gold,1358,5463,5571
+Gholdengo,1358,5463,5571,naturaleza,Timid,482,1971,1949
+Gholdengo,1358,5463,5571,objeto,Grassy Seed,61,243,242
+Gholdengo,1358,5463,5571,movimiento,Power Gem,62,247,268
+Salamence-Mega,1112,4414,4589,movimiento,Hyper Voice,1081,4301,4453
+Salamence-Mega,1112,4414,4589,movimiento,Draco Meteor,790,3240,3238
+Salamence-Mega,1112,4414,4589,movimiento,Flamethrower,392,1548,1623
+Salamence-Mega,1112,4414,4589,movimiento,Protect,1091,4340,4490
+Salamence-Mega,1112,4414,4589,objeto,Salamencite,1112,4414,4589
+Salamence-Mega,1112,4414,4589,naturaleza,Timid,771,3118,3156
+Salamence-Mega,1112,4414,4589,habilidad,Intimidate,1109,4405,4574
+Salamence-Mega,1112,4414,4589,movimiento,Tailwind,790,3209,3218
+Salamence-Mega,1112,4414,4589,movimiento,Double-Edge,138,476,585
+Salamence-Mega,1112,4414,4589,naturaleza,Naïve,64,228,272
+Salamence-Mega,1112,4414,4589,naturaleza,Hasty,52,176,224
+Salamence-Mega,1112,4414,4589,naturaleza,Modest,190,779,790
+Salamence-Mega,1112,4414,4589,movimiento,Dragon Pulse,63,199,283
+Charizard-Mega-Y,1048,4603,4117,movimiento,Heat Wave,1045,4596,4106
+Charizard-Mega-Y,1048,4603,4117,movimiento,Hurricane,313,1334,1234
+Charizard-Mega-Y,1048,4603,4117,movimiento,Weather Ball,1015,4516,3968
+Charizard-Mega-Y,1048,4603,4117,movimiento,Protect,1044,4594,4094
+Charizard-Mega-Y,1048,4603,4117,objeto,Charizardite Y,1048,4603,4117
+Charizard-Mega-Y,1048,4603,4117,naturaleza,Timid,434,1961,1694
+Charizard-Mega-Y,1048,4603,4117,habilidad,Blaze,950,4225,3700
+Charizard-Mega-Y,1048,4603,4117,movimiento,Solar Beam,386,1752,1497
+Charizard-Mega-Y,1048,4603,4117,movimiento,Ancient Power,332,1427,1316
+Charizard-Mega-Y,1048,4603,4117,habilidad,Solar Power,98,378,417
+Charizard-Mega-Y,1048,4603,4117,naturaleza,Modest,604,2612,2376
+Archaludon,1002,4204,4018,movimiento,Dragon Pulse,913,3882,3640
+Archaludon,1002,4204,4018,movimiento,Snarl,380,1654,1513
+Archaludon,1002,4204,4018,movimiento,Electro Shot,993,4176,3980
+Archaludon,1002,4204,4018,movimiento,Protect,996,4193,3989
+Archaludon,1002,4204,4018,objeto,Leftovers,962,4077,3839
+Archaludon,1002,4204,4018,naturaleza,Bold,275,1213,1080
+Archaludon,1002,4204,4018,habilidad,Stamina,989,4168,3961
+Archaludon,1002,4204,4018,movimiento,Flash Cannon,505,2035,2039
+Archaludon,1002,4204,4018,movimiento,Aura Sphere,137,576,548
+Archaludon,1002,4204,4018,naturaleza,Modest,278,1098,1129
+Archaludon,1002,4204,4018,naturaleza,Calm,414,1760,1660
+Archaludon,1002,4204,4018,movimiento,Draco Meteor,69,254,299
+Basculegion,947,3954,3783,movimiento,Wave Crash,905,3783,3609
+Basculegion,947,3954,3783,movimiento,Last Respects,944,3943,3771
+Basculegion,947,3954,3783,movimiento,Aqua Jet,818,3438,3261
+Basculegion,947,3954,3783,movimiento,Protect,488,2061,1928
+Basculegion,947,3954,3783,objeto,Mystic Water,163,716,634
+Basculegion,947,3954,3783,naturaleza,Adamant,473,1955,1883
+Basculegion,947,3954,3783,habilidad,Adaptability,919,3853,3666
+Basculegion,947,3954,3783,objeto,Life Orb,222,867,895
+Basculegion,947,3954,3783,movimiento,Flip Turn,451,1861,1822
+Basculegion,947,3954,3783,objeto,Choice Scarf,459,1895,1853
+Basculegion,947,3954,3783,naturaleza,Jolly,469,1982,1877
+Basculegion,947,3954,3783,movimiento,Soak,84,358,328
+Basculegion,947,3954,3783,movimiento,Liquidation,41,169,168
+Basculegion,947,3954,3783,objeto,Focus Sash,44,183,182
+Garchomp-Mega-Z,859,3315,3485,movimiento,Draco Meteor,429,1750,1696
+Garchomp-Mega-Z,859,3315,3485,movimiento,Dragon Pulse,443,1629,1838
+Garchomp-Mega-Z,859,3315,3485,movimiento,Earth Power,689,2662,2793
+Garchomp-Mega-Z,859,3315,3485,movimiento,Protect,857,3310,3477
+Garchomp-Mega-Z,859,3315,3485,objeto,Garchompite Z,859,3315,3485
+Garchomp-Mega-Z,859,3315,3485,naturaleza,Modest,629,2460,2583
+Garchomp-Mega-Z,859,3315,3485,habilidad,Rough Skin,850,3289,3448
+Garchomp-Mega-Z,859,3315,3485,movimiento,Flamethrower,193,717,784
+Garchomp-Mega-Z,859,3315,3485,movimiento,Power Gem,793,3069,3231
+Garchomp-Mega-Z,859,3315,3485,naturaleza,Timid,222,837,877
+Arcanine-Hisui,853,3484,3409,movimiento,Flare Blitz,853,3484,3409
+Arcanine-Hisui,853,3484,3409,movimiento,Head Smash,819,3350,3271
+Arcanine-Hisui,853,3484,3409,movimiento,Extreme Speed,769,3156,3072
+Arcanine-Hisui,853,3484,3409,movimiento,Protect,839,3433,3346
+Arcanine-Hisui,853,3484,3409,objeto,Focus Sash,832,3409,3325
+Arcanine-Hisui,853,3484,3409,naturaleza,Jolly,783,3245,3114
+Arcanine-Hisui,853,3484,3409,habilidad,Rock Head,845,3449,3382
+Arcanine-Hisui,853,3484,3409,movimiento,Rock Slide,108,448,433
+Arcanine-Hisui,853,3484,3409,naturaleza,Adamant,65,232,274
+Farigiraf,849,3419,3469,movimiento,Psychic,557,2328,2244
+Farigiraf,849,3419,3469,movimiento,Trick Room,830,3363,3379
+Farigiraf,849,3419,3469,movimiento,Protect,539,2182,2182
+Farigiraf,849,3419,3469,objeto,Sitrus Berry,660,2809,2667
+Farigiraf,849,3419,3469,naturaleza,Bold,367,1585,1474
+Farigiraf,849,3419,3469,habilidad,Armor Tail,847,3414,3458
+Farigiraf,849,3419,3469,movimiento,Thunderbolt,347,1438,1427
+Farigiraf,849,3419,3469,movimiento,Helping Hand,506,2007,2057
+Farigiraf,849,3419,3469,movimiento,Expanding Force,121,499,492
+Farigiraf,849,3419,3469,naturaleza,Sassy,77,303,304
+Farigiraf,849,3419,3469,objeto,Grassy Seed,66,223,280
+Farigiraf,849,3419,3469,naturaleza,Modest,103,413,422
+Farigiraf,849,3419,3469,naturaleza,Calm,84,336,346
+Farigiraf,849,3419,3469,naturaleza,Quiet,111,434,462
+Farigiraf,849,3419,3469,movimiento,Imprison,43,159,186
+Farigiraf,849,3419,3469,movimiento,Hyper Voice,73,247,321
+Farigiraf,849,3419,3469,objeto,Colbur Berry,82,259,344
+Farigiraf,849,3419,3469,naturaleza,Relaxed,104,342,449
+Farigiraf,849,3419,3469,movimiento,Twin Beam,111,401,468
+Farigiraf,849,3419,3469,movimiento,Roar,60,302,228
+Pelipper,832,3342,3381,movimiento,Hurricane,821,3294,3342
+Pelipper,832,3342,3381,movimiento,Weather Ball,793,3198,3230
+Pelipper,832,3342,3381,movimiento,Protect,249,976,1026
+Pelipper,832,3342,3381,movimiento,Tailwind,638,2520,2588
+Pelipper,832,3342,3381,objeto,Focus Sash,264,969,1112
+Pelipper,832,3342,3381,naturaleza,Modest,320,1222,1316
+Pelipper,832,3342,3381,habilidad,Drizzle,832,3342,3381
+Pelipper,832,3342,3381,movimiento,Wide Guard,604,2434,2457
+Pelipper,832,3342,3381,objeto,Sitrus Berry,382,1559,1532
+Pelipper,832,3342,3381,naturaleza,Bold,355,1518,1428
+Pelipper,832,3342,3381,naturaleza,Timid,95,373,379
+Pelipper,832,3342,3381,naturaleza,Calm,53,208,214
+Pelipper,832,3342,3381,movimiento,Helping Hand,137,603,536
+Pelipper,832,3342,3381,objeto,Damp Rock,130,573,510
+Indeedee-F,806,2997,3409,movimiento,Psychic,660,2475,2784
+Indeedee-F,806,2997,3409,movimiento,Follow Me,802,2984,3390
+Indeedee-F,806,2997,3409,movimiento,Helping Hand,688,2618,2910
+Indeedee-F,806,2997,3409,movimiento,Trick Room,606,2170,2578
+Indeedee-F,806,2997,3409,objeto,Rocky Helmet,380,1554,1554
+Indeedee-F,806,2997,3409,naturaleza,Relaxed,377,1362,1592
+Indeedee-F,806,2997,3409,habilidad,Psychic Surge,802,2981,3389
+Indeedee-F,806,2997,3409,objeto,Colbur Berry,201,630,906
+Indeedee-F,806,2997,3409,movimiento,Protect,205,825,857
+Indeedee-F,806,2997,3409,naturaleza,Calm,56,183,260
+Indeedee-F,806,2997,3409,naturaleza,Bold,323,1294,1325
+Indeedee-F,806,2997,3409,objeto,Psychic Seed,133,506,548
+Indeedee-F,806,2997,3409,naturaleza,Sassy,43,143,196
+Indeedee-F,806,2997,3409,objeto,Sitrus Berry,70,239,299
+Indeedee-F,806,2997,3409,movimiento,Imprison,61,211,257
+Indeedee-F,806,2997,3409,movimiento,Terrain Pulse,45,124,204
+Floette-Mega,792,3416,3150,movimiento,Dazzling Gleam,773,3335,3072
+Floette-Mega,792,3416,3150,movimiento,Draining Kiss,265,1169,1060
+Floette-Mega,792,3416,3150,movimiento,Calm Mind,671,2945,2677
+Floette-Mega,792,3416,3150,movimiento,Protect,790,3413,3137
+Floette-Mega,792,3416,3150,objeto,Floettite,792,3416,3150
+Floette-Mega,792,3416,3150,naturaleza,Modest,609,2708,2410
+Floette-Mega,792,3416,3150,habilidad,Flower Veil,785,3393,3126
+Floette-Mega,792,3416,3150,movimiento,Moonblast,535,2301,2115
+Floette-Mega,792,3416,3150,naturaleza,Timid,143,534,574
+Floette-Mega,792,3416,3150,naturaleza,Bold,37,164,152
+Floette-Mega,792,3416,3150,movimiento,Light of Ruin,130,491,517
+Garchomp,761,3431,3001,movimiento,Dragon Claw,730,3314,2874
+Garchomp,761,3431,3001,movimiento,Earthquake,571,2674,2225
+Garchomp,761,3431,3001,movimiento,Stomping Tantrum,599,2734,2342
+Garchomp,761,3431,3001,movimiento,Rock Tomb,80,358,305
+Garchomp,761,3431,3001,objeto,Choice Scarf,426,1971,1671
+Garchomp,761,3431,3001,naturaleza,Adamant,459,2089,1791
+Garchomp,761,3431,3001,habilidad,Rough Skin,759,3426,2993
+Garchomp,761,3431,3001,movimiento,Protect,327,1441,1296
+Garchomp,761,3431,3001,objeto,Life Orb,280,1243,1125
+Garchomp,761,3431,3001,naturaleza,Jolly,294,1306,1173
+Garchomp,761,3431,3001,movimiento,Rock Slide,625,2792,2489
+Sylveon,677,2847,2673,movimiento,Hyper Beam,495,2018,1954
+Sylveon,677,2847,2673,movimiento,Hyper Voice,677,2847,2673
+Sylveon,677,2847,2673,movimiento,Quick Attack,479,2030,1890
+Sylveon,677,2847,2673,movimiento,Protect,139,579,562
+Sylveon,677,2847,2673,objeto,Fairy Feather,645,2696,2553
+Sylveon,677,2847,2673,naturaleza,Modest,625,2640,2470
+Sylveon,677,2847,2673,habilidad,Pixilate,677,2847,2673
+Sylveon,677,2847,2673,movimiento,Detect,537,2266,2105
+Sylveon,677,2847,2673,movimiento,Yawn,195,917,745
+Sylveon,677,2847,2673,movimiento,Calm Mind,66,264,257
+Sylveon,677,2847,2673,movimiento,Moonblast,86,360,344
+Sylveon,677,2847,2673,naturaleza,Quiet,43,178,164
+Golisopod-Mega,669,2575,2784,movimiento,Leech Life,659,2555,2744
+Golisopod-Mega,669,2575,2784,movimiento,Drill Run,179,728,760
+Golisopod-Mega,669,2575,2784,movimiento,Iron Head,579,2205,2420
+Golisopod-Mega,669,2575,2784,movimiento,Protect,555,2155,2299
+Golisopod-Mega,669,2575,2784,objeto,Golisopite,669,2575,2784
+Golisopod-Mega,669,2575,2784,naturaleza,Adamant,528,2149,2167
+Golisopod-Mega,669,2575,2784,habilidad,Emergency Exit,669,2575,2784
+Golisopod-Mega,669,2575,2784,movimiento,Sucker Punch,302,1276,1234
+Golisopod-Mega,669,2575,2784,movimiento,Swords Dance,205,783,850
+Golisopod-Mega,669,2575,2784,movimiento,Close Combat,46,155,182
+Golisopod-Mega,669,2575,2784,movimiento,Liquidation,68,217,291
+Golisopod-Mega,669,2575,2784,movimiento,First Impression,28,72,128
+Golisopod-Mega,669,2575,2784,naturaleza,Brave,124,373,544
+Staraptor-Mega,664,2794,2712,movimiento,Brave Bird,636,2716,2602
+Staraptor-Mega,664,2794,2712,movimiento,Tailwind,522,2275,2087
+Staraptor-Mega,664,2794,2712,movimiento,Protect,659,2784,2688
+Staraptor-Mega,664,2794,2712,movimiento,Close Combat,664,2794,2712
+Staraptor-Mega,664,2794,2712,objeto,Staraptite,664,2794,2712
+Staraptor-Mega,664,2794,2712,naturaleza,Jolly,592,2490,2408
+Staraptor-Mega,664,2794,2712,habilidad,Intimidate,658,2779,2681
+Staraptor-Mega,664,2794,2712,movimiento,Roost,136,497,600
+Staraptor-Mega,664,2794,2712,naturaleza,Adamant,70,300,299
+Milotic,654,2507,2712,movimiento,Scald,402,1522,1664
+Milotic,654,2507,2712,movimiento,Ice Beam,416,1623,1719
+Milotic,654,2507,2712,movimiento,Icy Wind,307,1212,1255
+Milotic,654,2507,2712,movimiento,Protect,446,1706,1849
+Milotic,654,2507,2712,objeto,Leftovers,300,1065,1279
+Milotic,654,2507,2712,naturaleza,Calm,353,1400,1460
+Milotic,654,2507,2712,habilidad,Competitive,652,2504,2705
+Milotic,654,2507,2712,movimiento,Coil,247,958,1029
+Milotic,654,2507,2712,movimiento,Hypnosis,236,916,982
+Milotic,654,2507,2712,movimiento,Muddy Water,257,992,1069
+Milotic,654,2507,2712,objeto,Sitrus Berry,231,927,933
+Milotic,654,2507,2712,movimiento,Recover,168,639,703
+Milotic,654,2507,2712,objeto,Psychic Seed,78,329,323
+Milotic,654,2507,2712,naturaleza,Modest,178,690,727
+Milotic,654,2507,2712,movimiento,Life Dew,44,142,190
+Milotic,654,2507,2712,naturaleza,Bold,95,312,410
+Milotic,654,2507,2712,movimiento,Haze,32,100,132
+Volcarona,652,2653,2653,movimiento,Rage Powder,321,1250,1329
+Volcarona,652,2653,2653,movimiento,Overheat,247,1017,1003
+Volcarona,652,2653,2653,movimiento,Struggle Bug,332,1319,1359
+Volcarona,652,2653,2653,movimiento,Tailwind,210,746,874
+Volcarona,652,2653,2653,objeto,Sitrus Berry,60,253,252
+Volcarona,652,2653,2653,naturaleza,Timid,241,951,975
+Volcarona,652,2653,2653,habilidad,Flame Body,651,2652,2646
+Volcarona,652,2653,2653,movimiento,Protect,453,1967,1824
+Volcarona,652,2653,2653,objeto,Rocky Helmet,177,665,735
+Volcarona,652,2653,2653,naturaleza,Bold,92,357,400
+Volcarona,652,2653,2653,movimiento,Heat Wave,282,1209,1141
+Volcarona,652,2653,2653,movimiento,Giga Drain,232,981,920
+Volcarona,652,2653,2653,movimiento,Quiver Dance,335,1416,1343
+Volcarona,652,2653,2653,objeto,Leftovers,35,141,160
+Volcarona,652,2653,2653,naturaleza,Modest,287,1220,1148
+Volcarona,652,2653,2653,movimiento,Bug Buzz,57,223,244
+Volcarona,652,2653,2653,objeto,Grassy Seed,301,1266,1180
+Volcarona,652,2653,2653,movimiento,Fiery Dance,73,239,312
+Volcarona,652,2653,2653,movimiento,Flamethrower,50,188,197
+Volcarona,652,2653,2653,objeto,Charti Berry,41,187,166
+Volcarona,652,2653,2653,naturaleza,Calm,30,124,120
+Venusaur,452,2017,1764,movimiento,Protect,429,1940,1658
+Venusaur,452,2017,1764,movimiento,Sleep Powder,377,1640,1487
+Venusaur,452,2017,1764,movimiento,Sludge Bomb,445,1991,1733
+Venusaur,452,2017,1764,movimiento,Leaf Storm,344,1588,1335
+Venusaur,452,2017,1764,objeto,Focus Sash,347,1501,1359
+Venusaur,452,2017,1764,naturaleza,Modest,421,1898,1646
+Venusaur,452,2017,1764,habilidad,Chlorophyll,452,2017,1764
+Venusaur,452,2017,1764,movimiento,Earth Power,159,712,615
+Venusaur,452,2017,1764,objeto,Life Orb,82,424,304
+Venusaur,452,2017,1764,naturaleza,Timid,27,106,103
+Grimmsnarl,443,1808,1763,movimiento,Light Screen,437,1792,1736
+Grimmsnarl,443,1808,1763,movimiento,Reflect,434,1779,1722
+Grimmsnarl,443,1808,1763,movimiento,Parting Shot,433,1767,1721
+Grimmsnarl,443,1808,1763,movimiento,Spirit Break,421,1743,1667
+Grimmsnarl,443,1808,1763,objeto,Light Clay,434,1779,1729
+Grimmsnarl,443,1808,1763,naturaleza,Sassy,189,815,737
+Grimmsnarl,443,1808,1763,habilidad,Prankster,443,1808,1763
+Grimmsnarl,443,1808,1763,naturaleza,Careful,173,684,691
+Grimmsnarl,443,1808,1763,naturaleza,Impish,61,232,259
+Whimsicott,433,1770,1733,movimiento,Moonblast,422,1727,1687
+Whimsicott,433,1770,1733,movimiento,Encore,305,1349,1176
+Whimsicott,433,1770,1733,movimiento,Tailwind,432,1767,1729
+Whimsicott,433,1770,1733,movimiento,Protect,328,1398,1250
+Whimsicott,433,1770,1733,objeto,Focus Sash,360,1478,1435
+Whimsicott,433,1770,1733,naturaleza,Timid,383,1618,1490
+Whimsicott,433,1770,1733,habilidad,Prankster,429,1757,1715
+Whimsicott,433,1770,1733,objeto,Occa Berry,40,161,157
+Whimsicott,433,1770,1733,movimiento,Charm,55,194,257
+Whimsicott,433,1770,1733,movimiento,Fake Tears,18,54,76
+Whimsicott,433,1770,1733,movimiento,Sunny Day,83,335,346
+Whimsicott,433,1770,1733,naturaleza,Modest,30,77,154
+Tyranitar-Mega,403,1561,1673,movimiento,Rock Slide,401,1557,1663
+Tyranitar-Mega,403,1561,1673,movimiento,Knock Off,393,1533,1637
+Tyranitar-Mega,403,1561,1673,movimiento,Low Kick,287,1136,1186
+Tyranitar-Mega,403,1561,1673,movimiento,Protect,403,1561,1673
+Tyranitar-Mega,403,1561,1673,objeto,Tyranitarite,403,1561,1673
+Tyranitar-Mega,403,1561,1673,naturaleza,Jolly,270,1093,1110
+Tyranitar-Mega,403,1561,1673,habilidad,Sand Stream,400,1546,1659
+Tyranitar-Mega,403,1561,1673,naturaleza,Adamant,123,441,517
+Tyranitar-Mega,403,1561,1673,movimiento,Dragon Dance,62,267,260
+Tyranitar-Mega,403,1561,1673,movimiento,Ice Punch,20,46,89
+Sinistcha,381,1683,1541,movimiento,Matcha Gotcha,379,1676,1532
+Sinistcha,381,1683,1541,movimiento,Rage Powder,378,1675,1525
+Sinistcha,381,1683,1541,movimiento,Trick Room,281,1253,1138
+Sinistcha,381,1683,1541,movimiento,Protect,333,1528,1311
+Sinistcha,381,1683,1541,objeto,Colbur Berry,98,466,384
+Sinistcha,381,1683,1541,naturaleza,Bold,290,1324,1164
+Sinistcha,381,1683,1541,habilidad,Hospitality,380,1678,1538
+Sinistcha,381,1683,1541,objeto,Sitrus Berry,50,172,219
+Sinistcha,381,1683,1541,naturaleza,Calm,42,163,171
+Sinistcha,381,1683,1541,objeto,Kasib Berry,40,181,162
+Sinistcha,381,1683,1541,objeto,Rocky Helmet,39,214,143
+Sinistcha,381,1683,1541,objeto,Coba Berry,27,133,109
+Sinistcha,381,1683,1541,naturaleza,Relaxed,29,130,115
+Sinistcha,381,1683,1541,movimiento,Life Dew,66,247,282
+Sinistcha,381,1683,1541,movimiento,Shadow Ball,44,159,192
+Sinistcha,381,1683,1541,movimiento,Strength Sap,36,168,149
+Sinistcha,381,1683,1541,objeto,Occa Berry,108,461,430
+Excadrill,370,1474,1528,movimiento,Iron Head,369,1471,1523
+Excadrill,370,1474,1528,movimiento,High Horsepower,360,1437,1488
+Excadrill,370,1474,1528,movimiento,Rock Slide,330,1299,1366
+Excadrill,370,1474,1528,movimiento,Protect,366,1461,1509
+Excadrill,370,1474,1528,objeto,Focus Sash,355,1422,1460
+Excadrill,370,1474,1528,naturaleza,Jolly,154,588,633
+Excadrill,370,1474,1528,habilidad,Sand Rush,364,1462,1495
+Excadrill,370,1474,1528,naturaleza,Adamant,216,886,895
+Excadrill,370,1474,1528,movimiento,Earthquake,34,133,139
+Delphox-Mega,359,1621,1441,movimiento,Heat Wave,357,1614,1432
+Delphox-Mega,359,1621,1441,movimiento,Psychic,271,1252,1060
+Delphox-Mega,359,1621,1441,movimiento,Nasty Plot,310,1465,1216
+Delphox-Mega,359,1621,1441,movimiento,Protect,358,1621,1434
+Delphox-Mega,359,1621,1441,objeto,Delphoxite,359,1621,1441
+Delphox-Mega,359,1621,1441,naturaleza,Timid,350,1594,1392
+Delphox-Mega,359,1621,1441,habilidad,Blaze,353,1603,1416
+Delphox-Mega,359,1621,1441,movimiento,Expanding Force,24,87,112
+Delphox-Mega,359,1621,1441,movimiento,Psyshock,65,286,273
+Delphox-Mega,359,1621,1441,movimiento,Calm Mind,16,50,73
+Gardevoir-Mega,350,1309,1475,movimiento,Expanding Force,337,1265,1418
+Gardevoir-Mega,350,1309,1475,movimiento,Hyper Voice,346,1299,1462
+Gardevoir-Mega,350,1309,1475,movimiento,Calm Mind,75,322,301
+Gardevoir-Mega,350,1309,1475,movimiento,Protect,343,1280,1447
+Gardevoir-Mega,350,1309,1475,objeto,Gardevoirite,350,1309,1475
+Gardevoir-Mega,350,1309,1475,naturaleza,Modest,268,971,1137
+Gardevoir-Mega,350,1309,1475,habilidad,Trace,197,696,861
+Gardevoir-Mega,350,1309,1475,naturaleza,Timid,61,274,236
+Gardevoir-Mega,350,1309,1475,habilidad,Synchronize,114,476,457
+Gardevoir-Mega,350,1309,1475,movimiento,Trick Room,102,367,424
+Gardevoir-Mega,350,1309,1475,movimiento,Thunderbolt,69,266,275
+Gardevoir-Mega,350,1309,1475,movimiento,Moonblast,24,81,104
+Gardevoir-Mega,350,1309,1475,habilidad,Telepathy,39,137,157
+Gardevoir-Mega,350,1309,1475,movimiento,Mystical Fire,41,148,185
+Gardevoir-Mega,350,1309,1475,naturaleza,Quiet,17,52,86
+Gardevoir-Mega,350,1309,1475,movimiento,Shadow Ball,14,42,66
+Gardevoir-Mega,350,1309,1475,movimiento,Psychic,15,58,66
+Primarina,321,1354,1295,movimiento,Moonblast,315,1327,1271
+Primarina,321,1354,1295,movimiento,Hyper Voice,321,1354,1295
+Primarina,321,1354,1295,movimiento,Protect,319,1348,1287
+Primarina,321,1354,1295,objeto,Life Orb,56,226,239
+Primarina,321,1354,1295,naturaleza,Modest,284,1210,1137
+Primarina,321,1354,1295,habilidad,Liquid Voice,321,1354,1295
+Primarina,321,1354,1295,movimiento,Calm Mind,239,1024,952
+Primarina,321,1354,1295,objeto,Grassy Seed,20,92,78
+Primarina,321,1354,1295,movimiento,Aqua Jet,24,106,97
+Primarina,321,1354,1295,naturaleza,Quiet,29,112,124
+Primarina,321,1354,1295,objeto,Leftovers,199,863,782
+Primarina,321,1354,1295,objeto,Mystic Water,13,47,57
+Primarina,321,1354,1295,objeto,Sitrus Berry,25,97,105
+Politoed,316,1315,1296,movimiento,Muddy Water,170,714,704
+Politoed,316,1315,1296,movimiento,Ice Beam,176,725,738
+Politoed,316,1315,1296,movimiento,Weather Ball,301,1258,1233
+Politoed,316,1315,1296,movimiento,Protect,302,1251,1237
+Politoed,316,1315,1296,objeto,Mystic Water,119,513,488
+Politoed,316,1315,1296,naturaleza,Modest,145,596,601
+Politoed,316,1315,1296,habilidad,Drizzle,316,1315,1296
+Politoed,316,1315,1296,movimiento,Perish Song,131,562,519
+Politoed,316,1315,1296,movimiento,Encore,95,406,366
+Politoed,316,1315,1296,objeto,Sitrus Berry,139,587,556
+Politoed,316,1315,1296,naturaleza,Calm,116,502,465
+Politoed,316,1315,1296,movimiento,Helping Hand,19,67,82
+Politoed,316,1315,1296,objeto,Life Orb,31,111,142
+Politoed,316,1315,1296,naturaleza,Quiet,15,59,65
+Politoed,316,1315,1296,movimiento,Hypnosis,13,59,51
+Politoed,316,1315,1296,movimiento,Icy Wind,28,121,118
+Politoed,316,1315,1296,naturaleza,Timid,13,63,52
+Politoed,316,1315,1296,naturaleza,Bold,18,56,79
+Indeedee,304,1224,1245,movimiento,Expanding Force,303,1222,1241
+Indeedee,304,1224,1245,movimiento,Mystical Fire,202,790,826
+Indeedee,304,1224,1245,movimiento,Trick,182,732,741
+Indeedee,304,1224,1245,movimiento,Protect,186,764,764
+Indeedee,304,1224,1245,objeto,Choice Scarf,205,822,835
+Indeedee,304,1224,1245,naturaleza,Modest,183,731,752
+Indeedee,304,1224,1245,habilidad,Psychic Surge,304,1224,1245
+Indeedee,304,1224,1245,movimiento,Trick Room,99,405,399
+Indeedee,304,1224,1245,movimiento,Imprison,78,338,307
+Indeedee,304,1224,1245,objeto,Focus Sash,74,321,304
+Indeedee,304,1224,1245,naturaleza,Timid,117,485,474
+Indeedee,304,1224,1245,movimiento,Dazzling Gleam,32,120,141
+Indeedee,304,1224,1245,movimiento,Helping Hand,27,118,116
+Indeedee,304,1224,1245,movimiento,Energy Ball,20,72,90
+Indeedee,304,1224,1245,movimiento,Hyper Voice,25,106,102
+Froslass-Mega,302,1235,1218,movimiento,Blizzard,302,1235,1218
+Froslass-Mega,302,1235,1218,movimiento,Shadow Ball,288,1179,1165
+Froslass-Mega,302,1235,1218,movimiento,Aurora Veil,276,1156,1115
+Froslass-Mega,302,1235,1218,movimiento,Protect,301,1232,1213
+Froslass-Mega,302,1235,1218,objeto,Froslassite,302,1235,1218
+Froslass-Mega,302,1235,1218,naturaleza,Timid,259,1043,1034
+Froslass-Mega,302,1235,1218,habilidad,Cursed Body,283,1175,1141
+Froslass-Mega,302,1235,1218,naturaleza,Modest,42,188,180
+Froslass-Mega,302,1235,1218,habilidad,Snow Cloak,18,57,72
+Kommo-o,300,1332,1154,movimiento,Clanging Scales,295,1320,1134
+Kommo-o,300,1332,1154,movimiento,Aura Sphere,281,1255,1071
+Kommo-o,300,1332,1154,movimiento,Flamethrower,92,391,361
+Kommo-o,300,1332,1154,movimiento,Protect,297,1322,1141
+Kommo-o,300,1332,1154,objeto,Life Orb,103,446,396
+Kommo-o,300,1332,1154,naturaleza,Modest,251,1137,953
+Kommo-o,300,1332,1154,habilidad,Soundproof,253,1112,974
+Kommo-o,300,1332,1154,movimiento,Vacuum Wave,15,78,56
+Kommo-o,300,1332,1154,movimiento,Clangorous Soul,202,911,777
+Kommo-o,300,1332,1154,objeto,Leftovers,179,817,680
+Kommo-o,300,1332,1154,naturaleza,Timid,38,157,156
+Kommo-o,300,1332,1154,habilidad,Bulletproof,43,210,164
+Gengar-Mega,292,1326,1141,movimiento,Shadow Ball,290,1318,1133
+Gengar-Mega,292,1326,1141,movimiento,Sludge Bomb,273,1260,1066
+Gengar-Mega,292,1326,1141,movimiento,Perish Song,212,969,819
+Gengar-Mega,292,1326,1141,movimiento,Protect,292,1326,1141
+Gengar-Mega,292,1326,1141,objeto,Gengarite,292,1326,1141
+Gengar-Mega,292,1326,1141,naturaleza,Modest,201,959,771
+Gengar-Mega,292,1326,1141,habilidad,Cursed Body,291,1321,1138
+Gengar-Mega,292,1326,1141,movimiento,Focus Blast,22,101,92
+Gengar-Mega,292,1326,1141,movimiento,Substitute,33,161,127
+Gengar-Mega,292,1326,1141,naturaleza,Timid,88,362,358
+Gengar-Mega,292,1326,1141,movimiento,Icy Wind,14,51,54
+Gengar-Mega,292,1326,1141,movimiento,Disable,14,52,54
+Armarouge,246,946,1039,movimiento,Armor Cannon,220,860,922
+Armarouge,246,946,1039,movimiento,Expanding Force,239,908,1012
+Armarouge,246,946,1039,movimiento,Wide Guard,147,621,614
+Armarouge,246,946,1039,movimiento,Protect,173,663,734
+Armarouge,246,946,1039,objeto,Focus Sash,76,311,317
+Armarouge,246,946,1039,naturaleza,Modest,164,668,690
+Armarouge,246,946,1039,habilidad,Flash Fire,228,872,970
+Armarouge,246,946,1039,movimiento,Trick Room,115,411,483
+Armarouge,246,946,1039,objeto,Twisted Spoon,27,110,114
+Armarouge,246,946,1039,objeto,Life Orb,111,400,479
+Armarouge,246,946,1039,naturaleza,Timid,28,126,117
+Armarouge,246,946,1039,naturaleza,Quiet,53,151,228
+Armarouge,246,946,1039,movimiento,Heat Wave,30,100,139
+Armarouge,246,946,1039,movimiento,Aura Sphere,23,72,96
+Armarouge,246,946,1039,objeto,Psychic Seed,10,43,39
+Armarouge,246,946,1039,habilidad,Weak Armor,17,69,66
+Metagross-Mega,233,883,940,movimiento,Steel Roller,109,426,428
+Metagross-Mega,233,883,940,movimiento,Psychic Fangs,223,850,901
+Metagross-Mega,233,883,940,movimiento,Body Press,78,306,310
+Metagross-Mega,233,883,940,movimiento,Protect,220,835,895
+Metagross-Mega,233,883,940,objeto,Metagrossite,233,883,940
+Metagross-Mega,233,883,940,naturaleza,Adamant,124,466,501
+Metagross-Mega,233,883,940,habilidad,Clear Body,233,883,940
+Metagross-Mega,233,883,940,movimiento,Psych Up,26,107,98
+Metagross-Mega,233,883,940,naturaleza,Jolly,105,408,424
+Metagross-Mega,233,883,940,movimiento,Iron Head,86,308,370
+Metagross-Mega,233,883,940,movimiento,Ice Punch,29,110,118
+Metagross-Mega,233,883,940,movimiento,Stomping Tantrum,102,399,406
+Metagross-Mega,233,883,940,movimiento,Bullet Punch,15,62,55
+Dragonite-Mega,224,946,928,movimiento,Dragon Pulse,212,915,870
+Dragonite-Mega,224,946,928,movimiento,Heat Wave,174,760,707
+Dragonite-Mega,224,946,928,movimiento,Tailwind,181,806,732
+Dragonite-Mega,224,946,928,movimiento,Protect,220,932,912
+Dragonite-Mega,224,946,928,objeto,Dragoninite,224,946,928
+Dragonite-Mega,224,946,928,naturaleza,Modest,206,875,846
+Dragonite-Mega,224,946,928,habilidad,Multiscale,94,425,392
+Dragonite-Mega,224,946,928,movimiento,Hurricane,24,83,111
+Dragonite-Mega,224,946,928,movimiento,Flamethrower,21,79,87
+Dragonite-Mega,224,946,928,habilidad,Inner Focus,130,521,536
+Dragonite-Mega,224,946,928,movimiento,Extreme Speed,18,59,76
+Dragonite-Mega,224,946,928,movimiento,Thunderbolt,10,43,39
+Dragonite-Mega,224,946,928,movimiento,Draco Meteor,12,32,57
+Dragonite-Mega,224,946,928,naturaleza,Timid,16,67,70
+Swampert-Mega,218,872,883,movimiento,Protect,214,866,862
+Swampert-Mega,218,872,883,movimiento,Wave Crash,209,849,843
+Swampert-Mega,218,872,883,movimiento,Earthquake,130,522,521
+Swampert-Mega,218,872,883,movimiento,Ice Punch,194,778,792
+Swampert-Mega,218,872,883,objeto,Swampertite,218,872,883
+Swampert-Mega,218,872,883,naturaleza,Adamant,211,851,851
+Swampert-Mega,218,872,883,habilidad,Torrent,158,660,631
+Swampert-Mega,218,872,883,movimiento,High Horsepower,89,358,364
+Swampert-Mega,218,872,883,habilidad,Damp,59,208,248
+Torkoal,171,633,727,movimiento,Protect,158,583,673
+Torkoal,171,633,727,movimiento,Eruption,165,616,696
+Torkoal,171,633,727,movimiento,Weather Ball,125,476,525
+Torkoal,171,633,727,movimiento,Helping Hand,47,140,211
+Torkoal,171,633,727,objeto,Charcoal,153,565,646
+Torkoal,171,633,727,naturaleza,Quiet,160,600,678
+Torkoal,171,633,727,habilidad,Drought,171,633,727
+Torkoal,171,633,727,movimiento,Earth Power,104,410,429
+Torkoal,171,633,727,movimiento,Heat Wave,44,148,189
+Torkoal,171,633,727,naturaleza,Modest,9,28,38
+Torkoal,171,633,727,movimiento,Flamethrower,9,44,35
+Torkoal,171,633,727,objeto,Life Orb,11,51,44
+Torkoal,171,633,727,movimiento,Solar Beam,16,65,73
+Raichu-Mega-X,164,682,662,movimiento,Fake Out,161,672,648
+Raichu-Mega-X,164,682,662,movimiento,Volt Switch,140,586,560
+Raichu-Mega-X,164,682,662,movimiento,Volt Tackle,153,649,616
+Raichu-Mega-X,164,682,662,movimiento,Encore,12,49,50
+Raichu-Mega-X,164,682,662,objeto,Raichunite X,164,682,662
+Raichu-Mega-X,164,682,662,naturaleza,Jolly,142,605,568
+Raichu-Mega-X,164,682,662,habilidad,Lightning Rod,162,676,652
+Raichu-Mega-X,164,682,662,movimiento,Protect,49,204,204
+Raichu-Mega-X,164,682,662,naturaleza,Timid,16,62,65
+Raichu-Mega-X,164,682,662,movimiento,Feint,101,430,401
+Glimmora-Mega,152,694,596,movimiento,Sludge Bomb,149,686,586
+Glimmora-Mega,152,694,596,movimiento,Spiky Shield,145,667,569
+Glimmora-Mega,152,694,596,movimiento,Earth Power,149,689,581
+Glimmora-Mega,152,694,596,movimiento,Power Gem,151,693,589
+Glimmora-Mega,152,694,596,objeto,Glimmoranite,152,694,596
+Glimmora-Mega,152,694,596,naturaleza,Timid,81,359,324
+Glimmora-Mega,152,694,596,habilidad,Toxic Debris,152,694,596
+Glimmora-Mega,152,694,596,naturaleza,Modest,69,333,261
+Dragapult,145,626,562,movimiento,Draco Meteor,126,553,488
+Dragapult,145,626,562,movimiento,Shadow Ball,125,547,488
+Dragapult,145,626,562,movimiento,Will-O-Wisp,109,485,428
+Dragapult,145,626,562,movimiento,Protect,137,593,531
+Dragapult,145,626,562,objeto,Life Orb,136,592,515
+Dragapult,145,626,562,naturaleza,Timid,71,305,284
+Dragapult,145,626,562,habilidad,Infiltrator,99,419,393
+Dragapult,145,626,562,naturaleza,Modest,51,228,196
+Dragapult,145,626,562,habilidad,Clear Body,43,193,154
+Dragapult,145,626,562,movimiento,Flamethrower,11,45,43
+Dragapult,145,626,562,movimiento,Dragon Darts,19,76,67
+Dragapult,145,626,562,movimiento,Phantom Force,18,72,65
+Dragapult,145,626,562,naturaleza,Jolly,13,57,49
+Basculegion-F,142,635,561,movimiento,Ice Beam,141,633,555
+Basculegion-F,142,635,561,movimiento,Muddy Water,137,618,543
+Basculegion-F,142,635,561,movimiento,Shadow Ball,139,628,549
+Basculegion-F,142,635,561,movimiento,Protect,138,624,545
+Basculegion-F,142,635,561,objeto,Focus Sash,130,590,515
+Basculegion-F,142,635,561,naturaleza,Modest,138,624,545
+Basculegion-F,142,635,561,habilidad,Swift Swim,138,624,545
+Basculegion-F,142,635,561,objeto,Life Orb,8,34,30
+Camerupt-Mega,139,528,562,movimiento,Heat Wave,130,498,526
+Camerupt-Mega,139,528,562,movimiento,Ancient Power,132,506,534
+Camerupt-Mega,139,528,562,movimiento,Earth Power,138,525,557
+Camerupt-Mega,139,528,562,movimiento,Protect,132,489,538
+Camerupt-Mega,139,528,562,objeto,Cameruptite,139,528,562
+Camerupt-Mega,139,528,562,naturaleza,Quiet,128,495,518
+Camerupt-Mega,139,528,562,habilidad,Solid Rock,137,518,556
+Camerupt-Mega,139,528,562,naturaleza,Modest,11,33,44
+Camerupt-Mega,139,528,562,movimiento,Flamethrower,9,43,32
+Camerupt-Mega,139,528,562,movimiento,Eruption,11,36,47
+Aerodactyl-Mega,131,595,526,movimiento,Rock Slide,131,595,526
+Aerodactyl-Mega,131,595,526,movimiento,Dual Wingbeat,128,588,509
+Aerodactyl-Mega,131,595,526,movimiento,Tailwind,124,567,498
+Aerodactyl-Mega,131,595,526,movimiento,Wide Guard,40,164,160
+Aerodactyl-Mega,131,595,526,objeto,Aerodactylite,131,595,526
+Aerodactyl-Mega,131,595,526,naturaleza,Jolly,125,566,504
+Aerodactyl-Mega,131,595,526,habilidad,Unnerve,127,579,509
+Aerodactyl-Mega,131,595,526,movimiento,Protect,70,333,285
+Aerodactyl-Mega,131,595,526,movimiento,Ice Fang,28,121,112
+Corviknight,129,492,536,movimiento,Brave Bird,124,476,515
+Corviknight,129,492,536,movimiento,Power Trip,92,345,385
+Corviknight,129,492,536,movimiento,Bulk Up,107,408,446
+Corviknight,129,492,536,movimiento,Roost,116,449,478
+Corviknight,129,492,536,objeto,Psychic Seed,87,341,363
+Corviknight,129,492,536,naturaleza,Careful,95,370,398
+Corviknight,129,492,536,habilidad,Mirror Armor,129,492,536
+Corviknight,129,492,536,movimiento,Tailwind,29,119,124
+Corviknight,129,492,536,objeto,Leftovers,24,89,103
+Corviknight,129,492,536,movimiento,Body Press,14,46,54
+Corviknight,129,492,536,movimiento,Protect,8,31,33
+Corviknight,129,492,536,naturaleza,Adamant,10,41,39
+Corviknight,129,492,536,naturaleza,Impish,22,72,92
+Corviknight,129,492,536,movimiento,Iron Head,14,46,63
+Annihilape,122,509,513,movimiento,Close Combat,94,407,390
+Annihilape,122,509,513,movimiento,Shadow Claw,52,228,219
+Annihilape,122,509,513,movimiento,Ice Punch,64,288,250
+Annihilape,122,509,513,movimiento,Rock Tomb,23,109,96
+Annihilape,122,509,513,objeto,Choice Scarf,84,375,337
+Annihilape,122,509,513,naturaleza,Jolly,57,268,233
+Annihilape,122,509,513,habilidad,Defiant,122,509,513
+Annihilape,122,509,513,movimiento,Phantom Force,45,205,177
+Annihilape,122,509,513,movimiento,Protect,36,130,164
+Annihilape,122,509,513,movimiento,Rock Slide,24,90,99
+Annihilape,122,509,513,movimiento,Drain Punch,27,99,118
+Annihilape,122,509,513,movimiento,Rage Fist,35,126,160
+Annihilape,122,509,513,movimiento,Bulk Up,20,65,88
+Annihilape,122,509,513,naturaleza,Adamant,53,198,229
+Annihilape,122,509,513,movimiento,U-turn,42,194,172
+Annihilape,122,509,513,objeto,Leftovers,15,49,71
+Ceruledge,121,457,524,movimiento,Protect,114,438,490
+Ceruledge,121,457,524,movimiento,Bitter Blade,121,457,524
+Ceruledge,121,457,524,movimiento,Swords Dance,94,379,393
+Ceruledge,121,457,524,movimiento,Shadow Sneak,115,433,498
+Ceruledge,121,457,524,objeto,Grassy Seed,91,366,385
+Ceruledge,121,457,524,naturaleza,Adamant,112,428,481
+Ceruledge,121,457,524,habilidad,Flash Fire,120,449,519
+Ceruledge,121,457,524,objeto,Focus Sash,9,26,43
+Ceruledge,121,457,524,naturaleza,Jolly,8,27,39
+Ceruledge,121,457,524,movimiento,Bulk Up,23,71,109
+Ceruledge,121,457,524,objeto,Colbur Berry,16,49,72
+Ninetales-Alola,94,317,414,movimiento,Blizzard,86,295,375
+Ninetales-Alola,94,317,414,movimiento,Moonblast,42,133,187
+Ninetales-Alola,94,317,414,movimiento,Aurora Veil,57,177,262
+Ninetales-Alola,94,317,414,movimiento,Protect,56,185,247
+Ninetales-Alola,94,317,414,objeto,Light Clay,27,81,132
+Ninetales-Alola,94,317,414,naturaleza,Timid,75,246,330
+Ninetales-Alola,94,317,414,habilidad,Snow Warning,94,317,414
+Ninetales-Alola,94,317,414,movimiento,Freeze-Dry,49,175,205
+Ninetales-Alola,94,317,414,objeto,Never-Melt Ice,13,48,52
+Ninetales-Alola,94,317,414,objeto,Focus Sash,23,76,105
+Ninetales-Alola,94,317,414,movimiento,Icy Wind,31,107,139
+Ninetales-Alola,94,317,414,movimiento,Encore,29,97,122
+Ninetales-Alola,94,317,414,objeto,Choice Scarf,27,101,113
+Ninetales-Alola,94,317,414,naturaleza,Modest,19,71,84
+Lucario-Mega-Z,89,302,397,movimiento,Detect,62,212,278
+Lucario-Mega-Z,89,302,397,movimiento,Aura Sphere,89,302,397
+Lucario-Mega-Z,89,302,397,movimiento,Flash Cannon,84,291,376
+Lucario-Mega-Z,89,302,397,movimiento,Calm Mind,32,116,141
+Lucario-Mega-Z,89,302,397,objeto,Lucarionite Z,89,302,397
+Lucario-Mega-Z,89,302,397,naturaleza,Timid,52,193,231
+Lucario-Mega-Z,89,302,397,habilidad,Inner Focus,87,296,387
+Lucario-Mega-Z,89,302,397,movimiento,Protect,24,85,101
+Lucario-Mega-Z,89,302,397,movimiento,Nasty Plot,20,69,94
+Lucario-Mega-Z,89,302,397,naturaleza,Modest,37,109,166
+Lucario-Mega-Z,89,302,397,movimiento,Dark Pulse,25,90,104
+Vivillon,87,385,332,movimiento,Sleep Powder,87,385,332
+Vivillon,87,385,332,movimiento,Rage Powder,83,365,317
+Vivillon,87,385,332,movimiento,Hurricane,73,309,280
+Vivillon,87,385,332,movimiento,Protect,85,377,324
+Vivillon,87,385,332,objeto,Focus Sash,85,376,325
+Vivillon,87,385,332,naturaleza,Timid,86,377,329
+Vivillon,87,385,332,habilidad,Compound Eyes,86,384,329
+Vivillon,87,385,332,movimiento,Pollen Puff,13,71,49
+Hatterene,77,251,334,movimiento,Dazzling Gleam,72,237,315
+Hatterene,77,251,334,movimiento,Expanding Force,76,244,329
+Hatterene,77,251,334,movimiento,Protect,67,215,291
+Hatterene,77,251,334,movimiento,Trick Room,77,251,334
+Hatterene,77,251,334,objeto,Life Orb,64,200,285
+Hatterene,77,251,334,naturaleza,Quiet,73,233,316
+Hatterene,77,251,334,habilidad,Magic Bounce,76,251,333
+Hatterene,77,251,334,objeto,Focus Sash,9,38,30
+Toxapex,71,359,272,movimiento,Toxic,70,357,266
+Toxapex,71,359,272,movimiento,Infestation,70,357,266
+Toxapex,71,359,272,movimiento,Baneful Bunker,70,357,266
+Toxapex,71,359,272,objeto,Leftovers,70,357,267
+Toxapex,71,359,272,naturaleza,Bold,21,100,87
+Toxapex,71,359,272,habilidad,Regenerator,71,359,272
+Toxapex,71,359,272,movimiento,Wide Guard,69,348,262
+Toxapex,71,359,272,naturaleza,Relaxed,43,234,151
+Maushold,71,259,315,movimiento,Follow Me,69,255,309
+Maushold,71,259,315,movimiento,Super Fang,46,177,205
+Maushold,71,259,315,movimiento,Feint,33,153,133
+Maushold,71,259,315,movimiento,Taunt,18,56,83
+Maushold,71,259,315,naturaleza,Impish,20,102,78
+Maushold,71,259,315,habilidad,Friend Guard,56,217,246
+Maushold,71,259,315,movimiento,Encore,15,52,64
+Maushold,71,259,315,movimiento,Protect,62,231,275
+Maushold,71,259,315,objeto,Chople Berry,31,136,136
+Maushold,71,259,315,naturaleza,Jolly,28,71,131
+Maushold,71,259,315,objeto,Focus Sash,18,62,80
+Maushold,71,259,315,naturaleza,Timid,12,44,55
+Maushold,71,259,315,movimiento,Population Bomb,19,53,87
+Maushold,71,259,315,objeto,Wide Lens,15,42,66
+Maushold,71,259,315,habilidad,Technician,15,42,69
+Blastoise-Mega,70,288,279,movimiento,Protect,60,252,233
+Blastoise-Mega,70,288,279,movimiento,Shell Smash,60,258,232
+Blastoise-Mega,70,288,279,movimiento,Water Spout,66,282,256
+Blastoise-Mega,70,288,279,movimiento,Terrain Pulse,20,85,74
+Blastoise-Mega,70,288,279,objeto,Blastoisinite,70,288,279
+Blastoise-Mega,70,288,279,naturaleza,Modest,64,269,253
+Blastoise-Mega,70,288,279,habilidad,Rain Dish,62,271,242
+Blastoise-Mega,70,288,279,movimiento,Dark Pulse,42,179,172
+Blastoise-Mega,70,288,279,movimiento,Aura Sphere,14,42,64
+Blastoise-Mega,70,288,279,habilidad,Torrent,8,17,37
+Glimmora,70,326,284,movimiento,Sludge Bomb,68,323,277
+Glimmora,70,326,284,movimiento,Power Gem,69,325,277
+Glimmora,70,326,284,movimiento,Earth Power,68,321,273
+Glimmora,70,326,284,movimiento,Spiky Shield,69,323,279
+Glimmora,70,326,284,objeto,Focus Sash,51,230,211
+Glimmora,70,326,284,naturaleza,Modest,53,259,210
+Glimmora,70,326,284,habilidad,Toxic Debris,69,317,281
+Glimmora,70,326,284,naturaleza,Timid,17,67,74
+Glimmora,70,326,284,objeto,Life Orb,16,81,60
+Blaziken-Mega,68,268,276,movimiento,Close Combat,66,262,268
+Blaziken-Mega,68,268,276,movimiento,Flare Blitz,66,262,268
+Blaziken-Mega,68,268,276,movimiento,Rock Slide,60,248,240
+Blaziken-Mega,68,268,276,movimiento,Protect,24,106,91
+Blaziken-Mega,68,268,276,objeto,Blazikenite,68,268,276
+Blaziken-Mega,68,268,276,naturaleza,Adamant,66,263,268
+Blaziken-Mega,68,268,276,habilidad,Speed Boost,66,263,265
+Blaziken-Mega,68,268,276,movimiento,Detect,44,162,185
+Pyroar-Mega,62,259,243,movimiento,Heat Wave,62,259,243
+Pyroar-Mega,62,259,243,movimiento,Overheat,60,254,232
+Pyroar-Mega,62,259,243,movimiento,Scorching Sands,40,175,154
+Pyroar-Mega,62,259,243,movimiento,Protect,62,259,243
+Pyroar-Mega,62,259,243,objeto,Pyroarite,62,259,243
+Pyroar-Mega,62,259,243,naturaleza,Timid,57,240,222
+Pyroar-Mega,62,259,243,habilidad,Unnerve,61,256,238
+Pyroar-Mega,62,259,243,movimiento,Flamethrower,8,28,36
+Hydreigon,61,218,266,movimiento,Dark Pulse,55,199,240
+Hydreigon,61,218,266,movimiento,Protect,15,62,67
+Hydreigon,61,218,266,movimiento,Tailwind,8,30,36
+Hydreigon,61,218,266,movimiento,Draco Meteor,53,192,232
+Hydreigon,61,218,266,naturaleza,Timid,15,55,70
+Hydreigon,61,218,266,habilidad,Levitate,61,218,266
+Hydreigon,61,218,266,movimiento,Snarl,40,144,170
+Hydreigon,61,218,266,objeto,Choice Scarf,40,135,174
+Hydreigon,61,218,266,naturaleza,Modest,46,163,196
+Hydreigon,61,218,266,movimiento,Flamethrower,20,63,91
+Hydreigon,61,218,266,movimiento,Earth Power,32,112,136
+Hydreigon,61,218,266,movimiento,Dragon Pulse,9,29,39
+Pawmot,60,209,256,movimiento,Double Shock,58,204,249
+Pawmot,60,209,256,movimiento,Close Combat,57,203,245
+Pawmot,60,209,256,movimiento,Fake Out,42,167,170
+Pawmot,60,209,256,movimiento,Revival Blessing,41,144,178
+Pawmot,60,209,256,objeto,Focus Sash,51,183,215
+Pawmot,60,209,256,naturaleza,Jolly,50,178,209
+Pawmot,60,209,256,habilidad,Iron Fist,55,198,232
+Pawmot,60,209,256,movimiento,Coaching,9,36,43
+Pawmot,60,209,256,naturaleza,Adamant,9,27,43
+Pawmot,60,209,256,movimiento,Protect,16,46,70
+Talonflame,60,236,241,movimiento,Brave Bird,32,130,124
+Talonflame,60,236,241,movimiento,Flare Blitz,41,159,163
+Talonflame,60,236,241,movimiento,Tailwind,60,236,241
+Talonflame,60,236,241,movimiento,Protect,48,204,192
+Talonflame,60,236,241,objeto,Life Orb,9,43,35
+Talonflame,60,236,241,naturaleza,Jolly,37,162,148
+Talonflame,60,236,241,habilidad,Gale Wings,60,236,241
+Talonflame,60,236,241,movimiento,Overheat,11,45,45
+Talonflame,60,236,241,naturaleza,Timid,8,31,34
+Talonflame,60,236,241,objeto,Expert Belt,12,51,45
+Talonflame,60,236,241,objeto,Sharp Beak,14,54,60
+Talonflame,60,236,241,movimiento,Dual Wingbeat,16,60,66
+Talonflame,60,236,241,objeto,Focus Sash,16,45,65
+Talonflame,60,236,241,naturaleza,Adamant,10,26,38
+Absol-Mega-Z,49,152,216,movimiento,Night Slash,47,146,209
+Absol-Mega-Z,49,152,216,movimiento,Psycho Cut,13,40,56
+Absol-Mega-Z,49,152,216,movimiento,Shadow Claw,29,86,128
+Absol-Mega-Z,49,152,216,movimiento,Detect,31,105,130
+Absol-Mega-Z,49,152,216,objeto,Absolite Z,49,152,216
+Absol-Mega-Z,49,152,216,naturaleza,Jolly,26,75,115
+Absol-Mega-Z,49,152,216,habilidad,Super Luck,14,43,69
+Absol-Mega-Z,49,152,216,movimiento,Close Combat,34,107,152
+Absol-Mega-Z,49,152,216,movimiento,Protect,17,46,82
+Absol-Mega-Z,49,152,216,naturaleza,Adamant,22,74,96
+Absol-Mega-Z,49,152,216,habilidad,Justified,32,101,133
+Tyranitar,48,177,207,movimiento,Rock Slide,47,173,203
+Tyranitar,48,177,207,movimiento,Knock Off,47,174,202
+Tyranitar,48,177,207,movimiento,Low Kick,33,131,143
+Tyranitar,48,177,207,movimiento,Protect,36,133,150
+Tyranitar,48,177,207,objeto,Chople Berry,17,70,71
+Tyranitar,48,177,207,naturaleza,Adamant,27,96,118
+Tyranitar,48,177,207,habilidad,Sand Stream,47,173,203
+Tyranitar,48,177,207,movimiento,Ice Punch,12,43,55
+Tyranitar,48,177,207,objeto,Choice Scarf,12,44,57
+Tyranitar,48,177,207,naturaleza,Jolly,18,71,75
+Tyranitar,48,177,207,objeto,Focus Sash,9,26,39
+Sableye,48,141,217,movimiento,Rain Dance,34,108,155
+Sableye,48,141,217,movimiento,Reflect,25,71,101
+Sableye,48,141,217,movimiento,Light Screen,34,108,141
+Sableye,48,141,217,movimiento,Will-O-Wisp,13,44,61
+Sableye,48,141,217,objeto,Light Clay,17,55,72
+Sableye,48,141,217,naturaleza,Careful,16,45,71
+Sableye,48,141,217,habilidad,Prankster,48,141,217
+Sableye,48,141,217,movimiento,Encore,18,42,80
+Sableye,48,141,217,movimiento,Quash,10,29,51
+Sableye,48,141,217,objeto,Roseli Berry,18,57,80
+Sableye,48,141,217,movimiento,Foul Play,18,47,89
+Sableye,48,141,217,naturaleza,Calm,8,30,39
+Sableye,48,141,217,movimiento,Fake Out,14,42,64
+Sableye,48,141,217,naturaleza,Bold,8,18,36
+Sableye,48,141,217,naturaleza,Sassy,9,29,40
+Baxcalibur-Mega,45,160,193,movimiento,Protect,43,155,182
+Baxcalibur-Mega,45,160,193,movimiento,Glaive Rush,44,157,188
+Baxcalibur-Mega,45,160,193,movimiento,High Horsepower,14,51,64
+Baxcalibur-Mega,45,160,193,movimiento,Ice Shard,39,137,167
+Baxcalibur-Mega,45,160,193,objeto,Baxcalibrite,45,160,193
+Baxcalibur-Mega,45,160,193,naturaleza,Adamant,38,136,161
+Baxcalibur-Mega,45,160,193,habilidad,Thermal Exchange,45,160,193
+Baxcalibur-Mega,45,160,193,movimiento,Icicle Crash,10,32,39
+Baxcalibur-Mega,45,160,193,movimiento,Dragon Dance,8,23,37
+Baxcalibur-Mega,45,160,193,movimiento,Swords Dance,19,76,84
+Mawile-Mega,43,152,186,movimiento,Protect,40,142,175
+Mawile-Mega,43,152,186,movimiento,Sucker Punch,34,125,141
+Mawile-Mega,43,152,186,movimiento,Play Rough,43,152,186
+Mawile-Mega,43,152,186,movimiento,Iron Head,26,93,112
+Mawile-Mega,43,152,186,objeto,Mawilite,43,152,186
+Mawile-Mega,43,152,186,naturaleza,Brave,28,88,123
+Mawile-Mega,43,152,186,habilidad,Hyper Cutter,30,104,136
+Mawile-Mega,43,152,186,movimiento,Rock Slide,15,47,70
+Mawile-Mega,43,152,186,habilidad,Intimidate,12,46,46
+Mawile-Mega,43,152,186,movimiento,Swords Dance,8,27,34
+Mawile-Mega,43,152,186,naturaleza,Adamant,14,59,60
+Espathra,40,156,163,movimiento,Lumina Crash,36,143,144
+Espathra,40,156,163,movimiento,Calm Mind,34,133,136
+Espathra,40,156,163,movimiento,Baton Pass,35,135,140
+Espathra,40,156,163,movimiento,Protect,40,156,163
+Espathra,40,156,163,objeto,Grassy Seed,11,49,42
+Espathra,40,156,163,habilidad,Speed Boost,40,156,163
+Espathra,40,156,163,naturaleza,Timid,28,109,107
+Espathra,40,156,163,objeto,Electric Seed,12,46,44
+Espathra,40,156,163,naturaleza,Modest,8,36,35
+Scovillain-Mega,37,133,163,movimiento,Giga Drain,25,86,115
+Scovillain-Mega,37,133,163,movimiento,Overheat,27,106,115
+Scovillain-Mega,37,133,163,movimiento,Rage Powder,37,133,163
+Scovillain-Mega,37,133,163,movimiento,Protect,36,130,158
+Scovillain-Mega,37,133,163,objeto,Scovillainite,37,133,163
+Scovillain-Mega,37,133,163,naturaleza,Bold,25,96,109
+Scovillain-Mega,37,133,163,habilidad,Moody,32,115,141
+Aerodactyl,35,110,149,movimiento,Rock Slide,35,110,149
+Aerodactyl,35,110,149,movimiento,Tailwind,35,110,149
+Aerodactyl,35,110,149,movimiento,Wide Guard,19,54,75
+Aerodactyl,35,110,149,movimiento,Protect,17,64,71
+Aerodactyl,35,110,149,objeto,Focus Sash,31,103,129
+Aerodactyl,35,110,149,naturaleza,Jolly,34,109,142
+Aerodactyl,35,110,149,habilidad,Unnerve,35,110,149
+Aerodactyl,35,110,149,movimiento,Dual Wingbeat,27,84,119
+Kleavor,33,107,147,movimiento,Protect,20,65,84
+Kleavor,33,107,147,movimiento,Stone Axe,32,103,143
+Kleavor,33,107,147,movimiento,X-Scissor,33,107,147
+Kleavor,33,107,147,objeto,Focus Sash,17,55,72
+Kleavor,33,107,147,naturaleza,Adamant,20,70,86
+Kleavor,33,107,147,habilidad,Sharpness,33,107,147
+Kleavor,33,107,147,movimiento,Tailwind,8,25,36
+Kleavor,33,107,147,objeto,Choice Scarf,11,38,51
+Kleavor,33,107,147,naturaleza,Jolly,13,37,61
+Kleavor,33,107,147,movimiento,Night Slash,11,35,52
+Kleavor,33,107,147,movimiento,Close Combat,8,33,32
+Rotom-Heat,33,113,151,movimiento,Thunderbolt,15,51,66
+Rotom-Heat,33,113,151,movimiento,Overheat,32,113,146
+Rotom-Heat,33,113,151,movimiento,Volt Switch,21,68,98
+Rotom-Heat,33,113,151,movimiento,Protect,13,41,57
+Rotom-Heat,33,113,151,objeto,Sitrus Berry,11,35,50
+Rotom-Heat,33,113,151,habilidad,Levitate,33,113,151
+Rotom-Heat,33,113,151,movimiento,Electroweb,11,43,49
+Rotom-Heat,33,113,151,movimiento,Will-O-Wisp,10,33,46
+Rotom-Heat,33,113,151,movimiento,Trick,9,36,43
+Rotom-Heat,33,113,151,objeto,Choice Scarf,14,50,68
+Rotom-Heat,33,113,151,naturaleza,Timid,17,60,82
+Rotom-Heat,33,113,151,naturaleza,Modest,9,29,40
+Rotom-Heat,33,113,151,movimiento,Discharge,11,43,52
+Typhlosion-Hisui,30,89,134,movimiento,Eruption,29,87,128
+Typhlosion-Hisui,30,89,134,movimiento,Overheat,13,47,52
+Typhlosion-Hisui,30,89,134,movimiento,Heat Wave,23,76,96
+Typhlosion-Hisui,30,89,134,movimiento,Shadow Ball,29,89,126
+Typhlosion-Hisui,30,89,134,objeto,Choice Scarf,23,71,96
+Typhlosion-Hisui,30,89,134,naturaleza,Modest,22,66,93
+Typhlosion-Hisui,30,89,134,habilidad,Blaze,25,80,110
+Lycanroc-Dusk,28,103,128,movimiento,Close Combat,25,98,112
+Lycanroc-Dusk,28,103,128,movimiento,Accelerock,28,103,128
+Lycanroc-Dusk,28,103,128,movimiento,Rock Slide,28,103,128
+Lycanroc-Dusk,28,103,128,movimiento,Protect,27,103,121
+Lycanroc-Dusk,28,103,128,objeto,Focus Sash,26,102,116
+Lycanroc-Dusk,28,103,128,naturaleza,Adamant,22,85,101
+Lycanroc-Dusk,28,103,128,habilidad,Tough Claws,28,103,128
+Altaria,26,107,110,movimiento,Ice Beam,18,74,77
+Altaria,26,107,110,movimiento,Tailwind,22,91,94
+Altaria,26,107,110,movimiento,Will-O-Wisp,21,88,87
+Altaria,26,107,110,movimiento,Protect,25,106,107
+Altaria,26,107,110,objeto,Haban Berry,23,101,98
+Altaria,26,107,110,naturaleza,Timid,18,75,76
+Altaria,26,107,110,habilidad,Cloud Nine,26,107,110
+Venusaur-Mega,26,69,98,movimiento,Sludge Bomb,23,60,87
+Venusaur-Mega,26,69,98,movimiento,Giga Drain,17,52,72
+Venusaur-Mega,26,69,98,movimiento,Sleep Powder,8,16,21
+Venusaur-Mega,26,69,98,movimiento,Earth Power,20,56,80
+Venusaur-Mega,26,69,98,objeto,Venusaurite,26,69,98
+Venusaur-Mega,26,69,98,naturaleza,Modest,17,51,66
+Venusaur-Mega,26,69,98,habilidad,Chlorophyll,21,60,79
+Venusaur-Mega,26,69,98,movimiento,Protect,24,63,91
