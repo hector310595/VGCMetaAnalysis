@@ -30,6 +30,7 @@ Los datos crudos están en `data/`:
 - `equipos_mc.csv`: equipos. `player_id` identifica a la persona aunque se inscriba con otro nombre (también en `sets_mc.csv`).
 - `jugadores.csv`: un registro por jugador (`player_id`, nombre que se muestra, variantes con las que se inscribió, nº de resultados).
 - `jugadores_alias.csv`: uniones manuales de nombres distintos de la misma persona (alias → nombre). Las variantes de tildes se unen solas.
+- `familia_override.csv`: equipos reasignados a mano de familia (p. ej. Gengar con Substitute y sin Perish Song → Otros, hasta tener muestra propia).
 - `spreads_ref.csv`: sets completos con stat points de equipos de referencia de torneo (20 oct), mismo formato que `spreads_mc.csv`.
 - `ladder.csv`: ladder in-game de Pokémon Champions (pokemon-zone, temporada 7): por Pokémon, % de movimientos, habilidades, objetos, naturalezas y sus 3 repartos de stat points más usados.
 - Los stat points que muestra el dashboard son solo de las últimas 4 semanas; los anteriores se guardan para Tendencias y noticias.

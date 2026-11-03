@@ -1,9 +1,9 @@
 torneo,fecha,inscritos,familia,equipos,top32,top8,ganadas,partidas,esperadas
-Baltimore,2026-09-20,1081,Otros,599,16,2,947,2145,1059.6
+Baltimore,2026-09-20,1081,Otros,604,16,2,973,2190,1081.4
 Baltimore,2026-09-20,1081,Y-Chu Balance,173,5,3,717,1329,673.4
 Baltimore,2026-09-20,1081,Floette Balance,115,3,0,433,877,435.1
 Baltimore,2026-09-20,1081,Sand,50,2,1,198,387,194.3
-Baltimore,2026-09-20,1081,Gengar Perish,41,2,1,191,343,171.8
+Baltimore,2026-09-20,1081,Gengar Perish,36,2,1,165,298,150.0
 Baltimore,2026-09-20,1081,Sun Rain,23,0,0,101,185,92.7
 Baltimore,2026-09-20,1081,Zard Aero,20,1,0,120,192,100.3
 Baltimore,2026-09-20,1081,Goli Rain,11,0,0,40,81,40.2
@@ -14,11 +14,11 @@ Baltimore,2026-09-20,1081,Scovillain Froslass,5,1,0,19,41,19.9
 Baltimore,2026-09-20,1081,Zard Glimmora,4,0,0,15,31,15.9
 Baltimore,2026-09-20,1081,Glimmora Salamence,3,0,0,10,22,10.4
 Baltimore,2026-09-20,1081,Torkoal Sun,1,0,0,4,8,4.1
-Brisbane,2026-09-27,327,Otros,169,11,2,295,688,336.7
+Brisbane,2026-09-27,327,Otros,171,12,3,310,708,348.1
 Brisbane,2026-09-27,327,Y-Chu Balance,66,3,0,251,493,247.4
 Brisbane,2026-09-27,327,Sand,23,1,0,86,173,85.6
 Brisbane,2026-09-27,327,Floette Balance,21,4,3,95,176,88.2
-Brisbane,2026-09-27,327,Gengar Perish,19,3,1,85,152,77.9
+Brisbane,2026-09-27,327,Gengar Perish,17,2,0,70,132,66.5
 Brisbane,2026-09-27,327,Delphox Balance,10,5,0,62,94,49.3
 Brisbane,2026-09-27,327,Zard Aero,5,1,0,25,44,22.6
 Brisbane,2026-09-27,327,Goli Rain,4,0,0,14,32,16.1
@@ -26,11 +26,11 @@ Brisbane,2026-09-27,327,Sun Rain,4,3,2,33,42,23.3
 Brisbane,2026-09-27,327,Big 6,3,0,0,6,16,7.8
 Brisbane,2026-09-27,327,Glimmora Salamence,1,0,0,5,8,4.0
 Brisbane,2026-09-27,327,Zard Glimmora,1,1,0,7,10,5.1
-Frankfurt,2026-09-27,1129,Otros,573,5,1,971,2227,1091.2
+Frankfurt,2026-09-27,1129,Otros,574,5,1,980,2240,1097.9
 Frankfurt,2026-09-27,1129,Y-Chu Balance,258,11,2,1116,2072,1049.2
 Frankfurt,2026-09-27,1129,Floette Balance,77,4,2,325,637,320.3
 Frankfurt,2026-09-27,1129,Sand,54,1,0,210,423,211.5
-Frankfurt,2026-09-27,1129,Gengar Perish,47,3,1,213,396,197.7
+Frankfurt,2026-09-27,1129,Gengar Perish,46,3,1,204,383,191.0
 Frankfurt,2026-09-27,1129,Goli Rain,21,2,0,95,175,88.7
 Frankfurt,2026-09-27,1129,Delphox Balance,20,0,0,84,166,83.0
 Frankfurt,2026-09-27,1129,Zard Aero,19,1,0,78,158,79.0
@@ -53,27 +53,27 @@ Recife,2026-10-04,222,Zard Aero,4,1,0,23,35,19.1
 Recife,2026-10-04,222,Torkoal Sun,4,1,1,14,27,13.5
 Recife,2026-10-04,222,Goli Rain,3,0,0,9,23,11.4
 Recife,2026-10-04,222,Big 6,2,1,0,12,19,10.4
-Louisville,2026-10-11,1014,Otros,474,8,2,815,1838,915.9
+Louisville,2026-10-11,1014,Otros,476,8,2,824,1854,923.9
 Louisville,2026-10-11,1014,Y-Chu Balance,175,3,0,640,1295,644.2
 Louisville,2026-10-11,1014,Floette Balance,66,6,3,278,523,262.0
 Louisville,2026-10-11,1014,Sun Rain,65,2,1,246,482,238.3
 Louisville,2026-10-11,1014,Delphox Balance,54,1,0,220,413,206.0
 Louisville,2026-10-11,1014,Goli Rain,40,2,1,190,341,171.1
 Louisville,2026-10-11,1014,Sand,31,1,0,105,223,111.3
-Louisville,2026-10-11,1014,Gengar Perish,29,2,0,130,236,121.0
 Louisville,2026-10-11,1014,Zard Sun (Venusaur),28,4,1,136,222,113.9
+Louisville,2026-10-11,1014,Gengar Perish,27,2,0,121,220,113.0
 Louisville,2026-10-11,1014,Zard Aero,14,2,0,66,113,58.5
 Louisville,2026-10-11,1014,Big 6,11,1,0,59,97,49.9
 Louisville,2026-10-11,1014,Torkoal Sun,11,0,0,43,85,41.7
 Louisville,2026-10-11,1014,Glimmora Salamence,6,0,0,25,50,25.4
 Louisville,2026-10-11,1014,Zard Glimmora,3,0,0,17,26,13.4
 Louisville,2026-10-11,1014,Scovillain Froslass,2,0,0,10,20,9.8
-Nice,2026-10-18,862,Otros,315,10,1,686,1522,757.0
+Nice,2026-10-18,862,Otros,318,11,1,703,1551,771.6
 Nice,2026-10-18,862,Y-Chu Balance,183,4,0,633,1356,667.9
 Nice,2026-10-18,862,Sun Rain,63,1,0,232,459,231.3
 Nice,2026-10-18,862,Delphox Balance,52,0,0,233,432,216.6
 Nice,2026-10-18,862,Zard Sun (Venusaur),50,2,0,222,404,205.4
-Nice,2026-10-18,862,Gengar Perish,46,3,1,236,398,205.1
+Nice,2026-10-18,862,Gengar Perish,43,2,1,219,369,190.5
 Nice,2026-10-18,862,Floette Balance,40,3,1,175,346,174.9
 Nice,2026-10-18,862,Goli Rain,29,2,2,137,249,126.0
 Nice,2026-10-18,862,Big 6,24,2,2,121,211,106.2
@@ -97,7 +97,7 @@ Puebla,2026-10-25,333,Torkoal Sun,1,1,0,8,11,5.7
 Puebla,2026-10-25,333,Scovillain Froslass,1,0,0,5,8,4.2
 Puebla,2026-10-25,333,Glimmora Salamence,1,0,0,4,8,3.7
 Puebla,2026-10-25,333,Zard Glimmora,1,0,0,5,8,4.2
-Gdańsk,2026-11-01,758,Otros,260,2,0,576,1301,641.9
+Gdańsk,2026-11-01,758,Otros,266,2,0,599,1347,664.7
 Gdańsk,2026-11-01,758,Y-Chu Balance,112,2,0,432,873,430.5
 Gdańsk,2026-11-01,758,Big 6,71,7,3,304,536,276.6
 Gdańsk,2026-11-01,758,Goli Rain,50,0,0,194,395,195.2
@@ -105,8 +105,8 @@ Gdańsk,2026-11-01,758,Floette Balance,46,3,2,189,370,184.6
 Gdańsk,2026-11-01,758,Sun Rain,38,1,0,130,274,139.1
 Gdańsk,2026-11-01,758,Sand,37,2,1,164,307,153.9
 Gdańsk,2026-11-01,758,Delphox Balance,34,2,1,136,276,137.6
-Gdańsk,2026-11-01,758,Gengar Perish,29,6,0,126,239,119.4
 Gdańsk,2026-11-01,758,Zard Sun (Venusaur),28,2,0,131,243,123.5
+Gdańsk,2026-11-01,758,Gengar Perish,23,6,0,103,193,96.6
 Gdańsk,2026-11-01,758,Zard Aero,19,1,0,79,155,76.6
 Gdańsk,2026-11-01,758,Zard Glimmora,12,2,1,63,105,55.1
 Gdańsk,2026-11-01,758,Scovillain Froslass,11,1,0,58,100,50.1
