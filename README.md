@@ -30,6 +30,9 @@ Los datos crudos están en `data/`:
 - `equipos_mc.csv`: equipos. `player_id` identifica a la persona aunque se inscriba con otro nombre (también en `sets_mc.csv`).
 - `jugadores.csv`: un registro por jugador (`player_id`, nombre que se muestra, variantes con las que se inscribió, nº de resultados).
 - `jugadores_alias.csv`: uniones manuales de nombres distintos de la misma persona (alias → nombre). Las variantes de tildes se unen solas.
+- `spreads_ref.csv`: sets completos con stat points de equipos de referencia de torneo (20 oct), mismo formato que `spreads_mc.csv`.
+- `ladder.csv`: ladder in-game de Pokémon Champions (pokemon-zone, temporada 7): por Pokémon, % de movimientos, habilidades, objetos, naturalezas y sus 3 repartos de stat points más usados.
+- Los stat points que muestra el dashboard son solo de las últimas 4 semanas; los anteriores se guardan para Tendencias y noticias.
 - `arquetipos_mc.csv`: familia, variante, núcleo y flex de cada equipo del Top 32.
 - `spreads_mc.csv`: 1,314 sets con stat points y stats finales a nivel 50 (fuente: VGCPastes Repository, pokepast.es).
 - `sets_mc.csv`: un registro por Pokémon con objeto, habilidad, naturaleza y movimientos, leído de VR Pastes. Los pastes de torneo son Open Team List y no incluyen stat points.
