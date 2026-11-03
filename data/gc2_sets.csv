@@ -1,0 +1,128 @@
+team_id,place,player,pokemon,forma,item,ability,nature,move1,move2,move3,move4,sp
+GC2#2,2,ガーベラ,Gengar,Gengar-Mega,Gengarite,Cursed Body,Timid,Sludge Bomb,Perish Song,Shadow Ball,Protect,28/0/2/13/0/23
+GC2#2,2,ガーベラ,Archaludon,Archaludon,Leftovers,Stamina,Bold,Dragon Pulse,Electro Shot,Snarl,Protect,32/0/1/0/32/1
+GC2#2,2,ガーベラ,Politoed,Politoed,Sitrus Berry,Drizzle,Bold,Weather Ball,Ice Beam,Perish Song,Protect,31/0/23/0/12/0
+GC2#2,2,ガーベラ,Incineroar,Incineroar,Air Balloon,Intimidate,Sassy,Throat Chop,Fake Out,Parting Shot,Protect,32/0/10/0/24/0
+GC2#2,2,ガーベラ,Rillaboom,Rillaboom,Muscle Band,Grassy Surge,Careful,Grassy Glide,High Horsepower,Fake Out,U-turn,26/17/0/0/21/2
+GC2#2,2,ガーベラ,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Earthquake,Dragon Claw,Stomping Tantrum,Rock Tomb,10/9/0/0/19/28
+GC2#8,8,Doles,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,,Heat Wave,Weather Ball,Solar Beam,Protect,
+GC2#8,8,Doles,Farigiraf,Farigiraf,Sitrus Berry,Armor Tail,,Psychic,Thunderbolt,Trick Room,Helping Hand,
+GC2#8,8,Doles,Aerodactyl,Aerodactyl-Mega,Aerodactylite,Unnerve,,Rock Slide,Dual Wingbeat,Wide Guard,Tailwind,
+GC2#8,8,Doles,Garchomp,Garchomp,Life Orb,Rough Skin,,Dragon Claw,Stomping Tantrum,Earthquake,Protect,
+GC2#8,8,Doles,Kingambit,Kingambit,Focus Sash,Defiant,,Kowtow Cleave,Iron Head,Sucker Punch,Low Kick,
+GC2#8,8,Doles,Sylveon,Sylveon,Fairy Feather,Pixilate,,Hyper Voice,Hyper Beam,Quick Attack,Detect,
+GC2#10,10,SupahSanti,Incineroar,Incineroar,Chople Berry,Intimidate,Sassy,Protect,Fake Out,Flare Blitz,Parting Shot,32/0/20/0/14/0
+GC2#10,10,SupahSanti,Kommo-o,Kommo-o,Leftovers,Bulletproof,Timid,Protect,Clangorous Soul,Clanging Scales,Aura Sphere,10/0/0/24/0/32
+GC2#10,10,SupahSanti,Rillaboom,Rillaboom,Miracle Seed,Grassy Surge,Brave,Protect,Fake Out,Grassy Glide,U-turn,20/32/1/0/13/0
+GC2#10,10,SupahSanti,Primarina,Primarina,Sitrus Berry,Liquid Voice,Sassy,Protect,Perish Song,Hyper Voice,Moonblast,32/0/20/0/14/0
+GC2#10,10,SupahSanti,Gengar,Gengar-Mega,Gengarite,Cursed Body,Timid,Protect,Perish Song,Substitute,Shadow Ball,32/0/0/0/26/8
+GC2#10,10,SupahSanti,Annihilape,Annihilape,Choice Scarf,Defiant,Jolly,Close Combat,Phantom Force,Rock Slide,U-turn,1/32/1/0/0/32
+GC2#19,19,pikapatVGC,Sneasler,Sneasler,White Herb,Unburden,Adamant,Protect,Fake Out,Close Combat,Dire Claw,0/32/2/0/0/32
+GC2#19,19,pikapatVGC,Gholdengo,Gholdengo,Life Orb,Good as Gold,Timid,Protect,Make It Rain,Shadow Ball,Nasty Plot,7/0/1/32/5/21
+GC2#19,19,pikapatVGC,Altaria,Altaria-Mega,Altarianite,Cloud Nine,Modest,Protect,Hyper Voice,Draco Meteor,Tailwind,28/0/0/30/0/8
+GC2#19,19,pikapatVGC,Rillaboom,Rillaboom,Miracle Seed,Grassy Surge,Adamant,Fake Out,Grassy Glide,Wood Hammer,U-turn,17/25/1/0/21/2
+GC2#19,19,pikapatVGC,Rotom-Heat,Rotom-Heat,Choice Scarf,Levitate,Modest,Overheat,Thunderbolt,Volt Switch,Electroweb,20/0/0/15/0/31
+GC2#19,19,pikapatVGC,Basculegion,Basculegion,Focus Sash,Adaptability,Adamant,Protect,Liquidation,Last Respects,Aqua Jet,0/32/2/0/0/32
+GC2#30,30,ユーカリ,Gholdengo,Gholdengo,Choice Scarf,Good as Gold,,Make It Rain,Shadow Ball,Power Gem,Trick,
+GC2#30,30,ユーカリ,Floette-Eternal,Floette-Mega,Floettite,Flower Veil,,Moonblast,Dazzling Gleam,Calm Mind,Protect,
+GC2#30,30,ユーカリ,Sneasler,Sneasler,White Herb,Unburden,,Close Combat,Dire Claw,Throat Chop,Protect,
+GC2#30,30,ユーカリ,Incineroar,Incineroar,Sitrus Berry,Intimidate,,Flare Blitz,Darkest Lariat,Fake Out,Parting Shot,
+GC2#30,30,ユーカリ,Dragonite,Dragonite-Mega,Dragoninite,Inner Focus,,Dragon Pulse,Heat Wave,Tailwind,Protect,
+GC2#30,30,ユーカリ,Rillaboom,Rillaboom,Miracle Seed,Grassy Surge,,Wood Hammer,Grassy Glide,U-turn,Fake Out,
+GC2#44,44,さとるんご,Whimsicott,Whimsicott,Focus Sash,Prankster,Timid,Moonblast,Tailwind,Sunny Day,Protect,2/0/0/32/0/32
+GC2#44,44,さとるんご,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,Modest,Weather Ball,Solar Beam,Heat Wave,Protect,16/0/18/0/0/32
+GC2#44,44,さとるんご,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Earthquake,Dragon Claw,Stomping Tantrum,Rock Slide,2/32/0/0/0/32
+GC2#44,44,さとるんご,Basculegion,Basculegion,Life Orb,Adaptability,Adamant,Wave Crash,Last Respects,Aqua Jet,Protect,4/15/23/0/0/24
+GC2#44,44,さとるんご,Floette-Eternal,Floette-Mega,Floettite,Flower Veil,Modest,Moonblast,Dazzling Gleam,Calm Mind,Protect,22/0/9/20/0/15
+GC2#44,44,さとるんご,Incineroar,Incineroar,Sitrus Berry,Intimidate,Careful,Flare Blitz,Snarl,Fake Out,Parting Shot,32/0/10/0/17/7
+GC2#48,48,Ｋ,Drampa,Drampa,Haban Berry,Cloud Nine,Modest,Dragon Pulse,Grass Knot,Heat Wave,Protect,32/0/9/25/0/0
+GC2#48,48,Ｋ,Indeedee-F,Indeedee-F,Rocky Helmet,Psychic Surge,Bold,Psychic,Follow Me,Skill Swap,Trick Room,32/0/31/0/2/1
+GC2#48,48,Ｋ,Basculegion,Basculegion,Choice Scarf,Adaptability,Jolly,Wave Crash,Last Respects,Flip Turn,Aqua Jet,0/26/8/0/0/32
+GC2#48,48,Ｋ,Raichu,Raichu-Mega-Y,Raichunite Y,Lightning Rod,Timid,Zap Cannon,Focus Blast,Encore,Protect,32/0/7/0/1/26
+GC2#48,48,Ｋ,Sneasler,Sneasler,Psychic Seed,Unburden,Adamant,Close Combat,Dire Claw,Throat Chop,Protect,2/32/0/0/0/32
+GC2#48,48,Ｋ,Armarouge,Armarouge,Focus Sash,Weak Armor,Timid,Expanding Force,Armor Cannon,Wide Guard,Protect,2/0/0/32/0/32
+GC2#64,64,ぺかちう,Dragonite,Dragonite-Mega,Dragoninite,Inner Focus,,Dragon Pulse,Heat Wave,Protect,Tailwind,
+GC2#64,64,ぺかちう,Delphox,Delphox-Mega,Delphoxite,Blaze,,Heat Wave,Psychic,Substitute,Protect,
+GC2#64,64,ぺかちう,Sneasler,Sneasler,White Herb,Unburden,,Dire Claw,Close Combat,Fake Out,Protect,
+GC2#64,64,ぺかちう,Basculegion,Basculegion,Focus Sash,Adaptability,,Last Respects,Aqua Jet,Liquidation,Protect,
+GC2#64,64,ぺかちう,Kingambit,Kingambit,Chople Berry,Defiant,,Kowtow Cleave,Sucker Punch,Low Kick,Iron Head,
+GC2#64,64,ぺかちう,Garchomp,Garchomp,Choice Scarf,Rough Skin,,Rock Slide,Dragon Claw,Earthquake,Stomping Tantrum,
+GC2#65,65,natsumewato,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,Timid,Weather Ball,Heat Wave,Ancient Power,Protect,28/0/4/2/0/32
+GC2#65,65,natsumewato,Venusaur,Venusaur,Focus Sash,Chlorophyll,Modest,Sleep Powder,Sludge Bomb,Leaf Storm,Protect,2/0/0/32/0/32
+GC2#65,65,natsumewato,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Earthquake,Stomping Tantrum,Dragon Claw,Rock Slide,9/10/0/0/19/28
+GC2#65,65,natsumewato,Incineroar,Incineroar,Sitrus Berry,Intimidate,Adamant,Flare Blitz,Darkest Lariat,Parting Shot,Fake Out,32/5/7/0/21/1
+GC2#65,65,natsumewato,Sylveon,Sylveon,Fairy Feather,Pixilate,Modest,Hyper Voice,Moonblast,Yawn,Detect,19/0/27/20/0/0
+GC2#65,65,natsumewato,Farigiraf,Farigiraf,Twisted Spoon,Armor Tail,Relaxed,Psychic,Trick Room,Helping Hand,Protect,23/0/20/0/23/0
+GC2#70,70,こはく,Dragonite,Dragonite-Mega,Dragoninite,Inner Focus,Modest,Dragon Pulse,Heat Wave,Thunderbolt,Tailwind,18/0/0/25/2/21
+GC2#70,70,こはく,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Earthquake,Rock Slide,Stomping Tantrum,Dragon Claw,0/32/0/0/2/32
+GC2#70,70,こはく,Basculegion,Basculegion,Life Orb,Adaptability,Jolly,Wave Crash,Last Respects,Aqua Jet,Protect,0/26/14/0/0/26
+GC2#70,70,こはく,Sneasler,Sneasler,Focus Sash,Poison Touch,Jolly,Dire Claw,Close Combat,Fake Out,Feint,2/32/0/0/0/32
+GC2#70,70,こはく,Kingambit,Kingambit,Chople Berry,Defiant,Adamant,Kowtow Cleave,Iron Head,Sucker Punch,Low Kick,32/15/14/0/0/5
+GC2#70,70,こはく,Delphox,Delphox-Mega,Delphoxite,Blaze,Timid,Heat Wave,Psychic,Encore,Protect,1/0/2/31/0/32
+GC2#72,72,みんてぃあ,Sneasler,Sneasler,Focus Sash,Poison Touch,,Close Combat,Dire Claw,Fake Out,Protect,
+GC2#72,72,みんてぃあ,Basculegion,Basculegion,Life Orb,Adaptability,,Wave Crash,Last Respects,Aqua Jet,Protect,
+GC2#72,72,みんてぃあ,Dragonite,Dragonite-Mega,Dragoninite,Inner Focus,,Dragon Pulse,Flamethrower,Tailwind,Protect,
+GC2#72,72,みんてぃあ,Kingambit,Kingambit,Chople Berry,Defiant,,Kowtow Cleave,Sucker Punch,Iron Head,Protect,
+GC2#72,72,みんてぃあ,Volcarona,Volcarona,Sitrus Berry,Flame Body,,Overheat,Struggle Bug,Rage Powder,Whirlwind,
+GC2#72,72,みんてぃあ,Garchomp,Garchomp,Choice Scarf,Rough Skin,,Dragon Claw,Stomping Tantrum,Rock Slide,Earthquake,
+GC2#74,74,ががが,Archaludon,Archaludon,Air Balloon,Sturdy,,Electro Shot,Protect,Draco Meteor,Aura Sphere,
+GC2#74,74,ががが,Indeedee-F,Indeedee-F,Sitrus Berry,Psychic Surge,,Follow Me,Helping Hand,Psychic,Protect,
+GC2#74,74,ががが,Sneasler,Sneasler,Psychic Seed,Unburden,,Rock Slide,Close Combat,Dire Claw,Protect,
+GC2#74,74,ががが,Basculegion,Basculegion,Choice Scarf,Adaptability,,Wave Crash,Aqua Jet,Last Respects,Flip Turn,
+GC2#74,74,ががが,Gardevoir,Gardevoir-Mega,Gardevoirite,Trace,,Protect,Expanding Force,Mystical Fire,Hyper Voice,
+GC2#74,74,ががが,Kingambit,Kingambit,Focus Sash,Defiant,,Low Kick,Kowtow Cleave,Protect,Sucker Punch,
+GC2#84,84,フシギダネ,Delphox,Delphox-Mega,Delphoxite,Blaze,,Protect,Psychic,Encore,Heat Wave,
+GC2#84,84,フシギダネ,Sneasler,Sneasler,Focus Sash,Poison Touch,,Dire Claw,Feint,Close Combat,Fake Out,
+GC2#84,84,フシギダネ,Kingambit,Kingambit,Chople Berry,Defiant,,Sucker Punch,Low Kick,Iron Head,Kowtow Cleave,
+GC2#84,84,フシギダネ,Garchomp,Garchomp,Choice Scarf,Rough Skin,,Earthquake,Rock Slide,Stomping Tantrum,Dragon Claw,
+GC2#84,84,フシギダネ,Dragonite,Dragonite-Mega,Dragoninite,Inner Focus,,Dragon Pulse,Heat Wave,Tailwind,Thunderbolt,
+GC2#84,84,フシギダネ,Basculegion,Basculegion,Life Orb,Adaptability,,Last Respects,Wave Crash,Aqua Jet,Protect,
+GC2#92,92,しゅうか,Floette-Eternal,Floette-Mega,Floettite,Symbiosis,Modest,Moonblast,Dazzling Gleam,Light of Ruin,Protect,28/0/19/15/0/4
+GC2#92,92,しゅうか,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Earthquake,Dragon Claw,Stomping Tantrum,Rock Tomb,0/8/0/0/26/32
+GC2#92,92,しゅうか,Basculegion,Basculegion,Focus Sash,Adaptability,Adamant,Liquidation,Last Respects,Aqua Jet,Protect,0/32/2/0/0/32
+GC2#92,92,しゅうか,Dragonite,Dragonite-Mega,Dragoninite,Multiscale,Modest,Dragon Pulse,Flamethrower,Tailwind,Protect,9/0/0/25/0/32
+GC2#92,92,しゅうか,Indeedee-F,Indeedee-F,Rocky Helmet,Psychic Surge,Relaxed,Psychic,Helping Hand,Follow Me,Protect,32/0/32/0/2/0
+GC2#92,92,しゅうか,Incineroar,Incineroar,Charcoal,Intimidate,Adamant,Flare Blitz,Snarl,Fake Out,Parting Shot,32/16/0/0/18/0
+GC2#104,104,アルカテイル,Dragonite,Dragonite-Mega,Dragoninite,Multiscale,Modest,Dragon Pulse,Heat Wave,Tailwind,Protect,2/0/0/32/0/32
+GC2#104,104,アルカテイル,Sneasler,Sneasler,Focus Sash,Poison Touch,Jolly,Close Combat,Poison Jab,Protect,Fake Out,2/32/0/0/0/32
+GC2#104,104,アルカテイル,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Dragon Claw,Stomping Tantrum,Rock Slide,Earthquake,0/32/2/0/0/32
+GC2#104,104,アルカテイル,Basculegion,Basculegion,Life Orb,Adaptability,Jolly,Wave Crash,Last Respects,Aqua Jet,Protect,0/28/14/0/0/24
+GC2#104,104,アルカテイル,Gengar,Gengar-Mega,Gengarite,Cursed Body,Timid,Protect,Shadow Ball,Sludge Bomb,Substitute,2/0/0/32/0/32
+GC2#104,104,アルカテイル,Kingambit,Kingambit,Chople Berry,Defiant,Adamant,Kowtow Cleave,Sucker Punch,Iron Head,Protect,32/25/0/0/8/1
+GC2#109,109,KOOTA,Floette-Eternal,Floette-Mega,Floettite,Flower Veil,Modest,Moonblast,Dazzling Gleam,Synthesis,Protect,32/0/23/5/0/6
+GC2#109,109,KOOTA,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,Modest,Heat Wave,Weather Ball,Roost,Protect,32/0/16/1/0/17
+GC2#109,109,KOOTA,Incineroar,Incineroar,Leftovers,Intimidate,Impish,Flare Blitz,Parting Shot,Roar,Fake Out,32/1/10/0/0/23
+GC2#109,109,KOOTA,Rillaboom,Rillaboom,Sitrus Berry,Grassy Surge,Adamant,Wood Hammer,Grassy Glide,U-turn,Fake Out,32/4/0/0/25/5
+GC2#109,109,KOOTA,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Bulldoze,Stomping Tantrum,Dragon Claw,Rock Slide,0/10/0/0/28/28
+GC2#109,109,KOOTA,Espathra,Espathra,Grassy Seed,Speed Boost,Timid,Lumina Crash,Calm Mind,Baton Pass,Protect,21/0/21/0/12/12
+GC2#111,111,ちゃっぴー,Sylveon,Sylveon,Fairy Feather,Pixilate,,Hyper Voice,Quick Attack,Yawn,Detect,
+GC2#111,111,ちゃっぴー,Kingambit,Kingambit,Life Orb,Defiant,,Kowtow Cleave,Sucker Punch,Low Kick,Swords Dance,
+GC2#111,111,ちゃっぴー,Indeedee-F,Indeedee-F,Rocky Helmet,Synchronize,,Fake Out,Psychic,Follow Me,Helping Hand,
+GC2#111,111,ちゃっぴー,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,,Heat Wave,Ancient Power,Sunny Day,Protect,
+GC2#111,111,ちゃっぴー,Salamence,Salamence-Mega,Salamencite,Intimidate,,Hyper Voice,Double-Edge,Tailwind,Protect,
+GC2#111,111,ちゃっぴー,Basculegion,Basculegion,Focus Sash,Adaptability,,Liquidation,Last Respects,Aqua Jet,Protect,
+GC2#117,117,みなみん,Blastoise,Blastoise-Mega,Blastoisinite,Torrent,Modest,Water Spout,Aura Sphere,Ice Beam,Dark Pulse,32/0/2/32/0/0
+GC2#117,117,みなみん,Indeedee-F,Indeedee-F,Rocky Helmet,Psychic Surge,Bold,Psychic,Follow Me,Skill Swap,Helping Hand,32/0/32/0/1/1
+GC2#117,117,みなみん,Raichu,Raichu-Mega-Y,Raichunite Y,Lightning Rod,Timid,Protect,Zap Cannon,Encore,Focus Blast,32/0/8/0/0/26
+GC2#117,117,みなみん,Sneasler,Sneasler,Psychic Seed,Unburden,Adamant,Protect,Throat Chop,Dire Claw,Close Combat,2/32/0/0/0/32
+GC2#117,117,みなみん,Armarouge,Armarouge,Focus Sash,Weak Armor,Timid,Protect,Expanding Force,Wide Guard,Armor Cannon,2/0/0/32/0/32
+GC2#117,117,みなみん,Drampa,Drampa,Haban Berry,Cloud Nine,Modest,Protect,Dragon Pulse,Heat Wave,Grass Knot,32/0/2/32/0/0
+GC2#122,122,Taku,Tyranitar,Tyranitar,Chople Berry,Sand Stream,Adamant,Rock Slide,Knock Off,Dragon Tail,Protect,32/22/12/0/0/0
+GC2#122,122,Taku,Farigiraf,Farigiraf,Sitrus Berry,Armor Tail,Bold,Trick Room,Psychic,Thunderbolt,Protect,31/0/15/0/20/0
+GC2#122,122,Taku,Sylveon,Sylveon,Life Orb,Pixilate,Modest,Hyper Voice,Moonblast,Mystical Fire,Quick Attack,32/0/2/32/0/0
+GC2#122,122,Taku,Kingambit,Kingambit,Focus Sash,Defiant,Adamant,Kowtow Cleave,Sucker Punch,Iron Head,Low Kick,32/32/0/0/2/0
+GC2#122,122,Taku,Camerupt,Camerupt-Mega,Cameruptite,Solid Rock,Quiet,Eruption,Earth Power,Ancient Power,Protect,32/0/2/32/0/0
+GC2#122,122,Taku,Medicham,Medicham,Iron Ball,Pure Power,Brave,Fake Out,Close Combat,Poison Jab,Ice Punch,32/32/2/0/0/0
+GC2#123,123,マニュ,Salamence,Salamence-Mega,Salamencite,,,,,,,
+GC2#125,125,まりるり,Charizard,Charizard-Mega-Y,Charizardite Y,Solar Power,Timid,Heat Wave,Weather Ball,Ancient Power,Protect,6/0/18/10/0/32
+GC2#125,125,まりるり,Floette-Eternal,Floette-Mega,Floettite,Flower Veil,Modest,Moonblast,Dazzling Gleam,Light of Ruin,Protect,18/0/22/17/0/9
+GC2#125,125,まりるり,Whimsicott,Whimsicott,Focus Sash,Prankster,Timid,Moonblast,Tailwind,Encore,Protect,0/0/2/32/0/32
+GC2#125,125,まりるり,Basculegion,Basculegion,Kasib Berry,Adaptability,Adamant,Wave Crash,Last Respects,Aqua Jet,Protect,6/26/4/0/15/15
+GC2#125,125,まりるり,Kingambit,Kingambit,Occa Berry,Defiant,Adamant,Kowtow Cleave,Iron Head,Low Kick,Sucker Punch,8/22/1/0/9/26
+GC2#125,125,まりるり,Garchomp,Garchomp,Life Orb,Rough Skin,Jolly,Dragon Claw,Earthquake,Rock Slide,Protect,6/27/1/0/0/32
+GC2#147,147,ダブルバトル啓蒙活動,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,Modest,Heat Wave,Weather Ball,Solar Beam,Protect,32/0/12/1/0/21
+GC2#147,147,ダブルバトル啓蒙活動,Aerodactyl,Aerodactyl-Mega,Aerodactylite,Unnerve,Jolly,Rock Slide,Dual Wingbeat,Tailwind,Protect,10/23/1/0/0/32
+GC2#147,147,ダブルバトル啓蒙活動,Garchomp,Garchomp,Life Orb,Rough Skin,Jolly,Rock Slide,Earthquake,Dragon Claw,Protect,0/31/3/0/0/32
+GC2#147,147,ダブルバトル啓蒙活動,Sylveon,Sylveon,Fairy Feather,Pixilate,Modest,Hyper Voice,Hyper Beam,Quick Attack,Detect,7/0/22/20/0/17
+GC2#147,147,ダブルバトル啓蒙活動,Kingambit,Kingambit,Focus Sash,Defiant,Adamant,Kowtow Cleave,Iron Head,Sucker Punch,Low Kick,0/32/1/0/1/32
+GC2#147,147,ダブルバトル啓蒙活動,Farigiraf,Farigiraf,Sitrus Berry,Armor Tail,Relaxed,Psychic,Thunderbolt,Trick Room,Protect,27/0/20/0/19/0

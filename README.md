@@ -33,6 +33,9 @@ Los datos crudos están en `data/`:
 - `familia_override.csv`: equipos reasignados a mano de familia (p. ej. Gengar con Substitute y sin Perish Song → Otros, hasta tener muestra propia).
 - `spreads_ref.csv`: sets completos con stat points de equipos de referencia de torneo (20 oct), mismo formato que `spreads_mc.csv`.
 - `ladder.csv`: ladder in-game de Pokémon Champions (pokemon-zone, temporada 7): por Pokémon, % de movimientos, habilidades, objetos, naturalezas y sus 3 repartos de stat points más usados.
+- `gc2.csv`: Global Challenge II (30 oct – 2 nov 2026, Bo1 por rating): los 42 equipos publicados del Top 150 (liberty-note), con link al post, familia y si tiene sets.
+- `gc2_sets.csv`: sets leídos de las capturas de esos posts (22 equipos; objeto, habilidad, naturaleza, movimientos y stat points cuando se ven).
+- `spreads_gc2.csv`: los sets del GC II con stat points, mismo formato que `spreads_mc.csv`.
 - Los stat points que muestra el dashboard son solo de las últimas 4 semanas; los anteriores se guardan para Tendencias y noticias.
 - `arquetipos_mc.csv`: familia, variante, núcleo y flex de cada equipo del Top 32.
 - `spreads_mc.csv`: 1,314 sets con stat points y stats finales a nivel 50 (fuente: VGCPastes Repository, pokepast.es).
