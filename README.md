@@ -49,3 +49,11 @@ Los datos crudos están en `data/`:
 - `familias_por_torneo.csv`: por regional, inscritos, Top 32, Top 8 y partidas de cada familia en el campo completo.
 - `corte_final.csv`: resultados del corte final de los 8 regionales (por puesto final).
 - `opciones_campo_regionales.csv`: por forma, equipos y récord de quienes llevan cada movimiento, objeto, naturaleza y habilidad en los 8 regionales.
+
+### Familias por regla
+Además de los núcleos, tres familias se asignan por regla a los equipos que el núcleo deja en Otros:
+- **Psyspam**: Indeedee con Psychic Surge + Gardevoir o Armarouge.
+- **Sun Rain**: Charizard + Pelipper o Politoed.
+- **Rain** (antes Goli Rain): Pelipper o Politoed sin Charizard; la variante la define la mega (Golisopod, Swampert, Raichu…).
+
+En los regionales y Gdańsk se aplican también al campo completo (listas abiertas de pokedata), así que sus win rates y cruces ya las incluyen. En los VR Challenges y ESM los cruces del campo siguen con la clasificación anterior.
