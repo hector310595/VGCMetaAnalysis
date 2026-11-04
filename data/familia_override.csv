@@ -1,54 +1,526 @@
 team_id,familia,motivo
-Brisbane#5,Otros (fuera de las familias),"Gengar con Substitute y sin Perish Song: otra estrategia, aún sin muestra para familia propia"
-Nice#15,Otros (fuera de las familias),"Gengar con Substitute y sin Perish Song: otra estrategia, aún sin muestra para familia propia"
-Thailand PBL#12,Otros (fuera de las familias),"Gengar con Substitute y sin Perish Song: otra estrategia, aún sin muestra para familia propia"
-VR Oct #1#12,Otros (fuera de las familias),"Gengar con Substitute y sin Perish Song: otra estrategia, aún sin muestra para familia propia"
-VR Oct #1#24,Otros (fuera de las familias),"Gengar con Substitute y sin Perish Song: otra estrategia, aún sin muestra para familia propia"
-VR Oct #4#26,Otros (fuera de las familias),"Gengar con Substitute y sin Perish Song: otra estrategia, aún sin muestra para familia propia"
-Louisville#4,Rain,Regla: Pelipper o Politoed sin Charizard
-Louisville#20,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Louisville#28,Rain,Regla: Pelipper o Politoed sin Charizard
-Baltimore#2,Sun Rain,Regla: Charizard + Pelipper o Politoed
-Baltimore#9,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Baltimore#13,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Baltimore#15,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Baltimore#18,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Baltimore#21,Rain,Regla: Pelipper o Politoed sin Charizard
-Baltimore#25,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-ESM Madrid Q1#9,Rain,Regla: Pelipper o Politoed sin Charizard
-ESM Madrid Q1#14,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-ESM Madrid Q1#23,Rain,Regla: Pelipper o Politoed sin Charizard
-Frankfurt#17,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Frankfurt#26,Rain,Regla: Pelipper o Politoed sin Charizard
-Recife#2,Rain,Regla: Pelipper o Politoed sin Charizard
-Recife#9,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Recife#13,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Oct #1#17,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Oct #2#2,Rain,Regla: Pelipper o Politoed sin Charizard
-VR Oct #2#3,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Oct #2#31,Rain,Regla: Pelipper o Politoed sin Charizard
-Brisbane#4,Rain,Regla: Pelipper o Politoed sin Charizard
-Brisbane#6,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Brisbane#9,Rain,Regla: Pelipper o Politoed sin Charizard
-Brisbane#12,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Brisbane#22,Rain,Regla: Pelipper o Politoed sin Charizard
-Brisbane#27,Rain,Regla: Pelipper o Politoed sin Charizard
-Brisbane#31,Rain,Regla: Pelipper o Politoed sin Charizard
-VR Sep #1#3,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Sep #1#7,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Sep #1#12,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Sep #1#13,Sun Rain,Regla: Charizard + Pelipper o Politoed
-VR Sep #1#27,Rain,Regla: Pelipper o Politoed sin Charizard
-VR Sep #2#6,Rain,Regla: Pelipper o Politoed sin Charizard
-VR Sep #2#11,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Nice#13,Sun Rain,Regla: Charizard + Pelipper o Politoed
-Nice#16,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Nice#24,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Nice#26,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-VR Oct #3#27,Psyspam,Regla: Indeedee con Psychic Surge + Gardevoir o Armarouge
-Puebla#14,Rain,Regla: Pelipper o Politoed sin Charizard
-Puebla#20,Rain,Regla: Pelipper o Politoed sin Charizard
-VR Oct #4#20,Rain,Regla: Pelipper o Politoed sin Charizard
-VR Oct #4#22,Rain,Regla: Pelipper o Politoed sin Charizard
-ESM Madrid Q2#17,Rain,Regla: Pelipper o Politoed sin Charizard
-ESM Madrid Q2#26,Sun Rain,Regla: Charizard + Pelipper o Politoed
+Louisville#1,Zard Sun (Venusaur),Árbol de familias
+Louisville#2,Sun Rain,Árbol de familias
+Louisville#3,Sun Rain,Árbol de familias
+Louisville#4,Rain,Árbol de familias
+Louisville#5,Floette Balance,Árbol de familias
+Louisville#6,Rain,Árbol de familias
+Louisville#7,Floette Balance,Árbol de familias
+Louisville#8,Otros (fuera de las familias),Árbol de familias
+Louisville#9,Zard Sun (Venusaur),Árbol de familias
+Louisville#10,Big 6,Árbol de familias
+Louisville#11,Floette Balance,Árbol de familias
+Louisville#12,Zard Sun (Venusaur),Árbol de familias
+Louisville#13,Scovillain Froslass,Árbol de familias
+Louisville#14,Rain,Árbol de familias
+Louisville#15,Sand,Árbol de familias
+Louisville#16,Torkoal Sun,Árbol de familias
+Louisville#17,Gengar Perish,Árbol de familias
+Louisville#18,Floette Balance,Árbol de familias
+Louisville#19,Y-Chu Balance,Árbol de familias
+Louisville#20,Psyspam,Árbol de familias
+Louisville#21,Sun Rain,Árbol de familias
+Louisville#22,Delphox Balance,Árbol de familias
+Louisville#23,Y-Chu Balance,Árbol de familias
+Louisville#24,Zard Aero,Árbol de familias
+Louisville#25,Y-Chu Balance,Árbol de familias
+Louisville#26,Gengar Perish,Árbol de familias
+Louisville#27,Floette Balance,Árbol de familias
+Louisville#28,Rain,Árbol de familias
+Louisville#29,Torkoal Sun,Árbol de familias
+Louisville#30,Zard Sun (Venusaur),Árbol de familias
+Louisville#31,Zard Aero,Árbol de familias
+Louisville#32,Glimmora Salamence,Árbol de familias
+Baltimore#1,Sand,Árbol de familias
+Baltimore#2,Sun Rain,Árbol de familias
+Baltimore#3,Gengar Perish,Árbol de familias
+Baltimore#4,Otros (fuera de las familias),Árbol de familias
+Baltimore#5,Y-Chu Balance,Árbol de familias
+Baltimore#6,Y-Chu Balance,Árbol de familias
+Baltimore#7,Y-Chu Balance,Árbol de familias
+Baltimore#8,Delphox Balance,Árbol de familias
+Baltimore#9,Psyspam,Árbol de familias
+Baltimore#10,Gengar Perish,Árbol de familias
+Baltimore#11,Zard Aero,Árbol de familias
+Baltimore#12,Delphox Balance,Árbol de familias
+Baltimore#13,Psyspam,Árbol de familias
+Baltimore#14,Glimmora Salamence,Árbol de familias
+Baltimore#15,Psyspam,Árbol de familias
+Baltimore#16,Otros (fuera de las familias),Árbol de familias
+Baltimore#17,Sand,Árbol de familias
+Baltimore#18,Psyspam,Árbol de familias
+Baltimore#19,Scovillain Froslass,Árbol de familias
+Baltimore#20,Otros (fuera de las familias),Árbol de familias
+Baltimore#21,Rain,Árbol de familias
+Baltimore#22,Delphox Balance,Árbol de familias
+Baltimore#23,Delphox Balance,Árbol de familias
+Baltimore#24,Torkoal Sun,Árbol de familias
+Baltimore#25,Psyspam,Árbol de familias
+Baltimore#26,Otros (fuera de las familias),Árbol de familias
+Baltimore#27,Big 6,Árbol de familias
+Baltimore#28,Otros (fuera de las familias),Árbol de familias
+Baltimore#29,Floette Balance,Árbol de familias
+Baltimore#30,Otros (fuera de las familias),Árbol de familias
+Baltimore#31,Otros (fuera de las familias),Árbol de familias
+Baltimore#32,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#1,Delphox Balance,Árbol de familias
+ESM Madrid Q1#2,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#3,Gengar Perish,Árbol de familias
+ESM Madrid Q1#4,Scovillain Froslass,Árbol de familias
+ESM Madrid Q1#5,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#6,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#7,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#8,Torkoal Sun,Árbol de familias
+ESM Madrid Q1#9,Rain,Árbol de familias
+ESM Madrid Q1#10,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#11,Zard Aero,Árbol de familias
+ESM Madrid Q1#12,Sand,Árbol de familias
+ESM Madrid Q1#13,Big 6,Árbol de familias
+ESM Madrid Q1#14,Psyspam,Árbol de familias
+ESM Madrid Q1#15,Big 6,Árbol de familias
+ESM Madrid Q1#16,Sun Rain,Árbol de familias
+ESM Madrid Q1#17,Glimmora Salamence,Árbol de familias
+ESM Madrid Q1#18,Otros (fuera de las familias),Árbol de familias
+ESM Madrid Q1#19,Gengar Perish,Árbol de familias
+ESM Madrid Q1#20,Delphox Balance,Árbol de familias
+ESM Madrid Q1#21,Y-Chu Balance,Árbol de familias
+ESM Madrid Q1#22,Delphox Balance,Árbol de familias
+ESM Madrid Q1#23,Rain,Árbol de familias
+ESM Madrid Q1#24,Gengar Perish,Árbol de familias
+ESM Madrid Q1#25,Sun Rain,Árbol de familias
+ESM Madrid Q1#26,Delphox Balance,Árbol de familias
+ESM Madrid Q1#27,Delphox Balance,Árbol de familias
+ESM Madrid Q1#28,Torkoal Sun,Árbol de familias
+ESM Madrid Q1#29,Otros (fuera de las familias),Árbol de familias
+ESM Madrid Q1#30,Otros (fuera de las familias),Árbol de familias
+ESM Madrid Q1#31,Scovillain Froslass,Árbol de familias
+ESM Madrid Q1#32,Zard Sun (Venusaur),Árbol de familias
+Frankfurt#1,Y-Chu Balance,Árbol de familias
+Frankfurt#2,Torkoal Sun,Árbol de familias
+Frankfurt#3,Otros (fuera de las familias),Árbol de familias
+Frankfurt#4,Floette Balance,Árbol de familias
+Frankfurt#5,Gengar Perish,Árbol de familias
+Frankfurt#6,Zard Sun (Venusaur),Árbol de familias
+Frankfurt#7,Glimmora Salamence,Árbol de familias
+Frankfurt#8,Floette Balance,Árbol de familias
+Frankfurt#9,Y-Chu Balance,Árbol de familias
+Frankfurt#10,Y-Chu Balance,Árbol de familias
+Frankfurt#11,Rain,Árbol de familias
+Frankfurt#12,Sand,Árbol de familias
+Frankfurt#13,Y-Chu Balance,Árbol de familias
+Frankfurt#14,Rain,Árbol de familias
+Frankfurt#15,Y-Chu Balance,Árbol de familias
+Frankfurt#16,Y-Chu Balance,Árbol de familias
+Frankfurt#17,Psyspam,Árbol de familias
+Frankfurt#18,Delphox Balance,Árbol de familias
+Frankfurt#19,Floette Balance,Árbol de familias
+Frankfurt#20,Gengar Perish,Árbol de familias
+Frankfurt#21,Floette Balance,Árbol de familias
+Frankfurt#22,Y-Chu Balance,Árbol de familias
+Frankfurt#23,Sun Rain,Árbol de familias
+Frankfurt#24,Y-Chu Balance,Árbol de familias
+Frankfurt#25,Y-Chu Balance,Árbol de familias
+Frankfurt#26,Rain,Árbol de familias
+Frankfurt#27,Y-Chu Balance,Árbol de familias
+Frankfurt#28,Gengar Perish,Árbol de familias
+Frankfurt#29,Glimmora Salamence,Árbol de familias
+Frankfurt#30,Zard Aero,Árbol de familias
+Frankfurt#31,Y-Chu Balance,Árbol de familias
+Frankfurt#32,Sun Rain,Árbol de familias
+Recife#1,Zard Sun (Venusaur),Árbol de familias
+Recife#2,Rain,Árbol de familias
+Recife#3,Floette Balance,Árbol de familias
+Recife#4,Sun Rain,Árbol de familias
+Recife#5,Torkoal Sun,Árbol de familias
+Recife#6,Delphox Balance,Árbol de familias
+Recife#7,Y-Chu Balance,Árbol de familias
+Recife#8,Floette Balance,Árbol de familias
+Recife#9,Psyspam,Árbol de familias
+Recife#10,Delphox Balance,Árbol de familias
+Recife#11,Zard Aero,Árbol de familias
+Recife#12,Floette Balance,Árbol de familias
+Recife#13,Psyspam,Árbol de familias
+Recife#14,Y-Chu Balance,Árbol de familias
+Recife#15,Y-Chu Balance,Árbol de familias
+Recife#16,Sun Rain,Árbol de familias
+Recife#17,Sand,Árbol de familias
+Recife#18,Y-Chu Balance,Árbol de familias
+Recife#19,Sand,Árbol de familias
+Recife#20,Zard Glimmora,Árbol de familias
+Recife#21,Glimmora Salamence,Árbol de familias
+Recife#22,Sun Rain,Árbol de familias
+Recife#23,Sun Rain,Árbol de familias
+Recife#24,Floette Balance,Árbol de familias
+Recife#25,Sun Rain,Árbol de familias
+Recife#26,Y-Chu Balance,Árbol de familias
+Recife#27,Sand,Árbol de familias
+Recife#28,Y-Chu Balance,Árbol de familias
+Recife#29,Delphox Balance,Árbol de familias
+Recife#30,Y-Chu Balance,Árbol de familias
+Recife#31,Delphox Balance,Árbol de familias
+Recife#32,Sun Rain,Árbol de familias
+VR Oct #1#1,Y-Chu Balance,Árbol de familias
+VR Oct #1#2,Rain,Árbol de familias
+VR Oct #1#3,Floette Balance,Árbol de familias
+VR Oct #1#4,Floette Balance,Árbol de familias
+VR Oct #1#5,Torkoal Sun,Árbol de familias
+VR Oct #1#6,Rain,Árbol de familias
+VR Oct #1#7,Y-Chu Balance,Árbol de familias
+VR Oct #1#8,Sun Rain,Árbol de familias
+VR Oct #1#9,Y-Chu Balance,Árbol de familias
+VR Oct #1#10,Gengar Perish,Árbol de familias
+VR Oct #1#11,Zard Sun (Venusaur),Árbol de familias
+VR Oct #1#12,Otros (fuera de las familias),Árbol de familias
+VR Oct #1#13,Otros (fuera de las familias),Árbol de familias
+VR Oct #1#14,Y-Chu Balance,Árbol de familias
+VR Oct #1#15,Y-Chu Balance,Árbol de familias
+VR Oct #1#16,Otros (fuera de las familias),Árbol de familias
+VR Oct #1#17,Psyspam,Árbol de familias
+VR Oct #1#18,Delphox Balance,Árbol de familias
+VR Oct #1#19,Floette Balance,Árbol de familias
+VR Oct #1#20,Otros (fuera de las familias),Árbol de familias
+VR Oct #1#21,Floette Balance,Árbol de familias
+VR Oct #1#22,Y-Chu Balance,Árbol de familias
+VR Oct #1#23,Gengar Perish,Árbol de familias
+VR Oct #1#24,Otros (fuera de las familias),Árbol de familias
+VR Oct #1#25,Otros (fuera de las familias),Árbol de familias
+VR Oct #1#26,Delphox Balance,Árbol de familias
+VR Oct #1#27,Glimmora Salamence,Árbol de familias
+VR Oct #1#28,Y-Chu Balance,Árbol de familias
+VR Oct #1#29,Floette Balance,Árbol de familias
+VR Oct #1#30,Sun Rain,Árbol de familias
+VR Oct #1#31,Y-Chu Balance,Árbol de familias
+VR Oct #1#32,Torkoal Sun,Árbol de familias
+VR Oct #2#1,Sun Rain,Árbol de familias
+VR Oct #2#2,Rain,Árbol de familias
+VR Oct #2#3,Psyspam,Árbol de familias
+VR Oct #2#4,Delphox Balance,Árbol de familias
+VR Oct #2#5,Y-Chu Balance,Árbol de familias
+VR Oct #2#6,Zard Aero,Árbol de familias
+VR Oct #2#7,Zard Sun (Venusaur),Árbol de familias
+VR Oct #2#8,Y-Chu Balance,Árbol de familias
+VR Oct #2#9,Rain,Árbol de familias
+VR Oct #2#10,Zard Sun (Venusaur),Árbol de familias
+VR Oct #2#11,Rain,Árbol de familias
+VR Oct #2#12,Gengar Perish,Árbol de familias
+VR Oct #2#13,Big 6,Árbol de familias
+VR Oct #2#14,Sun Rain,Árbol de familias
+VR Oct #2#15,Y-Chu Balance,Árbol de familias
+VR Oct #2#16,Torkoal Sun,Árbol de familias
+VR Oct #2#17,Floette Balance,Árbol de familias
+VR Oct #2#18,Zard Sun (Venusaur),Árbol de familias
+VR Oct #2#19,Floette Balance,Árbol de familias
+VR Oct #2#20,Gengar Perish,Árbol de familias
+VR Oct #2#21,Y-Chu Balance,Árbol de familias
+VR Oct #2#22,Floette Balance,Árbol de familias
+VR Oct #2#23,Floette Balance,Árbol de familias
+VR Oct #2#24,Rain,Árbol de familias
+VR Oct #2#25,Gengar Perish,Árbol de familias
+VR Oct #2#26,Delphox Balance,Árbol de familias
+VR Oct #2#27,Y-Chu Balance,Árbol de familias
+VR Oct #2#28,Scovillain Froslass,Árbol de familias
+VR Oct #2#29,Delphox Balance,Árbol de familias
+VR Oct #2#30,Y-Chu Balance,Árbol de familias
+VR Oct #2#31,Rain,Árbol de familias
+VR Oct #2#32,Gengar Perish,Árbol de familias
+Brisbane#1,Sun Rain,Árbol de familias
+Brisbane#2,Floette Balance,Árbol de familias
+Brisbane#3,Floette Balance,Árbol de familias
+Brisbane#4,Rain,Árbol de familias
+Brisbane#5,Floette Balance,Árbol de familias
+Brisbane#6,Psyspam,Árbol de familias
+Brisbane#7,Floette Balance,Árbol de familias
+Brisbane#8,Sun Rain,Árbol de familias
+Brisbane#9,Rain,Árbol de familias
+Brisbane#10,Delphox Balance,Árbol de familias
+Brisbane#11,Sand,Árbol de familias
+Brisbane#12,Psyspam,Árbol de familias
+Brisbane#13,Gengar Perish,Árbol de familias
+Brisbane#14,Gengar Perish,Árbol de familias
+Brisbane#15,Otros (fuera de las familias),Árbol de familias
+Brisbane#16,Zard Glimmora,Árbol de familias
+Brisbane#17,Delphox Balance,Árbol de familias
+Brisbane#18,Big 6,Árbol de familias
+Brisbane#19,Rain,Árbol de familias
+Brisbane#20,Y-Chu Balance,Árbol de familias
+Brisbane#21,Otros (fuera de las familias),Árbol de familias
+Brisbane#22,Rain,Árbol de familias
+Brisbane#23,Y-Chu Balance,Árbol de familias
+Brisbane#24,Delphox Balance,Árbol de familias
+Brisbane#25,Sun Rain,Árbol de familias
+Brisbane#26,Delphox Balance,Árbol de familias
+Brisbane#27,Rain,Árbol de familias
+Brisbane#28,Delphox Balance,Árbol de familias
+Brisbane#29,Delphox Balance,Árbol de familias
+Brisbane#30,Delphox Balance,Árbol de familias
+Brisbane#31,Rain,Árbol de familias
+Brisbane#32,Scovillain Froslass,Árbol de familias
+VR Sep #1#1,Y-Chu Balance,Árbol de familias
+VR Sep #1#2,Floette Balance,Árbol de familias
+VR Sep #1#3,Psyspam,Árbol de familias
+VR Sep #1#4,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#5,Gengar Perish,Árbol de familias
+VR Sep #1#6,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#7,Psyspam,Árbol de familias
+VR Sep #1#8,Zard Aero,Árbol de familias
+VR Sep #1#9,Y-Chu Balance,Árbol de familias
+VR Sep #1#10,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#11,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#12,Psyspam,Árbol de familias
+VR Sep #1#13,Sun Rain,Árbol de familias
+VR Sep #1#14,Y-Chu Balance,Árbol de familias
+VR Sep #1#15,Zard Aero,Árbol de familias
+VR Sep #1#16,Floette Balance,Árbol de familias
+VR Sep #1#17,Glimmora Salamence,Árbol de familias
+VR Sep #1#18,Y-Chu Balance,Árbol de familias
+VR Sep #1#19,Zard Aero,Árbol de familias
+VR Sep #1#20,Floette Balance,Árbol de familias
+VR Sep #1#21,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#22,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#23,Floette Balance,Árbol de familias
+VR Sep #1#24,Zard Sun (Venusaur),Árbol de familias
+VR Sep #1#25,Otros (fuera de las familias),Árbol de familias
+VR Sep #1#26,Gengar Perish,Árbol de familias
+VR Sep #1#27,Rain,Árbol de familias
+VR Sep #1#28,Y-Chu Balance,Árbol de familias
+VR Sep #1#29,Gengar Perish,Árbol de familias
+VR Sep #1#30,Y-Chu Balance,Árbol de familias
+VR Sep #1#31,Y-Chu Balance,Árbol de familias
+VR Sep #1#32,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#1,Floette Balance,Árbol de familias
+VR Sep #2#2,Floette Balance,Árbol de familias
+VR Sep #2#3,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#4,Delphox Balance,Árbol de familias
+VR Sep #2#5,Y-Chu Balance,Árbol de familias
+VR Sep #2#6,Rain,Árbol de familias
+VR Sep #2#7,Floette Balance,Árbol de familias
+VR Sep #2#8,Rain,Árbol de familias
+VR Sep #2#9,Y-Chu Balance,Árbol de familias
+VR Sep #2#10,Y-Chu Balance,Árbol de familias
+VR Sep #2#11,Psyspam,Árbol de familias
+VR Sep #2#12,Gengar Perish,Árbol de familias
+VR Sep #2#13,Y-Chu Balance,Árbol de familias
+VR Sep #2#14,Sand,Árbol de familias
+VR Sep #2#15,Rain,Árbol de familias
+VR Sep #2#16,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#17,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#18,Y-Chu Balance,Árbol de familias
+VR Sep #2#19,Y-Chu Balance,Árbol de familias
+VR Sep #2#20,Zard Sun (Venusaur),Árbol de familias
+VR Sep #2#21,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#22,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#23,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#24,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#25,Otros (fuera de las familias),Árbol de familias
+VR Sep #2#26,Y-Chu Balance,Árbol de familias
+VR Sep #2#27,Glimmora Salamence,Árbol de familias
+VR Sep #2#28,Zard Aero,Árbol de familias
+VR Sep #2#29,Y-Chu Balance,Árbol de familias
+VR Sep #2#30,Y-Chu Balance,Árbol de familias
+VR Sep #2#31,Gengar Perish,Árbol de familias
+VR Sep #2#32,Otros (fuera de las familias),Árbol de familias
+Nice#1,Rain,Árbol de familias
+Nice#2,Gengar Perish,Árbol de familias
+Nice#3,Sand,Árbol de familias
+Nice#4,Rain,Árbol de familias
+Nice#5,Big 6,Árbol de familias
+Nice#6,Y-Chu Balance,Árbol de familias
+Nice#7,Big 6,Árbol de familias
+Nice#8,Floette Balance,Árbol de familias
+Nice#9,Floette Balance,Árbol de familias
+Nice#10,Zard Sun (Venusaur),Árbol de familias
+Nice#11,Zard Glimmora,Árbol de familias
+Nice#12,Zard Sun (Venusaur),Árbol de familias
+Nice#13,Sun Rain,Árbol de familias
+Nice#14,Floette Balance,Árbol de familias
+Nice#15,Sand,Árbol de familias
+Nice#16,Psyspam,Árbol de familias
+Nice#17,Gengar Perish,Árbol de familias
+Nice#18,Y-Chu Balance,Árbol de familias
+Nice#19,Y-Chu Balance,Árbol de familias
+Nice#20,Sun Rain,Árbol de familias
+Nice#21,Glimmora Salamence,Árbol de familias
+Nice#22,Zard Aero,Árbol de familias
+Nice#23,Y-Chu Balance,Árbol de familias
+Nice#24,Psyspam,Árbol de familias
+Nice#25,Floette Balance,Árbol de familias
+Nice#26,Psyspam,Árbol de familias
+Nice#27,Zard Aero,Árbol de familias
+Nice#28,Gengar Perish,Árbol de familias
+Nice#29,Big 6,Árbol de familias
+Nice#30,Scovillain Froslass,Árbol de familias
+Nice#31,Torkoal Sun,Árbol de familias
+Nice#32,Y-Chu Balance,Árbol de familias
+VR Oct #3#1,Y-Chu Balance,Árbol de familias
+VR Oct #3#2,Zard Sun (Venusaur),Árbol de familias
+VR Oct #3#3,Big 6,Árbol de familias
+VR Oct #3#4,Zard Glimmora,Árbol de familias
+VR Oct #3#5,Rain,Árbol de familias
+VR Oct #3#6,Y-Chu Balance,Árbol de familias
+VR Oct #3#7,Gengar Perish,Árbol de familias
+VR Oct #3#8,Zard Sun (Venusaur),Árbol de familias
+VR Oct #3#9,Big 6,Árbol de familias
+VR Oct #3#10,Scovillain Froslass,Árbol de familias
+VR Oct #3#11,Scovillain Froslass,Árbol de familias
+VR Oct #3#12,Sun Rain,Árbol de familias
+VR Oct #3#13,Gengar Perish,Árbol de familias
+VR Oct #3#14,Y-Chu Balance,Árbol de familias
+VR Oct #3#15,Big 6,Árbol de familias
+VR Oct #3#16,Sun Rain,Árbol de familias
+VR Oct #3#17,Delphox Balance,Árbol de familias
+VR Oct #3#18,Otros (fuera de las familias),Árbol de familias
+VR Oct #3#19,Big 6,Árbol de familias
+VR Oct #3#20,Zard Sun (Venusaur),Árbol de familias
+VR Oct #3#21,Otros (fuera de las familias),Árbol de familias
+VR Oct #3#22,Delphox Balance,Árbol de familias
+VR Oct #3#23,Y-Chu Balance,Árbol de familias
+VR Oct #3#24,Y-Chu Balance,Árbol de familias
+VR Oct #3#25,Delphox Balance,Árbol de familias
+VR Oct #3#26,Y-Chu Balance,Árbol de familias
+VR Oct #3#27,Psyspam,Árbol de familias
+VR Oct #3#28,Scovillain Froslass,Árbol de familias
+VR Oct #3#29,Otros (fuera de las familias),Árbol de familias
+VR Oct #3#30,Zard Sun (Venusaur),Árbol de familias
+VR Oct #3#31,Sand,Árbol de familias
+VR Oct #3#32,Gengar Perish,Árbol de familias
+Thailand PBL#1,Rain,Árbol de familias
+Thailand PBL#2,Big 6,Árbol de familias
+Thailand PBL#3,Sun Rain,Árbol de familias
+Thailand PBL#4,Rain,Árbol de familias
+Thailand PBL#5,Gengar Perish,Árbol de familias
+Thailand PBL#6,Sun Rain,Árbol de familias
+Thailand PBL#7,Sand,Árbol de familias
+Thailand PBL#8,Gengar Perish,Árbol de familias
+Thailand PBL#9,Floette Balance,Árbol de familias
+Thailand PBL#10,Rain,Árbol de familias
+Thailand PBL#11,Rain,Árbol de familias
+Thailand PBL#12,Otros (fuera de las familias),Árbol de familias
+Thailand PBL#13,Zard Sun (Venusaur),Árbol de familias
+Thailand PBL#14,Zard Aero,Árbol de familias
+Thailand PBL#15,Zard Sun (Venusaur),Árbol de familias
+Thailand PBL#16,Rain,Árbol de familias
+Puebla#1,Big 6,Árbol de familias
+Puebla#2,Y-Chu Balance,Árbol de familias
+Puebla#3,Sand,Árbol de familias
+Puebla#4,Y-Chu Balance,Árbol de familias
+Puebla#5,Big 6,Árbol de familias
+Puebla#6,Zard Aero,Árbol de familias
+Puebla#7,Sun Rain,Árbol de familias
+Puebla#8,Zard Sun (Venusaur),Árbol de familias
+Puebla#9,Y-Chu Balance,Árbol de familias
+Puebla#10,Torkoal Sun,Árbol de familias
+Puebla#11,Delphox Balance,Árbol de familias
+Puebla#12,Rain,Árbol de familias
+Puebla#13,Y-Chu Balance,Árbol de familias
+Puebla#14,Rain,Árbol de familias
+Puebla#15,Sun Rain,Árbol de familias
+Puebla#16,Floette Balance,Árbol de familias
+Puebla#17,Zard Sun (Venusaur),Árbol de familias
+Puebla#18,Torkoal Sun,Árbol de familias
+Puebla#19,Big 6,Árbol de familias
+Puebla#20,Rain,Árbol de familias
+Puebla#21,Zard Sun (Venusaur),Árbol de familias
+Puebla#22,Rain,Árbol de familias
+Puebla#23,Zard Sun (Venusaur),Árbol de familias
+Puebla#24,Sun Rain,Árbol de familias
+Puebla#25,Big 6,Árbol de familias
+Puebla#26,Big 6,Árbol de familias
+Puebla#27,Rain,Árbol de familias
+Puebla#28,Delphox Balance,Árbol de familias
+Puebla#29,Zard Sun (Venusaur),Árbol de familias
+Puebla#30,Rain,Árbol de familias
+Puebla#31,Sand,Árbol de familias
+Puebla#32,Sun Rain,Árbol de familias
+VR Oct #4#1,Rain,Árbol de familias
+VR Oct #4#2,Scovillain Froslass,Árbol de familias
+VR Oct #4#3,Y-Chu Balance,Árbol de familias
+VR Oct #4#4,Zard Glimmora,Árbol de familias
+VR Oct #4#5,Y-Chu Balance,Árbol de familias
+VR Oct #4#6,Floette Balance,Árbol de familias
+VR Oct #4#7,Otros (fuera de las familias),Árbol de familias
+VR Oct #4#8,Zard Sun (Venusaur),Árbol de familias
+VR Oct #4#9,Y-Chu Balance,Árbol de familias
+VR Oct #4#10,Y-Chu Balance,Árbol de familias
+VR Oct #4#11,Delphox Balance,Árbol de familias
+VR Oct #4#12,Zard Sun (Venusaur),Árbol de familias
+VR Oct #4#13,Zard Glimmora,Árbol de familias
+VR Oct #4#14,Y-Chu Balance,Árbol de familias
+VR Oct #4#15,Zard Glimmora,Árbol de familias
+VR Oct #4#16,Glimmora Salamence,Árbol de familias
+VR Oct #4#17,Otros (fuera de las familias),Árbol de familias
+VR Oct #4#18,Y-Chu Balance,Árbol de familias
+VR Oct #4#19,Zard Aero,Árbol de familias
+VR Oct #4#20,Rain,Árbol de familias
+VR Oct #4#21,Floette Balance,Árbol de familias
+VR Oct #4#22,Rain,Árbol de familias
+VR Oct #4#23,Rain,Árbol de familias
+VR Oct #4#24,Y-Chu Balance,Árbol de familias
+VR Oct #4#25,Floette Balance,Árbol de familias
+VR Oct #4#26,Otros (fuera de las familias),Árbol de familias
+VR Oct #4#27,Delphox Balance,Árbol de familias
+VR Oct #4#28,Floette Balance,Árbol de familias
+VR Oct #4#29,Y-Chu Balance,Árbol de familias
+ESM Madrid Q2#1,Zard Sun (Venusaur),Árbol de familias
+ESM Madrid Q2#2,Big 6,Árbol de familias
+ESM Madrid Q2#3,Zard Glimmora,Árbol de familias
+ESM Madrid Q2#4,Gengar Perish,Árbol de familias
+ESM Madrid Q2#5,Y-Chu Balance,Árbol de familias
+ESM Madrid Q2#6,Big 6,Árbol de familias
+ESM Madrid Q2#7,Gengar Perish,Árbol de familias
+ESM Madrid Q2#8,Gengar Perish,Árbol de familias
+ESM Madrid Q2#9,Delphox Balance,Árbol de familias
+ESM Madrid Q2#10,Big 6,Árbol de familias
+ESM Madrid Q2#11,Gengar Perish,Árbol de familias
+ESM Madrid Q2#12,Sun Rain,Árbol de familias
+ESM Madrid Q2#13,Y-Chu Balance,Árbol de familias
+ESM Madrid Q2#14,Big 6,Árbol de familias
+ESM Madrid Q2#15,Big 6,Árbol de familias
+ESM Madrid Q2#16,Rain,Árbol de familias
+ESM Madrid Q2#17,Rain,Árbol de familias
+ESM Madrid Q2#18,Otros (fuera de las familias),Árbol de familias
+ESM Madrid Q2#19,Y-Chu Balance,Árbol de familias
+ESM Madrid Q2#20,Delphox Balance,Árbol de familias
+ESM Madrid Q2#21,Y-Chu Balance,Árbol de familias
+ESM Madrid Q2#22,Big 6,Árbol de familias
+ESM Madrid Q2#23,Big 6,Árbol de familias
+ESM Madrid Q2#24,Y-Chu Balance,Árbol de familias
+ESM Madrid Q2#25,Delphox Balance,Árbol de familias
+ESM Madrid Q2#26,Sun Rain,Árbol de familias
+ESM Madrid Q2#27,Floette Balance,Árbol de familias
+ESM Madrid Q2#28,Big 6,Árbol de familias
+ESM Madrid Q2#29,Otros (fuera de las familias),Árbol de familias
+ESM Madrid Q2#30,Sand,Árbol de familias
+ESM Madrid Q2#31,Scovillain Froslass,Árbol de familias
+ESM Madrid Q2#32,Delphox Balance,Árbol de familias
+Gdańsk#1,Sand,Árbol de familias
+Gdańsk#2,Floette Balance,Árbol de familias
+Gdańsk#3,Big 6,Árbol de familias
+Gdańsk#4,Big 6,Árbol de familias
+Gdańsk#5,Zard Glimmora,Árbol de familias
+Gdańsk#6,Floette Balance,Árbol de familias
+Gdańsk#7,Big 6,Árbol de familias
+Gdańsk#8,Delphox Balance,Árbol de familias
+Gdańsk#9,Big 6,Árbol de familias
+Gdańsk#10,Zard Glimmora,Árbol de familias
+Gdańsk#11,Big 6,Árbol de familias
+Gdańsk#12,Y-Chu Balance,Árbol de familias
+Gdańsk#13,Y-Chu Balance,Árbol de familias
+Gdańsk#14,Scovillain Froslass,Árbol de familias
+Gdańsk#15,Scovillain Froslass,Árbol de familias
+Gdańsk#16,Gengar Perish,Árbol de familias
+Gdańsk#17,Glimmora Salamence,Árbol de familias
+Gdańsk#18,Zard Sun (Venusaur),Árbol de familias
+Gdańsk#19,Scovillain Froslass,Árbol de familias
+Gdańsk#20,Gengar Perish,Árbol de familias
+Gdańsk#21,Big 6,Árbol de familias
+Gdańsk#22,Floette Balance,Árbol de familias
+Gdańsk#23,Gengar Perish,Árbol de familias
+Gdańsk#24,Gengar Perish,Árbol de familias
+Gdańsk#25,Sand,Árbol de familias
+Gdańsk#26,Otros (fuera de las familias),Árbol de familias
+Gdańsk#27,Sun Rain,Árbol de familias
+Gdańsk#28,Gengar Perish,Árbol de familias
+Gdańsk#29,Big 6,Árbol de familias
+Gdańsk#30,Zard Aero,Árbol de familias
+Gdańsk#31,Gengar Perish,Árbol de familias
+Gdańsk#32,Otros (fuera de las familias),Árbol de familias

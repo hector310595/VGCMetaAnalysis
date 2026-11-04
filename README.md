@@ -50,10 +50,21 @@ Los datos crudos están en `data/`:
 - `corte_final.csv`: resultados del corte final de los 8 regionales (por puesto final).
 - `opciones_campo_regionales.csv`: por forma, equipos y récord de quienes llevan cada movimiento, objeto, naturaleza y habilidad en los 8 regionales.
 
-### Familias por regla
-Además de los núcleos, tres familias se asignan por regla a los equipos que el núcleo deja en Otros:
-- **Psyspam**: Indeedee con Psychic Surge + Gardevoir o Armarouge.
-- **Sun Rain**: Charizard + Pelipper o Politoed.
-- **Rain** (antes Goli Rain): Pelipper o Politoed sin Charizard; la variante la define la mega (Golisopod, Swampert, Raichu…).
+### Familias: árbol de reglas
+Cada equipo cae en UNA sola familia: se recorre esta lista y gana la primera regla que cumple.
+1. Gengar Perish: Gengar con Perish Song
+2. Psyspam: Indeedee con Psychic Surge + Gardevoir o Armarouge
+3. Sun Rain: Charizard + Pelipper o Politoed
+4. Rain: Pelipper o Politoed (la variante la define la mega)
+5. Torkoal Sun: Torkoal
+6. Sand: Tyranitar o Hippowdon + Excadrill
+7. Con Charizard: Venusaur → Zard Sun · Aerodactyl → Zard Aero · Glimmora → Zard Glimmora · Whimsicott → Big 6 · si no, Otros
+8. Y-Chu Balance: Mega Raichu Y
+9. Delphox Balance: Delphox
+10. Scovillain Froslass: Mega Scovillain
+11. Glimmora Salamence: Mega Glimmora, o Glimmora + Salamence
+12. Scovillain Froslass: Mega Froslass
+13. Floette Balance: Floette
+14. Otros
 
-En los regionales y Gdańsk se aplican también al campo completo (listas abiertas de pokedata), así que sus win rates y cruces ya las incluyen. En los VR Challenges y ESM los cruces del campo siguen con la clasificación anterior.
+Los cruces (matchups) y la conversión al Top 32 salen solo del campo completo de los 8 regionales (pokedata), clasificado con este árbol.
