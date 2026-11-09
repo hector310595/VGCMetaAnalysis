@@ -1,46 +1,53 @@
 player_id,nombre,variantes,resultados
-louis-markl,Louis Markl,Louis Markl,7
+louis-markl,Louis Markl,Louis Markl,8
 victor-medina,Victor Medina,Victor Medina | Víctor Medina,6
 alex-soto,Alex Soto,Alex Soto,5
 jude-lee,Jude Lee,Jude Gerard Lee Wei Cong | Jude Lee,5
+ko-aida,Ko Aida,Ko Aida,4
+lorenzo-antognoni,Lorenzo Antognoni,Lorenzo Antognoni,4
 marco-silva,Marco Silva,Marco Hemantha Kaludura Silva | Marco Silva,4
+mattia-cognetta,Mattia Cognetta,Mattia Cognetta,4
 michael-kelsch,Michael Kelsch,Michael Kelsch,4
+theotime-massaut,Theotime Massaut,Theotime Massaut | Théotime Massaut,4
 dorian-kang,Dorian Kang,Dorian Kang,3
+eden-batchelor,Eden Batchelor,Eden Batchelor,3
+emanuele-briganti,Emanuele Briganti,Emanuele Briganti,3
+federico-camporesi,Federico Camporesi,Federico Camporesi,3
 flavio-del-pidio,Flavio Del Pidio,Flavio Del Pidio,3
 francesco-pio-pero,Francesco Pio Pero,Francesco Pio Pero,3
 francisco-javier-carvajal,Francisco Javier Carvajal,Francisco Javier Carvajal,3
-ko-aida,Ko Aida,Ko Aida,3
+jongseo-lee,Jongseo Lee,Jongseo Lee,3
 ko-tsukide,Ko Tsukide,Ko Tsukide,3
 liam-chatterjee,Liam Chatterjee,Liam Chatterjee,3
-lorenzo-antognoni,Lorenzo Antognoni,Lorenzo Antognoni,3
-mattia-cognetta,Mattia Cognetta,Mattia Cognetta,3
 shunsuke-minami,Shunsuke Minami,Shunsuke Minami,3
-theotime-massaut,Theotime Massaut,Theotime Massaut,3
+vivienne-gafner,Vivienne Gafner,Vivienne Gafner,3
+yuya-tada,Yuya Tada,Yuya Tada,3
 adri,Adri,Adri,2
 alberto-tejada,Alberto Tejada,Alberto Tejada,2
+alexander-canseco,Alexander Canseco,Alexander Canseco,2
 andrew-figueras,Andrew Figueras,Andrew Figueras,2
 asra-stone,Asra Stone,Asra Stone,2
 carlos-verastegui,Carlos Verástegui,Carlos Verastegui | Carlos Verástegui,2
 carson-confer,Carson Confer,Carson Confer,2
+cristhian-andrade,Cristhian Andrade,Cristhian Andrade,2
+cristian-contreras,Cristian Contreras,Cristian Contreras,2
 daniel-yu,Daniel Yu,Daniel Yu,2
 david-lopez,David López,David Lopez | David López,2
 davide-carrer,Davide Carrer,Davide Carrer,2
-eden-batchelor,Eden Batchelor,Eden Batchelor,2
 eduardo-cunha,Eduardo Cunha,Eduardo Cunha,2
 elias-junker,Elias Junker,Elias Junker,2
-emanuele-briganti,Emanuele Briganti,Emanuele Briganti,2
 enrique-grimaldo,Enrique Grimaldo,Enrique Grimaldo,2
 enrique-schwartz,Enrique Schwartz,Enrique Schwartz,2
 ernesto-serpa,Ernesto Serpa,Ernesto Serpa,2
-federico-camporesi,Federico Camporesi,Federico Camporesi,2
+gabriel-agati,Gabriel Agati,Gabriel Agati,2
 giulio-tarlao,Giulio Tarlao,Giulio Tarlao,2
 giuseppe-musicco,Giuseppe Musicco,Giuseppe Musicco,2
+idrissa-kane,Idrissa Kane,Idrissa Kane,2
 ivan-de-la-pena,Iván de la Peña,Ivan de la Pena | Iván de la Peña,2
 jack-geronime,Jack Geronime,Jack Geronime,2
 jacob-acker,Jacob Acker,Jacob Acker,2
 javier-freire,Javier Freire,Javier Freire,2
 jeremy-cote,Jeremy Cote,Jeremy Cote,2
-jongseo-lee,Jongseo Lee,Jongseo Lee,2
 joseph-ugarte,Joseph Ugarte,Joseph Ugarte,2
 josiah-kim,Josiah Kim,Josiah Kim,2
 juan-lucin,Juan Lucin,Juan Lucin,2
@@ -52,8 +59,10 @@ lorenzo-colombo,Lorenzo Colombo,Lorenzo Colombo,2
 lorenzo-sollini,Lorenzo Sollini,Lorenzo Sollini,2
 luca-schianchi,Luca Schianchi,Luca Schianchi,2
 marcus-dion,Marcus Dion,Marcus Dion,2
+marcus-koh,Marcus Koh,Marcus Koh,2
 mark-mullender,Mark Mullender,Mark Mullender,2
 martin-pena,Martín Pena,Martin Pena | Martín Pena,2
+masayoshi-kuroo,Masayoshi Kuroo,Masayoshi Kuroo,2
 matteo-boschmans,Matteo Boschmans,Matteo Boschmans,2
 naoya-takasago,Naoya Takasago,Naoya Takasago,2
 ng-wei-lun,Ng Wei Lun,Ng Wei Lun,2
@@ -66,10 +75,9 @@ sahil-shaikh,Sahil Shaikh,Sahil Shaikh,2
 sebastian-liu-li,Sebastian Liu Li,Sebastian Liu Li,2
 sergio-maestre,Sergio Maestre,Sergio Maestre,2
 simone-sanvito,Simone Sanvito,Simone Sanvito,2
-vivienne-gafner,Vivienne Gafner,Vivienne Gafner,2
+takuto-notohara,Takuto Notohara,Takuto Notohara,2
 wataru-igarashi,Wataru Igarashi,Wataru Igarashi,2
 yuto-kimura,Yuto Kimura,Yuto Kimura,2
-yuya-tada,Yuya Tada,Yuya Tada,2
 yvar-vlieger,Yvar Vlieger,Yvar Vlieger,2
 aaron-grubbs,Aaron Grubbs,Aaron Grubbs,1
 abel-ewere,Abel Ewere,Abel Ewere,1
@@ -85,7 +93,6 @@ alejandro-ramirez,Alejandro Ramirez,Alejandro Ramirez,1
 alejandro-rodriguez,Alejandro Rodriguez,Alejandro Rodriguez,1
 alejandro-rolon,Alejandro Rolón,Alejandro Rolón,1
 alessio-di-giovanna,Alessio Di Giovanna,Alessio Di Giovanna,1
-alexander-canseco,Alexander Canseco,Alexander Canseco,1
 alexavier-alvarez,Alexavier Alvarez,Alexavier Alvarez,1
 alfredo-chang-gonzalez,Alfredo Chang-Gonzalez,Alfredo Chang-Gonzalez,1
 amelia-sedgman,Amelia Sedgman,Amelia Sedgman,1
@@ -93,6 +100,7 @@ amin-lehna,Amin Lehna,Amin Lehna,1
 ander-bolanos,Ander Bolanos,Ander Bolanos,1
 andrea-calligari,Andrea Calligari,Andrea Calligari,1
 andrea-pagano,Andrea Pagano,Andrea Pagano,1
+andrea-sasso,Andrea Sasso,Andrea Sasso,1
 andres-wilkerson,Andres Wilkerson,Andres Wilkerson,1
 andrew-wilson,Andrew Wilson,Andrew Wilson,1
 angel-otero,Angel Otero,Angel Otero,1
@@ -141,8 +149,6 @@ conner-pietrusinski,Conner Pietrusinski,Conner Pietrusinski,1
 connor-o-sullivan,Connor O'Sullivan,Connor O'Sullivan,1
 copchxx,Copchxx,Copchxx,1
 cori-corley,Cori Corley,Cori Corley,1
-cristhian-andrade,Cristhian Andrade,Cristhian Andrade,1
-cristian-contreras,Cristian Contreras,Cristian Contreras,1
 cristobal-carrasco,Cristobal Carrasco,Cristobal Carrasco,1
 d1mo22,d1mo22,d1mo22,1
 damahni-palmer,Damahni Palmer,Damahni Palmer,1
@@ -171,6 +177,7 @@ dimitri-koziaris,Dimitri Koziaris,Dimitri Koziaris,1
 domingo-tundidor,Domingo Tundidor,Domingo Tundidor,1
 dominic-vogel,Dominic Vogel,Dominic Vogel,1
 drew-bliss,Drew Bliss,Drew Bliss,1
+du-shaoqing,Du Shaoqing,Du Shaoqing,1
 duc-invernizzi,Duc Invernizzi,Duc Invernizzi,1
 dylan-fabian-ruiz,Dylan Fabian Ruiz,Dylan Fabian Ruiz,1
 dylan-mak,Dylan Mak,Dylan Mak,1
@@ -199,7 +206,6 @@ francesco-magurno,Francesco Magurno,Francesco Magurno,1
 francesco-rasini,Francesco Rasini,Francesco Rasini,1
 francisco-espin,Francisco Espín,Francisco Espín,1
 frithjof-haugwitz,Frithjof Haugwitz,Frithjof Haugwitz,1
-gabriel-agati,Gabriel Agati,Gabriel Agati,1
 gabriel-rigo,Gabriel Rigo,Gabriel Rigo,1
 gabriele-de-leo,Gabriele De Leo,Gabriele De Leo,1
 gabriele-karol-lopez,Gabriele Karol Lopez,Gabriele Karol Lopez,1
@@ -222,7 +228,6 @@ hippolyte-bernard,Hippolyte Bernard,Hippolyte Bernard,1
 hiroto-saito,Hiroto Saito,Hiroto Saito,1
 hugo-santos,Hugo Santos,Hugo Santos,1
 iain-mackay,Iain MacKay,Iain MacKay,1
-idrissa-kane,Idrissa Kane,Idrissa Kane,1
 iker-rodrigo,Iker Rodrigo,Iker Rodrigo,1
 inigo-madariaga,Íñigo Madariaga,Íñigo Madariaga,1
 isaac-moreira,Isaac Moreira,Isaac Moreira,1
@@ -251,6 +256,7 @@ joey-scudiero,Joey Scudiero,Joey Scudiero,1
 jonas-wiegel,Jonas Wiegel,Jonas Wiegel,1
 jonathan-barradas,Jonathan Barradas,Jonathan Barradas,1
 jonathan-martin,Jonathan Martin,Jonathan Martin,1
+jonathan-zuniga,Jonathan Zuniga,Jonathan Zuniga,1
 jong-one-moon,Jong One Moon,Jong One Moon,1
 jonne-veenstra,Jonne Veenstra,Jonne Veenstra,1
 jorge-barrajon,Jorge Barrajon,Jorge Barrajon,1
@@ -281,8 +287,10 @@ krittapas-augchariyajinda,Krittapas Augchariyajinda,Krittapas Augchariyajinda,1
 kshaunish-shaik,Kshaunish Shaik,Kshaunish Shaik,1
 kyle-livinghouse,Kyle Livinghouse,Kyle Livinghouse,1
 kyler-williams,Kyler Williams,Kyler Williams,1
+laurence-archer,Laurence Archer,Laurence Archer,1
 layla-montgomerie,Layla Montgomerie,Layla Montgomerie,1
 leland-smith,Leland Smith,Leland Smith,1
+leon-muller,Leon Müller,Leon Müller,1
 leonardo-bonanomi,Leonardo Bonanomi,Leonardo Bonanomi,1
 leonardo-chinchilla,Leonardo Chinchilla,Leonardo Chinchilla,1
 leonardo-gomes,Leonardo Gomes,Leonardo Gomes,1
@@ -292,21 +300,24 @@ liam-clarkson,Liam Clarkson,Liam Clarkson,1
 london-faust,London Faust,London Faust,1
 lorenzo-arce,Lorenzo Arce,Lorenzo Arce,1
 lorenzo-medina,Lorenzo Medina,Lorenzo Medina,1
+lorenzo-silvestrini,Lorenzo Silvestrini,Lorenzo Silvestrini,1
 louis-fontvieille,Louis Fontvieille,Louis Fontvieille,1
+luca-bertani,Luca Bertani,Luca Bertani,1
+luca-gesualdo,Luca Gesualdo,Luca Gesualdo,1
 luca-lussignoli,Luca Lussignoli,Luca Lussignoli,1
 luca-santelli,Luca Santelli,Luca Santelli,1
 lucas-gardes,Lucas Gardes,Lucas Gardes,1
 luciano-begot,Luciano Begot,Luciano Begot,1
 luciano-laroze,Luciano Laroze,Luciano Laroze,1
 luis-perez,Luis Pérez,Luis Pérez,1
+luke-coogan,Luke Coogan,Luke Coogan,1
 maksim-lieder,Maksim Lieder,Maksim Lieder,1
 marcelo-langaro,Marcelo Langaro,Marcelo Langaro,1
 marco-tziavas,Marco Tziavas,Marco Tziavas,1
-marcus-koh,Marcus Koh,Marcus Koh,1
 mario-queiroz,Mario Queiroz,Mario Queiroz,1
 mario-valencia,Mario Valencia,Mario Valencia,1
 martin-saez,Martin Saez,Martin Saez,1
-masayoshi-kuroo,Masayoshi Kuroo,Masayoshi Kuroo,1
+masahiro-taoka,Masahiro Taoka,Masahiro Taoka,1
 mason-cutler,Mason Cutler,Mason Cutler,1
 matteo-donati,Matteo Donati,Matteo Donati,1
 matthew-henry,Matthew Henry,Matthew Henry,1
@@ -359,6 +370,7 @@ rin-leiba,Rin Leiba,Rin Leiba,1
 roberto-parente,Roberto Parente,Roberto Parente,1
 rogerio-da-costa,Rogerio da Costa,Rogerio da Costa,1
 roxanne-joniau,Roxanne Joniau,Roxanne Joniau,1
+ryan-klemick,Ryan Klemick,Ryan Klemick,1
 ryan-loseto,Ryan Loseto,Ryan Loseto,1
 sali-resuli,Sali Resuli,Sali Resuli,1
 samad-ahmed,Samad Ahmed,Samad Ahmed,1
@@ -368,6 +380,7 @@ santiago-molina,Santiago Molina,Santiago Molina,1
 santino-tarquinio,Santino Tarquinio,Santino Tarquinio,1
 scott-iwafuchi,Scott Iwafuchi,Scott Iwafuchi,1
 scott-kennedy,Scott Kennedy,Scott Kennedy,1
+sebastian-pinkawa,Sebastian Pinkawa,Sebastian Pinkawa,1
 sebastian-rodriguez,Sebastian Rodriguez,Sebastian Rodriguez,1
 seowon-kim,Seowon Kim,Seowon Kim,1
 sergio-igarashi,Sergio Igarashi,Sergio Igarashi,1
@@ -381,7 +394,6 @@ stefan-mott,Stefan Mott,Stefan Mott,1
 stefano-de-maria,Stefano De Maria,Stefano De Maria,1
 stefano-greppi,Stefano Greppi,Stefano Greppi,1
 takaaki-ando,Takaaki Ando,Takaaki Ando,1
-takuto-notohara,Takuto Notohara,Takuto Notohara,1
 tanita-wongapichat,Tanita Wongapichat,Tanita Wongapichat,1
 tanner-mask,Tanner Mask,Tanner Mask,1
 taran-birdee,Taran Birdee,Taran Birdee,1
@@ -420,5 +432,6 @@ wyatt-fout,Wyatt Fout,Wyatt Fout,1
 xavier-mendez,Xavier Méndez,Xavier Méndez,1
 yan-fernandes,Yan Fernandes,Yan Fernandes,1
 yan-sym,Yan Sym,Yan Sym,1
+yuki-zaninovich,Yuki Zaninovich,Yuki Zaninovich,1
 yuya-hashiba,Yuya Hashiba,Yuya Hashiba,1
 zach-holowiak,Zach Holowiak,Zach Holowiak,1
