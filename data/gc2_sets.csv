@@ -5,12 +5,6 @@ GC2#2,2,ガーベラ,Politoed,Politoed,Sitrus Berry,Drizzle,Bold,Weather Ball,Ic
 GC2#2,2,ガーベラ,Incineroar,Incineroar,Air Balloon,Intimidate,Sassy,Throat Chop,Fake Out,Parting Shot,Protect,32/0/10/0/24/0
 GC2#2,2,ガーベラ,Rillaboom,Rillaboom,Muscle Band,Grassy Surge,Careful,Grassy Glide,High Horsepower,Fake Out,U-turn,26/17/0/0/21/2
 GC2#2,2,ガーベラ,Garchomp,Garchomp,Choice Scarf,Rough Skin,Adamant,Earthquake,Dragon Claw,Stomping Tantrum,Rock Tomb,10/9/0/0/19/28
-GC2#8,8,Doles,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,,Heat Wave,Weather Ball,Solar Beam,Protect,
-GC2#8,8,Doles,Farigiraf,Farigiraf,Sitrus Berry,Armor Tail,,Psychic,Thunderbolt,Trick Room,Helping Hand,
-GC2#8,8,Doles,Aerodactyl,Aerodactyl-Mega,Aerodactylite,Unnerve,,Rock Slide,Dual Wingbeat,Wide Guard,Tailwind,
-GC2#8,8,Doles,Garchomp,Garchomp,Life Orb,Rough Skin,,Dragon Claw,Stomping Tantrum,Earthquake,Protect,
-GC2#8,8,Doles,Kingambit,Kingambit,Focus Sash,Defiant,,Kowtow Cleave,Iron Head,Sucker Punch,Low Kick,
-GC2#8,8,Doles,Sylveon,Sylveon,Fairy Feather,Pixilate,,Hyper Voice,Hyper Beam,Quick Attack,Detect,
 GC2#10,10,SupahSanti,Incineroar,Incineroar,Chople Berry,Intimidate,Sassy,Protect,Fake Out,Flare Blitz,Parting Shot,32/0/20/0/14/0
 GC2#10,10,SupahSanti,Kommo-o,Kommo-o,Leftovers,Bulletproof,Timid,Protect,Clangorous Soul,Clanging Scales,Aura Sphere,10/0/0/24/0/32
 GC2#10,10,SupahSanti,Rillaboom,Rillaboom,Miracle Seed,Grassy Surge,Brave,Protect,Fake Out,Grassy Glide,U-turn,20/32/1/0/13/0
@@ -126,3 +120,21 @@ GC2#147,147,ダブルバトル啓蒙活動,Garchomp,Garchomp,Life Orb,Rough Skin
 GC2#147,147,ダブルバトル啓蒙活動,Sylveon,Sylveon,Fairy Feather,Pixilate,Modest,Hyper Voice,Hyper Beam,Quick Attack,Detect,7/0/22/20/0/17
 GC2#147,147,ダブルバトル啓蒙活動,Kingambit,Kingambit,Focus Sash,Defiant,Adamant,Kowtow Cleave,Iron Head,Sucker Punch,Low Kick,0/32/1/0/1/32
 GC2#147,147,ダブルバトル啓蒙活動,Farigiraf,Farigiraf,Sitrus Berry,Armor Tail,Relaxed,Psychic,Thunderbolt,Trick Room,Protect,27/0/20/0/19/0
+GC2#8,8,Doles,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,Modest,Heat Wave,Weather Ball,Solar Beam,Protect,20/0/30/3/0/13
+GC2#8,8,Doles,Aerodactyl,Aerodactyl-Mega,Aerodactylite,Unnerve,Jolly,Rock Slide,Dual Wingbeat,Tailwind,Wide Guard,2/32/0/0/0/32
+GC2#8,8,Doles,Garchomp,Garchomp,Life Orb,Rough Skin,Jolly,Dragon Claw,Earthquake,Stomping Tantrum,Protect,2/32/0/0/0/32
+GC2#8,8,Doles,Sylveon,Sylveon,Fairy Feather,Pixilate,Modest,Hyper Voice,Quick Attack,Hyper Beam,Detect,5/0/24/20/0/17
+GC2#8,8,Doles,Farigiraf,Farigiraf,Sitrus Berry,Armor Tail,Calm,Psychic,Thunderbolt,Helping Hand,Trick Room,31/0/15/0/20/0
+GC2#8,8,Doles,Kingambit,Kingambit,Focus Sash,Defiant,Adamant,Kowtow Cleave,Sucker Punch,Iron Head,Low Kick,2/32/0/0/0/32
+GC2#80,80,ゆー,Floette-Eternal,Floette-Mega,Floettite,Flower Veil,,Moonblast,Dazzling Gleam,Light of Ruin,Protect,
+GC2#80,80,ゆー,Talonflame,Talonflame,Sharp Beak,Gale Wings,,Brave Bird,Tailwind,Quick Guard,Protect,
+GC2#80,80,ゆー,Garchomp,Garchomp,Life Orb,Rough Skin,,Dragon Claw,Earthquake,Rock Slide,Protect,
+GC2#80,80,ゆー,Rillaboom,Rillaboom,Miracle Seed,Grassy Surge,,Wood Hammer,Grassy Glide,Superpower,Fake Out,
+GC2#80,80,ゆー,Kingambit,Kingambit,Occa Berry,Defiant,,Kowtow Cleave,Iron Head,Sucker Punch,Protect,
+GC2#80,80,ゆー,Basculegion,Basculegion,Focus Sash,Adaptability,,Liquidation,Last Respects,Aqua Jet,Protect,
+GC2#157,157,やきいも,Charizard,Charizard-Mega-Y,Charizardite Y,Blaze,,Heat Wave,Weather Ball,Solar Beam,Protect,
+GC2#157,157,やきいも,Garchomp,Garchomp,Choice Scarf,Rough Skin,,Dragon Claw,Earthquake,Rock Slide,Stomping Tantrum,
+GC2#157,157,やきいも,Staraptor,Staraptor-Mega,Staraptite,Intimidate,,Brave Bird,Close Combat,Roost,Protect,
+GC2#157,157,やきいも,Glimmora,Glimmora,Life Orb,Toxic Debris,,Power Gem,Sludge Bomb,Earth Power,Spiky Shield,
+GC2#157,157,やきいも,Indeedee,Indeedee,Focus Sash,Psychic Surge,,Expanding Force,Hyper Voice,Imprison,Trick Room,
+GC2#157,157,やきいも,Whimsicott,Whimsicott,Babiri Berry,Prankster,,Moonblast,Encore,Charm,Tailwind,
